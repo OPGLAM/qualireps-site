@@ -35,7 +35,8 @@ const jsonLd = [
 ---
 
 <Base title={title} description={description} path="/forms" jsonLd={jsonLd}>
-  <div class="forms-intro">
+  <div class="wrap">
+    <div class="forms-intro">
     <h1>Perfect form guides</h1>
     <p>
       These guides describe each exercise in the QualiReps chains: the movement,
@@ -48,18 +49,19 @@ const jsonLd = [
     </p>
   </div>
 
-  {
-    chains.map((chain) => (
-      <section class="chain">
-        <h2>{chain.name}</h2>
-        <div class="chain__grid">
-          {chain.fiches.map((entry) => (
-            <FicheCard entry={entry} />
-          ))}
-        </div>
-      </section>
-    ))
-  }
+    {
+      chains.map((chain) => (
+        <section class="chain">
+          <h2>{chain.name}</h2>
+          <div class="chain__grid">
+            {chain.fiches.map((entry) => (
+              <FicheCard entry={entry} />
+            ))}
+          </div>
+        </section>
+      ))
+    }
+  </div>
 </Base>
 
 <style>

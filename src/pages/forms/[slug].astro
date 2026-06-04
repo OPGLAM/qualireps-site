@@ -80,47 +80,49 @@ if (steps.length > 0) {
   ogType="article"
   jsonLd={jsonLd}
 >
-  <nav class="crumbs" aria-label="Breadcrumb">
-    <a href="/">Home</a>
-    <span aria-hidden="true">/</span>
-    <a href="/forms">Forms</a>
-    <span aria-hidden="true">/</span>
-    <span>{chain}</span>
-  </nav>
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="/forms">Forms</a>
+      <span aria-hidden="true">/</span>
+      <span>{chain}</span>
+    </nav>
 
-  <article class="prose fiche">
-    <Content />
-  </article>
+    <article class="prose fiche">
+      <Content />
+    </article>
 
-  {
-    (prev || next) && (
-      <nav class="tier-nav" aria-label="Tier navigation">
-        {prev ? (
-          <a class="tier-nav__link tier-nav__prev" href={`/forms/${ficheSlug(prev)}`}>
-            <span class="tier-nav__dir">← Previous tier</span>
-            <span class="tier-nav__name">{exerciseName(prev)}</span>
-          </a>
-        ) : (
-          <span />
-        )}
-        {next && (
-          <a class="tier-nav__link tier-nav__next" href={`/forms/${ficheSlug(next)}`}>
-            <span class="tier-nav__dir">Next tier →</span>
-            <span class="tier-nav__name">{exerciseName(next)}</span>
-          </a>
-        )}
-      </nav>
-    )
-  }
+    {
+      (prev || next) && (
+        <nav class="tier-nav" aria-label="Tier navigation">
+          {prev ? (
+            <a class="tier-nav__link tier-nav__prev" href={`/forms/${ficheSlug(prev)}`}>
+              <span class="tier-nav__dir">← Previous tier</span>
+              <span class="tier-nav__name">{exerciseName(prev)}</span>
+            </a>
+          ) : (
+            <span />
+          )}
+          {next && (
+            <a class="tier-nav__link tier-nav__next" href={`/forms/${ficheSlug(next)}`}>
+              <span class="tier-nav__dir">Next tier →</span>
+              <span class="tier-nav__name">{exerciseName(next)}</span>
+            </a>
+          )}
+        </nav>
+      )
+    }
 
-  <aside class="fiche-cta">
-    <p>Get QualiReps and put this guide to work.</p>
-    <PlayBadge label="Get QualiReps on Google Play" />
-    <p class="fiche-cta__alt">
-      On desktop or iOS, <a href="/#install">install the free demo</a> — one
-      exercise, the full instrument.
-    </p>
-  </aside>
+    <aside class="fiche-cta">
+      <p>Get QualiReps and put this guide to work.</p>
+      <PlayBadge label="Get QualiReps on Google Play" />
+      <p class="fiche-cta__alt">
+        On desktop or iOS, <a href="/#install">install the free demo</a> — one
+        exercise, the full instrument.
+      </p>
+    </aside>
+  </div>
 </Base>
 
 <style>
