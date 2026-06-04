@@ -1,0 +1,22 @@
+---
+import Base from '../layouts/Base.astro';
+// Rendered from the repo-root PRIVACY.md (single source of truth for the
+// legal copy). Astro's markdown pipeline turns it into a component.
+import { Content } from '../../PRIVACY.md';
+
+const title = 'Privacy Policy — QualiReps';
+const description =
+  'QualiReps does not collect, transmit, or store personal data on remote servers. The application runs entirely on your device.';
+---
+
+<Base title={title} description={description} path="/privacy">
+  <article class="prose legal">
+    <Content />
+  </article>
+</Base>
+
+<style>
+  .legal {
+    padding: 2rem 0;
+  }
+</style>

@@ -1,0 +1,75 @@
+---
+/**
+ * "Get it on Google Play" badge → Play Store listing.
+ *
+ * NOTE: This is a faithfully-styled in-house badge (the Play triangle + the
+ * standard two-line lockup) so we ship no third-party asset and no CDN call.
+ * Before launch, consider swapping in Google's official badge artwork to stay
+ * within their branding guidelines. The deep-link uses PLAY_PACKAGE_NAME, which
+ * is a documented placeholder until the TWA package is confirmed.
+ */
+import { PLAY_STORE_URL } from '../lib/playBilling';
+
+interface Props {
+  href?: string;
+  label?: string;
+}
+const { href = PLAY_STORE_URL, label = 'Get it on Google Play' } = Astro.props;
+---
+
+<a
+  class="play-badge"
+  href={href}
+  rel="noopener"
+  aria-label={label}
+>
+  <svg class="play-tri" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+    <!-- Four-segment Play mark, brand-colored. -->
+    <path fill="#34A853" d="M61 26 311 256 61 486 61 26z"></path>
+    <path fill="#FBBC04" d="M311 256 405 209 451 235c18 11 18 31 0 42L405 303 311 256z"></path>
+    <path fill="#EA4335" d="M61 486 311 256 405 303 130 506c-26 14-55 7-69-20z" opacity="0.92"></path>
+    <path fill="#4285F4" d="M61 26 311 256 405 209 130 6c-26-14-55-7-69 20z"></path>
+  </svg>
+  <span class="play-text">
+    <small>GET IT ON</small>
+    <strong>Google Play</strong>
+  </span>
+</a>
+
+<style>
+  .play-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.6rem 1.1rem;
+    background: #000;
+    border: 1px solid var(--color-border-strong);
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: border-color 200ms ease;
+  }
+  .play-badge:hover {
+    border-color: var(--color-cuivre);
+  }
+  .play-tri {
+    width: 26px;
+    height: 26px;
+    flex: none;
+  }
+  .play-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+  .play-text small {
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #cfcfcf;
+  }
+  .play-text strong {
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+</style>

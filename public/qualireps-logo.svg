@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" role="img" aria-label="Qualireps logo">
+  <title>Qualireps</title>
+  <desc>Qualireps logo, dark mode. Glyph Q en cuivre sur fond charbon, wordmark Impact, tagline GTG TRACKER justifiee.</desc>
+  <rect width="680" height="340" fill="#1c1a18"/>
+  <rect x="100" y="100" width="80" height="140" rx="8" ry="8" fill="none" stroke="#d9904a" stroke-width="17"/>
+  <line x1="121" y1="125" x2="121" y2="215" stroke="#d9904a" stroke-width="13" stroke-linecap="square"/>
+  <line x1="140" y1="125" x2="140" y2="215" stroke="#d9904a" stroke-width="13" stroke-linecap="square"/>
+  <line x1="159" y1="125" x2="159" y2="215" stroke="#d9904a" stroke-width="13" stroke-linecap="square"/>
+  <line x1="177" y1="238" x2="190" y2="251" stroke="#d9904a" stroke-width="17" stroke-linecap="square"/>
+  <text x="240" y="190" font-family="Impact, 'Arial Black', 'Helvetica Neue', 'Franklin Gothic Bold', sans-serif" font-size="86" font-weight="900" fill="#d1cdc5" letter-spacing="-1.5">Qualireps</text>
+  <text x="240" y="222" font-family="'Inter', system-ui, sans-serif" font-size="11" font-weight="500" fill="#d9904a" textLength="335" lengthAdjust="spacing">GTG TRACKER</text>
+</svg>

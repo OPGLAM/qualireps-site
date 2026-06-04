@@ -1,0 +1,185 @@
+---
+import Base from '../layouts/Base.astro';
+import PlayBadge from '../components/PlayBadge.astro';
+import PlatformInstall from '../components/PlatformInstall.astro';
+import { SITE_NAME, SITE_ORIGIN } from '../lib/site';
+
+const title = 'QualiReps — a strength ledger for daily practice';
+const description =
+  "QualiReps tracks your max, computes today's dose, and signals when to progress. Built for practitioners who train strength the patient way — distributed across the day, never to failure, for years.";
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: SITE_NAME,
+    applicationCategory: 'HealthApplication',
+    operatingSystem: 'Android, Web',
+    offers: {
+      '@type': 'Offer',
+      price: '9.99',
+      priceCurrency: 'EUR',
+    },
+    description,
+    url: SITE_ORIGIN,
+  },
+];
+---
+
+<Base title={title} description={description} path="/" jsonLd={jsonLd}>
+  <!-- Hero -->
+  <section class="hero">
+    <h1>A strength ledger for daily practice.</h1>
+    <p class="hero__lede">
+      QualiReps tracks your max, computes today's dose, and signals when to
+      progress. Built for practitioners who train strength the patient way —
+      distributed across the day, never to failure, for years.
+    </p>
+    <div class="hero__cta">
+      <PlayBadge label="Get it on Google Play — full version" />
+    </div>
+    <p class="hero__note">
+      Available as a free demo for desktop and iOS. Full versions for these
+      platforms are in development.
+    </p>
+  </section>
+
+  <!-- Freemium -->
+  <section class="block">
+    <h2>The free demo is the instrument trial, not a stripped-down product.</h2>
+    <p>
+      You pick one exercise at any tier. You log your sets, get your daily dose,
+      receive recovery windows, see your practice tracked. The full instrument
+      runs on that exercise.
+    </p>
+    <p>
+      What the demo doesn't do: progression to the next tier, creating new
+      exercises, custom exercises. The criterion fires when you reach it — but
+      the move to the next tier is paid.
+    </p>
+
+    <div class="cols">
+      <div class="panel">
+        <h3>What you get free</h3>
+        <ul>
+          <li>One exercise, frozen at your chosen tier</li>
+          <li>Full set logging, dose calculation, recovery windows</li>
+          <li>Notifications, backup, export — the complete instrument</li>
+          <li>All perfect form guides accessible</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>What unlocks with the full version</h3>
+        <ul>
+          <li>Progression to the next tier when you're ready</li>
+          <li>Additional exercises across all four chains</li>
+          <li>Custom exercises beyond the chains</li>
+          <li>Your demo exercise and history carry over when you upgrade</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="lockup">One purchase, lifetime access. No subscription.</p>
+  </section>
+
+  <!-- Install -->
+  <section class="block" id="install">
+    <h2>Get QualiReps</h2>
+    <PlatformInstall />
+  </section>
+</Base>
+
+<style>
+  .hero {
+    padding: 3rem 0 2rem;
+    max-width: 48rem;
+  }
+  .hero h1 {
+    font-size: clamp(2.5rem, 9vw, 4rem);
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin: 0 0 1.25rem;
+    color: var(--color-fg);
+  }
+  .hero__lede {
+    font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+    line-height: 1.5;
+    color: var(--color-fg-secondary);
+    margin: 0 0 2rem;
+  }
+  .hero__cta {
+    margin-bottom: 1rem;
+  }
+  .hero__note {
+    color: var(--color-fg-tertiary);
+    font-size: 0.95rem;
+    margin: 0;
+  }
+
+  .block {
+    padding: 3rem 0;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+  .block h2 {
+    font-size: clamp(1.6rem, 4vw, 2.25rem);
+    line-height: 1.15;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--color-fg);
+    margin: 0 0 1.25rem;
+    max-width: 40ch;
+  }
+  .block > p {
+    color: var(--color-fg-secondary);
+    max-width: 65ch;
+    margin: 0 0 1rem;
+    line-height: 1.6;
+  }
+
+  .cols {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+    margin: 2rem 0;
+  }
+  .panel {
+    background: var(--color-surface-1);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+  .panel h3 {
+    margin: 0 0 1rem;
+    font-size: 1.15rem;
+    color: var(--color-cuivre);
+  }
+  .panel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .panel li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin: 0.6rem 0;
+    color: var(--color-fg-secondary);
+    line-height: 1.45;
+  }
+  .panel li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.65em;
+    width: 7px;
+    height: 1px;
+    background: var(--color-cuivre);
+  }
+
+  .lockup {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--color-fg);
+    margin: 1.5rem 0 0;
+  }
+</style>

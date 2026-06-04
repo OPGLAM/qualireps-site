@@ -1,0 +1,27 @@
+# build output
+dist/
+.output/
+.vercel/
+
+# astro
+.astro/
+
+# dependencies
+node_modules/
+
+# logs / env
+*.log
+npm-debug.log*
+.env
+.env.*
+!.env.example
+
+# os / editor
+.DS_Store
+Thumbs.db
+
+# NOTE: src/content/forms/ is intentionally COMMITTED (not ignored).
+# It is synced from ../qualireps-v2 by `npm run sync-content`, but the deploy
+# build (Vercel) has no access to that sibling repo, so the synced fiches must
+# be in version control for the build to succeed. Re-sync + commit when the app
+# content changes.

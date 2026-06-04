@@ -1,0 +1,103 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import FicheCard from '../../components/FicheCard.astro';
+import { groupByChain } from '../../lib/content';
+import { SITE_ORIGIN } from '../../lib/site';
+
+const entries = await getCollection('forms');
+const chains = groupByChain(entries);
+
+const title = 'Perfect form guides — QualiReps';
+const description =
+  'Free guides to every exercise in the QualiReps chains: the movement, the setup, the sensations, the common errors. The knowledge is open, the instrument is paid.';
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: SITE_ORIGIN + '/',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Forms',
+        item: SITE_ORIGIN + '/forms',
+      },
+    ],
+  },
+];
+---
+
+<Base title={title} description={description} path="/forms" jsonLd={jsonLd}>
+  <div class="forms-intro">
+    <h1>Perfect form guides</h1>
+    <p>
+      These guides describe each exercise in the QualiReps chains: the movement,
+      the setup, the sensations, the common errors. They are freely accessible —
+      the knowledge is open, the instrument is paid.
+    </p>
+    <p class="safety">
+      Practice safely. Consult a qualified professional if you have any doubt
+      about whether a movement is appropriate for you.
+    </p>
+  </div>
+
+  {
+    chains.map((chain) => (
+      <section class="chain">
+        <h2>{chain.name}</h2>
+        <div class="chain__grid">
+          {chain.fiches.map((entry) => (
+            <FicheCard entry={entry} />
+          ))}
+        </div>
+      </section>
+    ))
+  }
+</Base>
+
+<style>
+  .forms-intro {
+    max-width: 50rem;
+    padding: 2rem 0 1rem;
+  }
+  .forms-intro h1 {
+    font-size: clamp(2.25rem, 7vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin: 0 0 1rem;
+    color: var(--color-fg);
+  }
+  .forms-intro p {
+    color: var(--color-fg-secondary);
+    line-height: 1.6;
+    margin: 0 0 1rem;
+  }
+  .forms-intro .safety {
+    color: var(--color-fg-tertiary);
+    font-size: 0.95rem;
+    border-left: 2px solid var(--color-border-default);
+    padding-left: 0.9rem;
+  }
+  .chain {
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+  .chain h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-fg);
+    margin: 0 0 1.25rem;
+  }
+  .chain__grid {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+  }
+</style>

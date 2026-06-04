@@ -1,0 +1,227 @@
+---
+import '../styles/global.css';
+import LangSwitcher from '../components/LangSwitcher.astro';
+import { SITE_NAME, NAV, OG_IMAGE, LEGAL_EMAIL } from '../lib/site';
+
+interface Props {
+  title: string;
+  description: string;
+  /** Path of this page (e.g. "/pricing"). Used for the canonical URL. */
+  path: string;
+  /** OG image path; defaults to the single brand image. */
+  ogImage?: string;
+  ogType?: 'website' | 'article';
+  /** JSON-LD structured-data objects to embed. */
+  jsonLd?: Record<string, unknown>[];
+}
+
+const {
+  title,
+  description,
+  path,
+  ogImage = OG_IMAGE,
+  ogType = 'website',
+  jsonLd = [],
+} = Astro.props;
+
+const canonical = new URL(path, Astro.site).href;
+const ogImageUrl = new URL(ogImage, Astro.site).href;
+const year = 2026;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+
+    <!-- Preload the primary font weight -->
+    <link
+      rel="preload"
+      href="/fonts/inter-latin-wght-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:locale" content="en" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
+    <!--
+      GoatCounter analytics — activate after account creation.
+      Replace the data-goatcounter URL with the real site code, then uncomment.
+      The CSP in vercel.json already allows gc.zgo.at + the goatcounter origin.
+    -->
+    <!-- GoatCounter analytics — activate after account creation
+    <script data-goatcounter="https://qualireps.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    -->
+
+    {
+      jsonLd.map((obj) => (
+        <script
+          type="application/ld+json"
+          is:inline
+          set:html={JSON.stringify(obj)}
+        />
+      ))
+    }
+  </head>
+  <body>
+    <div id="app-root">
+      <header class="site-header">
+        <a href="/" class="brand" aria-label={`${SITE_NAME} — home`}>
+          <img src="/qualireps-icon.svg" alt="" width="32" height="32" />
+          <span>{SITE_NAME}</span>
+        </a>
+        <nav aria-label="Primary">
+          <ul>
+            {
+              NAV.map((item) => (
+                <li>
+                  <a
+                    href={item.href}
+                    aria-current={
+                      path === item.href ||
+                      (item.href !== '/' && path.startsWith(item.href))
+                        ? 'page'
+                        : undefined
+                    }
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+          <LangSwitcher path={path} />
+        </nav>
+      </header>
+
+      <main id="main">
+        <slot />
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <p class="footer-copy">© {year} {SITE_NAME} · Olivier Lamglait</p>
+          <nav aria-label="Footer">
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+            <a href={`mailto:${LEGAL_EMAIL}`}>{LEGAL_EMAIL}</a>
+          </nav>
+        </div>
+      </footer>
+    </div>
+
+    <style>
+      .site-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        max-width: 72rem;
+        margin: 0 auto;
+        padding: 1rem 1.5rem;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: var(--color-fg);
+        text-decoration: none;
+        letter-spacing: -0.01em;
+      }
+      .brand img {
+        border-radius: 7px;
+        display: block;
+      }
+      nav[aria-label='Primary'] {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+      }
+      nav[aria-label='Primary'] ul {
+        display: flex;
+        gap: 1.25rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav[aria-label='Primary'] a {
+        color: var(--color-fg-secondary);
+        text-decoration: none;
+        font-size: 0.95rem;
+        padding: 0.25rem 0;
+        border-bottom: 1px solid transparent;
+      }
+      nav[aria-label='Primary'] a:hover {
+        color: var(--color-fg);
+      }
+      nav[aria-label='Primary'] a[aria-current='page'] {
+        color: var(--color-cuivre);
+        border-bottom-color: var(--color-cuivre);
+      }
+      #main {
+        max-width: 72rem;
+        margin: 0 auto;
+        padding: 1.5rem 1.5rem 4rem;
+      }
+      .site-footer {
+        border-top: 1px solid var(--color-border-subtle);
+        margin-top: 2rem;
+      }
+      .footer-inner {
+        max-width: 72rem;
+        margin: 0 auto;
+        padding: 2rem 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+      .footer-copy {
+        color: var(--color-fg-tertiary);
+        font-size: 0.875rem;
+        margin: 0;
+      }
+      .site-footer nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+      }
+      .site-footer a {
+        color: var(--color-fg-secondary);
+        text-decoration: none;
+        font-size: 0.875rem;
+      }
+      .site-footer a:hover {
+        color: var(--color-cuivre);
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "qualireps-site",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "QualiReps landing page — strength ledger for daily practice",
+  "scripts": {
+    "sync-content": "node scripts/sync-content.js",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "prebuild": "npm run sync-content",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.6.0",
+    "@tailwindcss/vite": "^4.1.18",
+    "astro": "^5.16.0",
+    "qrcode": "^1.5.4",
+    "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "@types/qrcode": "^1.5.5",
+    "typescript": "^5.9.3"
+  }
+}

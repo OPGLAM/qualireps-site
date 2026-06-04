@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 680" role="img" aria-label="Qualireps app icon">
+  <title>Qualireps app icon</title>
+  <desc>App icon Qualireps, glyph Q dans un squircle charbon, format carre 1 sur 1 pour PWA et stores.</desc>
+  <rect width="680" height="680" rx="150" ry="150" fill="#1c1a18"/>
+  <g transform="translate(340 340) scale(3.5) translate(-143.75 -174.25)">
+    <rect x="100" y="100" width="80" height="140" rx="8" ry="8" fill="none" stroke="#d9904a" stroke-width="17"/>
+    <line x1="121" y1="125" x2="121" y2="215" stroke="#d9904a" stroke-width="13" stroke-linecap="square"/>
+    <line x1="140" y1="125" x2="140" y2="215" stroke="#d9904a" stroke-width="13" stroke-linecap="square"/>
+    <line x1="159" y1="125" x2="159" y2="215" stroke="#d9904a" stroke-width="13" stroke-linecap="square"/>
+    <line x1="177" y1="238" x2="190" y2="251" stroke="#d9904a" stroke-width="17" stroke-linecap="square"/>
+  </g>
+</svg>

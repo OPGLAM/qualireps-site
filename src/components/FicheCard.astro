@@ -1,0 +1,69 @@
+---
+/** Form-sheet preview card for the /forms/ index. */
+import type { FormEntry } from '../lib/content';
+import { exerciseName, essenceLine, ficheSlug } from '../lib/content';
+
+interface Props {
+  entry: FormEntry;
+}
+const { entry } = Astro.props;
+const name = exerciseName(entry);
+const essence = essenceLine(entry);
+const slug = ficheSlug(entry);
+const level = entry.data.level;
+---
+
+<a class="fiche-card" href={`/forms/${slug}`}>
+  <span class="fiche-card__head">
+    {level !== null && <span class="fiche-card__level">L{level}</span>}
+    <span class="fiche-card__name">{name}</span>
+  </span>
+  {essence && <span class="fiche-card__essence">{essence}</span>}
+</a>
+
+<style>
+  .fiche-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 0.9rem 1rem;
+    background: var(--color-surface-1);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 10px;
+    text-decoration: none;
+    transition:
+      border-color 200ms ease,
+      background 200ms ease;
+  }
+  .fiche-card:hover {
+    border-color: var(--color-cuivre);
+    background: var(--color-surface-2);
+  }
+  .fiche-card__head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+  }
+  .fiche-card__level {
+    font-variant-numeric: tabular-nums;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-cuivre);
+    border: 1px solid var(--color-border-default);
+    border-radius: 5px;
+    padding: 0.05rem 0.35rem;
+    flex: none;
+  }
+  .fiche-card__name {
+    color: var(--color-fg);
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+  .fiche-card__essence {
+    color: var(--color-fg-tertiary);
+    font-size: 0.85rem;
+    line-height: 1.4;
+    font-style: italic;
+  }
+</style>

@@ -1,0 +1,121 @@
+---
+import Base from '../layouts/Base.astro';
+import PlayBadge from '../components/PlayBadge.astro';
+import { PRICE_LABEL } from '../lib/site';
+
+const title = 'Pricing — QualiReps';
+const description =
+  'QualiReps is 9,99 € on Google Play. One purchase, lifetime access. No subscription. The free demo lets you try the instrument on one exercise before you buy.';
+---
+
+<Base title={title} description={description} path="/pricing">
+  <article class="pricing">
+    <h1>Pricing</h1>
+
+    <p class="lead">
+      QualiReps is {PRICE_LABEL} on Google Play. One purchase, lifetime access.
+      No subscription.
+    </p>
+
+    <div class="cta">
+      <PlayBadge label="Get it on Google Play — full version" />
+    </div>
+
+    <section>
+      <h2>What you get</h2>
+      <ul>
+        <li>
+          Full progression across four chains: push, pull, squat, kettlebell
+          press
+        </li>
+        <li>Unlimited custom exercises</li>
+        <li>
+          All instrument features: dose, recovery, triggers, notifications,
+          backup, export
+        </li>
+        <li>Lifetime access to future updates</li>
+      </ul>
+      <p>
+        The free demo lets you try the instrument on one exercise before you
+        buy.
+      </p>
+    </section>
+
+    <section>
+      <h2>Refunds</h2>
+      <p>
+        Refunds are handled by Google Play. You can request a refund within 48
+        hours of purchase directly through your Google account.
+      </p>
+    </section>
+
+    <section>
+      <h2>No subscription</h2>
+      <p>
+        QualiReps will never charge you again after this purchase. No yearly
+        fee, no recurring billing, no premium tier that comes later.
+      </p>
+    </section>
+  </article>
+</Base>
+
+<style>
+  .pricing {
+    max-width: 44rem;
+    padding: 2rem 0;
+  }
+  .pricing h1 {
+    font-size: clamp(2.25rem, 7vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin: 0 0 1rem;
+    color: var(--color-fg);
+  }
+  .lead {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: var(--color-fg);
+    margin: 0 0 1.75rem;
+  }
+  .cta {
+    margin-bottom: 2.5rem;
+  }
+  .pricing section {
+    border-top: 1px solid var(--color-border-subtle);
+    padding: 1.75rem 0;
+  }
+  .pricing h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-fg);
+    margin: 0 0 0.75rem;
+  }
+  .pricing p {
+    color: var(--color-fg-secondary);
+    line-height: 1.6;
+    margin: 0 0 0.5rem;
+    max-width: 60ch;
+  }
+  .pricing ul {
+    list-style: none;
+    margin: 0 0 1rem;
+    padding: 0;
+  }
+  .pricing li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin: 0.5rem 0;
+    color: var(--color-fg-secondary);
+    line-height: 1.5;
+    max-width: 60ch;
+  }
+  .pricing li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.65em;
+    width: 7px;
+    height: 1px;
+    background: var(--color-cuivre);
+  }
+</style>

@@ -1,0 +1,21 @@
+---
+import Base from '../layouts/Base.astro';
+// Rendered from the repo-root TERMS.md (single source of truth).
+import { Content } from '../../TERMS.md';
+
+const title = 'Terms of Service — QualiReps';
+const description =
+  'The terms governing use of QualiReps: a strength training ledger. It is a tool, not coaching, medical advice, or a prescription.';
+---
+
+<Base title={title} description={description} path="/terms">
+  <article class="prose legal">
+    <Content />
+  </article>
+</Base>
+
+<style>
+  .legal {
+    padding: 2rem 0;
+  }
+</style>

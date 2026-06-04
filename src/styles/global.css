@@ -1,0 +1,224 @@
+@import 'tailwindcss';
+
+/* ============================================================
+   Self-hosted Inter (variable, latin). woff2 in /public/fonts.
+   No third-party font CDNs.
+   ============================================================ */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('/fonts/inter-latin-wght-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('/fonts/inter-latin-wght-italic.woff2') format('woff2');
+}
+
+/* ============================================================
+   QualiReps brand tokens — Industrial Workshop, dark by default.
+   Mirrored from qualireps-v2/src/app.css (OKLCH palette).
+   ============================================================ */
+@theme {
+  --font-sans: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI',
+    Roboto, sans-serif;
+
+  /* Surface depth (4 layers) */
+  --color-charbon: #1c1a18; /* surface-base */
+  --color-surface-base: oklch(0.157 0.005 60); /* #1c1a18 */
+  --color-surface-1: oklch(0.205 0.006 60); /* #26221e */
+  --color-surface-2: oklch(0.255 0.008 60); /* #332e29 */
+  --color-surface-overlay: oklch(0.09 0.003 60); /* #0e0d0c */
+
+  /* Semantic accents */
+  --color-cuivre: oklch(0.689 0.117 56); /* #D9904A accent */
+  --color-oxblood: oklch(0.555 0.195 22);
+  --color-kaki: oklch(0.582 0.077 124);
+  --color-ambre: oklch(0.755 0.094 84);
+
+  /* Foreground hierarchy (text on dark) */
+  --color-fg: oklch(0.91 0.006 80); /* sand #e8e4de */
+  --color-fg-secondary: oklch(0.747 0.005 80);
+  --color-fg-tertiary: oklch(0.541 0.007 80);
+  --color-fg-subtle: oklch(0.346 0.007 80);
+
+  /* Borders (1px luminance shifts, no shadows) */
+  --color-border-subtle: oklch(1 0 0 / 0.06);
+  --color-border-default: oklch(1 0 0 / 0.12);
+  --color-border-strong: oklch(1 0 0 / 0.2);
+}
+
+/* Background treatment — radial glow + faint grain, mirrored from the app. */
+:root {
+  --bg-base: #1c1a18;
+  --bg-glow-color: #201e1b;
+  --bg-glow-edge: #1a1816;
+  --grain-opacity: 0.03;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-fg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  background-color: var(--bg-base);
+  background-image: radial-gradient(
+    120% 120% at 50% 30%,
+    var(--bg-glow-color),
+    var(--bg-glow-edge)
+  );
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100dvh;
+}
+
+/* Grain overlay — inline SVG feTurbulence, fixed, passive. */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: var(--grain-opacity);
+  mix-blend-mode: soft-light;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='matrix' values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+@media (prefers-contrast: more) {
+  body::before {
+    opacity: 0;
+  }
+}
+
+/* Content sits above the grain layer. */
+#app-root {
+  position: relative;
+  z-index: 1;
+}
+
+/* Focus ring — cuivre, visible. */
+:focus-visible {
+  outline: 2px solid var(--color-cuivre);
+  outline-offset: 2px;
+}
+
+/* ============================================================
+   Prose — legal pages and form fiches.
+   Hand-rolled (no plugin) to match the workshop palette.
+   ============================================================ */
+.prose {
+  color: var(--color-fg-secondary);
+  line-height: 1.7;
+  max-width: 70ch;
+}
+.prose > :first-child {
+  margin-top: 0;
+}
+.prose h1 {
+  color: var(--color-fg);
+  font-size: clamp(2rem, 6vw, 2.75rem);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0 0 1rem;
+}
+.prose h2 {
+  color: var(--color-fg);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 2.5rem 0 0.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border-subtle);
+}
+.prose h3 {
+  color: var(--color-fg);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1.75rem 0 0.5rem;
+}
+.prose p {
+  margin: 0 0 1rem;
+}
+.prose strong {
+  color: var(--color-fg);
+  font-weight: 600;
+}
+.prose em {
+  color: var(--color-fg);
+}
+.prose a {
+  color: var(--color-cuivre);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.prose a:hover {
+  color: var(--color-ambre);
+}
+.prose ul,
+.prose ol {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+}
+.prose li {
+  margin: 0.4rem 0;
+}
+.prose ul {
+  list-style: none;
+  padding-left: 0;
+}
+.prose ul > li {
+  position: relative;
+  padding-left: 1.25rem;
+}
+.prose ul > li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 6px;
+  height: 1px;
+  background: var(--color-cuivre);
+}
+.prose ol {
+  list-style: decimal;
+}
+.prose code {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Consolas,
+    monospace;
+  font-size: 0.9em;
+  background: var(--color-surface-2);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+.prose blockquote {
+  border-left: 2px solid var(--color-border-default);
+  margin: 1.25rem 0;
+  padding-left: 1rem;
+  color: var(--color-fg-tertiary);
+  font-style: italic;
+}
+.prose hr {
+  border: none;
+  border-top: 1px solid var(--color-border-subtle);
+  margin: 2rem 0;
+}
+
+/* The fiche's leading meta line ("**Push horizontal · reps · bilateral**")
+   and italic essence line render via .prose; nudge them apart from the H1. */
+.prose h1 + p {
+  margin-top: 0.25rem;
+}

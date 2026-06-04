@@ -1,0 +1,45 @@
+---
+/**
+ * Language switcher. The structure is in place for the Phase 2 FR site.
+ * For V1 there is only English content, so the switcher renders nothing
+ * (no point offering a single language). When FR lands, populate `locales`
+ * and remove the early-return.
+ */
+interface Props {
+  // `path` is accepted for the Phase 2 FR switcher (to build per-locale hrefs).
+  // Unused while V1 is EN-only — read it then to populate `locales`.
+  path: string;
+}
+
+// V1: EN only. Phase 2: e.g. [{ code: 'en', label: 'EN', href: Astro.props.path },
+// { code: 'fr', label: 'FR', href: '/fr' + Astro.props.path }]
+const locales: { code: string; label: string; href: string }[] = [];
+const showSwitcher = locales.length > 1;
+---
+
+{
+  showSwitcher && (
+    <div class="lang-switcher" aria-label="Language">
+      {locales.map((l) => (
+        <a href={l.href} lang={l.code} hreflang={l.code}>
+          {l.label}
+        </a>
+      ))}
+    </div>
+  )
+}
+
+<style>
+  .lang-switcher {
+    display: inline-flex;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+  }
+  .lang-switcher a {
+    color: var(--color-fg-tertiary);
+    text-decoration: none;
+  }
+  .lang-switcher a:hover {
+    color: var(--color-fg);
+  }
+</style>
