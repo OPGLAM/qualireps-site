@@ -25,6 +25,19 @@ const {
 
 const canonical = new URL(path, Astro.site).href;
 const ogImageUrl = new URL(ogImage, Astro.site).href;
+
+// Primary header nav. Active state is derived from `path`: Home matches only
+// the root; the others match their section (so /forms/{slug} keeps Forms lit).
+const navItems = [
+  { href: '/', label: 'Home' },
+  { href: '/forms/', label: 'Forms' },
+  { href: '/pricing', label: 'Pricing' },
+];
+function isActive(href: string): boolean {
+  if (href === '/') return path === '/';
+  const base = href.replace(/\/$/, '');
+  return path === base || path.startsWith(`${base}/`);
+}
 ---
 
 <!doctype html>
@@ -79,6 +92,18 @@ const ogImageUrl = new URL(ogImage, Astro.site).href;
         <a href="/" class="logo" aria-label="QualiReps home">
           <Logo wordmark="#e8e4de" />
         </a>
+        <nav class="site-nav" aria-label="Primary">
+          {
+            navItems.map((item) => (
+              <a
+                href={item.href}
+                aria-current={isActive(item.href) ? 'page' : undefined}
+              >
+                {item.label}
+              </a>
+            ))
+          }
+        </nav>
         <div class="header-right">
           <a class="open-app" href="/app">Already a user? Open the app <span class="arrow">→</span></a>
           <LangSwitcher />
@@ -194,8 +219,33 @@ const ogImageUrl = new URL(ogImage, Astro.site).href;
       .open-app:hover .arrow {
         transform: translateX(3px);
       }
+
+      /* Primary header nav — small, muted, copper on hover, full opacity
+         when active. No underline. */
+      .site-nav {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+      }
+      .site-nav a {
+        color: var(--fg-mute);
+        font-size: 14px;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+      .site-nav a:hover {
+        color: var(--accent-hi);
+      }
+      .site-nav a[aria-current='page'] {
+        color: var(--fg);
+      }
+
       @media (max-width: 640px) {
         .open-app {
+          display: none;
+        }
+        /* Nav collapses on small screens (the footer carries the links). */
+        .site-nav {
           display: none;
         }
         .header-inner {
