@@ -5,7 +5,7 @@
  * All three render server-side so the page works with no JavaScript. A small
  * bundled client script (imports the verbatim detection from src/lib/platform)
  * then reveals just the relevant block and offers a "Show all platforms"
- * toggle. Served from 'self' (Astro bundles it) — no inline-script CSP need.
+ * toggle.
  */
 import PlayBadge from './PlayBadge.astro';
 import QRCode from './QRCode.astro';
@@ -19,44 +19,47 @@ import { APP_URL, PRICE_LABEL } from '../lib/site';
   </div>
 
   <!-- Android -->
-  <section class="install__block" data-platform="android" aria-label="Android">
+  <section class="how-card" data-platform="android" aria-label="Android">
+    <div class="plat"><span class="badge">Android</span><span>Google Play · full app</span></div>
     <h3>Android</h3>
     <p>Get QualiReps from Google Play. The full app, {PRICE_LABEL}.</p>
     <div class="install__badge">
       <PlayBadge />
     </div>
-    <p class="install__qr-label">Scan with your phone:</p>
+    <p class="qr-label">Scan with your phone:</p>
     <QRCode value={PLAY_STORE_URL} alt="QR code linking to QualiReps on Google Play" />
   </section>
 
   <!-- Desktop -->
-  <section class="install__block" data-platform="desktop" aria-label="Desktop">
+  <section class="how-card" data-platform="desktop" aria-label="Desktop">
+    <div class="plat"><span class="badge">Desktop</span><span>Chrome · Edge · free demo</span></div>
     <h3>Desktop</h3>
     <p>
       QualiReps runs as an installable web app on Chrome and Edge. Open
       <a href={APP_URL}>qualireps.app</a>, then click the install icon in your
       browser's address bar.
     </p>
-    <p class="install__note">
+    <p class="note">
       Desktop is a free demo: one exercise, no progression. A native version is
       in development.
     </p>
   </section>
 
   <!-- iOS -->
-  <section class="install__block" data-platform="ios" aria-label="iOS">
+  <section class="how-card" data-platform="ios" aria-label="iOS">
+    <div class="plat"><span class="badge">iOS</span><span>Safari · free demo</span></div>
     <h3>iOS</h3>
     <p>
       Open <a href={APP_URL}>qualireps.app</a> in Safari, tap the Share icon,
       then "Add to Home Screen".
     </p>
-    <p class="install__note">
+    <p class="note">
       iOS is a free demo: one exercise, no progression. A native version is in
       development.
     </p>
-    <p class="install__warn">
-      Note: Apple's Safari may clear app data after about 7 days of non-use.
-      Back up regularly to protect your practice history.
+    <p class="warn">
+      Note: Apple's Safari may clear app data after about 7 days of non-use. Back
+      up regularly to protect your practice history.
     </p>
   </section>
 </div>
@@ -89,54 +92,82 @@ import { APP_URL, PRICE_LABEL } from '../lib/site';
 <style>
   .install {
     display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+    gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+    background: var(--hairline-soft);
+    border: 1px solid var(--hairline-soft);
+    border-radius: 6px;
+    overflow: hidden;
   }
-  .install__block {
-    background: var(--color-surface-1);
-    border: 1px solid var(--color-border-subtle);
-    border-radius: 12px;
-    padding: 1.5rem;
+  .how-card {
+    background: var(--bg-elev-1);
+    padding: clamp(24px, 3vw, 32px);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
   }
-  .install__block h3 {
-    margin: 0 0 0.75rem;
-    font-size: 1.25rem;
-    color: var(--color-fg);
+  .plat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: var(--fg-mute);
+    text-transform: uppercase;
+    margin-bottom: 18px;
   }
-  .install__block p {
-    margin: 0 0 0.75rem;
-    color: var(--color-fg-secondary);
+  .plat .badge {
+    background: var(--bg-elev-2);
+    color: var(--fg);
+    padding: 3px 9px;
+    border-radius: 3px;
+    font-size: 11px;
+    border: 1px solid var(--hairline);
   }
-  .install__block a {
-    color: var(--color-cuivre);
-    text-underline-offset: 2px;
+  .how-card h3 {
+    font-family: var(--font-display);
+    font-size: 22px;
+    margin: 0 0 14px;
+    color: var(--fg);
+  }
+  .how-card p {
+    margin: 0 0 12px;
+    color: var(--fg-mute);
+    font-size: 14.5px;
+    line-height: 1.6;
+  }
+  .how-card a {
+    color: var(--accent-hi);
   }
   .install__badge {
-    margin: 1rem 0;
+    margin: 6px 0 16px;
   }
-  .install__qr-label {
-    font-size: 0.9rem;
-    color: var(--color-fg-tertiary);
+  .qr-label {
+    font-size: 13px;
+    color: var(--fg-dim);
   }
-  .install__note {
-    font-size: 0.9rem;
-    color: var(--color-fg-tertiary);
+  .note {
+    font-size: 13.5px;
+    color: var(--fg-dim);
   }
-  .install__warn {
-    font-size: 0.85rem;
-    color: var(--color-ambre);
-    border-left: 2px solid var(--color-ambre);
+  .warn {
+    font-size: 13px;
+    color: var(--warning);
+    border-left: 2px solid var(--warning);
     padding-left: 0.75rem;
+    margin-top: 6px;
     margin-bottom: 0;
   }
   .install__toggle {
     grid-column: 1 / -1;
-    margin-bottom: -0.5rem;
+    background: var(--bg);
+    padding: 14px;
   }
   .install__toggle button {
     background: transparent;
-    border: 1px solid var(--color-border-default);
-    color: var(--color-fg-secondary);
+    border: 1px solid var(--hairline);
+    color: var(--fg-mute);
     border-radius: 8px;
     padding: 0.45rem 0.9rem;
     font: inherit;
@@ -144,21 +175,27 @@ import { APP_URL, PRICE_LABEL } from '../lib/site';
     cursor: pointer;
   }
   .install__toggle button:hover {
-    border-color: var(--color-cuivre);
-    color: var(--color-fg);
+    border-color: var(--accent);
+    color: var(--fg);
+  }
+
+  @media (max-width: 860px) {
+    .install {
+      grid-template-columns: 1fr;
+    }
   }
 
   /* With JS + a detected platform, show only the matching block until the
      user asks for all. Default (no JS): every block stays visible. */
-  .install.is-detected:not(.show-all) .install__block {
+  .install.is-detected:not(.show-all) .how-card {
     display: none;
   }
   .install.is-detected[data-detected='android']:not(.show-all)
-    .install__block[data-platform='android'],
+    .how-card[data-platform='android'],
   .install.is-detected[data-detected='desktop']:not(.show-all)
-    .install__block[data-platform='desktop'],
+    .how-card[data-platform='desktop'],
   .install.is-detected[data-detected='ios']:not(.show-all)
-    .install__block[data-platform='ios'] {
-    display: block;
+    .how-card[data-platform='ios'] {
+    display: flex;
   }
 </style>

@@ -1,17 +1,16 @@
 ---
 import '../styles/global.css';
+import Logo from '../components/Logo.astro';
 import LangSwitcher from '../components/LangSwitcher.astro';
-import { SITE_NAME, NAV, OG_IMAGE, LEGAL_EMAIL } from '../lib/site';
+import { SITE_NAME, OG_IMAGE, LEGAL_EMAIL } from '../lib/site';
 
 interface Props {
   title: string;
   description: string;
   /** Path of this page (e.g. "/pricing"). Used for the canonical URL. */
   path: string;
-  /** OG image path; defaults to the single brand image. */
   ogImage?: string;
   ogType?: 'website' | 'article';
-  /** JSON-LD structured-data objects to embed. */
   jsonLd?: Record<string, unknown>[];
 }
 
@@ -26,35 +25,27 @@ const {
 
 const canonical = new URL(path, Astro.site).href;
 const ogImageUrl = new URL(ogImage, Astro.site).href;
-const year = 2026;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="generator" content={Astro.generator} />
 
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
 
-    <!-- Icons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
 
-    <!-- Preload the primary font weight -->
-    <link
-      rel="preload"
-      href="/fonts/inter-latin-wght-normal.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
+    <!-- Self-hosted display + body fonts (no CDN) -->
+    <link rel="preload" href="/fonts/archivo-black-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
 
-    <!-- Open Graph -->
     <meta property="og:site_name" content={SITE_NAME} />
     <meta property="og:type" content={ogType} />
     <meta property="og:title" content={title} />
@@ -63,7 +54,6 @@ const year = 2026;
     <meta property="og:image" content={ogImageUrl} />
     <meta property="og:locale" content="en" />
 
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
@@ -71,7 +61,6 @@ const year = 2026;
 
     <!--
       GoatCounter analytics — activate after account creation.
-      Replace the data-goatcounter URL with the real site code, then uncomment.
       The CSP in vercel.json already allows gc.zgo.at + the goatcounter origin.
     -->
     <!-- GoatCounter analytics — activate after account creation
@@ -80,147 +69,205 @@ const year = 2026;
 
     {
       jsonLd.map((obj) => (
-        <script
-          type="application/ld+json"
-          is:inline
-          set:html={JSON.stringify(obj)}
-        />
+        <script type="application/ld+json" is:inline set:html={JSON.stringify(obj)} />
       ))
     }
   </head>
   <body>
-    <div id="app-root">
-      <header class="site-header">
-        <a href="/" class="brand" aria-label={`${SITE_NAME} — home`}>
-          <img src="/qualireps-icon.svg" alt="" width="32" height="32" />
-          <span>{SITE_NAME}</span>
+    <header class="site-header" id="siteHeader">
+      <div class="wrap header-inner">
+        <a href="/" class="logo" aria-label="QualiReps home">
+          <Logo wordmark="#e8e4de" />
         </a>
-        <nav aria-label="Primary">
-          <ul>
-            {
-              NAV.map((item) => (
-                <li>
-                  <a
-                    href={item.href}
-                    aria-current={
-                      path === item.href ||
-                      (item.href !== '/' && path.startsWith(item.href))
-                        ? 'page'
-                        : undefined
-                    }
-                  >
-                    {item.label}
-                  </a>
-                </li>
-              ))
-            }
-          </ul>
-          <LangSwitcher path={path} />
-        </nav>
-      </header>
-
-      <main id="main">
-        <slot />
-      </main>
-
-      <footer class="site-footer">
-        <div class="footer-inner">
-          <p class="footer-copy">© {year} {SITE_NAME} · Olivier Lamglait</p>
-          <nav aria-label="Footer">
-            <a href="/privacy">Privacy</a>
-            <a href="/terms">Terms</a>
-            <a href={`mailto:${LEGAL_EMAIL}`}>{LEGAL_EMAIL}</a>
-          </nav>
+        <div class="header-right">
+          <a class="open-app" href="/app">Already a user? Open the app <span class="arrow">→</span></a>
+          <LangSwitcher />
         </div>
-      </footer>
-    </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer>
+      <div class="wrap foot-inner">
+        <div class="foot-logo">
+          <Logo wordmark="#a59f97" />
+          <span class="foot-meta">A daily strength practice tool · v1.0</span>
+        </div>
+        <nav aria-label="Footer">
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
+          <a href="/forms">Forms</a>
+          <a href={`mailto:${LEGAL_EMAIL}`}>Contact</a>
+        </nav>
+      </div>
+      <div class="wrap">
+        <div class="built">
+          <span>© 2026 Olivier Lamglait · {SITE_NAME} · Made in France</span>
+          <span>No trackers · No ads · No subscription</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Sticky-header hairline on scroll (progressive enhancement).
+      const header = document.getElementById('siteHeader');
+      if (header) {
+        const onScroll = () =>
+          header.classList.toggle('scrolled', window.scrollY > 8);
+        document.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+
+        // Reveal-on-scroll.
+        const io = new IntersectionObserver(
+          (entries) => {
+            for (const e of entries) {
+              if (e.isIntersecting) {
+                e.target.classList.add('in');
+                io.unobserve(e.target);
+              }
+            }
+          },
+          { threshold: 0.12 }
+        );
+        document
+          .querySelectorAll('section, .reveal-item')
+          .forEach((el) => {
+            el.classList.add('reveal');
+            io.observe(el);
+          });
+      }
+    </script>
 
     <style>
       .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: rgba(28, 26, 24, 0.85);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.25s ease, background 0.25s ease;
+      }
+      .site-header.scrolled {
+        border-bottom-color: var(--hairline-soft);
+        background: rgba(20, 18, 16, 0.92);
+      }
+      .header-inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 1rem;
-        max-width: 72rem;
-        margin: 0 auto;
-        padding: 1rem 1.5rem;
+        height: 100px;
+        gap: 16px;
       }
-      .brand {
-        display: inline-flex;
+      .logo {
+        display: flex;
         align-items: center;
-        gap: 0.6rem;
-        font-weight: 700;
-        font-size: 1.1rem;
-        color: var(--color-fg);
-        text-decoration: none;
-        letter-spacing: -0.01em;
+        height: 72px;
       }
-      .brand img {
-        border-radius: 7px;
+      .logo :global(svg) {
+        height: 72px;
+        width: auto;
         display: block;
       }
-      nav[aria-label='Primary'] {
+      .header-right {
         display: flex;
         align-items: center;
-        gap: 1.25rem;
+        gap: 22px;
       }
-      nav[aria-label='Primary'] ul {
-        display: flex;
-        gap: 1.25rem;
-        list-style: none;
-        margin: 0;
-        padding: 0;
+      .open-app {
+        color: var(--fg-mute);
+        font-size: 13px;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
       }
-      nav[aria-label='Primary'] a {
-        color: var(--color-fg-secondary);
-        text-decoration: none;
-        font-size: 0.95rem;
-        padding: 0.25rem 0;
-        border-bottom: 1px solid transparent;
+      .open-app:hover {
+        color: var(--fg);
       }
-      nav[aria-label='Primary'] a:hover {
-        color: var(--color-fg);
+      .open-app .arrow {
+        transition: transform 0.2s ease;
       }
-      nav[aria-label='Primary'] a[aria-current='page'] {
-        color: var(--color-cuivre);
-        border-bottom-color: var(--color-cuivre);
+      .open-app:hover .arrow {
+        transform: translateX(3px);
       }
+      @media (max-width: 640px) {
+        .open-app {
+          display: none;
+        }
+        .header-inner {
+          height: 68px;
+        }
+        .logo,
+        .logo :global(svg) {
+          height: 42px;
+        }
+      }
+
       #main {
-        max-width: 72rem;
-        margin: 0 auto;
-        padding: 1.5rem 1.5rem 4rem;
+        position: relative;
+        z-index: 1;
       }
-      .site-footer {
-        border-top: 1px solid var(--color-border-subtle);
-        margin-top: 2rem;
+
+      footer {
+        background: #0f0d0c;
+        border-top: 1px solid #2a2624;
+        padding: 48px 0 40px;
+        color: var(--fg-mute);
       }
-      .footer-inner {
-        max-width: 72rem;
-        margin: 0 auto;
-        padding: 2rem 1.5rem;
+      .foot-inner {
         display: flex;
-        flex-wrap: wrap;
-        align-items: center;
         justify-content: space-between;
-        gap: 1rem;
-      }
-      .footer-copy {
-        color: var(--color-fg-tertiary);
-        font-size: 0.875rem;
-        margin: 0;
-      }
-      .site-footer nav {
-        display: flex;
+        align-items: flex-start;
+        gap: 32px;
         flex-wrap: wrap;
-        gap: 1.25rem;
       }
-      .site-footer a {
-        color: var(--color-fg-secondary);
-        text-decoration: none;
-        font-size: 0.875rem;
+      .foot-logo {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
       }
-      .site-footer a:hover {
-        color: var(--color-cuivre);
+      .foot-logo :global(svg) {
+        height: 44px;
+        width: auto;
+      }
+      .foot-meta {
+        font-family: var(--font-mono);
+        font-size: 11px;
+        letter-spacing: 0.04em;
+        color: var(--fg-dim);
+      }
+      footer nav {
+        display: flex;
+        gap: 28px;
+        flex-wrap: wrap;
+        font-family: var(--font-mono);
+        font-size: 12px;
+        letter-spacing: 0.04em;
+      }
+      footer nav a {
+        color: var(--fg-mute);
+      }
+      footer nav a:hover {
+        color: var(--accent-hi);
+      }
+      .built {
+        margin-top: 36px;
+        padding-top: 24px;
+        border-top: 1px solid #1f1c1a;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        font-family: var(--font-mono);
+        font-size: 11px;
+        letter-spacing: 0.06em;
+        color: var(--fg-dim);
+        text-transform: uppercase;
       }
     </style>
   </body>

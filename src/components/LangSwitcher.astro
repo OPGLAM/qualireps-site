@@ -1,45 +1,40 @@
 ---
 /**
- * Language switcher. The structure is in place for the Phase 2 FR site.
- * For V1 there is only English content, so the switcher renders nothing
- * (no point offering a single language). When FR lands, populate `locales`
- * and remove the early-return.
+ * EN / FR language pill (matches the original landing).
+ * V1: English only. FR points at /fr, which redirects to / (see astro.config).
+ * The element is present so the FR funnel exists the moment FR content lands.
  */
-interface Props {
-  // `path` is accepted for the Phase 2 FR switcher (to build per-locale hrefs).
-  // Unused while V1 is EN-only — read it then to populate `locales`.
-  path: string;
-}
-
-// V1: EN only. Phase 2: e.g. [{ code: 'en', label: 'EN', href: Astro.props.path },
-// { code: 'fr', label: 'FR', href: '/fr' + Astro.props.path }]
-const locales: { code: string; label: string; href: string }[] = [];
-const showSwitcher = locales.length > 1;
 ---
 
-{
-  showSwitcher && (
-    <div class="lang-switcher" aria-label="Language">
-      {locales.map((l) => (
-        <a href={l.href} lang={l.code} hreflang={l.code}>
-          {l.label}
-        </a>
-      ))}
-    </div>
-  )
-}
+<div class="lang" role="group" aria-label="Language">
+  <span class="active" aria-current="true">EN</span>
+  <a href="/fr" hreflang="fr" lang="fr">FR</a>
+</div>
 
 <style>
-  .lang-switcher {
+  .lang {
     display: inline-flex;
-    gap: 0.5rem;
-    font-size: 0.85rem;
+    align-items: center;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid var(--hairline);
+    border-radius: 999px;
+    padding: 2px;
   }
-  .lang-switcher a {
-    color: var(--color-fg-tertiary);
+  .lang > * {
+    color: var(--fg-mute);
+    padding: 5px 12px;
+    border-radius: 999px;
+    letter-spacing: 0.04em;
     text-decoration: none;
+    transition: color 0.15s ease, background 0.15s ease;
   }
-  .lang-switcher a:hover {
-    color: var(--color-fg);
+  .lang > a:hover {
+    color: var(--fg);
+  }
+  .lang .active {
+    background: var(--bg-elev-2);
+    color: var(--fg);
   }
 </style>
