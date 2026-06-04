@@ -2,9 +2,10 @@
 /**
  * The three install sub-blocks (Android / Desktop / iOS).
  *
- * All three render server-side so the page works with no JavaScript. A small
- * bundled client script (imports the verbatim detection from src/lib/platform)
- * then reveals just the relevant block and offers a "Show all platforms"
+ * All three render server-side. Android shows by default (the primary
+ * distribution channel) so the page works with no JavaScript. A small bundled
+ * client script (imports the verbatim detection from src/lib/platform) then
+ * swaps in the visitor's real platform and offers a "Show all platforms"
  * toggle.
  */
 import PlayBadge from './PlayBadge.astro';
@@ -185,13 +186,22 @@ import { APP_URL, PRICE_LABEL } from '../lib/site';
     }
   }
 
-  /* With JS + a detected platform, show only the matching block until the
-     user asks for all. Default (no JS): every block stays visible. */
-  .install.is-detected:not(.show-all) .how-card {
+  /* Default (incl. no JS / before detection runs): show only the Android
+     block — Android is the primary distribution channel (full, paid app).
+     Client-side detection then swaps in the user's real platform
+     (desktop → Desktop, iOS → iOS). "Show all" reveals every block. */
+  .install:not(.show-all) .how-card {
     display: none;
   }
-  .install.is-detected[data-detected='android']:not(.show-all)
+  .install:not(.show-all) .how-card[data-platform='android'] {
+    display: flex;
+  }
+  .install.is-detected[data-detected='desktop']:not(.show-all)
     .how-card[data-platform='android'],
+  .install.is-detected[data-detected='ios']:not(.show-all)
+    .how-card[data-platform='android'] {
+    display: none;
+  }
   .install.is-detected[data-detected='desktop']:not(.show-all)
     .how-card[data-platform='desktop'],
   .install.is-detected[data-detected='ios']:not(.show-all)
