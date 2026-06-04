@@ -4,7 +4,7 @@ Last updated: 4 June 2026
 
 ## Operator
 
-QualiReps is operated by Olivier Lamglait, auto-entrepreneur, SIRET 88914184200027, registered in France, 50 rue Consolat, 13001 Marseille.
+QualiReps is operated by Olivier Lamglait, sole proprietor (auto-entrepreneur), legal name LAMGLAIT Olivier Georges Philippe, SIRET 88914184200027, registered in France at 50 rue Consolat, 13001 Marseille, France.
 
 Contact: legal@qualireps.app
 
@@ -28,9 +28,11 @@ The free demo lets you try the instrument on one exercise. The demo is not time-
 
 ## Purchases
 
-Purchases are processed by Google Play. Payment, refunds, and disputes are handled by Google according to its terms. We receive a purchase token that unlocks the full version on your device.
+Purchases are processed by Paddle.com Market Limited, which acts as the merchant of record and authorized reseller of QualiReps. Payment, taxes, and billing are handled by Paddle according to its terms; your bank or card statement shows a charge from Paddle.com. On a completed purchase, we issue you a license key that unlocks the full version on your device.
 
-If you purchase, then uninstall and reinstall, your purchase is restored automatically if you use the same Google account. If your purchase is not restored, contact us at legal@qualireps.app.
+Refunds are handled in accordance with our [Refund Policy](/refund).
+
+Your license key is the only credential — there is no account. If you uninstall and reinstall, re-enter your license key to restore the full version. The key is emailed to you and shown on the purchase success page; keep it. If you lose it, contact us at legal@qualireps.app.
 
 ## Your responsibility
 

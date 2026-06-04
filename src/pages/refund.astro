@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+// Rendered from the repo-root REFUND.md (single source of truth).
+import { Content } from '../../REFUND.md';
+
+const title = 'Refund Policy — QualiReps';
+const description =
+  'Purchases are processed by Paddle as merchant of record. A 14-day refund window applies, with the EU/EEA right of withdrawal for digital content.';
+---
+
+<Base title={title} description={description} path="/refund">
+  <div class="wrap">
+    <article class="prose legal">
+      <Content />
+    </article>
+  </div>
+</Base>
+
+<style>
+  .legal {
+    padding: 2rem 0;
+  }
+</style>

@@ -24,9 +24,9 @@ If you import a backup file, it is read locally by the application. No data is t
 
 ## Purchases
 
-When you purchase the full version on Google Play, the purchase is processed by Google. Google may collect data according to its own Privacy Policy. QualiReps receives only a purchase confirmation token to unlock features on your device.
+When you purchase the full version, payment is processed by Paddle.com Market Limited, our merchant of record. Paddle handles the transaction and may collect data — such as your email and billing details — according to its own Privacy Policy. QualiReps itself stores nothing server-side: we receive confirmation of a completed purchase and issue a license key.
 
-We do not store your name, email, payment method, or any identifier from Google.
+We do not store your name, email, payment method, or any identifier on our servers.
 
 ## Notifications
 
