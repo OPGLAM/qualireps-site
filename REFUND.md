@@ -6,7 +6,7 @@ Last updated: 4 June 2026
 
 Purchases of QualiReps are processed by Paddle.com Market Limited, which acts as the merchant of record and authorized reseller. Your bank or card statement shows a charge from Paddle.com.
 
-To request a refund, reply to the Paddle receipt email you received at purchase, or contact us at legal@qualireps.app. Include the email address used at checkout so we can locate your purchase.
+Refunds are requested and processed directly through Paddle — you do not need to contact QualiReps. Use the refund link in your Paddle receipt email, or the Paddle buyer portal at paddle.net. If you cannot access your receipt, you can reach us at legal@qualireps.app and we will help locate your purchase.
 
 ## 14-day refund window
 
