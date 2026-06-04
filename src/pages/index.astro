@@ -3,7 +3,6 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import PlatformInstall from '../components/PlatformInstall.astro';
 import { groupByChain } from '../lib/content';
-import { PLAY_STORE_URL } from '../lib/playBilling';
 import { SITE_ORIGIN } from '../lib/site';
 
 const entries = await getCollection('forms');
@@ -11,7 +10,7 @@ const chains = groupByChain(entries);
 
 const title = 'QualiReps — a strength ledger for daily practice';
 const description =
-  "QualiReps tracks your max, computes today's dose, and signals when to progress. A Greasing the Groove ledger: distributed across the day, never to failure, for years. 9,99 € on Google Play — one purchase, lifetime access.";
+  "QualiReps tracks your max, computes today's dose, and signals when to progress. A Greasing the Groove ledger: distributed across the day, never to failure, for years. Install free from your browser on Android, iOS, and desktop; 9,99 € unlocks everything — one purchase, lifetime, no subscription.";
 
 // GtG doctrinal paragraph — verbatim from the original landing, with <em> on
 // the doctrinal phrases.
@@ -24,7 +23,7 @@ const jsonLd = [
     '@type': 'SoftwareApplication',
     name: 'QualiReps',
     applicationCategory: 'HealthApplication',
-    operatingSystem: 'Android, Web',
+    operatingSystem: 'Web, Android, iOS',
     offers: { '@type': 'Offer', price: '9.99', priceCurrency: 'EUR' },
     description,
     url: SITE_ORIGIN,
@@ -89,13 +88,12 @@ const faqs = [
             distributed across the day, never to failure, for years.
           </p>
           <div class="hero-cta-row">
-            <a href={PLAY_STORE_URL} rel="noopener" class="btn btn-primary">
-              Get it on Google Play — full version
-            </a>
+            <a href="#install" class="btn btn-primary">Install QualiReps — free</a>
             <a href="#what-is-gtg" class="btn btn-ghost">What is GTG?</a>
           </div>
           <p class="reassure">
-            9,99 € launch price. One purchase, lifetime access. No subscription.
+            <a href="/pricing">Lifetime unlock — 9,99 €</a>. One purchase, no
+            subscription.
           </p>
 
           <div class="hero-meta">
@@ -105,11 +103,11 @@ const faqs = [
             </div>
             <div class="item">
               <span class="k">Platform</span>
-              <span class="v">Google Play (full) · Desktop and iOS (free demo)</span>
+              <span class="v">Web app · Android, iOS, desktop</span>
             </div>
             <div class="item">
               <span class="k">Pricing</span>
-              <span class="v">9,99 € — launch price</span>
+              <span class="v">9,99 € — one-time, lifetime</span>
             </div>
           </div>
         </div>
@@ -240,8 +238,8 @@ const faqs = [
           <h2>Install.</h2>
         </div>
         <p class="lead">
-          Android runs the full app from Google Play. Desktop and iOS run a free
-          demo today, with native versions in development.
+          Install free from your browser. Android, desktop, and iOS run the same
+          web app — installed in a few taps, fully offline.
         </p>
       </div>
       <PlatformInstall />

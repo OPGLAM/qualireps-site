@@ -2,56 +2,64 @@
 /**
  * The three install sub-blocks (Android / Desktop / iOS).
  *
- * All three render server-side and are always shown, in order: Android (the
- * primary distribution channel) first, then Desktop, then iOS. A small bundled
- * client script records the detected platform (kept for analytics / future
- * logic); it does not hide or reorder any block.
+ * V1 is a pure PWA, distributed from qualireps.app on every platform. All three
+ * blocks render server-side and are always shown, in order: Android, Desktop,
+ * iOS. A small bundled client script records the detected platform (kept for
+ * analytics / future logic); it does not hide or reorder any block.
+ *
+ * The Google Play TWA channel is postponed to a conditional V1.5: the Play
+ * badge + QR markup is preserved but gated behind PLAY_TWA_ENABLED (see
+ * lib/config.ts). PlayBadge / QRCode / PLAY_STORE_URL stay imported so flipping
+ * that one flag is all the V1.5 chantier needs.
  */
 import PlayBadge from './PlayBadge.astro';
 import QRCode from './QRCode.astro';
 import { PLAY_STORE_URL } from '../lib/playBilling';
-import { APP_URL, PRICE_LABEL } from '../lib/site';
+import { PLAY_TWA_ENABLED } from '../lib/config';
+import { APP_URL } from '../lib/site';
 ---
 
 <div class="install" data-platform-install>
   <!-- Android -->
   <section class="how-card" data-platform="android" aria-label="Android">
-    <div class="plat"><span class="badge">Android</span><span>Google Play · full app</span></div>
+    <div class="plat"><span class="badge">Android</span><span>Chrome · install from browser</span></div>
     <h3>Android</h3>
-    <p>Get QualiReps from Google Play. The full app, {PRICE_LABEL}.</p>
-    <div class="install__badge">
-      <PlayBadge />
-    </div>
-    <p class="qr-label">Scan with your phone:</p>
-    <QRCode value={PLAY_STORE_URL} alt="QR code linking to QualiReps on Google Play" />
+    <p>
+      Open <a href={APP_URL}>qualireps.app</a> in Chrome. Tap the menu, then
+      "Install app" (or "Add to Home screen"). QualiReps installs like a native
+      app and runs offline.
+    </p>
+    {
+      PLAY_TWA_ENABLED && (
+        <>
+          <div class="install__badge">
+            <PlayBadge />
+          </div>
+          <p class="qr-label">Scan with your phone:</p>
+          <QRCode value={PLAY_STORE_URL} alt="QR code linking to QualiReps on Google Play" />
+        </>
+      )
+    }
   </section>
 
   <!-- Desktop -->
   <section class="how-card" data-platform="desktop" aria-label="Desktop">
-    <div class="plat"><span class="badge">Desktop</span><span>Chrome · Edge · free demo</span></div>
+    <div class="plat"><span class="badge">Desktop</span><span>Chrome · Edge</span></div>
     <h3>Desktop</h3>
     <p>
       QualiReps runs as an installable web app on Chrome and Edge. Open
       <a href={APP_URL}>qualireps.app</a>, then click the install icon in your
       browser's address bar.
     </p>
-    <p class="note">
-      Desktop is a free demo: one exercise, no progression. A native version is
-      in development.
-    </p>
   </section>
 
   <!-- iOS -->
   <section class="how-card" data-platform="ios" aria-label="iOS">
-    <div class="plat"><span class="badge">iOS</span><span>Safari · free demo</span></div>
+    <div class="plat"><span class="badge">iOS</span><span>Safari</span></div>
     <h3>iOS</h3>
     <p>
       Open <a href={APP_URL}>qualireps.app</a> in Safari, tap the Share icon,
       then "Add to Home Screen".
-    </p>
-    <p class="note">
-      iOS is a free demo: one exercise, no progression. A native version is in
-      development.
     </p>
     <p class="warn">
       Note: Apple's Safari may clear app data after about 7 days of non-use. Back
