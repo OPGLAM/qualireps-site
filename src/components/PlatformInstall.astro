@@ -2,11 +2,11 @@
 /**
  * The three install sub-blocks (Android / Desktop / iOS).
  *
- * All three render server-side. Android shows by default (the primary
- * distribution channel) so the page works with no JavaScript. A small bundled
- * client script (imports the verbatim detection from src/lib/platform) then
- * swaps in the visitor's real platform and offers a "Show all platforms"
- * toggle.
+ * All three render server-side, but Android leads by default (the primary
+ * distribution channel) and is the only block shown until the visitor opts in.
+ * A small bundled client script records the detected platform (kept for
+ * analytics / future logic, it no longer changes the visible block) and offers
+ * a "Show all platforms" toggle.
  */
 import PlayBadge from './PlayBadge.astro';
 import QRCode from './QRCode.astro';
@@ -70,6 +70,8 @@ import { APP_URL, PRICE_LABEL } from '../lib/site';
 
   const root = document.querySelector<HTMLElement>('[data-platform-install]');
   if (root) {
+    // Detection is still recorded (useful for analytics / future logic) but it
+    // no longer changes which sub-block is shown: Android leads by default.
     const detected = isAndroid()
       ? 'android'
       : isIOSSafariPWA()
@@ -77,7 +79,6 @@ import { APP_URL, PRICE_LABEL } from '../lib/site';
         : 'desktop';
 
     root.dataset.detected = detected;
-    root.classList.add('is-detected');
 
     const toggle = root.querySelector<HTMLElement>('.install__toggle');
     toggle?.removeAttribute('hidden');
@@ -186,26 +187,13 @@ import { APP_URL, PRICE_LABEL } from '../lib/site';
     }
   }
 
-  /* Default (incl. no JS / before detection runs): show only the Android
-     block — Android is the primary distribution channel (full, paid app).
-     Client-side detection then swaps in the user's real platform
-     (desktop → Desktop, iOS → iOS). "Show all" reveals every block. */
+  /* Android always leads — it's the primary distribution channel (full, paid
+     app). Only the Android block shows until the visitor clicks "Show all
+     platforms"; detected platform never changes this. */
   .install:not(.show-all) .how-card {
     display: none;
   }
   .install:not(.show-all) .how-card[data-platform='android'] {
-    display: flex;
-  }
-  .install.is-detected[data-detected='desktop']:not(.show-all)
-    .how-card[data-platform='android'],
-  .install.is-detected[data-detected='ios']:not(.show-all)
-    .how-card[data-platform='android'] {
-    display: none;
-  }
-  .install.is-detected[data-detected='desktop']:not(.show-all)
-    .how-card[data-platform='desktop'],
-  .install.is-detected[data-detected='ios']:not(.show-all)
-    .how-card[data-platform='ios'] {
     display: flex;
   }
 </style>
