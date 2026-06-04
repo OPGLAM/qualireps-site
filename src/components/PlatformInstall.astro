@@ -2,11 +2,10 @@
 /**
  * The three install sub-blocks (Android / Desktop / iOS).
  *
- * All three render server-side, but Android leads by default (the primary
- * distribution channel) and is the only block shown until the visitor opts in.
- * A small bundled client script records the detected platform (kept for
- * analytics / future logic, it no longer changes the visible block) and offers
- * a "Show all platforms" toggle.
+ * All three render server-side and are always shown, in order: Android (the
+ * primary distribution channel) first, then Desktop, then iOS. A small bundled
+ * client script records the detected platform (kept for analytics / future
+ * logic); it does not hide or reorder any block.
  */
 import PlayBadge from './PlayBadge.astro';
 import QRCode from './QRCode.astro';
@@ -15,10 +14,6 @@ import { APP_URL, PRICE_LABEL } from '../lib/site';
 ---
 
 <div class="install" data-platform-install>
-  <div class="install__toggle" hidden>
-    <button type="button" data-show-all>Show all platforms</button>
-  </div>
-
   <!-- Android -->
   <section class="how-card" data-platform="android" aria-label="Android">
     <div class="plat"><span class="badge">Android</span><span>Google Play · full app</span></div>
@@ -70,8 +65,8 @@ import { APP_URL, PRICE_LABEL } from '../lib/site';
 
   const root = document.querySelector<HTMLElement>('[data-platform-install]');
   if (root) {
-    // Detection is still recorded (useful for analytics / future logic) but it
-    // no longer changes which sub-block is shown: Android leads by default.
+    // Detection is recorded for analytics / future logic only — every
+    // sub-block stays visible, so this never changes the UI.
     const detected = isAndroid()
       ? 'android'
       : isIOSSafariPWA()
@@ -79,15 +74,6 @@ import { APP_URL, PRICE_LABEL } from '../lib/site';
         : 'desktop';
 
     root.dataset.detected = detected;
-
-    const toggle = root.querySelector<HTMLElement>('.install__toggle');
-    toggle?.removeAttribute('hidden');
-
-    const btn = root.querySelector<HTMLButtonElement>('[data-show-all]');
-    btn?.addEventListener('click', () => {
-      root.classList.add('show-all');
-      toggle?.setAttribute('hidden', '');
-    });
   }
 </script>
 
@@ -161,39 +147,9 @@ import { APP_URL, PRICE_LABEL } from '../lib/site';
     margin-top: 6px;
     margin-bottom: 0;
   }
-  .install__toggle {
-    grid-column: 1 / -1;
-    background: var(--bg);
-    padding: 14px;
-  }
-  .install__toggle button {
-    background: transparent;
-    border: 1px solid var(--hairline);
-    color: var(--fg-mute);
-    border-radius: 8px;
-    padding: 0.45rem 0.9rem;
-    font: inherit;
-    font-size: 0.875rem;
-    cursor: pointer;
-  }
-  .install__toggle button:hover {
-    border-color: var(--accent);
-    color: var(--fg);
-  }
-
   @media (max-width: 860px) {
     .install {
       grid-template-columns: 1fr;
     }
-  }
-
-  /* Android always leads — it's the primary distribution channel (full, paid
-     app). Only the Android block shows until the visitor clicks "Show all
-     platforms"; detected platform never changes this. */
-  .install:not(.show-all) .how-card {
-    display: none;
-  }
-  .install:not(.show-all) .how-card[data-platform='android'] {
-    display: flex;
   }
 </style>
