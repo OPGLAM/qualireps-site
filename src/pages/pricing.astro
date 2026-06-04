@@ -1,123 +1,334 @@
 ---
 import Base from '../layouts/Base.astro';
-import PlayBadge from '../components/PlayBadge.astro';
 import { PRICE_LABEL } from '../lib/site';
+import { CHECKOUT_LIVE, BUY_URL } from '../lib/config';
 
 const title = 'Pricing — QualiReps';
 const description =
-  'QualiReps is 9,99 € on Google Play. One purchase, lifetime access. No subscription. The free demo lets you try the instrument on one exercise before you buy.';
+  'One exercise free forever with the full instrument. 9,99 € unlocks everything — one purchase, lifetime, no subscription. Paid through Paddle, delivered as a license key.';
+
+const freeFeatures = [
+  'One exercise, chosen from any chain, frozen at its tier',
+  'Max test, dose calculation, set logging',
+  'Recovery windows, progression triggers',
+  'Notifications, backup, export',
+  'All perfect form guides',
+];
+
+const lifetimeFeatures = [
+  'Progression and regression across every tier',
+  'All four chains: push, pull, squat, kettlebell press',
+  'Custom exercises beyond the chains',
+  'Everything in Free, unlocked across your whole practice',
+  'Future updates included',
+  'No subscription, ever',
+];
 ---
 
 <Base title={title} description={description} path="/pricing">
   <div class="wrap">
     <article class="pricing">
-    <h1>Pricing</h1>
+      <header class="pricing-head">
+        <div class="eyebrow">Pricing</div>
+        <h1>One exercise free. Everything for {PRICE_LABEL}.</h1>
+        <p class="lead">
+          Install free from your browser and run the full instrument on one
+          exercise, for as long as you like. Unlock the rest once — one purchase,
+          lifetime, no subscription.
+        </p>
+      </header>
 
-    <p class="lead">
-      QualiReps is {PRICE_LABEL} on Google Play. One purchase, lifetime access.
-      No subscription.
-    </p>
+      <div class="plans">
+        <section class="plan" aria-label="Free">
+          <div class="plan-head">
+            <h2>Free</h2>
+            <p class="price"><span class="amount">0 €</span></p>
+            <p class="plan-sub">The instrument, on one exercise.</p>
+          </div>
+          <ul class="plan-features">
+            {freeFeatures.map((f) => <li>{f}</li>)}
+          </ul>
+          <p class="plan-foot">Install from qualireps.app on any platform.</p>
+        </section>
 
-    <div class="cta">
-      <PlayBadge label="Get it on Google Play — full version" />
-    </div>
+        <section class="plan plan--accent" aria-label="Lifetime">
+          <div class="plan-head">
+            <h2>Lifetime</h2>
+            <p class="price">
+              <span class="amount">{PRICE_LABEL}</span>
+              <span class="period">one-time</span>
+            </p>
+            <p class="plan-sub">Your whole practice, unlocked.</p>
+          </div>
+          <ul class="plan-features">
+            {lifetimeFeatures.map((f) => <li>{f}</li>)}
+          </ul>
+          <div class="plan-cta">
+            {
+              CHECKOUT_LIVE ? (
+                <a href={BUY_URL} class="btn btn-primary">
+                  Buy QualiReps — {PRICE_LABEL}
+                </a>
+              ) : (
+                <span class="btn btn-primary is-disabled" aria-disabled="true" role="button">
+                  Checkout opens at launch
+                </span>
+              )
+            }
+            <p class="reassure">One purchase, lifetime access. No subscription.</p>
+          </div>
+        </section>
+      </div>
 
-    <section>
-      <h2>What you get</h2>
-      <ul>
-        <li>
-          Full progression across four chains: push, pull, squat, kettlebell
-          press
-        </li>
-        <li>Unlimited custom exercises</li>
-        <li>
-          All instrument features: dose, recovery, triggers, notifications,
-          backup, export
-        </li>
-        <li>Lifetime access to future updates</li>
-      </ul>
-      <p>
-        The free demo lets you try the instrument on one exercise before you
-        buy.
-      </p>
-    </section>
-
-    <section>
-      <h2>Refunds</h2>
-      <p>
-        Refunds are handled by Google Play. You can request a refund within 48
-        hours of purchase directly through your Google account.
-      </p>
-    </section>
-
-    <section>
-      <h2>No subscription</h2>
-      <p>
-        QualiReps will never charge you again after this purchase. No yearly
-        fee, no recurring billing, no premium tier that comes later.
-      </p>
-    </section>
+      <section class="faq" aria-label="Pricing questions">
+        <h2 class="faq-title">How it works</h2>
+        <div class="faq-list">
+          <details>
+            <summary>How does the purchase work?</summary>
+            <div class="answer">
+              <p>
+                Checkout runs through Paddle, our merchant of record. You pay
+                once; a license key is emailed to you and shown on the success
+                page. You enter that key in the app to unlock everything. There
+                is no account — the license key is your only credential.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>What will my bank statement show?</summary>
+            <div class="answer">
+              <p>
+                A charge from <strong>Paddle.com</strong>, not QualiReps. Paddle
+                handles payment, taxes, and billing as the merchant of record.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>What's your refund policy?</summary>
+            <div class="answer">
+              <p>
+                A 14-day refund window, no questions asked, plus the EU/EEA
+                statutory right of withdrawal. See the full
+                <a href="/refund">Refund Policy</a>.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Does one license cover all my devices?</summary>
+            <div class="answer">
+              <p>
+                Yes. One license, every platform — Android, iOS, desktop. Enter
+                the same key wherever you install QualiReps.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Do I need an account?</summary>
+            <div class="answer">
+              <p>
+                No. No sign-up, no login, no email/password. The license key is
+                the only credential — keep it, and re-enter it if you reinstall.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
     </article>
   </div>
 </Base>
 
 <style>
   .pricing {
-    max-width: 44rem;
-    padding: 2rem 0;
+    padding: clamp(32px, 5vw, 64px) 0;
+  }
+  .pricing-head {
+    max-width: 60ch;
+    margin-bottom: clamp(32px, 5vw, 56px);
+  }
+  .pricing-head .eyebrow {
+    margin-bottom: 20px;
   }
   .pricing h1 {
-    font-size: clamp(2.25rem, 7vw, 3rem);
-    font-weight: 800;
+    font-size: clamp(2rem, 5vw, 3rem);
     letter-spacing: -0.02em;
-    margin: 0 0 1rem;
-    color: var(--color-fg);
+    margin: 0 0 18px;
+    color: var(--fg);
   }
-  .lead {
-    font-size: 1.3rem;
-    line-height: 1.5;
-    color: var(--color-fg);
-    margin: 0 0 1.75rem;
-  }
-  .cta {
-    margin-bottom: 2.5rem;
-  }
-  .pricing section {
-    border-top: 1px solid var(--color-border-subtle);
-    padding: 1.75rem 0;
-  }
-  .pricing h2 {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--color-fg);
-    margin: 0 0 0.75rem;
-  }
-  .pricing p {
-    color: var(--color-fg-secondary);
+  .pricing .lead {
+    font-size: clamp(16px, 1.5vw, 19px);
     line-height: 1.6;
-    margin: 0 0 0.5rem;
-    max-width: 60ch;
+    color: var(--fg-mute);
+    margin: 0;
   }
-  .pricing ul {
+
+  /* ───── plans ───── */
+  .plans {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--hairline-soft);
+    border: 1px solid var(--hairline-soft);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: clamp(48px, 7vw, 80px);
+  }
+  .plan {
+    background: var(--bg-elev-1);
+    padding: clamp(28px, 3.2vw, 40px);
+    display: flex;
+    flex-direction: column;
+  }
+  .plan--accent {
+    background: var(--bg-elev-2);
+  }
+  .plan-head h2 {
+    font-family: var(--font-display);
+    font-size: 24px;
+    margin: 0 0 14px;
+    color: var(--fg);
+  }
+  .price {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 0 0 8px;
+  }
+  .price .amount {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 3.4vw, 38px);
+    color: var(--fg);
+    letter-spacing: -0.01em;
+  }
+  .plan--accent .price .amount {
+    color: var(--accent-hi);
+  }
+  .price .period {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--fg-dim);
+  }
+  .plan-sub {
+    margin: 0 0 24px;
+    color: var(--fg-mute);
+    font-size: 14.5px;
+  }
+  .plan-features {
     list-style: none;
-    margin: 0 0 1rem;
-    padding: 0;
+    margin: 0;
+    padding: 22px 0 0;
+    border-top: 1px solid var(--hairline-soft);
+    flex: 1;
   }
-  .pricing li {
+  .plan-features li {
     position: relative;
-    padding-left: 1.25rem;
-    margin: 0.5rem 0;
-    color: var(--color-fg-secondary);
+    padding-left: 1.5rem;
+    margin: 0.7rem 0;
+    color: var(--fg);
+    font-size: 15px;
     line-height: 1.5;
-    max-width: 60ch;
   }
-  .pricing li::before {
-    content: '';
+  .plan-features li::before {
+    content: '—';
     position: absolute;
     left: 0;
-    top: 0.65em;
-    width: 7px;
-    height: 1px;
-    background: var(--color-cuivre);
+    color: var(--accent);
+  }
+  .plan-foot {
+    margin: 24px 0 0;
+    padding-top: 18px;
+    border-top: 1px solid var(--hairline-soft);
+    color: var(--fg-dim);
+    font-size: 13.5px;
+  }
+  .plan-cta {
+    margin-top: 28px;
+  }
+  .plan-cta .btn {
+    width: 100%;
+  }
+  .plan-cta .reassure {
+    margin-top: 12px;
+    text-align: center;
+  }
+  .btn.is-disabled {
+    background: var(--bg-elev-1);
+    color: var(--fg-dim);
+    box-shadow: none;
+    border: 1px solid var(--hairline);
+    cursor: not-allowed;
+  }
+  @media (max-width: 620px) {
+    .plans {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* ───── faq ───── */
+  .faq-title {
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    color: var(--fg);
+    margin: 0 0 8px;
+  }
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--hairline-soft);
+  }
+  .faq-list details {
+    border-bottom: 1px solid var(--hairline-soft);
+  }
+  .faq-list summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 28px;
+    gap: 16px;
+    align-items: center;
+    font-size: clamp(15px, 1.4vw, 17px);
+    font-weight: 600;
+    color: var(--fg);
+    transition: color 0.15s ease;
+  }
+  .faq-list summary:hover {
+    color: var(--accent-hi);
+  }
+  .faq-list summary::-webkit-details-marker {
+    display: none;
+  }
+  .faq-list summary::after {
+    content: '+';
+    font-family: var(--font-mono);
+    font-size: 20px;
+    color: var(--accent);
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--hairline);
+    border-radius: 50%;
+  }
+  .faq-list details[open] summary::after {
+    content: '–';
+    background: var(--accent);
+    color: #1c1a18;
+    border-color: var(--accent);
+  }
+  .faq-list .answer {
+    padding: 0 0 22px;
+    color: var(--fg-mute);
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 68ch;
+  }
+  .faq-list .answer p {
+    margin: 0;
+  }
+  .faq-list .answer a {
+    color: var(--accent-hi);
+    border-bottom: 1px solid rgba(217, 144, 74, 0.4);
   }
 </style>

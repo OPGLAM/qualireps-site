@@ -1,7 +1,6 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import PlayBadge from '../../components/PlayBadge.astro';
 import {
   exerciseName,
   ficheDescription,
@@ -116,10 +115,11 @@ if (steps.length > 0) {
 
     <aside class="fiche-cta">
       <p>Get QualiReps and put this guide to work.</p>
-      <PlayBadge label="Get QualiReps on Google Play" />
+      <a href="/#install" class="btn btn-primary">Install QualiReps — free</a>
       <p class="fiche-cta__alt">
-        On desktop or iOS, <a href="/#install">install the free demo</a> — one
-        exercise, the full instrument.
+        Installs from your browser on Android, iOS, and desktop. One exercise
+        free with the full instrument; <a href="/pricing">9,99 € unlocks
+        everything</a>.
       </p>
     </aside>
   </div>
