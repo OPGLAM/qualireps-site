@@ -48,7 +48,8 @@ const description = 'Your QualiReps purchase is complete. Your license key.';
   <script is:inline>
     (function () {
       var params = new URLSearchParams(window.location.search);
-      var txn = params.get('_ptxn') || params.get('txn');
+      // Our /buy redirect uses `txn`; `_ptxn` is kept as a Paddle fallback.
+      var txn = params.get('txn') || params.get('_ptxn');
 
       var loading = document.getElementById('state-loading');
       var keyState = document.getElementById('state-key');
