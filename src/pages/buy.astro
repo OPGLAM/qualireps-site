@@ -61,6 +61,11 @@ const description =
         if (btn) btn.disabled = true;
         if (err) err.hidden = false;
       }
+      // Diagnostic (non-secret): confirms the baked environment + price id.
+      console.info('[QualiReps] checkout init', {
+        env: paddleEnv,
+        priceId: priceId,
+      });
       if (!window.Paddle || !clientToken || !priceId) {
         fail();
         return;
