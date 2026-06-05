@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import vercel from '@astrojs/vercel';
 import tailwindcss from '@tailwindcss/vite';
 
 // Canonical production origin. Update if the domain changes.
@@ -9,7 +10,12 @@ const SITE = 'https://qualireps.app';
 // https://astro.build/config
 export default defineConfig({
   site: SITE,
+  // Static by default: every existing page is prerendered. The Vercel adapter
+  // is present only so the handful of API/checkout routes that opt out with
+  // `export const prerender = false` (src/pages/api/**) run as serverless
+  // functions. Adding the adapter does not change the static pages.
   output: 'static',
+  adapter: vercel(),
   trailingSlash: 'ignore',
 
   // i18n: English is the default and served at the root (no /en/ prefix).

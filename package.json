@@ -11,10 +11,12 @@
     "prebuild": "npm run sync-content",
     "build": "astro build",
     "preview": "astro preview",
+    "test": "vitest run",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.6.0",
+    "@astrojs/vercel": "9.0.5",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.16.0",
     "qrcode": "^1.5.4",
@@ -22,7 +24,9 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.9",
+    "@types/node": "24.0.10",
     "@types/qrcode": "^1.5.5",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "3.2.4"
   }
 }
