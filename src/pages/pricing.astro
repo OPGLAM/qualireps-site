@@ -66,16 +66,28 @@ const lifetimeFeatures = [
           <div class="plan-cta">
             {
               CHECKOUT_LIVE ? (
-                <a href={BUY_URL} class="btn btn-primary">
-                  Buy QualiReps — {PRICE_LABEL}
-                </a>
+                <Fragment>
+                  <a href={APP_URL} class="btn btn-primary">
+                    Install free — unlock in the app
+                  </a>
+                  <p class="reassure">
+                    Install free, then unlock everything from inside the app when
+                    you're ready. Instant, no key to copy.
+                  </p>
+                  <p class="buy-now">
+                    Buying before you install? <a href={BUY_URL}>Buy now</a> — we'll
+                    email your license key.
+                  </p>
+                </Fragment>
               ) : (
-                <span class="btn btn-primary is-disabled" aria-disabled="true" role="button">
-                  Checkout opens at launch
-                </span>
+                <Fragment>
+                  <span class="btn btn-primary is-disabled" aria-disabled="true" role="button">
+                    Checkout opens at launch
+                  </span>
+                  <p class="reassure">One purchase, lifetime access. No subscription.</p>
+                </Fragment>
               )
             }
-            <p class="reassure">One purchase, lifetime access. No subscription.</p>
           </div>
         </section>
       </div>
@@ -87,10 +99,13 @@ const lifetimeFeatures = [
             <summary>How does the purchase work?</summary>
             <div class="answer">
               <p>
-                Checkout runs through Paddle, our merchant of record. You pay
-                once; a license key is emailed to you and shown on the success
-                page. You enter that key in the app to unlock everything. There
-                is no account — the license key is your only credential.
+                You unlock from inside the app: open QualiReps, choose Lifetime,
+                and pay once through Paddle, our merchant of record. Activation
+                is instant — nothing to copy. We also email you a license key;
+                that key is your credential for unlocking your other devices, and
+                there's no account beyond it. Prefer to pay before installing?
+                You can also <a href="/buy">buy on the web</a> and we'll email
+                the key.
               </p>
             </div>
           </details>
@@ -255,6 +270,18 @@ const lifetimeFeatures = [
   .plan-cta .reassure {
     margin-top: 12px;
     text-align: center;
+  }
+  .plan-cta .buy-now {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--hairline-soft);
+    text-align: center;
+    color: var(--fg-dim);
+    font-size: 13.5px;
+  }
+  .plan-cta .buy-now a {
+    color: var(--accent-hi);
+    border-bottom: 1px solid rgba(217, 144, 74, 0.4);
   }
   .btn.is-disabled {
     background: var(--bg-elev-1);
