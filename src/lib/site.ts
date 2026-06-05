@@ -5,7 +5,10 @@ export const SITE_TAGLINE = 'A strength ledger for daily practice.';
 export const SITE_ORIGIN = 'https://qualireps.app';
 
 /** The installable web-app origin users open to install the PWA. */
-export const APP_URL = 'https://qualireps.app';
+export const APP_URL = 'https://app.qualireps.app';
+
+/** Bare host of APP_URL — the visible label for install links. */
+export const APP_HOST = 'app.qualireps.app';
 
 /** Public contact for legal matters (footer + legal pages). */
 export const LEGAL_EMAIL = 'legal@qualireps.app';

@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import { APP_URL, APP_HOST } from '../lib/site';
 
 // Prerendered shell. The transaction id arrives in the URL (Paddle appends
 // `_ptxn` on the checkout success redirect); the key is fetched client-side
@@ -26,8 +27,8 @@ const description = 'Your QualiReps purchase is complete. Your license key.';
           <button id="copy-btn" class="btn btn-ghost" type="button">Copy</button>
         </div>
         <p class="key-note">
-          Enter it in the app: Settings → License. One license covers Android,
-          iOS, and desktop.
+          Open <a href={APP_URL}>{APP_HOST}</a> and enter it: Settings → License.
+          One license covers Android, iOS, and desktop.
         </p>
       </div>
 
@@ -171,6 +172,9 @@ const description = 'Your QualiReps purchase is complete. Your license key.';
     color: var(--fg-mute);
     font-size: 14.5px;
     line-height: 1.6;
+  }
+  .key-note a {
+    color: var(--accent-hi);
   }
   #state-error p {
     color: var(--fg-mute);

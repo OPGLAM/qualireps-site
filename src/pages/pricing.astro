@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { PRICE_LABEL } from '../lib/site';
+import { PRICE_LABEL, APP_URL, APP_HOST } from '../lib/site';
 import { CHECKOUT_LIVE, BUY_URL } from '../lib/config';
 
 const title = 'Pricing — QualiReps';
@@ -48,7 +48,7 @@ const lifetimeFeatures = [
           <ul class="plan-features">
             {freeFeatures.map((f) => <li>{f}</li>)}
           </ul>
-          <p class="plan-foot">Install from qualireps.app on any platform.</p>
+          <p class="plan-foot">Install from <a href={APP_URL}>{APP_HOST}</a> on any platform.</p>
         </section>
 
         <section class="plan plan--accent" aria-label="Lifetime">
@@ -241,6 +241,10 @@ const lifetimeFeatures = [
     border-top: 1px solid var(--hairline-soft);
     color: var(--fg-dim);
     font-size: 13.5px;
+  }
+  .plan-foot a {
+    color: var(--accent-hi);
+    border-bottom: 1px solid rgba(217, 144, 74, 0.4);
   }
   .plan-cta {
     margin-top: 28px;

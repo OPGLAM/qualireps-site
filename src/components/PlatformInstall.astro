@@ -2,7 +2,7 @@
 /**
  * The three install sub-blocks (Android / Desktop / iOS).
  *
- * V1 is a pure PWA, distributed from qualireps.app on every platform. All three
+ * V1 is a pure PWA, distributed from app.qualireps.app on every platform. All three
  * blocks render server-side and are always shown, in order: Android, Desktop,
  * iOS. A small bundled client script records the detected platform (kept for
  * analytics / future logic); it does not hide or reorder any block.
@@ -16,7 +16,7 @@ import PlayBadge from './PlayBadge.astro';
 import QRCode from './QRCode.astro';
 import { PLAY_STORE_URL } from '../lib/playBilling';
 import { PLAY_TWA_ENABLED } from '../lib/config';
-import { APP_URL } from '../lib/site';
+import { APP_URL, APP_HOST } from '../lib/site';
 ---
 
 <div class="install" data-platform-install>
@@ -25,7 +25,7 @@ import { APP_URL } from '../lib/site';
     <div class="plat"><span class="badge">Android</span><span>Chrome · install from browser</span></div>
     <h3>Android</h3>
     <p>
-      Open <a href={APP_URL}>qualireps.app</a> in Chrome. Tap the menu, then
+      Open <a href={APP_URL}>{APP_HOST}</a> in Chrome. Tap the menu, then
       "Install app" (or "Add to Home screen"). QualiReps installs like a native
       app and runs offline.
     </p>
@@ -48,7 +48,7 @@ import { APP_URL } from '../lib/site';
     <h3>Desktop</h3>
     <p>
       QualiReps runs as an installable web app on Chrome and Edge. Open
-      <a href={APP_URL}>qualireps.app</a>, then click the install icon in your
+      <a href={APP_URL}>{APP_HOST}</a>, then click the install icon in your
       browser's address bar.
     </p>
   </section>
@@ -58,12 +58,12 @@ import { APP_URL } from '../lib/site';
     <div class="plat"><span class="badge">iOS</span><span>Safari</span></div>
     <h3>iOS</h3>
     <p>
-      Open <a href={APP_URL}>qualireps.app</a> in Safari, tap the Share icon,
+      Open <a href={APP_URL}>{APP_HOST}</a> in Safari, tap the Share icon,
       then "Add to Home Screen".
     </p>
-    <p class="warn">
-      Note: Apple's Safari may clear app data after about 7 days of non-use. Back
-      up regularly to protect your practice history.
+    <p class="note">
+      Once on your home screen, the app and its data live on your device. As
+      with any local-only data, regular backups remain recommended.
     </p>
   </section>
 </div>
@@ -146,12 +146,6 @@ import { APP_URL } from '../lib/site';
   .note {
     font-size: 13.5px;
     color: var(--fg-dim);
-  }
-  .warn {
-    font-size: 13px;
-    color: var(--warning);
-    border-left: 2px solid var(--warning);
-    padding-left: 0.75rem;
     margin-top: 6px;
     margin-bottom: 0;
   }
