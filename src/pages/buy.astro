@@ -1,0 +1,149 @@
+---
+import Base from '../layouts/Base.astro';
+import { PRICE_LABEL } from '../lib/site';
+
+// Prerendered. Paddle's client token and price id are publishable, so they are
+// safe to bake into the static HTML at build time. Read from the build env
+// (Vercel sets these; a local .env works too via Vite).
+const clientToken: string = import.meta.env.PADDLE_CLIENT_TOKEN ?? '';
+const priceId: string = import.meta.env.PADDLE_PRICE_ID ?? '';
+const paddleEnv: 'sandbox' | 'production' =
+  import.meta.env.PADDLE_ENV === 'production' ? 'production' : 'sandbox';
+
+const title = 'Buy QualiReps — lifetime license';
+const description =
+  'One-time 9,99 € purchase: a lifetime license, no subscription. Delivered as a license key by email and on the success page.';
+---
+
+<Base title={title} description={description} path="/buy">
+  <div class="wrap">
+    <article class="buy">
+      <div class="eyebrow">Checkout</div>
+      <h1>QualiReps — lifetime license</h1>
+      <p class="lead">
+        One purchase, {PRICE_LABEL}. Lifetime access, no subscription. After
+        payment you receive a license key — by email and on the next screen.
+        Enter it in the app to unlock everything.
+      </p>
+
+      <ul class="buy-list">
+        <li>Progression and regression across all four chains</li>
+        <li>Custom exercises and the full instrument</li>
+        <li>One license, every platform — Android, iOS, desktop</li>
+        <li>Future updates included. No subscription, ever.</li>
+      </ul>
+
+      <button id="buy-btn" class="btn btn-primary" type="button">
+        Buy QualiReps — {PRICE_LABEL}
+      </button>
+      <p id="buy-error" class="buy-error" hidden>
+        Checkout could not start. Reload the page, or contact
+        legal@qualireps.app.
+      </p>
+
+      <p class="fine">
+        Payment is processed by Paddle, our merchant of record. By purchasing
+        you agree to the <a href="/terms">Terms</a>. See also
+        <a href="/privacy">Privacy</a> and <a href="/refund">Refund Policy</a>.
+      </p>
+    </article>
+  </div>
+
+  <script src="https://cdn.paddle.com/paddle/v2/paddle.js" is:inline></script>
+  <script
+    is:inline
+    define:vars={{ clientToken, priceId, paddleEnv }}
+  >
+    (function () {
+      var btn = document.getElementById('buy-btn');
+      var err = document.getElementById('buy-error');
+      function fail() {
+        if (btn) btn.disabled = true;
+        if (err) err.hidden = false;
+      }
+      if (!window.Paddle || !clientToken || !priceId) {
+        fail();
+        return;
+      }
+      try {
+        Paddle.Environment.set(paddleEnv);
+        Paddle.Initialize({ token: clientToken });
+      } catch (e) {
+        fail();
+        return;
+      }
+      if (btn) {
+        btn.addEventListener('click', function () {
+          Paddle.Checkout.open({
+            items: [{ priceId: priceId, quantity: 1 }],
+            settings: {
+              displayMode: 'overlay',
+              theme: 'dark',
+              // Paddle appends `?_ptxn=<transaction_id>` to this URL on success.
+              successUrl: window.location.origin + '/thanks',
+            },
+          });
+        });
+      }
+    })();
+  </script>
+</Base>
+
+<style>
+  .buy {
+    max-width: 44rem;
+    padding: clamp(32px, 5vw, 64px) 0;
+  }
+  .buy .eyebrow {
+    margin-bottom: 20px;
+  }
+  .buy h1 {
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    letter-spacing: -0.02em;
+    margin: 0 0 18px;
+    color: var(--fg);
+  }
+  .buy .lead {
+    font-size: clamp(16px, 1.5vw, 19px);
+    line-height: 1.6;
+    color: var(--fg-mute);
+    margin: 0 0 28px;
+    max-width: 60ch;
+  }
+  .buy-list {
+    list-style: none;
+    margin: 0 0 32px;
+    padding: 24px 0 0;
+    border-top: 1px solid var(--hairline-soft);
+  }
+  .buy-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin: 0.7rem 0;
+    color: var(--fg);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .buy-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+  .buy-error {
+    margin: 14px 0 0;
+    color: var(--warning);
+    font-size: 14px;
+  }
+  .fine {
+    margin: 28px 0 0;
+    padding-top: 18px;
+    border-top: 1px solid var(--hairline-soft);
+    color: var(--fg-dim);
+    font-size: 13.5px;
+    line-height: 1.6;
+  }
+  .fine a {
+    color: var(--accent-hi);
+  }
+</style>

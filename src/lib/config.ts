@@ -6,11 +6,11 @@
  */
 
 /**
- * Paddle checkout is not live yet. While `false`, the Buy button renders in a
- * disabled "Checkout opens at launch" state. The payment-integration chantier
- * flips this to `true` once the Paddle product and success page are wired.
+ * Paddle checkout is live: /pricing routes to /buy, which opens the Paddle
+ * overlay. Flip back to `false` to return the Buy button to its disabled
+ * "Checkout opens at launch" state.
  */
-export const CHECKOUT_LIVE = false;
+export const CHECKOUT_LIVE = true;
 
 /** Where the Paddle checkout will live once CHECKOUT_LIVE flips. */
 export const BUY_URL = '/buy';
