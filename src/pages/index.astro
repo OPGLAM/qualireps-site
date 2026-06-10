@@ -501,6 +501,10 @@ const faqs = [
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /* Anchor to the top so the dark top margin (corner clearance) is what
+       the rounded frame clips — never the app's top-corner icons. The
+       bottom of the screenshot overflows and is clipped instead. */
+    object-position: top;
     display: block;
     border-radius: 32px;
   }
@@ -707,7 +711,8 @@ const faqs = [
 
   /* ───── SCREENSHOTS ───── */
   /* Mobile-first: a user-controlled, swipeable scroll-snap strip. No
-     autoplay. Desktop (≥760px) lays the same tiles out as a static row. */
+     autoplay. Desktop (≥760px) lays the six tiles out as a static 3×2
+     grid for bigger, readable tiles. */
   .shots {
     list-style: none;
     margin: 0;
@@ -748,9 +753,9 @@ const faqs = [
   @media (min-width: 760px) {
     .shots {
       grid-auto-flow: row;
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-auto-columns: auto;
-      gap: clamp(14px, 1.6vw, 22px);
+      gap: clamp(20px, 2.6vw, 32px);
       overflow: visible;
       scroll-snap-type: none;
       padding-bottom: 0;
