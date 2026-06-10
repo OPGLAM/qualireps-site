@@ -92,8 +92,9 @@ const faqs = [
             <a href="#what-is-gtg" class="btn btn-ghost">What is GTG?</a>
           </div>
           <a href="/pricing" class="hero-price">
+            <span class="lead-in">Unlock everything —</span>
             <span class="amount">9,99 €</span>
-            <span class="terms">Lifetime · one purchase, no subscription</span>
+            <span class="terms">· one purchase, no subscription</span>
           </a>
 
           <div class="hero-meta">
@@ -344,6 +345,10 @@ const faqs = [
     column-gap: 12px;
     row-gap: 2px;
     text-decoration: none;
+  }
+  .hero-price .lead-in {
+    font-size: 15px;
+    color: var(--fg);
   }
   .hero-price .amount {
     font-family: var(--font-display);
