@@ -24,11 +24,11 @@ import { APP_URL, APP_HOST } from '../lib/site';
   <section class="how-card" data-platform="android" aria-label="Android">
     <div class="plat"><span class="badge">Android</span><span>Chrome · install from browser</span></div>
     <h3>Android</h3>
-    <p>
-      Open <a href={APP_URL}>{APP_HOST}</a> in Chrome. Tap the menu, then
-      "Install app" (or "Add to Home screen"). QualiReps installs like a native
-      app and runs offline.
-    </p>
+    <ol class="steps">
+      <li>Open {APP_HOST} in Chrome.</li>
+      <li>Tap the menu (⋮), then "Install app" (or "Add to Home Screen").</li>
+      <li>It installs like a native app and runs fully offline.</li>
+    </ol>
     {
       PLAY_TWA_ENABLED && (
         <>
@@ -40,31 +40,35 @@ import { APP_URL, APP_HOST } from '../lib/site';
         </>
       )
     }
+    <a href={APP_URL} class="btn btn-ghost open-btn">Open {APP_HOST}</a>
   </section>
 
   <!-- Desktop -->
   <section class="how-card" data-platform="desktop" aria-label="Desktop">
     <div class="plat"><span class="badge">Desktop</span><span>Chrome · Edge</span></div>
     <h3>Desktop</h3>
-    <p>
-      QualiReps runs as an installable web app on Chrome and Edge. Open
-      <a href={APP_URL}>{APP_HOST}</a>, then click the install icon in your
-      browser's address bar.
-    </p>
+    <ol class="steps">
+      <li>Open {APP_HOST} in Chrome or Edge.</li>
+      <li>Click the install icon in the address bar.</li>
+      <li>It runs offline as a standalone app.</li>
+    </ol>
+    <a href={APP_URL} class="btn btn-ghost open-btn">Open {APP_HOST}</a>
   </section>
 
   <!-- iOS -->
   <section class="how-card" data-platform="ios" aria-label="iOS">
     <div class="plat"><span class="badge">iOS</span><span>Safari</span></div>
     <h3>iOS</h3>
-    <p>
-      Open <a href={APP_URL}>{APP_HOST}</a> in Safari, tap the Share icon,
-      then "Add to Home Screen".
-    </p>
+    <ol class="steps">
+      <li>Open {APP_HOST} in Safari.</li>
+      <li>Tap the Share icon.</li>
+      <li>Tap "Add to Home Screen".</li>
+    </ol>
     <p class="note">
       Once on your home screen, the app and its data live on your device. As
       with any local-only data, regular backups remain recommended.
     </p>
+    <a href={APP_URL} class="btn btn-ghost open-btn">Open {APP_HOST}</a>
   </section>
 </div>
 
@@ -133,8 +137,32 @@ import { APP_URL, APP_HOST } from '../lib/site';
     font-size: 14.5px;
     line-height: 1.6;
   }
-  .how-card a {
-    color: var(--accent-hi);
+  .steps {
+    margin: 0 0 20px;
+    padding-left: 1.4em;
+    color: var(--fg-mute);
+    font-size: 14.5px;
+    line-height: 1.6;
+  }
+  .steps li {
+    margin: 0 0 8px;
+    padding-left: 4px;
+  }
+  .steps li:last-child {
+    margin-bottom: 0;
+  }
+  .steps li::marker {
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: 12px;
+  }
+  /* Push the action button to the card's lower edge so all three align. */
+  .open-btn {
+    margin-top: auto;
+    align-self: flex-start;
+    height: 46px;
+    padding: 0 20px;
+    font-size: 14px;
   }
   .install__badge {
     margin: 6px 0 16px;

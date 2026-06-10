@@ -91,10 +91,10 @@ const faqs = [
             <a href="#install" class="btn btn-primary">Install QualiReps — free</a>
             <a href="#what-is-gtg" class="btn btn-ghost">What is GTG?</a>
           </div>
-          <p class="reassure">
-            <a href="/pricing">Lifetime unlock — 9,99 €</a>. One purchase, no
-            subscription.
-          </p>
+          <a href="/pricing" class="hero-price">
+            <span class="amount">9,99 €</span>
+            <span class="terms">Lifetime · one purchase, no subscription</span>
+          </a>
 
           <div class="hero-meta">
             <div class="item">
@@ -336,6 +336,29 @@ const faqs = [
     gap: 14px;
     align-items: center;
     margin-bottom: 22px;
+  }
+  .hero-price {
+    display: inline-flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    column-gap: 12px;
+    row-gap: 2px;
+    text-decoration: none;
+  }
+  .hero-price .amount {
+    font-family: var(--font-display);
+    font-size: clamp(26px, 3vw, 34px);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--accent);
+    transition: color 0.15s ease;
+  }
+  .hero-price:hover .amount {
+    color: var(--accent-hi);
+  }
+  .hero-price .terms {
+    font-size: 13px;
+    color: var(--fg-mute);
   }
   .hero-meta {
     margin-top: 28px;
