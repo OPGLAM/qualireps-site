@@ -77,8 +77,10 @@ import { APP_URL, APP_HOST } from '../lib/site';
 
   const root = document.querySelector<HTMLElement>('[data-platform-install]');
   if (root) {
-    // Detection is recorded for analytics / future logic only — every
-    // sub-block stays visible, so this never changes the UI.
+    // Best-effort platform detection. Recorded on data-detected for
+    // analytics / future logic, and used below as progressive enhancement
+    // to emphasize the matching card. The SSR output stays unchanged: with
+    // no JS, all three cards render equal (ghost buttons, no highlight).
     const detected = isAndroid()
       ? 'android'
       : isIOSSafariPWA()
@@ -86,6 +88,20 @@ import { APP_URL, APP_HOST } from '../lib/site';
         : 'desktop';
 
     root.dataset.detected = detected;
+
+    // Emphasize only the matching card — never reorder or hide any card.
+    // If the card can't be found, every card stays in the default state.
+    const match = root.querySelector<HTMLElement>(
+      `.how-card[data-platform="${detected}"]`
+    );
+    if (match) {
+      match.classList.add('is-detected');
+      const btn = match.querySelector('.open-btn');
+      if (btn) {
+        btn.classList.remove('btn-ghost');
+        btn.classList.add('btn-primary');
+      }
+    }
   }
 </script>
 
@@ -105,6 +121,13 @@ import { APP_URL, APP_HOST } from '../lib/site';
     display: flex;
     flex-direction: column;
     gap: 0;
+  }
+  /* Progressive enhancement: the JS-detected platform's card gets a
+     restrained accent cue. Inset box-shadow avoids any layout shift, so
+     the no-JS / undetected fallback (all cards equal) stays pixel-identical. */
+  .how-card.is-detected {
+    background: var(--bg-elev-2);
+    box-shadow: inset 0 0 0 1px var(--accent);
   }
   .plat {
     display: flex;
