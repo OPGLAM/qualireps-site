@@ -1,12 +1,32 @@
 ---
 import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import PlatformInstall from '../components/PlatformInstall.astro';
 import { groupByChain } from '../lib/content';
 import { SITE_ORIGIN, APP_URL, APP_HOST } from '../lib/site';
 
+import heroShot from '../assets/screenshots/01-dashboard.png';
+import shotFresh from '../assets/screenshots/02-exercise-fresh.png';
+import shotResting from '../assets/screenshots/03-exercise-resting.png';
+import shotRecovery from '../assets/screenshots/04-exercise-recovery.png';
+import shotTestMax from '../assets/screenshots/05-test-max.png';
+import shotCustom from '../assets/screenshots/06-custom-exercise.png';
+import shotChainPicker from '../assets/screenshots/07-chain-picker.png';
+
 const entries = await getCollection('forms');
 const chains = groupByChain(entries);
+
+// Screenshots gallery — user-controlled strip, captions editable. `alt` is a
+// fuller description for assistive tech; `caption` is the short visible label.
+const shots = [
+  { src: shotFresh, caption: 'Your daily dose', alt: 'Exercise screen, fresh — today’s dose and set logging' },
+  { src: shotResting, caption: 'Rest between sets', alt: 'Exercise screen resting between sets' },
+  { src: shotRecovery, caption: 'Recovery countdown', alt: 'Exercise screen showing the recovery countdown' },
+  { src: shotTestMax, caption: 'Test your max', alt: 'Screen for testing your current rep maximum' },
+  { src: shotChainPicker, caption: 'Choose a progression path', alt: 'Chain picker for choosing a progression path' },
+  { src: shotCustom, caption: 'Or create a custom exercise', alt: 'Screen for creating a custom exercise' },
+];
 
 const title = 'QualiReps — a strength ledger for daily practice';
 const description =
@@ -113,10 +133,19 @@ const faqs = [
           </div>
         </div>
 
-        <div class="phone-stage" aria-hidden="true">
-          <div class="phone phone-placeholder">
+        <div class="phone-stage">
+          <div class="phone">
             <div class="phone-screen">
-              <span class="placeholder-label">App screenshot</span>
+              <Image
+                class="phone-shot"
+                src={heroShot}
+                alt="QualiReps dashboard showing several exercises with their state and max"
+                widths={[320, 480, 640]}
+                sizes="(max-width: 880px) 280px, 320px"
+                format="webp"
+                loading="eager"
+                fetchpriority="high"
+              />
             </div>
           </div>
         </div>
@@ -230,12 +259,49 @@ const faqs = [
     </div>
   </section>
 
-  <!-- ───────────── 04 · GET QUALIREPS ───────────── -->
+  <!-- ───────────── 04 · SCREENSHOTS ───────────── -->
+  <section id="screenshots" class="section-divider">
+    <div class="wrap">
+      <div class="features-head">
+        <div>
+          <div class="eyebrow" style="margin-bottom:24px">04 / Screenshots</div>
+          <h2>See it.</h2>
+        </div>
+        <p class="lead">
+          The instrument in practice — your dose, your rests, your recovery
+          windows, your progressions.
+        </p>
+      </div>
+
+      <ul class="shots" role="list">
+        {
+          shots.map((shot) => (
+            <li class="shot">
+              <div class="shot-frame">
+                <Image
+                  class="shot-img"
+                  src={shot.src}
+                  alt={shot.alt}
+                  widths={[240, 360, 480]}
+                  sizes="(max-width: 760px) 60vw, 220px"
+                  format="webp"
+                  loading="lazy"
+                />
+              </div>
+              <span class="shot-cap">{shot.caption}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- ───────────── 05 · GET QUALIREPS ───────────── -->
   <section id="install" class="section-divider">
     <div class="wrap">
       <div class="features-head">
         <div>
-          <div class="eyebrow" style="margin-bottom:24px">04 / Get QualiReps</div>
+          <div class="eyebrow" style="margin-bottom:24px">05 / Get QualiReps</div>
           <h2>Install.</h2>
         </div>
         <p class="lead">
@@ -247,12 +313,12 @@ const faqs = [
     </div>
   </section>
 
-  <!-- ───────────── 05 · PERFECT FORM GUIDES ───────────── -->
+  <!-- ───────────── 06 · PERFECT FORM GUIDES ───────────── -->
   <section id="forms" class="section-divider">
     <div class="wrap">
       <div class="features-head">
         <div>
-          <div class="eyebrow" style="margin-bottom:24px">05 / Perfect form guides</div>
+          <div class="eyebrow" style="margin-bottom:24px">06 / Perfect form guides</div>
           <h2>Open knowledge.</h2>
         </div>
         <p class="lead">
@@ -281,12 +347,12 @@ const faqs = [
     </div>
   </section>
 
-  <!-- ───────────── 06 · FAQ ───────────── -->
+  <!-- ───────────── 07 · FAQ ───────────── -->
   <section id="faq" class="section-divider">
     <div class="wrap">
       <div class="features-head faq-head">
         <div>
-          <div class="eyebrow" style="margin-bottom:24px">06 / Frequently asked</div>
+          <div class="eyebrow" style="margin-bottom:24px">07 / Frequently asked</div>
           <h2>Questions.</h2>
         </div>
       </div>
@@ -431,12 +497,12 @@ const faqs = [
     align-items: center;
     justify-content: center;
   }
-  .placeholder-label {
-    font-family: var(--font-mono);
-    font-size: 12px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--fg-dim);
+  .phone-shot {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 32px;
   }
   @media (max-width: 880px) {
     .hero-grid {
@@ -636,6 +702,58 @@ const faqs = [
   @media (max-width: 560px) {
     .cols {
       grid-template-columns: 1fr;
+    }
+  }
+
+  /* ───── SCREENSHOTS ───── */
+  /* Mobile-first: a user-controlled, swipeable scroll-snap strip. No
+     autoplay. Desktop (≥760px) lays the same tiles out as a static row. */
+  .shots {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 6px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: clamp(180px, 60%, 240px);
+    gap: clamp(16px, 2.4vw, 24px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+  .shot {
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .shot-frame {
+    border: 1px solid var(--hairline);
+    border-radius: 14px;
+    overflow: hidden;
+    background: var(--bg-elev-1);
+    aspect-ratio: 1080 / 2177;
+  }
+  .shot-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .shot-cap {
+    font-size: 14px;
+    color: var(--fg-mute);
+    line-height: 1.4;
+  }
+  @media (min-width: 760px) {
+    .shots {
+      grid-auto-flow: row;
+      grid-template-columns: repeat(6, 1fr);
+      grid-auto-columns: auto;
+      gap: clamp(14px, 1.6vw, 22px);
+      overflow: visible;
+      scroll-snap-type: none;
+      padding-bottom: 0;
     }
   }
 
