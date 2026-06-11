@@ -59,14 +59,22 @@ import { APP_URL, APP_HOST } from '../lib/site';
   <section class="how-card" data-platform="ios" aria-label="iOS">
     <div class="plat"><span class="badge">iOS</span><span>Safari</span></div>
     <h3>iOS</h3>
+    <p>
+      iOS only installs web apps from Safari. If you opened this page from a
+      link inside another app, tap the ⋯ / Share menu → "Open in Safari"
+      first — in-app browsers (and Chrome) can't add to the home screen.
+    </p>
     <ol class="steps">
-      <li>Open {APP_HOST} in Safari.</li>
-      <li>Tap the Share icon.</li>
-      <li>Tap "Add to Home Screen".</li>
+      <li>
+        In Safari, tap the Share icon (a square with an arrow pointing up) — in
+        the toolbar, or under the ⋯ menu if you don't see it.
+      </li>
+      <li>Scroll down and tap "Add to Home Screen".</li>
+      <li>Tap "Add".</li>
     </ol>
     <p class="note">
-      Once on your home screen, the app and its data live on your device. As
-      with any local-only data, regular backups remain recommended.
+      QualiReps now lives on your home screen — opens full-screen, no browser
+      bar.
     </p>
     <a href={APP_URL} class="btn btn-ghost open-btn">Open {APP_HOST}</a>
   </section>
