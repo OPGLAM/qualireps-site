@@ -1,14 +1,11 @@
 ---
 import Base from '../layouts/Base.astro';
+import PaddlePrice from '../components/PaddlePrice.astro';
 import { PRICE_LABEL } from '../lib/site';
 
-// Prerendered. Paddle's client token and price id are publishable, so they are
-// safe to bake into the static HTML at build time. Read from the build env
-// (Vercel sets these; a local .env works too via Vite).
-const clientToken: string = import.meta.env.PADDLE_CLIENT_TOKEN ?? '';
-const priceId: string = import.meta.env.PADDLE_PRICE_ID ?? '';
-const paddleEnv: 'sandbox' | 'production' =
-  import.meta.env.PADDLE_ENV === 'production' ? 'production' : 'sandbox';
+// Prerendered. Paddle.js is loaded + initialized once by <PaddlePrice />, which
+// also drives the localized price display. This page only wires the checkout
+// button to that shared init (window.__qrPaddle).
 
 const title = 'Buy QualiReps — lifetime license';
 const description =
@@ -21,7 +18,8 @@ const description =
       <div class="eyebrow">Checkout</div>
       <h1>QualiReps — lifetime license</h1>
       <p class="lead">
-        One purchase, {PRICE_LABEL}. Lifetime access, no subscription. After
+        One purchase, <span data-paddle-price>{PRICE_LABEL}</span>. Lifetime
+        access, no subscription. After
         payment you receive a license key — by email and on the next screen.
         Enter it in the app to unlock everything.
       </p>
@@ -34,7 +32,7 @@ const description =
       </ul>
 
       <button id="buy-btn" class="btn btn-primary" type="button">
-        Buy QualiReps — {PRICE_LABEL}
+        Buy QualiReps — <span data-paddle-price>{PRICE_LABEL}</span>
       </button>
       <p id="buy-error" class="buy-error" hidden>
         Checkout could not start. Reload the page, or contact
@@ -49,11 +47,10 @@ const description =
     </article>
   </div>
 
-  <script src="https://cdn.paddle.com/paddle/v2/paddle.js" is:inline></script>
-  <script
-    is:inline
-    define:vars={{ clientToken, priceId, paddleEnv }}
-  >
+  <!-- Loads + initializes Paddle.js once, and drives the localized price. -->
+  <PaddlePrice />
+
+  <script is:inline>
     (function () {
       var btn = document.getElementById('buy-btn');
       var err = document.getElementById('buy-error');
@@ -61,49 +58,29 @@ const description =
         if (btn) btn.disabled = true;
         if (err) err.hidden = false;
       }
-      // Diagnostic (non-secret): confirms the baked environment + price id.
-      console.info('[QualiReps] checkout init', {
-        env: paddleEnv,
-        priceId: priceId,
-      });
-      if (!window.Paddle || !clientToken || !priceId) {
+      // <PaddlePrice /> renders above this script, so __qrPaddle is set by now.
+      var paddle = window.__qrPaddle;
+      if (!paddle) {
         fail();
         return;
       }
-      try {
-        Paddle.Environment.set(paddleEnv);
-        Paddle.Initialize({
-          token: clientToken,
-          eventCallback: function (event) {
-            // Redirect ourselves on completion, carrying the transaction id.
-            // Paddle does not reliably append it to a configured successUrl,
-            // so we read it from the event and build /thanks?txn=<id>.
-            if (event && event.name === 'checkout.completed') {
-              var txnId = event.data && event.data.transaction_id;
-              if (txnId) {
-                window.location.href =
-                  window.location.origin +
-                  '/thanks?txn=' +
-                  encodeURIComponent(txnId);
-              }
-            }
-          },
-        });
-      } catch (e) {
-        fail();
-        return;
-      }
-      if (btn) {
-        btn.addEventListener('click', function () {
-          Paddle.Checkout.open({
-            items: [{ priceId: priceId, quantity: 1 }],
-            settings: {
-              displayMode: 'overlay',
-              theme: 'dark',
-            },
+      paddle.ready.then(function (ok) {
+        if (!ok) {
+          fail();
+          return;
+        }
+        if (btn) {
+          btn.addEventListener('click', function () {
+            Paddle.Checkout.open({
+              items: [{ priceId: paddle.priceId, quantity: 1 }],
+              settings: {
+                displayMode: 'overlay',
+                theme: 'dark',
+              },
+            });
           });
-        });
-      }
+        }
+      });
     })();
   </script>
 </Base>

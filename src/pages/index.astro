@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import PlatformInstall from '../components/PlatformInstall.astro';
+import PaddlePrice from '../components/PaddlePrice.astro';
 import { groupByChain } from '../lib/content';
 import { SITE_ORIGIN, APP_URL, APP_HOST } from '../lib/site';
 
@@ -57,7 +58,7 @@ const faqs = [
   },
   {
     q: 'How much does QualiReps cost? Is it a subscription?',
-    a: 'No. There’s nothing to subscribe to: QualiReps is a finished tool, with no database or running costs. It’s 9,99 € — one purchase, lifetime access. You unlock from inside the app: pay once through Paddle and activation is instant. A license key is also emailed to you — that key unlocks your other devices. The free demo lets you try the instrument on one exercise before you buy.',
+    a: 'No. There’s nothing to subscribe to: QualiReps is a finished tool, with no database or running costs. It’s <span data-paddle-price>9,99 €</span> — one purchase, lifetime access. You unlock from inside the app: pay once through Paddle and activation is instant. A license key is also emailed to you — that key unlocks your other devices. The free demo lets you try the instrument on one exercise before you buy.',
   },
   {
     q: 'How do I install QualiReps?',
@@ -113,7 +114,7 @@ const faqs = [
           </div>
           <a href="/pricing" class="hero-price">
             <span class="lead-in">Unlock everything —</span>
-            <span class="amount">9,99 €</span>
+            <span class="amount" data-paddle-price>9,99 €</span>
             <span class="terms">· one purchase, no subscription</span>
           </a>
 
@@ -128,7 +129,7 @@ const faqs = [
             </div>
             <div class="item">
               <span class="k">Pricing</span>
-              <span class="v">9,99 € — one-time, lifetime</span>
+              <span class="v"><span data-paddle-price>9,99 €</span> — one-time, lifetime</span>
             </div>
           </div>
         </div>
@@ -368,6 +369,8 @@ const faqs = [
       </div>
     </div>
   </section>
+
+  <PaddlePrice />
 </Base>
 
 <style>

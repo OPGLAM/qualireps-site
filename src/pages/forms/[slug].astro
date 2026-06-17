@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import PaddlePrice from '../../components/PaddlePrice.astro';
 import {
   exerciseName,
   ficheDescription,
@@ -118,11 +119,13 @@ if (steps.length > 0) {
       <a href="/#install" class="btn btn-primary">Install QualiReps — free</a>
       <p class="fiche-cta__alt">
         Installs from your browser on Android, iOS, and desktop. One exercise
-        free with the full instrument; <a href="/pricing">9,99 € unlocks
-        everything</a>.
+        free with the full instrument; <a href="/pricing"><span
+          data-paddle-price>9,99 €</span> unlocks everything</a>.
       </p>
     </aside>
   </div>
+
+  <PaddlePrice />
 </Base>
 
 <style>
