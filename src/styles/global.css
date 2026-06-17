@@ -340,6 +340,13 @@ section {
   margin-top: 0.25rem;
 }
 
+/* Localized price (Paddle.PricePreview swaps the text in place). Keep the
+   currency string on one line so a longer localized total reflows the line
+   rather than wrapping mid-price. */
+[data-paddle-price] {
+  white-space: nowrap;
+}
+
 /* Reveal-on-scroll (progressive enhancement; visible without JS). */
 .reveal {
   opacity: 0;

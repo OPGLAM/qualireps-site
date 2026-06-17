@@ -1,0 +1,114 @@
+---
+/**
+ * Shared Paddle.js bootstrap + localized price display.
+ *
+ * Include ONCE per page that shows a price (or runs checkout). It:
+ *   1. loads Paddle.js a single time,
+ *   2. initializes it with the build-time env (same token / env / eventCallback
+ *      pattern as the old buy.astro inline script),
+ *   3. calls Paddle.PricePreview() once on load — no address, so Paddle
+ *      auto-detects the visitor's country by IP — and swaps the text of every
+ *      [data-paddle-price] element to the localized formatted total,
+ *   4. exposes `window.__qrPaddle = { priceId, env, ready }` where `ready` is a
+ *      Promise<boolean> (true once Paddle is initialized) so checkout buttons
+ *      (buy.astro) can wire themselves to the SAME init — no double-load,
+ *      no double-init.
+ *
+ * Graceful degradation: if Paddle.js is blocked/slow, the token/price id is
+ * missing, or PricePreview errors, the server-rendered fallback price (the
+ * static PRICE_LABEL inside each [data-paddle-price]) is left untouched.
+ *
+ * The publishable client token + price id are read at build time and inlined
+ * via define:vars — identical to the original buy.astro flow. Both values are
+ * publishable, so baking them into the static HTML is safe.
+ */
+const clientToken: string = import.meta.env.PADDLE_CLIENT_TOKEN ?? '';
+const priceId: string = import.meta.env.PADDLE_PRICE_ID ?? '';
+const paddleEnv: 'sandbox' | 'production' =
+  import.meta.env.PADDLE_ENV === 'production' ? 'production' : 'sandbox';
+---
+
+<script src="https://cdn.paddle.com/paddle/v2/paddle.js" is:inline></script>
+<script is:inline define:vars={{ clientToken, priceId, paddleEnv }}>
+  (function () {
+    // Guard: only bootstrap once even if the component is included twice.
+    if (window.__qrPaddle) return;
+
+    var resolveReady;
+    var state = {
+      priceId: priceId,
+      env: paddleEnv,
+      ready: new Promise(function (res) {
+        resolveReady = res;
+      }),
+    };
+    window.__qrPaddle = state;
+
+    function applyPrice(text) {
+      var els = document.querySelectorAll('[data-paddle-price]');
+      for (var i = 0; i < els.length; i++) {
+        els[i].textContent = text;
+      }
+    }
+
+    // No Paddle.js (blocked / failed to load) or missing config → keep the
+    // static fallback price and report checkout as unavailable.
+    if (!window.Paddle || !clientToken || !priceId) {
+      resolveReady(false);
+      return;
+    }
+
+    try {
+      Paddle.Environment.set(paddleEnv);
+      Paddle.Initialize({
+        token: clientToken,
+        eventCallback: function (event) {
+          // Redirect ourselves on completion, carrying the transaction id, so
+          // /thanks can fetch the license key. (Harmless on pages with no
+          // checkout — the event never fires there.)
+          if (event && event.name === 'checkout.completed') {
+            var txnId = event.data && event.data.transaction_id;
+            if (txnId) {
+              window.location.href =
+                window.location.origin +
+                '/thanks?txn=' +
+                encodeURIComponent(txnId);
+            }
+          }
+        },
+      });
+    } catch (e) {
+      resolveReady(false);
+      return;
+    }
+
+    // Paddle is ready: checkout buttons can wire up now.
+    resolveReady(true);
+
+    // Localized price — IP-detected (no address passed). Best-effort: any
+    // failure leaves the static fallback in place.
+    try {
+      Paddle.PricePreview({ items: [{ priceId: priceId, quantity: 1 }] })
+        .then(function (result) {
+          // Logged once so the exact response shape can be confirmed in-browser.
+          console.info('[QualiReps] PricePreview result', result);
+          var lineItems =
+            result &&
+            result.data &&
+            result.data.details &&
+            result.data.details.lineItems;
+          var total =
+            lineItems &&
+            lineItems[0] &&
+            lineItems[0].formattedTotals &&
+            lineItems[0].formattedTotals.total;
+          if (total) applyPrice(total);
+        })
+        .catch(function (err) {
+          console.warn('[QualiReps] PricePreview failed', err);
+        });
+    } catch (e) {
+      /* leave the static fallback */
+    }
+  })();
+</script>

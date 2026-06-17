@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import PaddlePrice from '../components/PaddlePrice.astro';
 import { PRICE_LABEL, APP_URL, APP_HOST } from '../lib/site';
 import { CHECKOUT_LIVE, BUY_URL } from '../lib/config';
 
@@ -30,7 +31,7 @@ const lifetimeFeatures = [
     <article class="pricing">
       <header class="pricing-head">
         <div class="eyebrow">Pricing</div>
-        <h1>One exercise free. Everything for {PRICE_LABEL}.</h1>
+        <h1>One exercise free. Everything for <span data-paddle-price>{PRICE_LABEL}</span>.</h1>
         <p class="lead">
           Install free from your browser and run the full instrument on one
           exercise, for as long as you like. Unlock the rest once — one purchase,
@@ -55,7 +56,7 @@ const lifetimeFeatures = [
           <div class="plan-head">
             <h2>Lifetime</h2>
             <p class="price">
-              <span class="amount">{PRICE_LABEL}</span>
+              <span class="amount" data-paddle-price>{PRICE_LABEL}</span>
               <span class="period">one-time</span>
             </p>
             <p class="plan-sub">Your whole practice, unlocked.</p>
@@ -150,6 +151,8 @@ const lifetimeFeatures = [
       </section>
     </article>
   </div>
+
+  <PaddlePrice />
 </Base>
 
 <style>
