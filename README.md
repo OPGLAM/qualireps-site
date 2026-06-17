@@ -35,7 +35,7 @@ self-hosted (`public/fonts/`), QR codes are generated at build time.
 
 ```
 qualireps-site/
-├─ astro.config.mjs        # site, output: static, i18n (en default, /fr/), sitemap
+├─ astro.config.mjs        # site, output: static, sitemap
 ├─ vercel.json             # security headers (CSP, HSTS, …) + build config
 ├─ PRIVACY.md, TERMS.md    # legal copy (source of truth, rendered by /privacy, /terms)
 ├─ scripts/
@@ -49,7 +49,7 @@ qualireps-site/
    ├─ content.config.ts    # `forms` collection (zod schema)
    ├─ content/forms/       # SYNCED fiches (committed — see "Content sync")
    ├─ layouts/Base.astro   # head/SEO, header, footer, GoatCounter placeholder
-   ├─ components/          # PlatformInstall, FicheCard, PlayBadge, QRCode, LangSwitcher
+   ├─ components/          # PlatformInstall, FicheCard, PlayBadge, QRCode
    ├─ lib/                 # platform.ts, playBilling.ts, content.ts, site.ts
    ├─ pages/               # index, pricing, privacy, terms, forms/
    └─ styles/global.css    # brand tokens + prose
@@ -101,13 +101,11 @@ warning and uses the committed content as-is (it does not fail the build).
 5. Verify Digital Asset Links for the `qualireps.app` origin (after the TWA
    build is ready).
 
-## i18n
+## Language
 
-Astro i18n: `defaultLocale: 'en'`, `locales: ['en', 'fr']`,
-`prefixDefaultLocale: false`. English is served at `/`. For V1 there is no
-French content, so `/fr` and `/fr/` redirect to `/`. Form sheets are EN-only
-(`/forms/{slug}`). `LangSwitcher.astro` renders the structure but stays hidden
-while only one language exists.
+English only. The site is served at `/` with `<html lang="en">`; form sheets
+live at `/forms/{slug}`. (The FR toggle and i18n stub were removed for V1; add
+real `src/pages/fr/*` routes and i18n config when French content lands.)
 
 ## Security headers
 
