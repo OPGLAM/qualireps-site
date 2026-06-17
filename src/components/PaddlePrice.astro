@@ -90,8 +90,6 @@ const paddleEnv: 'sandbox' | 'production' =
     try {
       Paddle.PricePreview({ items: [{ priceId: priceId, quantity: 1 }] })
         .then(function (result) {
-          // Logged once so the exact response shape can be confirmed in-browser.
-          console.info('[QualiReps] PricePreview result', result);
           var lineItems =
             result &&
             result.data &&
