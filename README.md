@@ -13,8 +13,11 @@ Production origin: **https://qualireps.app**
 | ---------------- | -------------------------------------------------------------- |
 | `/`              | Home — hero, freemium explainer, install block (`#install`)    |
 | `/pricing`       | Pricing (9,99 €, lifetime, no subscription)                    |
+| `/buy`           | Paddle checkout overlay (gated by `CHECKOUT_LIVE`)             |
+| `/thanks`        | Purchase success page — shows the issued license key           |
 | `/privacy`       | Privacy policy (rendered from `PRIVACY.md`)                     |
 | `/terms`         | Terms of service (rendered from `TERMS.md`)                     |
+| `/refund`        | Refund policy (rendered from `REFUND.md`)                       |
 | `/forms`         | Index of all 39 form guides, grouped by chain                  |
 | `/forms/{slug}`  | Individual form guide (`slug` = `exercise_id`)                 |
 
@@ -48,7 +51,7 @@ qualireps-site/
 └─ src/
    ├─ content.config.ts    # `forms` collection (zod schema)
    ├─ content/forms/       # SYNCED fiches (committed — see "Content sync")
-   ├─ layouts/Base.astro   # head/SEO, header, footer, GoatCounter placeholder
+   ├─ layouts/Base.astro   # head/SEO, header, footer, GoatCounter snippet (live)
    ├─ components/          # PlatformInstall, FicheCard, PlayBadge, QRCode
    ├─ lib/                 # platform.ts, playBilling.ts, content.ts, site.ts
    ├─ pages/               # index, pricing, privacy, terms, forms/
@@ -78,23 +81,21 @@ warning and uses the committed content as-is (it does not fail the build).
 1. **`PLAY_PACKAGE_NAME`** (`src/lib/playBilling.ts`) is the placeholder
    `app.qualireps.twa`. It drives every Play Store deep-link. Replace it with
    the real TWA package name from Play Console (must match the Digital Asset
-   Links published for `qualireps.app`).
-2. **GoatCounter analytics** (`src/layouts/Base.astro`) is a commented-out
-   snippet. Create a GoatCounter account, then uncomment and set the real
-   `data-goatcounter` site code. The CSP in `vercel.json` already allows
-   `gc.zgo.at` (script) and `qualireps.goatcounter.com` (beacon).
-3. **OG image** (`public/og-default.svg`) is a single brand placeholder used on
+   Links published for `qualireps.app`). Note: all Play markup is currently
+   gated out by `PLAY_TWA_ENABLED = false` (Play TWA postponed to V1.5).
+2. **OG image** (`public/og-default.svg`) is a single brand placeholder used on
    every page. Replace with a designed 1200×630 PNG (and update `OG_IMAGE` in
    `src/lib/site.ts`). Per-page OG generation is deferred to Phase 2.
-4. **Play badge** (`src/components/PlayBadge.astro`) is an in-house rendition.
+3. **Play badge** (`src/components/PlayBadge.astro`) is an in-house rendition.
    Consider swapping Google's official badge artwork to follow their branding
    guidelines.
 
 ## External prerequisites (manual, outside this repo)
 
 1. Confirm the real TWA package name from Play Console → update
-   `PLAY_PACKAGE_NAME`.
-2. Create a GoatCounter account → activate the analytics snippet.
+   `PLAY_PACKAGE_NAME` (only needed when the Play TWA channel ships in V1.5).
+2. GoatCounter analytics is live: the snippet in `src/layouts/Base.astro` posts
+   to `qualireps.goatcounter.com` (account assumed created).
 3. Create a Vercel project linked to `OPGLAM/qualireps-site` (build:
    `npm run build`, output: `dist/`; `vercel.json` is picked up automatically).
 4. Point `qualireps.app` DNS (OVH) at Vercel.
@@ -119,5 +120,4 @@ served from `'self'`.
 ## Out of scope (Phase 2)
 
 Per-page OG generation, `/about`, `/learn/`, FR translations,
-`getInstalledRelatedApps` detection, real GoatCounter activation, DNS, Vercel
-project creation.
+`getInstalledRelatedApps` detection, DNS, Vercel project creation.
