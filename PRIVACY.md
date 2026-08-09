@@ -28,18 +28,13 @@ When you purchase the full version, payment is processed by Paddle.com Market Li
 
 We do not store your name, email, payment method, or any identifier on our servers.
 
-## Notifications
-
-If you enable notifications, the application schedules them locally on your device. No notification data is transmitted to any server.
-
 ## Permissions
 
-QualiReps may request the following browser permissions:
+QualiReps may request the following browser permission:
 
 - Persistent storage: to protect your data from being purged
-- Notifications: to deliver opportunity and daily reminders
 
-These permissions are granted by you, used only for the described purposes, and can be revoked at any time through your browser or device settings.
+This permission is granted by you, used only for the described purposes, and can be revoked at any time through your browser or device settings.
 
 ## Your rights
 
