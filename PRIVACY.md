@@ -30,11 +30,11 @@ We do not store your name, email, payment method, or any identifier on our serve
 
 ## Permissions
 
-QualiReps may request the following browser permissions:
+QualiReps may request the following browser permission:
 
 - Persistent storage: to protect your data from being purged
 
-These permissions are granted by you, used only for the described purposes, and can be revoked at any time through your browser or device settings.
+This permission is granted by you, used only for the described purposes, and can be revoked at any time through your browser or device settings.
 
 ## Your rights
 
