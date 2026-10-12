@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Last updated: 4 June 2026
+Last updated: 12 October 2026
 
 ## Operator
 
@@ -15,6 +15,12 @@ QualiReps does not collect, transmit, or store any personal data on remote serve
 All practice data (exercises, sets, max tests, settings) is stored locally in your browser's IndexedDB or your device's local storage. It never leaves your device unless you choose to export a backup file.
 
 We do not use cookies for tracking purposes. We do not use third-party analytics that identify you. We do not share data with advertisers — there are no advertisers.
+
+## Website analytics
+
+This website uses GoatCounter to count page views. It is an open-source, privacy-focused service: it sets no cookies, does not track you across sites, and does not collect personal data. It records the page visited, the referring page, and coarse browser and country information. It cannot identify you.
+
+The QualiReps application itself contains no analytics of any kind. Nothing you do in the app is measured, transmitted, or recorded anywhere but on your own device.
 
 ## Backups and exports
 
