@@ -95,7 +95,7 @@ warning and uses the committed content as-is (it does not fail the build).
 1. Confirm the real TWA package name from Play Console → update
    `PLAY_PACKAGE_NAME` (only needed when the Play TWA channel ships in V1.5).
 2. GoatCounter analytics is live: the snippet in `src/layouts/Base.astro` posts
-   to `qualireps.goatcounter.com` (account assumed created).
+   to `qualireps.goatcounter.com` (account active, collecting since 2026-06-10).
 3. Create a Vercel project linked to `OPGLAM/qualireps-site` (build:
    `npm run build`, output: `dist/`; `vercel.json` is picked up automatically).
 4. Point `qualireps.app` DNS (OVH) at Vercel.

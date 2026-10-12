@@ -49,7 +49,8 @@ fallback), `PlayBadge` + `QRCode` (gated behind `PLAY_TWA_ENABLED`), `FicheCard`
 `Logo`.
 
 Other: GoatCounter analytics snippet is live in `src/layouts/Base.astro`
-(posts to `qualireps.goatcounter.com`; account existence **(to verify)**).
+(posts to `qualireps.goatcounter.com`; account active, collecting since
+2026-06-10). Disclosed in `PRIVACY.md` → "Website analytics".
 Form content is synced (committed) from the `qualireps-v2` app repo via
 `scripts/sync-content.js`.
 
@@ -105,8 +106,9 @@ Form content is synced (committed) from the `qualireps-v2` app repo via
   with the real Play Console package before any V1.5 Play TWA launch (and must
   match published Digital Asset Links).
 - OG image is a single placeholder SVG used on every page (no per-page OG yet).
-- Production deployment, DNS (`qualireps.app` → Vercel), and the GoatCounter
-  account are not confirmable from the repo **(to verify)**.
+- Production deployment and DNS (`qualireps.app` → Vercel) are not
+  confirmable from the repo **(to verify)**. The GoatCounter account is
+  confirmed active (since 2026-06-10).
 - Several stale local feature branches linger after squash-merges; pruning them
   would avoid confusion about what is actually pending.
 - Form guides depend on an out-of-repo source (`qualireps-v2`); the committed
