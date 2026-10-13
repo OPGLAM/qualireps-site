@@ -1,6 +1,6 @@
 # Product State — qualireps-site (the landing)
 
-_Snapshot derived from the repository on 2026-06-24. Items that could not be
+_Snapshot derived from the repository on 2026-10-13. Items that could not be
 confirmed from code or git are marked **(to verify)**._
 
 ## 1. What this repo is
@@ -14,8 +14,8 @@ of serverless endpoints for Paddle checkout fulfillment.
 
 ## 2. Status
 
-- **Last commit (main):** `895abc4` — _copy(landing): single canonical iOS
-  install list (all iOS, iPhone + iPad) (#5)_ — 2026-06-24.
+- **Last commit (main):** `415ba60` — _Chore/remove notification copy (#7)_ —
+  2026-08-09. Repositioning work is in progress on `copy/repositioning`.
 - **Live in prod?** The repo is wired for Vercel (`@astrojs/vercel` adapter +
   `vercel.json` headers) and the production origin is `https://qualireps.app`.
   Actual deployment/DNS being live **(to verify)** — not confirmable from the
@@ -57,17 +57,9 @@ Form content is synced (committed) from the `qualireps-v2` app repo via
 ## 4. In progress / pending
 
 - **No open TODO/FIXME markers** in `src/`.
-- **Unmerged local branches** all appear to be leftover source branches of
-  already-merged squash PRs (#1–#5), not active work:
-  - `feat/ios-install-steps` — content already in `main` (#5); safe to delete.
-  - `chore/faq-precision-and-pricing-log` — older 3-step iOS list, superseded by
-    the canonical list now in `main`.
-  - `feat/localized-pricing` — localized pricing already in `main` (#3).
-  - `feat/messaging-alignment` — source of the messaging copy already in `main`
-    (#1).
-  - `feat/landing-copy-fix` — copy + "remove FR toggle / i18n stub" work; `main`
-    is already English-only with an empty `src/pages/fr/`, so this looks
-    superseded **(to verify before deleting)**.
+- **Branches:** only `main` and `copy/repositioning` exist, locally and on
+  `origin`. The seven leftover source branches of squash-merged PRs (#1–#7)
+  were deleted on 2026-10-12.
 - Pre-launch placeholders still open (see README): real `PLAY_PACKAGE_NAME`
   (only needed for V1.5 Play TWA), designed OG image, official Play badge art.
 
@@ -109,7 +101,5 @@ Form content is synced (committed) from the `qualireps-v2` app repo via
 - Production deployment and DNS (`qualireps.app` → Vercel) are not
   confirmable from the repo **(to verify)**. The GoatCounter account is
   confirmed active (since 2026-06-10).
-- Several stale local feature branches linger after squash-merges; pruning them
-  would avoid confusion about what is actually pending.
 - Form guides depend on an out-of-repo source (`qualireps-v2`); the committed
   copy can drift if a sync is forgotten after app-content changes.
