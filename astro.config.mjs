@@ -16,9 +16,18 @@ export default defineConfig({
   // functions. Adding the adapter does not change the static pages.
   output: 'static',
   adapter: vercel(),
-  trailingSlash: 'ignore',
+  // One address per page: no trailing slash. The canonical tags (Base.astro),
+  // the sitemap and internal links all use this form, and the Vercel adapter
+  // turns this setting into a permanent redirect from the slash form.
+  trailingSlash: 'never',
 
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      // Checkout and post-purchase pages stay out of the index (they also
+      // carry a robots noindex meta tag).
+      filter: (page) => !/\/(buy|thanks)\/?$/.test(new URL(page).pathname),
+    }),
+  ],
 
   vite: {
     // Cast: @tailwindcss/vite ships its own Vite types which skew slightly from

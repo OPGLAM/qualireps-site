@@ -11,6 +11,8 @@ interface Props {
   ogImage?: string;
   ogType?: 'website' | 'article';
   jsonLd?: Record<string, unknown>[];
+  /** Keep this page out of search indexes (checkout / post-purchase pages). */
+  noindex?: boolean;
 }
 
 const {
@@ -20,6 +22,7 @@ const {
   ogImage = OG_IMAGE,
   ogType = 'website',
   jsonLd = [],
+  noindex = false,
 } = Astro.props;
 
 const canonical = new URL(path, Astro.site).href;
@@ -29,7 +32,7 @@ const ogImageUrl = new URL(ogImage, Astro.site).href;
 // the root; the others match their section (so /forms/{slug} keeps Forms lit).
 const navItems = [
   { href: '/', label: 'Home' },
-  { href: '/forms/', label: 'Forms' },
+  { href: '/forms', label: 'Forms' },
   { href: '/pricing', label: 'Pricing' },
 ];
 function isActive(href: string): boolean {
@@ -49,6 +52,7 @@ function isActive(href: string): boolean {
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
