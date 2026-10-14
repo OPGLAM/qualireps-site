@@ -41,6 +41,8 @@ API routes (serverless, `prerender = false`):
   in-app auto-activation (CORS locked to the `app.qualireps.app` origin).
 - `POST /api/paddle/webhook` — Paddle webhook fulfillment (issues/email license
   key on completed purchase).
+- `POST /api/paddle/webhook-v2` — same handler, second URL for zero-downtime
+  secret rotation; retire the old route once Paddle points here.
 
 Components (`src/components/`): `PlatformInstall` (Android/Desktop/iOS install
 steps; iOS uses the single canonical 4-step list covering iPhone + iPad),
