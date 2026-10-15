@@ -16,7 +16,7 @@ A slow, controlled press of one kettlebell from the shoulder to a locked-out arm
 
 ## Equipment and setup
 
-- One kettlebell at your current tier weight.
+- One kettlebell at your current level's weight.
 - Flat, hard, non-slip floor; avoid soft mats.
 - Clear overhead space; room to set the bell down and clear a failed rep.
 - Flat footwear or bare feet; chalk if grip limits.

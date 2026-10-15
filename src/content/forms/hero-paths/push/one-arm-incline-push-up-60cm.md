@@ -11,7 +11,7 @@ unit: "reps"
 *Upper-middle of the descent. Anti-rotation is now a genuine co-limiter alongside the press. Brace before you push.*
 
 ## The movement
-One hand on a stable surface around 60 cm (firm sofa back, large crate, stacked steps), body more horizontal than the previous tier. Controlled descent to the edge and a clean press back, on one arm.
+One hand on a stable surface around 60 cm (firm sofa back, large crate, stacked steps), body more horizontal than the previous level. Controlled descent to the edge and a clean press back, on one arm.
 
 ## Set-up — and what each part is for
 - **Face a stable surface** at roughly 60 cm with a free edge. Working hand under its shoulder.

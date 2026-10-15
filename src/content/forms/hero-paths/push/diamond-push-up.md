@@ -8,7 +8,7 @@ unit: "reps"
 
 # Diamond Push-Up
 **Push horizontal · reps · bilateral**
-*The last bilateral tier. Triceps lockout and the compact press — elbows close to the body — that the one-arm push-up demands.*
+*The last bilateral level. Triceps lockout and the compact press — elbows close to the body — that the one-arm push-up demands.*
 
 ## The movement
 From a plank, hands together under the sternum with index fingers and thumbs touching to form a diamond, lower until the lower chest meets the hands, then press back to a clean lockout. The narrow hand position forces the triceps to do more and keeps the press tight to the ribs.

@@ -1,12 +1,12 @@
 # Perfect Form Sheets — Index
 
-Master registry of all exercise content for QualiReps V2. 39 unique fiches: 38 Hero Path movement levels (16 push + 12 pull + 10 squat) plus 1 KB press fiche shared across all 11 tiers. Custom exercises carry no fiche.
+Master registry of all exercise content for QualiReps V2. 39 unique fiches: 38 Hero Path movement levels (16 push + 12 pull + 10 squat) plus 1 KB press fiche shared across all 11 levels. Custom exercises carry no fiche.
 
-> The Open Path concept was removed (2026-05-31). The 11 Open-only fiches and the overlap mapping (`_OVERLAPS.md`) were deleted; the 3 former overlap exercises (`standard-push-up`, `standard-pull-up`, `dead-hang`) remain solely as the Hero Path tier fiches they always were.
+> The Open Path concept was removed (2026-05-31). The 11 Open-only fiches and the overlap mapping (`_OVERLAPS.md`) were deleted; the 3 former overlap exercises (`standard-push-up`, `standard-pull-up`, `dead-hang`) remain solely as the Hero Path level fiches they always were.
 
-> The three bodyweight chains were restructured in the 2026-06 coach revision: pull → One-Arm Pull-Up endpoint (12 tiers); push → collapsed to a single 9-tier OAPU ramp; squat → unified to a single 10-tier pistol ramp. Fiche filenames are now slug-only (no numeric prefix).
+> The three bodyweight chains were restructured in the 2026-06 coach revision: pull → One-Arm Pull-Up endpoint (12 levels); push → collapsed to a single 9-level OAPU ramp; squat → unified to a single 10-level pistol ramp. Fiche filenames are now slug-only (no numeric prefix).
 
-> The push path was expanded again in a second coach review (2026-06) to a 16-tier one-arm ramp matching the realistic 2-3 year progression: entry from 2 strict standard push-ups, two isometric tiers (one-arm high plank at L3, one-arm bottom hold at L12), a one-arm incline ramp by absolute support height (90 → 10 cm), and a final floor ramp by stance width (wide → shoulder → narrow). Endpoint is now the One-Arm Push-Up — Narrow Stance (maintenance-only, no passage criterion).
+> The push path was expanded again in a second coach review (2026-06) to a 16-level one-arm ramp matching the realistic 2-3 year progression: entry from 2 strict standard push-ups, two isometric levels (one-arm high plank at L3, one-arm bottom hold at L12), a one-arm incline ramp by absolute support height (90 → 10 cm), and a final floor ramp by stance width (wide → shoulder → narrow). Endpoint is now the One-Arm Push-Up — Narrow Stance (maintenance-only, no passage criterion).
 
 ## Push-up path (16 levels)
 
@@ -61,20 +61,20 @@ Master registry of all exercise content for QualiReps V2. 39 unique fiches: 38 H
 | 9 | `pistol-arms-counterweight` | `hero-paths/squat/pistol-arms-counterweight.md` |
 | 10 | `free-pistol` | `hero-paths/squat/free-pistol.md` |
 
-## Kettlebell press path (1 fiche, shared across 11 tiers)
+## Kettlebell press path (1 fiche, shared across 11 levels)
 
 | exercise_id | Unit | Kind | File |
 |---|---|---|---|
 | `one-arm-kb-strict-press` | reps | unilateral | `kb-press-path.md` |
 
-The KB press fiche has no per-level key — one fiche is shared across all 11 load tiers (only the bell weight changes).
+The KB press fiche has no per-level key — one fiche is shared across all 11 load levels (only the bell weight changes).
 
 ## Totals
 
 - **Hero Path movement fiches**: 38 (16 push + 12 pull + 10 squat)
-- **KB press fiche**: 1 (shared across 11 tiers)
+- **KB press fiche**: 1 (shared across 11 levels)
 - **Unique markdown files**: 39
-- **Exercises accessible in the app**: Hero Path levels + KB press tiers (Custom exercises carry no fiche)
+- **Exercises accessible in the app**: Hero Path levels + KB press levels (Custom exercises carry no fiche)
 
 ## Frontmatter convention
 

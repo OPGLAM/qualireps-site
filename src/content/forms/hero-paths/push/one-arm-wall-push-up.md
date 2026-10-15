@@ -11,11 +11,11 @@ unit: "reps"
 *The gentlest possible one-arm press. Load is minimal — the work is to groove the single-arm pattern: elbow tracking, hand-screw, square pelvis.*
 
 ## The movement
-Standing and leaning into a wall on one hand, bend the elbow to bring the shoulder toward the wall — not the face — then press back to a straight arm. The free arm is parked. This is the only pressing tier of the chain with feet flat. Do all reps on one side, then switch.
+Standing and leaning into a wall on one hand, bend the elbow to bring the shoulder toward the wall — not the face — then press back to a straight arm. The free arm is parked. This is the only pressing level of the chain with feet flat. Do all reps on one side, then switch.
 
 ## Set-up — and what each part is for
 - **Face the wall**, feet a short distance away (start about two foot-lengths back). The lean should feel light. **Measure this foot-to-wall distance and reproduce it every session.**
-- **Feet** **flat, heels grounded** — unique to this tier. Hip-width. If your heels start lifting, step the feet in.
+- **Feet** **flat, heels grounded** — unique to this level. Hip-width. If your heels start lifting, step the feet in.
 - **Working hand** flat on the wall at sternum height, under the shoulder.
 - **Free hand** parked in the small of the back. No contact.
 - **Body** one straight line. Glutes squeezed, abdominals braced, pelvis square to the wall. → *Feel a faint anti-rotation tension in the trunk; the free-side hip does not open.*
@@ -28,7 +28,7 @@ Standing and leaning into a wall on one hand, bend the elbow to bring the should
 - **Up.** Press back to a complete lockout, no twist. The line stays angled and square.
 
 ## Watch for
-- **Head drifting toward the wall** (the error this tier exists to teach against) → turn the head, the shoulder leads.
+- **Head drifting toward the wall** (the error this level exists to teach against) → turn the head, the shoulder leads.
 - **Heels lifting** → feet too far back; step in.
 - **Trunk twisting** to share the load → hold the chest square.
 - **Free hand sneaking off** the back to help → it stays parked.

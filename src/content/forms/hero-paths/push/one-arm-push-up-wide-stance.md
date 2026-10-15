@@ -8,7 +8,7 @@ unit: "reps"
 
 # One-Arm Push-Up — Wide Stance
 **Push horizontal · reps · unilateral**
-*The first complete, unassisted one-arm push-up. The strength is there from the previous tiers; the wide base minimizes the anti-rotation demand so you can assemble descent and press into one clean rep.*
+*The first complete, unassisted one-arm push-up. The strength is there from the previous levels; the wide base minimizes the anti-rotation demand so you can assemble descent and press into one clean rep.*
 
 ## The movement
 On the floor, working hand under its shoulder, the other parked behind the back. Lower the chest to the floor and press back, on one arm, while the trunk holds square. The wide base is a base, not a license to twist. Do all reps on one side, then switch.

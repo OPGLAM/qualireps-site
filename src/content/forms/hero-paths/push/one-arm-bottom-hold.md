@@ -8,7 +8,7 @@ unit: "seconds"
 
 # One-Arm Bottom Hold
 **Push horizontal · seconds · unilateral**
-*Own the sticking point of the one-arm push-up — the bottom at the floor, the weakest spot structurally. This isometric tier bridges from the incline work to the full floor press.*
+*Own the sticking point of the one-arm push-up — the bottom at the floor, the weakest spot structurally. This isometric level bridges from the incline work to the full floor press.*
 
 ## The movement
 Hold the low position of a one-arm push-up still: chest near the floor, elbow tucked, body rigid, pelvis square. There is no displacement during the hold — entry and exit are not the work. Train both sides; the weaker side gates progression.

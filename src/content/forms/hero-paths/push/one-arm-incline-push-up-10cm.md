@@ -28,7 +28,7 @@ One hand on a low rigid surface around 10 cm (thin riser, stable stack of large 
 - **Up.** Press to a complete lockout; the whole body rigid, hips and chest moving together.
 
 ## Watch for
-- **A compensatory twist becoming habitual** → if so, stay on this tier; do not force the floor.
+- **A compensatory twist becoming habitual** → if so, stay on this level; do not force the floor.
 - **Range shortening** under fatigue → full range or end the set.
 - **Loss of the square pelvis** at the bottom → brace before the descent, not in reaction to the sag.
 - **Soft surface** → at this load it shifts; use something rigid.

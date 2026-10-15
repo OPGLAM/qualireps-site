@@ -11,7 +11,7 @@ unit: "reps"
 *First real load step-down. The press demand rises and the anti-rotation system starts to wake up.*
 
 ## The movement
-One hand on a stable surface around table or desk height (~75 cm), body more tilted toward horizontal than the previous tier. Lower the chest to the edge and press back, on one arm. The pattern is identical to tier 5 against a heavier load.
+One hand on a stable surface around table or desk height (~75 cm), body more tilted toward horizontal than the previous level. Lower the chest to the edge and press back, on one arm. The pattern is identical to Level 5 against a heavier load.
 
 ## Set-up — and what each part is for
 - **Face a stable surface** at roughly 75 cm with a free edge. Working hand under its shoulder.

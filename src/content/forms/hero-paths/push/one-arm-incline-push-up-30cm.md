@@ -8,7 +8,7 @@ unit: "reps"
 
 # One-Arm Incline Push-Up — support ~30 cm
 **Push horizontal · reps · unilateral**
-*Approaching the floor. The load on the working arm is now high; the tier's discipline is to protect full range and total-body tension as it gets hard.*
+*Approaching the floor. The load on the working arm is now high; the level's discipline is to protect full range and total-body tension as it gets hard.*
 
 ## The movement
 One hand on a stable surface around 30 cm (low bench, double step, stacked risers), body nearly horizontal. Controlled full-range press to the edge and back, on one arm. Resist the urge to cut depth as fatigue rises.
