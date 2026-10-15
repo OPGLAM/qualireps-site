@@ -1,6 +1,6 @@
 # Terms of Service
 
-Last updated: 4 June 2026
+Last updated: 15 October 2026
 
 ## Operator
 
@@ -24,7 +24,7 @@ On purchase, we grant you a non-exclusive, non-transferable, worldwide license t
 
 ## Free demo
 
-The free demo lets you try the instrument on one exercise. The demo is not time-limited and may be used indefinitely. Progression to additional tiers, additional exercises, and custom exercises require purchase of the full version.
+The free demo lets you try the instrument on one exercise. The demo is not time-limited and may be used indefinitely. Moving to another level, additional exercises, and custom exercises require purchase of the full version.
 
 ## Purchases
 
@@ -68,7 +68,7 @@ We may update, modify, or discontinue features of QualiReps. We will not remove 
 
 ## Changes to these Terms
 
-We may update these Terms. The current version is always available at qualireps.app/terms. Material changes will be communicated through the application.
+We may update these Terms. When we do, the new version is published on this page, qualireps.app/terms, with a new date at the top. There is no account and no mailing list through which we could tell you, so please check this page from time to time.
 
 ## Governing law
 

@@ -31,7 +31,7 @@ npm run build          # static build → dist/  (prebuild auto-runs sync-conten
 npm run preview        # serve the built dist/
 ```
 
-Requirements: Node 20+ (developed on Node 24). No third-party CDNs — Inter is
+Requirements: Node 20+ (developed on Node 24). Third-party scripts: Paddle (cdn.paddle.com) and GoatCounter (gc.zgo.at); Inter is
 self-hosted (`public/fonts/`), QR codes are generated at build time.
 
 ## Project structure

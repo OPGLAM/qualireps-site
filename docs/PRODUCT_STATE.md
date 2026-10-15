@@ -88,8 +88,7 @@ Form content is synced (committed) from the `qualireps-v2` app repo via
   from `/buy`; `api/paddle/webhook.ts` fulfills purchases; `api/license.ts`
   returns the license key; Ed25519-derived license keys (`src/server/`). Static
   9,99 € fallback price, localized at runtime via `Paddle.PricePreview`.
-- **Fonts/assets:** self-hosted Inter (`public/fonts/`), no third-party CDNs
-  beyond GoatCounter.
+- **Fonts/assets:** self-hosted Inter (`public/fonts/`); third-party scripts load from cdn.paddle.com and gc.zgo.at.
 - **Content pipeline:** `scripts/sync-content.js` copies form guides from the
   sibling `qualireps-v2` repo into `src/content/forms/` (committed to git so the
   Vercel build needs no sibling access).
