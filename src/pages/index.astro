@@ -30,7 +30,7 @@ const shots = [
   { src: shotCustom, caption: 'A custom exercise', alt: 'Custom exercise form: exercise name, unit (reps or seconds), symmetry (bilateral or unilateral)' },
 ];
 
-const title = 'QualiReps — a strength ledger for daily practice';
+const title = 'QualiReps — a strength ledger for frequent practice';
 const description =
   'A ledger for practising one movement often, in sets well short of failure. QualiReps records your max, computes the dose for each set, shows when the next set is due, and tracks your level on four progression paths. Free on one exercise; 9,99 € once to change level, keep up to three exercises active and create custom ones.';
 
@@ -94,7 +94,7 @@ const faqs = [
       <div class="hero-grid">
         <div class="hero-copy">
           <div class="eyebrow hero-eyebrow">A strength practice ledger · v1.0</div>
-          <h1>A strength ledger for daily practice.</h1>
+          <h1>A strength ledger for frequent practice.</h1>
           <p class="hero-sub">
             Practise one movement often, in sets well short of failure.
             QualiReps records your max, computes the dose for each set, shows
@@ -187,28 +187,54 @@ const faqs = [
       </div>
       <div>
         <p>
-          Each path is a ladder of levels, with a passage criterion per level.
-          The push-up, pull-up and squat paths make each level harder through
-          leverage. The kettlebell press path keeps one movement, a one-arm
-          clean and press, and makes it harder by weight.
+          Each path is a ladder of levels; every level below the last has a
+          passage criterion. The push-up, pull-up and squat paths make each
+          level harder through leverage. The kettlebell press path keeps one
+          movement, a one-arm clean and press, and makes it harder by weight.
         </p>
         <p>
-          Push-up path: 16 levels. Pull-up path: 12 levels. Squat path: 10
-          levels. Kettlebell press path: 11 levels, from 8 kg to 48 kg in 4 kg
-          steps. You choose the level you start at, and you can keep one active
-          exercise per path. For a movement outside the paths, a paid license
-          adds custom exercises.
+          Push-up path: 16 levels, ending at One-Arm Push-Up — Narrow Stance.
+          Pull-up path: 12 levels, ending at One-Arm Pull-Up. Squat path: 10
+          levels, ending at Free Pistol. Kettlebell press path: 11 levels, from
+          8 kg to 48 kg in 4 kg steps. You choose the level you start at, and
+          you can keep one active exercise per path. For a movement outside the
+          paths, a paid license adds custom exercises.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- ───────────── 03 · FREE AND PAID ───────────── -->
+  <!-- ───────────── 03 · WHO IT'S FOR ───────────── -->
+  <section class="for-who">
+    <div class="wrap inner">
+      <div>
+        <div class="eyebrow" style="margin-bottom:24px">03 / Who it's for</div>
+        <h2>Who it's for.</h2>
+      </div>
+      <div>
+        <p>
+          You want to get better at one movement — a pull-up, a pistol, a
+          one-arm push-up — and you'd rather practise it often than train it
+          hard twice a week. You can fit a thirty-second set into your day,
+          several times over.
+        </p>
+        <p>
+          And you want a record of what you did rather than a coach telling you
+          what to do: QualiReps keeps the ledger, the decisions stay yours. The
+          paths run to the One-Arm Push-Up — Narrow Stance, the One-Arm Pull-Up
+          and the Free Pistol — far ends, reached level by level, or not. The
+          record is useful either way.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── 04 · FREE AND PAID ───────────── -->
   <section id="demo" class="section-divider">
     <div class="wrap">
       <div class="features-head">
         <div>
-          <div class="eyebrow" style="margin-bottom:24px">03 / Free and paid</div>
+          <div class="eyebrow" style="margin-bottom:24px">04 / Free and paid</div>
           <h2>Free on one exercise.</h2>
         </div>
         <p class="lead">
@@ -262,7 +288,7 @@ const faqs = [
     <div class="wrap">
       <div class="features-head">
         <div>
-          <div class="eyebrow" style="margin-bottom:24px">04 / Screenshots</div>
+          <div class="eyebrow" style="margin-bottom:24px">05 / Screenshots</div>
           <h2>See it.</h2>
         </div>
         <p class="lead">
@@ -299,7 +325,7 @@ const faqs = [
     <div class="wrap">
       <div class="features-head">
         <div>
-          <div class="eyebrow" style="margin-bottom:24px">05 / Get QualiReps</div>
+          <div class="eyebrow" style="margin-bottom:24px">06 / Get QualiReps</div>
           <h2>Install.</h2>
         </div>
         <p class="lead">
@@ -317,7 +343,7 @@ const faqs = [
     <div class="wrap">
       <div class="features-head">
         <div>
-          <div class="eyebrow" style="margin-bottom:24px">06 / Perfect form guides</div>
+          <div class="eyebrow" style="margin-bottom:24px">07 / Perfect form guides</div>
           <h2>Open knowledge.</h2>
         </div>
         <p class="lead">
@@ -351,7 +377,7 @@ const faqs = [
     <div class="wrap">
       <div class="features-head faq-head">
         <div>
-          <div class="eyebrow" style="margin-bottom:24px">07 / Frequently asked</div>
+          <div class="eyebrow" style="margin-bottom:24px">08 / Frequently asked</div>
           <h2>Questions.</h2>
         </div>
       </div>
@@ -619,6 +645,9 @@ const faqs = [
     margin-top: 18px;
     color: var(--fg-mute);
     font-size: clamp(16px, 1.4vw, 18px);
+  }
+  .for-who + .for-who {
+    border-top: 0;
   }
   @media (max-width: 760px) {
     .for-who .inner {

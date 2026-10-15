@@ -95,19 +95,19 @@ if (steps.length > 0) {
 
     {
       (prev || next) && (
-        <nav class="tier-nav" aria-label="Tier navigation">
+        <nav class="level-nav" aria-label="Level navigation">
           {prev ? (
-            <a class="tier-nav__link tier-nav__prev" href={`/forms/${ficheSlug(prev)}`}>
-              <span class="tier-nav__dir">← Previous tier</span>
-              <span class="tier-nav__name">{exerciseName(prev)}</span>
+            <a class="level-nav__link level-nav__prev" href={`/forms/${ficheSlug(prev)}`}>
+              <span class="level-nav__dir">← Previous level</span>
+              <span class="level-nav__name">{exerciseName(prev)}</span>
             </a>
           ) : (
             <span />
           )}
           {next && (
-            <a class="tier-nav__link tier-nav__next" href={`/forms/${ficheSlug(next)}`}>
-              <span class="tier-nav__dir">Next tier →</span>
-              <span class="tier-nav__name">{exerciseName(next)}</span>
+            <a class="level-nav__link level-nav__next" href={`/forms/${ficheSlug(next)}`}>
+              <span class="level-nav__dir">Next level →</span>
+              <span class="level-nav__name">{exerciseName(next)}</span>
             </a>
           )}
         </nav>
@@ -118,9 +118,10 @@ if (steps.length > 0) {
       <p>Get QualiReps and put this guide to work.</p>
       <a href="/#install" class="btn btn-primary">Install QualiReps — free</a>
       <p class="fiche-cta__alt">
-        Installs from your browser on Android, iOS, and desktop. One exercise
-        free with the full instrument; <a href="/pricing"><span
-          data-paddle-price>9,99 €</span> unlocks everything</a>.
+        Installs from your browser on Android, iOS, and desktop. Free on one
+        exercise; <a href="/pricing"><span data-paddle-price>9,99 €</span>
+        once</a> adds level changes, up to three active exercises and custom
+        exercises.
       </p>
     </aside>
   </div>
@@ -148,14 +149,14 @@ if (steps.length > 0) {
   .fiche {
     padding: 0.5rem 0 1rem;
   }
-  .tier-nav {
+  .level-nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.75rem;
     margin: 2rem 0;
     max-width: 70ch;
   }
-  .tier-nav__link {
+  .level-nav__link {
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
@@ -165,17 +166,17 @@ if (steps.length > 0) {
     border-radius: 10px;
     text-decoration: none;
   }
-  .tier-nav__link:hover {
+  .level-nav__link:hover {
     border-color: var(--color-cuivre);
   }
-  .tier-nav__next {
+  .level-nav__next {
     text-align: right;
   }
-  .tier-nav__dir {
+  .level-nav__dir {
     font-size: 0.8rem;
     color: var(--color-cuivre);
   }
-  .tier-nav__name {
+  .level-nav__name {
     color: var(--color-fg);
     font-weight: 600;
   }

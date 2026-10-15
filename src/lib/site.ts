@@ -1,7 +1,7 @@
 /** Site-wide constants. */
 
 export const SITE_NAME = 'QualiReps';
-export const SITE_TAGLINE = 'A strength ledger for daily practice.';
+export const SITE_TAGLINE = 'A strength ledger for frequent practice.';
 export const SITE_ORIGIN = 'https://qualireps.app';
 
 /** The installable web-app origin users open to install the PWA. */
