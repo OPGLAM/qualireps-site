@@ -1,4 +1,7 @@
 ---
+// Copy source: AUDIT-2026-10-15.md (repo root). Every factual statement on
+// this page traces to a section of that audit; vocabulary follows its
+// section 9 (the app's own words on screen).
 import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
@@ -7,31 +10,33 @@ import PaddlePrice from '../components/PaddlePrice.astro';
 import { groupByChain } from '../lib/content';
 import { SITE_ORIGIN, APP_URL, APP_HOST } from '../lib/site';
 
+// 01 (dashboard) and 03 (resting) are not used: they show a 15-minute rest
+// on an exercise created before the 5-minute default.
 import heroShot from '../assets/screenshots/02-exercise-fresh.png';
 import shotRecovery from '../assets/screenshots/04-exercise-recovery.png';
 import shotTestMax from '../assets/screenshots/05-test-max.png';
 import shotCustom from '../assets/screenshots/06-custom-exercise.png';
+import shotChainPicker from '../assets/screenshots/07-chain-picker.png';
 
 const entries = await getCollection('forms');
-// The kettlebell press chain stays in the app but is not shown on the landing.
-const chains = groupByChain(entries).filter((chain) => chain.key !== 'kb_press_path');
+const chains = groupByChain(entries);
 
-// Screenshots gallery — user-controlled strip, captions editable. `alt` is a
-// fuller description for assistive tech; `caption` is the short visible label.
+// Screenshots gallery — user-controlled strip. `alt` is a fuller description
+// for assistive tech; `caption` is the short visible label.
 const shots = [
-  { src: shotTestMax, caption: 'Test your max', alt: 'Screen for testing your current max in clean reps' },
-  { src: shotRecovery, caption: 'Recovery after a max test', alt: 'Exercise screen in the 24-hour recovery window after a max test' },
-  { src: shotCustom, caption: 'Create a custom exercise', alt: 'Screen for creating a custom exercise' },
+  { src: shotChainPicker, caption: 'Choose a path', alt: 'New exercise screen: Push-up path 16 levels, Pull-up path 12 levels, Squat path 10 levels, Kettlebell press path 11 levels, and Create a custom exercise' },
+  { src: shotTestMax, caption: 'Test your max', alt: 'Test max now screen: a clean reps stepper and the line “Saving this triggers 24-hour CNS recovery.”' },
+  { src: shotRecovery, caption: 'Recovery after a max test', alt: 'Standard Pull-Up, Pull-up path Level 7 of 12: state Recovery, with a 24-hour countdown' },
+  { src: shotCustom, caption: 'A custom exercise', alt: 'Custom exercise form: exercise name, unit (reps or seconds), symmetry (bilateral or unilateral)' },
 ];
 
 const title = 'QualiReps — a strength ledger for daily practice';
 const description =
-  "QualiReps records your max, computes the dose for each set, enforces the rest between sets, and tracks your progression tier by tier. A ledger for Greasing the Groove: short sets spread across the day, never to failure. Install free from your browser on Android, iOS, and desktop; 9,99 € unlocks everything — one purchase, lifetime, no subscription.";
+  'A ledger for practising one movement often, in sets well short of failure. QualiReps records your max, computes the dose for each set, shows when the next set is due, and tracks your level on four progression paths. Free on one exercise; 9,99 € once to change level, keep up to three exercises active and create custom ones.';
 
-// The method paragraph: mechanics only, every figure from qualireps-v2
-// (logic/dose.ts, logic/recovery.ts). No training-science claims here.
+// The only home-page occurrence of the term outside the FAQ (kept for search).
 const methodParagraph =
-  'QualiReps implements one method: <em>submaximal distributed training</em>, known in the strength community as Greasing the Groove. You practise the same movement several times a day, in short sets well short of failure, and each rep is done with full form — if form breaks down, the rep doesn’t count. The app does the arithmetic. You measure your max in clean reps, stopping where form degrades. Each working set is half that max, rounded down and capped at five reps; timed holds use half the max, with no cap. Two sets of the same exercise are at least 5 minutes apart. A measured max test puts that exercise into a 24-hour recovery window, while your other exercises stay available. When your clean max reaches the standard for your tier, QualiReps signals that you’re ready for the next variation — the move itself is yours to make.';
+  'QualiReps is built around one practice: a single movement, done in several short sets spread through the day, each set stopped well short of failure. The practice is known as <em>Greasing the Groove</em>; on screen, the app calls it GtG. QualiReps keeps the ledger for it, exercise by exercise.';
 
 const jsonLd = [
   {
@@ -49,43 +54,35 @@ const jsonLd = [
 const faqs = [
   {
     q: 'Can I try QualiReps before paying?',
-    a: 'Yes. The free demo lets you practice one exercise at any tier you choose, with the full instrument — set logging, dose calculation, recovery windows, backup. You only pay when you want to progress to the next tier, add more exercises, or create custom exercises.',
+    a: 'Yes. The free version runs on one exercise, on any path and at any level, and that exercise stays at its level. Max testing, the dose, the four states, set logging, history, the form guides, CSV export and backup all work on it. You can change your choice of exercise once. Changing level, adding exercises and creating custom exercises are paid.',
   },
   {
-    q: 'How much does QualiReps cost? Is it a subscription?',
-    a: 'No. There’s nothing to subscribe to: QualiReps is a finished tool, with no database or running costs. It’s <span data-paddle-price>9,99 €</span> — one purchase, lifetime access. You unlock from inside the app: pay once through Paddle and activation is instant. A license key is also emailed to you — that key unlocks your other devices. The free demo lets you try the instrument on one exercise before you buy.',
+    q: 'What does the purchase add?',
+    a: 'Three things: changing level, up or down, on any exercise; up to three active exercises at a time, at most one per path; and custom exercises, for movements outside the paths. The limit of three active exercises applies to paid users too. The price is <span data-paddle-price>9,99 €</span>, paid once: a lifetime license, no subscription.',
+  },
+  {
+    q: 'How do I pay, and how do I use my other devices?',
+    a: 'You pay once through Paddle, either from inside the app or <a href="/buy">on the web</a>. The license key is emailed to you, and in the app it is shown under Settings → License. On another device, tap “I have a license” or “Enter key →” and type the key. It is checked on the device; there is no account.',
   },
   {
     q: 'How do I install QualiReps?',
-    a: `QualiReps installs from your browser on every platform. On Android: open <a href="${APP_URL}">${APP_HOST}</a> in Chrome, tap the ⋮ menu, then “Install app”. On desktop (Chrome or Edge): open <a href="${APP_URL}">${APP_HOST}</a> and click the install icon in the address bar. On iPhone: open <a href="${APP_URL}">${APP_HOST}</a> in Safari, tap the Share icon, scroll down, tap “Add to Home Screen”, then tap “Add”. It installs like a native app and runs offline.`,
-  },
-  {
-    q: 'Can I use QualiReps alongside other training?',
-    a: 'Yes. Greasing the Groove works as a standalone strength practice, and it also fits next to other training — strength work, sport, climbing. The rule that governs compatibility is freshness: each set must stay clean and well short of fatigue. As long as your other activity leaves you fresh enough for quality reps, the two coexist. If your sets start to degrade, reduce volume or spacing until freshness returns. QualiReps tracks your recovery windows, so you can see when an exercise is ready.',
+    a: `From the browser; there is no app store. On Android and desktop, open <a href="${APP_URL}">${APP_HOST}</a> in Chrome (or Edge on desktop) and use its install button. On iPhone and iPad, open <a href="${APP_URL}">${APP_HOST}</a> in Safari, tap Share, then “Add to Home Screen”.`,
   },
   {
     q: 'Does it work offline?',
-    a: 'Yes — entirely. Once installed, QualiReps does not require an internet connection. A service worker caches the app shell, and all your data is stored locally on your device. Nothing is sent to a server; backups are files you export and keep yourself.',
+    a: 'Yes, after the first load. The app’s files are cached on your device, and your data is stored there too. Purchasing is the exception: it needs a connection.',
   },
   {
-    q: 'How is QualiReps distributed?',
-    a: `QualiReps is a web app installed from <a href="${APP_URL}">${APP_HOST}</a> — the same app on Android, iOS, and desktop. There is no app store; you install it straight from the browser, and it runs offline once installed.`,
+    q: 'What data leaves my device?',
+    a: 'In normal use, none. Your exercises, sets and maxes stay in your browser’s storage on the device. The app has no account, no analytics, no trackers and no third-party fonts. Buying is the one exception: the app loads Paddle’s checkout, where you type your email; our server then receives the Paddle transaction id, fetches your email from Paddle and sends you the license key through an email provider, Resend. This website is different from the app: it counts visits with GoatCounter, and some pages load Paddle’s script to show the price in your currency. See the <a href="/privacy">privacy policy</a>.',
   },
   {
-    q: 'What’s your refund policy?',
-    a: 'A 14-day refund window, no questions asked, plus the EU/EEA statutory right of withdrawal. Refunds go through Paddle (the receipt email) or legal@qualireps.app. See the full <a href="/refund">refund policy</a>.',
+    q: 'What if I lose or replace my phone?',
+    a: 'Your data lives only on the device, so keep a backup. Settings → Data → “Export backup” writes a JSON file with everything, including your license key; the file is not encrypted, so keep it somewhere safe. “Import backup” on another device replaces that device’s data with the file’s. The app reminds you after 30 days without a backup.',
   },
   {
-    q: 'What about data privacy?',
-    a: 'Your practice data lives on your device. QualiReps does not collect, transmit, or store personal data on remote servers, and there are no third-party analytics that identify you. See the full <a href="/privacy">privacy policy</a> for details.',
-  },
-  {
-    q: 'How is my purchase tied across devices?',
-    a: 'One license, every platform. When you unlock from inside the app, that device activates instantly. For your other devices — Android, iOS, desktop — enter the license key we email you. There’s no account: if you reinstall, re-enter the key. Keep it safe — it’s also shown on the success page if you buy on the web. If you lose it, contact legal@qualireps.app.',
-  },
-  {
-    q: 'Who builds QualiReps?',
-    a: 'QualiReps is built by a single independent developer.',
+    q: 'What is Greasing the Groove?',
+    a: 'A way of practising one movement: several short sets through the day, each stopped well short of failure, with rest between sets. QualiReps implements it with the mechanics on this page: the dose comes from your max, the next set waits for the rest to end, and a level change waits for you, once the passage criterion is reached.',
   },
 ];
 ---
@@ -96,27 +93,28 @@ const faqs = [
     <div class="wrap">
       <div class="hero-grid">
         <div class="hero-copy">
-          <div class="eyebrow hero-eyebrow">A daily strength practice tool · v1.0</div>
+          <div class="eyebrow hero-eyebrow">A strength practice ledger · v1.0</div>
           <h1>A strength ledger for daily practice.</h1>
           <p class="hero-sub">
-            QualiReps records your max, computes the dose for each set, enforces
-            the rest between sets, and tracks your progression tier by tier — you
-            move up when your clean max reaches the tier's standard.
+            Practise one movement often, in sets well short of failure.
+            QualiReps records your max, computes the dose for each set, shows
+            when the next set is due, and tracks your level along a path of
+            harder variations.
           </p>
           <div class="hero-cta-row">
             <a href="#install" class="btn btn-primary">Install QualiReps — free</a>
             <a href="#method" class="btn btn-ghost">How it works</a>
           </div>
           <a href="/pricing" class="hero-price">
-            <span class="lead-in">Unlock everything —</span>
+            <span class="lead-in">Lifetime license —</span>
             <span class="amount" data-paddle-price>9,99 €</span>
             <span class="terms">· one purchase, no subscription</span>
           </a>
 
           <div class="hero-meta">
             <div class="item">
-              <span class="k">Method</span>
-              <span class="v">Greasing the Groove</span>
+              <span class="k">Paths</span>
+              <span class="v">Push-up · Pull-up · Squat · Kettlebell press</span>
             </div>
             <div class="item">
               <span class="k">Platform</span>
@@ -124,7 +122,7 @@ const faqs = [
             </div>
             <div class="item">
               <span class="k">Pricing</span>
-              <span class="v"><span data-paddle-price>9,99 €</span> — one-time, lifetime</span>
+              <span class="v">Free on one exercise · <span data-paddle-price>9,99 €</span> once</span>
             </div>
           </div>
         </div>
@@ -135,7 +133,7 @@ const faqs = [
               <Image
                 class="phone-shot"
                 src={heroShot}
-                alt="QualiReps exercise screen: Split Squat, fresh, next set of 4 reps"
+                alt="Exercise screen for Split Squat, Squat path Level 1 of 10: state Fresh, next set 4 reps"
                 widths={[320, 480, 640]}
                 sizes="(max-width: 880px) 280px, 320px"
                 format="webp"
@@ -149,102 +147,113 @@ const faqs = [
     </div>
   </section>
 
-  <!-- ───────────── 01 · THE METHOD ───────────── -->
+  <!-- ───────────── 01 · HOW IT WORKS ───────────── -->
   <section id="method" class="section-divider">
     <div class="wrap">
       <div class="two-col">
         <div class="col-head">
-          <div class="eyebrow" style="margin-bottom:24px">01 / The method</div>
-          <h2>Greasing the Groove.</h2>
+          <div class="eyebrow" style="margin-bottom:24px">01 / How it works</div>
+          <h2>Max, dose, rest, level.</h2>
           <p class="lead" style="margin-top:18px">
-            The method QualiReps implements: short, submaximal sets spread across
-            the day, never to failure.
+            What QualiReps keeps for each exercise, and what it shows you.
           </p>
         </div>
         <div class="body">
           <p set:html={methodParagraph}></p>
           <div class="gtg-principles">
-            <div class="p"><span class="n">01</span><div><span class="t">Daily, submaximal</span><span class="d">Half your max or less, computed for you.</span></div></div>
-            <div class="p"><span class="n">02</span><div><span class="t">Spaced sets</span><span class="d">At least 5 minutes between sets, so each one stays fresh.</span></div></div>
-            <div class="p"><span class="n">03</span><div><span class="t">Never to failure</span><span class="d">Stop while your reps are still clean.</span></div></div>
-            <div class="p"><span class="n">04</span><div><span class="t">Perfect form</span><span class="d">Each rep is a rehearsal — done with full form, or it doesn't count.</span></div></div>
+            <div class="p"><span class="n">01</span><div><span class="t">Max</span><span class="d">Your max in clean reps or clean seconds: performed now, already performed, or estimated. It changes only when you update it.</span></div></div>
+            <div class="p"><span class="n">02</span><div><span class="t">Dose</span><span class="d">NEXT SET shows half your max, rounded down, capped at 5 reps and never below 1. Timed holds get half the max, with no cap. One-sided exercises are dosed from the weaker side.</span></div></div>
+            <div class="p"><span class="n">03</span><div><span class="t">Rest</span><span class="d">After a set, the exercise is Resting, with a countdown, for at least 5 minutes — longer after a set close to failure. Its Log set button stays disabled until it is Fresh again.</span></div></div>
+            <div class="p"><span class="n">04</span><div><span class="t">Level</span><span class="d">Each level has a passage criterion. When your max reaches it, the exercise screen says so and offers Change level. Moving is never automatic.</span></div></div>
           </div>
+          <p class="after-grid">
+            A measured max test puts that exercise into Recovery for 24 hours;
+            an estimated max does not, and your other exercises are unaffected.
+            On the days you switch off under Settings → Active days (Sunday, by
+            default), every exercise shows Rest day and its set button is
+            disabled.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ───────────── 02 · WHO IS IT FOR ───────────── -->
+  <!-- ───────────── 02 · THE PATHS ───────────── -->
   <section class="for-who">
     <div class="wrap inner">
       <div>
-        <div class="eyebrow" style="margin-bottom:24px">02 / Who is it for</div>
-        <h2>For practitioners and athletes.</h2>
+        <div class="eyebrow" style="margin-bottom:24px">02 / The paths</div>
+        <h2>Four paths of harder variations.</h2>
       </div>
       <div>
         <p>
-          If you practise Greasing the Groove, this is the ledger for it. It's an
-          instrument, not a coach and not medical advice — it counts your sets,
-          computes each dose, and tracks your recovery windows.
+          Each path is a ladder of levels, with a passage criterion per level.
+          The push-up, pull-up and squat paths make each level harder through
+          leverage. The kettlebell press path keeps one movement, a one-arm
+          clean and press, and makes it harder by weight.
         </p>
         <p>
-          If you train strength alongside a main practice — sport, climbing,
-          grappling — the sets fit around it, as long as you come to each one
-          fresh. If you're after a long goal, the chains run tier by tier to the
-          one-arm push-up, the one-arm pull-up and the free pistol.
+          Push-up path: 16 levels. Pull-up path: 12 levels. Squat path: 10
+          levels. Kettlebell press path: 11 levels, from 8 kg to 48 kg in 4 kg
+          steps. You choose the level you start at, and you can keep one active
+          exercise per path. For a movement outside the paths, a paid license
+          adds custom exercises.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- ───────────── 03 · THE FREE DEMO ───────────── -->
+  <!-- ───────────── 03 · FREE AND PAID ───────────── -->
   <section id="demo" class="section-divider">
     <div class="wrap">
       <div class="features-head">
         <div>
-          <div class="eyebrow" style="margin-bottom:24px">03 / The free demo</div>
-          <h2>Try the instrument.</h2>
+          <div class="eyebrow" style="margin-bottom:24px">03 / Free and paid</div>
+          <h2>Free on one exercise.</h2>
         </div>
         <p class="lead">
-          The free demo is the instrument trial, not a stripped-down product.
+          The free version runs the whole ledger, on one exercise.
         </p>
       </div>
 
       <div class="demo-body">
         <p>
-          You pick one exercise at any tier. You log your sets, get your daily dose,
-          receive recovery windows, see your practice tracked. The full instrument
-          runs on that exercise.
+          You pick one exercise, on any path, at any level. It stays at that
+          level, and everything else works on it: max testing, the dose, the
+          four states, set logging, history, the form guides, CSV export and
+          backup.
         </p>
         <p>
-          What the demo doesn't do: progression to the next tier, creating new
-          exercises, custom exercises. The criterion fires when you reach it — but
-          the move to the next tier is paid.
+          You can change that choice once. After that it is fixed: archiving or
+          deleting the exercise does not open a new choice, and neither does
+          Reset all data. When you reach the passage criterion, the app still
+          shows it; changing level is part of the paid version.
         </p>
       </div>
 
       <div class="cols">
         <div class="panel">
-          <h3>What you get free</h3>
+          <h3>Free</h3>
           <ul>
-            <li>One exercise, frozen at your chosen tier</li>
-            <li>Full set logging, dose calculation, recovery windows</li>
-            <li>Backup, export — the complete instrument</li>
-            <li>All perfect form guides accessible</li>
+            <li>One exercise, on any path and at any level, fixed at that level</li>
+            <li>One change of that choice</li>
+            <li>Max testing, dose, the four states, set logging</li>
+            <li>History, CSV export, backup</li>
+            <li>All 39 form guides</li>
           </ul>
         </div>
         <div class="panel">
-          <h3>What unlocks with the full version</h3>
+          <h3>Paid · <span data-paddle-price>9,99 €</span> once</h3>
           <ul>
-            <li>Progression to the next tier when you're ready</li>
-            <li>Additional exercises from the progression chains</li>
-            <li>Custom exercises beyond the chains</li>
-            <li>Your demo exercise and history carry over when you upgrade</li>
+            <li>Change level, up or down, at any time</li>
+            <li>Up to three active exercises, at most one per path</li>
+            <li>Custom exercises, for movements outside the paths</li>
+            <li>One license key for your other devices</li>
           </ul>
         </div>
       </div>
 
-      <p class="lockup">One purchase, lifetime access. No subscription.</p>
+      <p class="lockup">One purchase, lifetime license. No subscription.</p>
     </div>
   </section>
 
@@ -257,8 +266,8 @@ const faqs = [
           <h2>See it.</h2>
         </div>
         <p class="lead">
-          The instrument in practice: testing your max, the recovery window that
-          follows, and your own exercises.
+          The paths, the max test, the Recovery state that follows it, and a
+          custom exercise.
         </p>
       </div>
 
@@ -294,8 +303,9 @@ const faqs = [
           <h2>Install.</h2>
         </div>
         <p class="lead">
-          Install free from your browser. Android, desktop, and iOS run the same
-          web app — installed in a few taps, fully offline.
+          Install free from your browser. Android, desktop and iOS run the same
+          web app; after the first load it works offline, except for
+          purchasing.
         </p>
       </div>
       <PlatformInstall />
@@ -311,11 +321,9 @@ const faqs = [
           <h2>Open knowledge.</h2>
         </div>
         <p class="lead">
-          Each of the 38 tiers in the three bodyweight chains — push-up, pull-up,
-          squat — has its own perfect form guide: a checklist of the setup, the
-          movement, the sensations and the common errors. Pair it with a
-          demonstration video. The guides are free to read. The knowledge is
-          open. The instrument is paid.
+          39 perfect form guides: one for each of the 38 bodyweight levels, and
+          one shared by all 11 kettlebell levels. They are free to read, here
+          and in the app.
         </p>
       </div>
 
@@ -528,10 +536,10 @@ const faqs = [
     color: var(--accent-hi);
     font-style: italic;
   }
-  .two-col .body p.muted {
+  .two-col .body p.after-grid {
+    margin-top: 28px;
     color: var(--fg-mute);
     font-size: 15px;
-    font-style: italic;
   }
   .gtg-principles {
     margin-top: 28px;
@@ -704,8 +712,7 @@ const faqs = [
 
   /* ───── SCREENSHOTS ───── */
   /* Mobile-first: a user-controlled, swipeable scroll-snap strip. No
-     autoplay. Desktop (≥760px) lays the six tiles out as a static 3×2
-     grid for bigger, readable tiles. */
+     autoplay. Desktop (≥760px) lays the four tiles out as a static row. */
   .shots {
     list-style: none;
     margin: 0;
@@ -746,7 +753,7 @@ const faqs = [
   @media (min-width: 760px) {
     .shots {
       grid-auto-flow: row;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-auto-columns: auto;
       gap: clamp(20px, 2.6vw, 32px);
       overflow: visible;
@@ -758,7 +765,7 @@ const faqs = [
   /* ───── FORMS preview ───── */
   .chain-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1px;
     background: var(--hairline-soft);
     border: 1px solid var(--hairline-soft);

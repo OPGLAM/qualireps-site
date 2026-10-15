@@ -4,24 +4,25 @@ import PaddlePrice from '../components/PaddlePrice.astro';
 import { PRICE_LABEL, APP_URL, APP_HOST } from '../lib/site';
 import { CHECKOUT_LIVE, BUY_URL } from '../lib/config';
 
+// Copy source: AUDIT-2026-10-15.md (repo root), sections 2, 4 and 5.
 const title = 'Pricing — QualiReps';
 const description =
-  'One exercise free forever with the full instrument. 9,99 € unlocks everything — one purchase, lifetime, no subscription. Paid through Paddle, delivered as a license key.';
+  'Free on one exercise, with the whole ledger. 9,99 € once adds level changes, up to three active exercises and custom exercises. Paid through Paddle; no subscription.';
 
 const freeFeatures = [
-  'One exercise, chosen from any chain, frozen at its tier',
-  'Max test, dose calculation, set logging',
-  'Recovery windows, progression triggers',
-  'Backup, export',
-  'All perfect form guides',
+  'One exercise, on any path and at any level, fixed at that level',
+  'One change of that choice',
+  'Max testing, dose, the four states, set logging',
+  'The passage criterion, shown when you reach it',
+  'History, CSV export, backup',
+  'All 39 form guides',
 ];
 
 const lifetimeFeatures = [
-  'Progression and regression across every tier',
-  'The bodyweight chains: push, pull, squat',
-  'Custom exercises beyond the chains',
-  'Everything in Free, unlocked across your whole practice',
-  'Future updates included',
+  'Change level, up or down, at any time',
+  'Up to three active exercises, at most one per path',
+  'Custom exercises, for movements outside the paths',
+  'One license key for your other devices',
   'No subscription',
 ];
 ---
@@ -31,11 +32,12 @@ const lifetimeFeatures = [
     <article class="pricing">
       <header class="pricing-head">
         <div class="eyebrow">Pricing</div>
-        <h1>One exercise free. Everything for <span data-paddle-price>{PRICE_LABEL}</span>.</h1>
+        <h1>One exercise free. Three, at any level, for <span data-paddle-price>{PRICE_LABEL}</span>.</h1>
         <p class="lead">
-          Install free from your browser and run the full instrument on one
-          exercise, for as long as you like. Unlock the rest once — one purchase,
-          lifetime, no subscription.
+          Install free from your browser and use the whole ledger on one
+          exercise, for as long as you like. Pay once to change level, keep up
+          to three exercises active and create custom exercises. No
+          subscription.
         </p>
       </header>
 
@@ -44,7 +46,7 @@ const lifetimeFeatures = [
           <div class="plan-head">
             <h2>Free</h2>
             <p class="price"><span class="amount">0 €</span></p>
-            <p class="plan-sub">The instrument, on one exercise.</p>
+            <p class="plan-sub">The ledger, on one exercise.</p>
           </div>
           <ul class="plan-features">
             {freeFeatures.map((f) => <li>{f}</li>)}
@@ -59,7 +61,7 @@ const lifetimeFeatures = [
               <span class="amount" data-paddle-price>{PRICE_LABEL}</span>
               <span class="period">one-time</span>
             </p>
-            <p class="plan-sub">Your whole practice, unlocked.</p>
+            <p class="plan-sub">Level changes, more exercises, custom exercises.</p>
           </div>
           <ul class="plan-features">
             {lifetimeFeatures.map((f) => <li>{f}</li>)}
@@ -72,8 +74,9 @@ const lifetimeFeatures = [
                     Install free — unlock in the app
                   </a>
                   <p class="reassure">
-                    Install free, then unlock everything from inside the app when
-                    you're ready. Instant, no key to copy.
+                    Install free, then buy from inside the app when you're
+                    ready. That device activates on its own; there is no key to
+                    copy there.
                   </p>
                   <p class="buy-now">
                     Buying before you install? <a href={BUY_URL}>Buy now</a> — we'll
@@ -85,7 +88,7 @@ const lifetimeFeatures = [
                   <span class="btn btn-primary is-disabled" aria-disabled="true" role="button">
                     Checkout opens at launch
                   </span>
-                  <p class="reassure">One purchase, lifetime access. No subscription.</p>
+                  <p class="reassure">One purchase, lifetime license. No subscription.</p>
                 </Fragment>
               )
             }
@@ -100,32 +103,21 @@ const lifetimeFeatures = [
             <summary>How does the purchase work?</summary>
             <div class="answer">
               <p>
-                You unlock from inside the app: open QualiReps, choose Lifetime,
-                and pay once through Paddle, our merchant of record. Activation
-                is instant — nothing to copy. We also email you a license key;
-                that key is your credential for unlocking your other devices, and
-                there's no account beyond it. Prefer to pay before installing?
-                You can also <a href="/buy">buy on the web</a> and we'll email
-                the key.
+                Open QualiReps, tap “Get QualiReps” and pay once through Paddle.
+                The app then fetches your license key and activates on that
+                device. The key is also emailed to you, and in the app it is
+                shown under Settings → License. You can also
+                <a href="/buy">buy on the web</a> first; the key arrives by
+                email.
               </p>
             </div>
           </details>
           <details>
-            <summary>What will my bank statement show?</summary>
+            <summary>Does paying remove the three-exercise limit?</summary>
             <div class="answer">
               <p>
-                A charge from <strong>Paddle.com</strong>, not QualiReps. Paddle
-                handles payment, taxes, and billing as the merchant of record.
-              </p>
-            </div>
-          </details>
-          <details>
-            <summary>What's your refund policy?</summary>
-            <div class="answer">
-              <p>
-                A 14-day refund window, no questions asked, plus the EU/EEA
-                statutory right of withdrawal. See the full
-                <a href="/refund">Refund Policy</a>.
+                No. Everyone, paid or free, can have at most three active
+                exercises at a time. Archive one to make room for another.
               </p>
             </div>
           </details>
@@ -133,8 +125,8 @@ const lifetimeFeatures = [
             <summary>Does one license cover all my devices?</summary>
             <div class="answer">
               <p>
-                Yes. One license, every platform — Android, iOS, desktop. Enter
-                the same key wherever you install QualiReps.
+                Yes. The same key works on Android, iOS and desktop: enter it
+                wherever you install QualiReps. It is checked on the device.
               </p>
             </div>
           </details>
@@ -142,8 +134,16 @@ const lifetimeFeatures = [
             <summary>Do I need an account?</summary>
             <div class="answer">
               <p>
-                No. No sign-up, no login, no email/password. The license key is
-                the only credential — keep it, and re-enter it if you reinstall.
+                No. No sign-up, no email, no password. The license key is the
+                only credential: keep it, and enter it again if you reinstall.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>What's your refund policy?</summary>
+            <div class="answer">
+              <p>
+                It is set out in the <a href="/refund">Refund Policy</a>.
               </p>
             </div>
           </details>
