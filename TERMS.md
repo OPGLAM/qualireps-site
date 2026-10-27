@@ -8,6 +8,8 @@ QualiReps is operated by Olivier Lamglait, sole proprietor (auto-entrepreneur), 
 
 Contact: legal@qualireps.app
 
+Support: support@qualireps.app
+
 ## By using the application
 
 By installing or using QualiReps, you agree to these Terms.
@@ -32,7 +34,7 @@ Purchases are processed by Paddle.com Market Limited, which acts as the merchant
 
 Refunds are handled in accordance with our [Refund Policy](/refund).
 
-Your license key is the only credential — there is no account. If you uninstall and reinstall, re-enter your license key to restore the full version. The key is emailed to you and shown on the purchase success page; keep it. If you lose it, contact us at legal@qualireps.app.
+Your license key is the only credential — there is no account. If you uninstall and reinstall, re-enter your license key to restore the full version. The key is emailed to you and shown on the purchase success page; keep it. If you lose it, contact us at support@qualireps.app.
 
 ## Your responsibility
 

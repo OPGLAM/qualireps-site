@@ -13,6 +13,9 @@ export const APP_HOST = 'app.qualireps.app';
 /** Public contact for legal matters (footer + legal pages). */
 export const LEGAL_EMAIL = 'legal@qualireps.app';
 
+/** Public contact for support: license keys, payments, the app (footer + buy/thanks). */
+export const SUPPORT_EMAIL = 'support@qualireps.app';
+
 /** Price shown across the site. One purchase, lifetime access. */
 export const PRICE_LABEL = '9,99 €';
 

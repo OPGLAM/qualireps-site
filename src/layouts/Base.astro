@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 import Logo from '../components/Logo.astro';
-import { SITE_NAME, OG_IMAGE, LEGAL_EMAIL } from '../lib/site';
+import { SITE_NAME, OG_IMAGE, SUPPORT_EMAIL } from '../lib/site';
 
 interface Props {
   title: string;
@@ -124,7 +124,7 @@ function isActive(href: string): boolean {
           <a href="/refund">Refund</a>
           <a href="/legal">Legal</a>
           <a href="/forms">Forms</a>
-          <a href={`mailto:${LEGAL_EMAIL}`}>Contact</a>
+          <a href={`mailto:${SUPPORT_EMAIL}`}>Contact</a>
         </nav>
       </div>
       <div class="wrap">

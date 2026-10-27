@@ -8,6 +8,8 @@ QualiReps is operated by Olivier Lamglait, auto-entrepreneur, SIRET 889141842000
 
 Contact: legal@qualireps.app
 
+Support: support@qualireps.app
+
 ## What we collect
 
 QualiReps handles data in three places: the app on your device, the purchase, and this website.
