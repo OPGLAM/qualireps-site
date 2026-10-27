@@ -9,7 +9,6 @@ This website, qualireps.app, and the QualiReps application are published by Oliv
 - Address: 14 rue des Fossillons, 93170 Bagnolet, France
 - SIREN: 889 141 842
 - SIRET: 889 141 842 00035
-- Phone: [TÉLÉPHONE]
 - Email: support@qualireps.app
 
 ## Publication director
