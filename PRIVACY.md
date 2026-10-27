@@ -4,7 +4,7 @@ Last updated: 15 October 2026
 
 ## Operator
 
-QualiReps is operated by Olivier Lamglait, auto-entrepreneur, SIRET 88914184200027, registered in France, 50 rue Consolat, 13001 Marseille.
+QualiReps is operated by Olivier Lamglait, auto-entrepreneur, SIRET 88914184200035, registered in France, 14 rue des Fossillons, 93170 Bagnolet, France.
 
 Contact: legal@qualireps.app
 
