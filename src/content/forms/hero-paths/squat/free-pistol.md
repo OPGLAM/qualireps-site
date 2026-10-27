@@ -35,6 +35,7 @@ Inhale on the descent, exhale on the drive up; a brief brace at the bottom is na
 
 ## Within the level
 The endpoint stays active after the criterion is met.
+
 - *Harder:* arms by the sides; deficit pistol (stand on a raised surface, free leg drops below the floor); slow tempo; added load if you can track it.
 - *Easier:* re-introduce arms-forward or a fingertip; drop to the arms-counterweight level (9).
 

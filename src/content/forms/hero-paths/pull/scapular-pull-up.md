@@ -13,7 +13,7 @@ unit: "reps"
 ## The movement
 From a straight-arm dead hang, **without bending the elbows**, pack the shoulders down away from the ears. The body rises a few centimetres. Hold, then lower to the relaxed hang. The arms never bend — all the motion comes from the shoulder blades.
 
-> **Why the body goes *up* when you pull the blades *down*:** your hands are locked on the bar, so the shoulders can't drop in space. Driving them "down" away from your ears lifts the rest of your body toward the bar instead. Shoulders-down (relative to your ears) and body-up (relative to the bar) are the same motion — your hands are the fixed point.
+> **Why the body goes up when you pull the blades down:** your hands are locked on the bar, so the shoulders can't drop in space. Driving them "down" away from your ears lifts the rest of your body toward the bar instead. Shoulders-down (relative to your ears) and body-up (relative to the bar) are the same motion — your hands are the fixed point.
 
 ## Set-up — and what each part is for
 - **Grip** pronated, thumbs wrapped, a little wider than the shoulders.

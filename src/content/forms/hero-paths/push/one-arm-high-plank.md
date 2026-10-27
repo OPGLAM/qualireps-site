@@ -41,4 +41,4 @@ Short breaths behind a firm brace; never release the trunk to breathe. Think "br
 - *Easier:* feet wider; rest the fingertips of the free hand on the floor for balance, taking less weight on them over time.
 
 ## Dose
-Test a clean max hold on each side; work at half of the weaker side (rounded down to whole seconds), max 5 holds per set, same duration both sides, weaker side first, spread through the day. Stop each hold well short of form failure.
+Test a clean max hold on each side; hold half of the weaker side (rounded down to whole seconds) per set, same duration both sides, weaker side first, spread through the day. Stop each hold well short of form failure.

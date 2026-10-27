@@ -7,7 +7,7 @@ unit: "reps"
 ---
 
 # One-Arm Incline Push-Up — support ~60 cm
-**Push horizontal · reps · unilateral*
+**Push horizontal · reps · unilateral**
 *Upper-middle of the descent. Anti-rotation is now a genuine co-limiter alongside the press. Brace before you push.*
 
 ## The movement

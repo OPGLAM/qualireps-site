@@ -21,7 +21,7 @@ Feet staggered, one forward and one back. Bend both knees to lower straight down
 
 ## The rep — rehearse it before you do it
 - **Descend** in 1–2 s, both knees bending together, torso going straight down (not forward). → *feel the front quadriceps (front-thigh muscle) and glute (buttock muscle that extends the hip) take the weight.*
-- **Bottom:** back knee within a couple cm of the floor (light touch, no weight on it); front thigh ~parallel, front shin near-vertical — knee over the foot, not past the toes.
+- **Bottom:** back knee within a couple cm of the floor (light touch, no weight on it); front thigh ~parallel, front shin near vertical in this variation.
 - **Drive up** through the front heel to standing.
 - **Switch sides** after all reps on one side.
 
@@ -29,9 +29,8 @@ Feet staggered, one forward and one back. Bend both knees to lower straight down
 Inhale on the descent, exhale on the drive up.
 
 ## Watch for
-- **Front knee past the toes** → stance too short or leaning forward; step the front foot out, descend straight down.
+- **Front heel lifting or weight drifting onto the toes** → stance too short or leaning forward; step the front foot out, descend straight down.
 - **Torso leaning forward** → shifts load to the back leg; stay vertical, that's the point.
-- **Front heel lifting** → keep it anchored; it's the push.
 - **Knee caving inward** → track it over the foot (joint safety).
 
 ## Within the level

@@ -23,6 +23,8 @@ A slow, controlled press of one kettlebell from the shoulder to a locked-out arm
 
 ## The clean (floor to rack)
 
+The clean is the part of this lift most often learned badly from text alone. If you are new to it, learn it from a qualified kettlebell instructor or a reputable demonstration before loading the press.
+
 The clean brings the bell to the **rack**: the shouldered position where the bell rests on the back of the forearm against the torso — your platform, returned to for every rep.
 
 - **Grip and stance.** Bell slightly in front. *Hinge* at the hips (hips back, neutral spine) and grip the handle diagonally across the palm.
@@ -34,7 +36,7 @@ The clean brings the bell to the **rack**: the shouldered position where the bel
 
 ## The press (rack to lockout)
 
-- **Build tension first.** From a settled rack, **brace** the trunk in a full circle, as if to take a blow to the stomach; and apply **irradiation** — tensing non-pressing muscles to stabilize the working ones: crush the handle, squeeze the glutes, grip the floor, and engage the *lat* (the back muscle below the armpit) by drawing the shoulder down into its socket. On heavy reps, hold a breath behind the brace through the sticking point.
+- **Build tension first.** From a settled rack, **brace** the trunk in a full circle, as if to take a blow to the stomach; and apply **irradiation** — tensing non-pressing muscles to stabilize the working ones: crush the handle, squeeze the glutes, grip the floor, and engage the *lat* (the back muscle below the armpit) by drawing the shoulder down into its socket. On heavy reps, hold a breath behind the brace through the sticking point. If you have high blood pressure or a heart condition, avoid long breath-holds: keep a controlled exhale through the effort.
 - **The groove (the bell's path).** Not a straight line up the front: drive up as the upper arm *externally rotates* (the elbow turning from forward-and-down toward outward), so the bell travels up and slightly around in a shallow spiral. Keep the forearm under the bell.
 - **Clear the head** back as the bell passes, then return to neutral.
 - **Grind, don't cheat.** Press slowly and continuously; drive through a sticking point under tension. No knee dip, no lean.
@@ -59,8 +61,12 @@ Lower under control along the same spiral, using the lat rather than dropping th
 
 ## Mode A and Mode B (one clean, or re-clean each rep)
 
-The app selects the mode; the press is identical in both — only the clean frequency differs.
+The app selects the mode from your dose: Mode A when the daily set is 3 reps or more, Mode B below that. The press is identical in both — only the clean frequency differs.
 
 - **Mode A — clean once, press for reps.** For lighter bells, where the rack holds across several presses: clean once, then press the whole set without setting the bell down.
 - **Mode B — re-clean before each rep.** For heavy bells: lower and re-clean after each press, so every rep is a full clean and press.
 - **Why.** Under heavy load the rack degrades across reps — the forearm and shoulder fatigue, the elbow drifts, the grip loosens — so each press starts weaker and form decays. Re-cleaning resets a fresh, braced rack every rep — never skip it on heavy bells.
+
+## Dose
+
+Test a clean max per arm with your current bell; work at half of the weaker arm (rounded down), max 5 reps per set, same count both arms, weaker arm first, spread through the day. Stop each set well short of failure.

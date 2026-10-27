@@ -33,10 +33,11 @@ On the floor, feet narrow, working hand under its shoulder, the other parked beh
 - **Free arm escaping** → it stays parked; momentum voids the rep.
 
 ## Breathing
-Inhale and brace at the top; a brief held breath at the bottom stabilises the trunk under maximum load; a single decisive sharp exhale through the hardest part of the press.
+Inhale and brace at the top; a brief held breath at the bottom stabilises the trunk under maximum load; a single decisive sharp exhale through the hardest part of the press. If you have high blood pressure or a heart condition, avoid long breath-holds: keep a controlled exhale through the effort.
 
 ## Within the level
 The endpoint stays active after the criterion is met; these keep it productive without leaving it.
+
 - *Harder:* 3 s descent; dead-start from the floor; paused isometric at the bottom; external load once it can be tracked.
 - *Easier:* widen the stance toward shoulder-width. Slow negatives build the rep when fresh singles are not available.
 

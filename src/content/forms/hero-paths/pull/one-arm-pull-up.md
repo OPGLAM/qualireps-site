@@ -25,7 +25,7 @@ From a one-arm dead hang, pull until the chin clears the bar, lower under contro
 - **Switch sides** after the reps on one side.
 
 ## Breathing
-Inhale before the pull, exhale through the hardest part; a brief brace-hold at the start is natural under max load.
+Inhale before the pull, exhale through the hardest part; a brief brace-hold at the start is natural under max load. If you have high blood pressure or a heart condition, avoid long breath-holds: keep a controlled exhale through the effort.
 
 ## Watch for
 - **Kipping / body whip** → strict means no swing; power comes from the back and arm.
@@ -35,6 +35,7 @@ Inhale before the pull, exhale through the hardest part; a brief brace-hold at t
 
 ## Within the level
 The endpoint stays active after the criterion is met.
+
 - *Harder:* slower tempo on both phases; top pause; external load if you can track it.
 - *Easier:* drop back to the one-arm lock-off (level 11) for the top hold and controlled descent, or re-introduce a touch of free-hand help (the assisted level's convention).
 
