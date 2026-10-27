@@ -33,7 +33,7 @@ Exhale on the pull, inhale on the lower. No holding at the top.
 - **Grip drifting** → set it and keep it.
 
 ## Within the level
-- *Harder:* tempo 3-1-1 (3 s lower, 1 s hang, 1 s pull); top pause; external load if you can track it (Open Path).
+- *Harder:* tempo 3-1-1 (3 s lower, 1 s hang, 1 s pull); top pause; external load if you can track it.
 - *Easier:* a touch of foot or band assist to finish clean reps; reduce range and rebuild.
 
 ## Dose

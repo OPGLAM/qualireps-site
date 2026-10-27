@@ -35,7 +35,7 @@ Inhale on the descent, exhale on the drive up; a brief brace at the bottom is na
 
 ## Within the level
 The endpoint stays active after the criterion is met.
-- *Harder:* arms by the sides; deficit pistol (stand on a raised surface, free leg drops below the floor); slow tempo; added load if you can track it (Open Path).
+- *Harder:* arms by the sides; deficit pistol (stand on a raised surface, free leg drops below the floor); slow tempo; added load if you can track it.
 - *Easier:* re-introduce arms-forward or a fingertip; drop to the arms-counterweight level (9).
 
 > **A note on anatomy.** The strict free pistol is partly a question of body proportions. Longer femurs relative to the shins, or stubborn ankle-mobility limits, can make it mechanically hard regardless of strength. If it stalls after long practice and honest ankle work, that may be anatomy, not a training failure — a lasting practice at the counterweight levels (7–8) is a legitimate strength endpoint in its own right. The strict free pistol is one valid endpoint, not the only one.

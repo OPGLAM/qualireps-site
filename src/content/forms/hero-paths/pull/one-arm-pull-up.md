@@ -35,7 +35,7 @@ Inhale before the pull, exhale through the hardest part; a brief brace-hold at t
 
 ## Within the level
 The endpoint stays active after the criterion is met.
-- *Harder:* slower tempo on both phases; top pause; external load if you can track it (Open Path).
+- *Harder:* slower tempo on both phases; top pause; external load if you can track it.
 - *Easier:* drop back to the one-arm lock-off (level 11) for the top hold and controlled descent, or re-introduce a touch of free-hand help (the assisted level's convention).
 
 ## Dose
