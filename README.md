@@ -25,9 +25,9 @@ Production origin: **https://qualireps.app**
 
 ```bash
 npm install
-npm run sync-content   # copy fiches from ../qualireps-v2 (see below)
 npm run dev            # http://localhost:4321
-npm run build          # static build → dist/  (prebuild auto-runs sync-content)
+npm run build          # static build → dist/  (uses the committed fiches; never syncs)
+npm test               # unit tests + form-guide drift check
 npm run preview        # serve the built dist/
 ```
 
@@ -42,7 +42,8 @@ qualireps-site/
 ├─ vercel.json             # security headers (CSP, HSTS, …) + build config
 ├─ PRIVACY.md, TERMS.md    # legal copy (source of truth, rendered by /privacy, /terms)
 ├─ scripts/
-│  └─ sync-content.js      # copies coach-content/ from ../qualireps-v2
+│  ├─ sync-content.js      # copies coach-content/ from qualireps-v2 at a commit
+│  └─ coach-content.mjs    # shared reader (sync + drift test)
 ├─ public/
 │  ├─ fonts/               # self-hosted Inter (variable, latin woff2)
 │  ├─ icons/               # favicon + app icons
@@ -63,18 +64,29 @@ qualireps-site/
 The app repo **`qualireps-v2`** is the single source of truth for the perfect
 form guides. This site never edits fiches directly — it copies them:
 
-- **Source:** `../qualireps-v2/coach-content/` (a sibling of this repo), or set
-  `QUALIREPS_V2_DIR=/path/to/qualireps-v2`.
-- **Destination:** `src/content/forms/`.
-- Run `npm run sync-content`. It also runs automatically on `prebuild`.
+- **Source:** `coach-content/` of `../qualireps-v2` (a sibling of this repo),
+  or set `QUALIREPS_V2_DIR=/path/to/qualireps-v2`, read **at a given commit**
+  with `git archive` — never from the working tree.
+- **Destination:** `src/content/forms/`, plus `src/content/forms/.source-sha`
+  (the full commit SHA the guides were copied from).
+- Run `npm run sync-content <sha>`. It refuses if `coach-content/` has
+  uncommitted or untracked changes in qualireps-v2, or if `<sha>` is not a
+  commit there. It is **not** part of the build: `npm run build` never copies
+  anything.
 
 **`src/content/forms/` is committed to git** (not ignored). The deploy build
 (Vercel) has no access to the `qualireps-v2` sibling, so the synced fiches must
-be in version control. If the sibling repo is missing, `sync-content` logs a
-warning and uses the committed content as-is (it does not fail the build).
+be in version control.
 
-**Workflow when app content changes:** clone/pull `qualireps-v2` as a sibling →
-`npm run sync-content` → commit the updated `src/content/forms/` → push.
+**Drift check:** `src/content/forms.sync.test.ts` compares `src/content/forms/`
+with `coach-content/` at the SHA in `.source-sha`. It runs whenever the
+qualireps-v2 checkout (with that commit) is available, and skips otherwise
+(e.g. on Vercel). `.gitattributes` keeps every `.md` in LF so the comparison is
+exact on Windows too.
+
+**Workflow when app content changes:** edit and commit in
+`qualireps-v2/coach-content/` → `npm run sync-content <sha>` here → `npm test`
+→ commit as `content: sync forms from qualireps-v2@<short sha>` → push.
 
 ## ⚠️ Placeholders to resolve before launch
 

@@ -3,7 +3,7 @@ import { glob } from 'astro/loaders';
 
 /**
  * `forms` — the perfect form guides, synced from qualireps-v2 by
- * `scripts/sync-content.js` into `src/content/forms/`.
+ * `npm run sync-content <sha>` into `src/content/forms/`.
  *
  * `index.md` is the human-readable registry (the chain order tables), NOT a
  * fiche, so it is excluded from the collection. It is parsed separately by

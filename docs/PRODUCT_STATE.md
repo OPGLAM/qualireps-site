@@ -89,9 +89,10 @@ Form content is synced (committed) from the `qualireps-v2` app repo via
   returns the license key; Ed25519-derived license keys (`src/server/`). Static
   9,99 € fallback price, localized at runtime via `Paddle.PricePreview`.
 - **Fonts/assets:** self-hosted Inter (`public/fonts/`); third-party scripts load from cdn.paddle.com and gc.zgo.at.
-- **Content pipeline:** `scripts/sync-content.js` copies form guides from the
-  sibling `qualireps-v2` repo into `src/content/forms/` (committed to git so the
-  Vercel build needs no sibling access).
+- **Content pipeline:** `npm run sync-content <sha>` copies form guides from
+  `qualireps-v2` at a pinned commit into `src/content/forms/` (committed to git
+  so the Vercel build needs no sibling access; SHA recorded in
+  `src/content/forms/.source-sha`). The build never syncs.
 
 ## 7. Known issues / risks
 
@@ -103,4 +104,5 @@ Form content is synced (committed) from the `qualireps-v2` app repo via
   confirmable from the repo **(to verify)**. The GoatCounter account is
   confirmed active (since 2026-06-10).
 - Form guides depend on an out-of-repo source (`qualireps-v2`); the committed
-  copy can drift if a sync is forgotten after app-content changes.
+  copy can lag the app if a sync is forgotten. `src/content/forms.sync.test.ts`
+  catches edits that diverge from the recorded commit, not a missing sync.
