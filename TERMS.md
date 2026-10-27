@@ -4,7 +4,7 @@ Last updated: 27 October 2026
 
 ## Operator
 
-QualiReps is operated by Olivier Lamglait, sole proprietor (auto-entrepreneur), legal name LAMGLAIT Olivier Georges Philippe, SIRET 88914184200035, registered in France at 14 rue des Fossillons, 93170 Bagnolet, France.
+QualiReps is operated by Olivier Lamglait, sole proprietor (entrepreneur individuel, micro-entreprise), legal name LAMGLAIT Olivier Georges Philippe, SIRET 88914184200035, registered in France at 14 rue des Fossillons, 93170 Bagnolet, France.
 
 Contact: legal@qualireps.app
 
