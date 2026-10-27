@@ -1,0 +1,3 @@
+# Markdown is stored and checked out with LF endings on every platform, so
+# the synced form guides compare byte-for-byte with qualireps-v2.
+*.md text eol=lf
