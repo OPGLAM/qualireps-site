@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Last updated: 15 October 2026
+Last updated: 27 October 2026
 
 ## Operator
 
