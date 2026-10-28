@@ -32,7 +32,7 @@ Pages (`src/pages/`):
 - `/thanks` — purchase success page; surfaces the issued license key.
 - `/privacy`, `/terms`, `/refund` — legal pages rendered from `PRIVACY.md`,
   `TERMS.md`, `REFUND.md`.
-- `/forms` — index of 39 perfect-form guides, grouped by chain (push / pull /
+- `/forms` — index of 42 perfect-form guides, grouped by chain (push / pull /
   squat / kettlebell press).
 - `/forms/{slug}` — individual form guide (`slug` = `exercise_id`).
 

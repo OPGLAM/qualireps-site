@@ -1,6 +1,6 @@
 # Terms of Service
 
-Last updated: 27 October 2026
+Last updated: 28 October 2026
 
 ## Operator
 
@@ -26,7 +26,7 @@ On purchase, we grant you a non-exclusive, non-transferable, worldwide license t
 
 ## Free demo
 
-The free demo lets you try the instrument on one exercise. The demo is not time-limited and may be used indefinitely. Moving to another level, additional exercises, and custom exercises require purchase of the full version.
+The free demo lets you try the instrument on one exercise. The demo is not time-limited and may be used indefinitely. Within the demo, the exercise may move down to an easier level and back up to the level chosen at the start. Moving above that level, additional exercises, and custom exercises require purchase of the full version.
 
 ## Purchases
 

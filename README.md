@@ -18,7 +18,7 @@ Production origin: **https://qualireps.app**
 | `/privacy`       | Privacy policy (rendered from `PRIVACY.md`)                     |
 | `/terms`         | Terms of service (rendered from `TERMS.md`)                     |
 | `/refund`        | Refund policy (rendered from `REFUND.md`)                       |
-| `/forms`         | Index of all 39 form guides, grouped by chain                  |
+| `/forms`         | Index of all 42 form guides, grouped by chain                  |
 | `/forms/{slug}`  | Individual form guide (`slug` = `exercise_id`)                 |
 
 ## Quick start
