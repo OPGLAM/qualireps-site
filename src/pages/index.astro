@@ -508,7 +508,6 @@ const faqs = [
     position: relative;
     z-index: 1;
     width: min(320px, 100%);
-    aspect-ratio: 430 / 932;
     background: #0e0c0b;
     border-radius: 44px;
     padding: 12px;
@@ -517,25 +516,19 @@ const faqs = [
     border: 1px solid #2a2622;
   }
   .phone-screen {
+    /* Exactly the screenshot's ratio, so the whole image fits uncropped.
+       The phone's height follows from it (no fixed ratio on .phone). */
     width: 100%;
-    height: 100%;
+    aspect-ratio: 1080 / 2177;
     background: linear-gradient(180deg, #1c1a18 0%, #161412 100%);
     border-radius: 32px;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .phone-shot {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    /* Anchor to the top so the dark top margin (corner clearance) is what
-       the rounded frame clips — never the app's top-corner icons. The
-       bottom of the screenshot overflows and is clipped instead. */
-    object-position: top;
+    object-fit: contain;
     display: block;
-    border-radius: 32px;
   }
   @media (max-width: 880px) {
     .hero-grid {
@@ -768,12 +761,12 @@ const faqs = [
     border-radius: 14px;
     overflow: hidden;
     background: var(--bg-elev-1);
-    aspect-ratio: 1080 / 2177;
   }
   .shot-img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    aspect-ratio: 1080 / 2177;
+    object-fit: contain;
     display: block;
   }
   .shot-cap {
