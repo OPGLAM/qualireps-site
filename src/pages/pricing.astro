@@ -7,11 +7,11 @@ import { CHECKOUT_LIVE, BUY_URL } from '../lib/config';
 // Copy source: AUDIT-2026-10-15.md (repo root), sections 2, 4 and 5.
 const title = 'Pricing — QualiReps';
 const description =
-  'Free on one exercise, with the whole ledger. 9,99 € once opens every level, up to three active exercises and custom exercises. Paid through Paddle; no subscription.';
+  'Free on one exercise, with the whole ledger and every level of its path. 9,99 € once adds unlimited exercises and custom exercises. Paid through Paddle; no subscription.';
 
 const freeFeatures = [
-  'One exercise, on any path and at any level, free to move between level 1 and that level',
-  'One change of that choice',
+  'One active exercise, on any path, with every level of that path',
+  'Archive it and start another at any time',
   'Max testing, dose, the five states, set logging',
   'The passage criterion, shown when you reach it',
   'History, CSV export, backup',
@@ -19,8 +19,7 @@ const freeFeatures = [
 ];
 
 const lifetimeFeatures = [
-  'Any level, on any exercise, at any time',
-  'Up to three active exercises, at most one per path',
+  'Unlimited exercises, several per path if you want',
   'Custom exercises, for movements outside the paths',
   'One license key for your other devices',
   'No subscription',
@@ -32,11 +31,11 @@ const lifetimeFeatures = [
     <article class="pricing">
       <header class="pricing-head">
         <div class="eyebrow">Pricing</div>
-        <h1>One exercise free. Three, at any level, for <span data-paddle-price>{PRICE_LABEL}</span>.</h1>
+        <h1>One exercise free. Unlimited for <span data-paddle-price>{PRICE_LABEL}</span>.</h1>
         <p class="lead">
           Install free from your browser and use the whole ledger on one
-          exercise, for as long as you like. Pay once to move to any level, keep up
-          to three exercises active and create custom exercises. No
+          exercise, for as long as you like. Pay once for unlimited exercises and
+          custom exercises. No
           subscription.
         </p>
       </header>
@@ -61,7 +60,7 @@ const lifetimeFeatures = [
               <span class="amount" data-paddle-price>{PRICE_LABEL}</span>
               <span class="period">one-time</span>
             </p>
-            <p class="plan-sub">Level changes, more exercises, custom exercises.</p>
+            <p class="plan-sub">Unlimited exercises, custom exercises.</p>
           </div>
           <ul class="plan-features">
             {lifetimeFeatures.map((f) => <li>{f}</li>)}
@@ -113,11 +112,12 @@ const lifetimeFeatures = [
             </div>
           </details>
           <details>
-            <summary>Does paying remove the three-exercise limit?</summary>
+            <summary>Is there a limit on the number of exercises?</summary>
             <div class="answer">
               <p>
-                No. Everyone, paid or free, can have at most three active
-                exercises at a time. Archive one to make room for another.
+                Not with a license: keep as many active exercises as you want,
+                several on the same path if you like. The free version keeps one
+                active exercise; archive it to start another.
               </p>
             </div>
           </details>

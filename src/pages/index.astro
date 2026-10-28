@@ -32,7 +32,7 @@ const shots = [
 
 const title = 'QualiReps — a strength ledger for frequent practice';
 const description =
-  'A ledger for practicing one movement often, in sets well short of failure. QualiReps records your max, computes the dose for each set, shows when the next set is due, and tracks your level on four progression paths. Free on one exercise; 9,99 € once to move to any level, keep up to three exercises active and create custom ones.';
+  'A ledger for practicing one movement often, in sets well short of failure. QualiReps records your max, computes the dose for each set, shows when the next set is due, and tracks your level on four progression paths. Free on one exercise, with every level of its path; 9,99 € once for unlimited exercises and custom ones.';
 
 // The only home-page occurrence of the term outside the FAQ (kept for search).
 const methodParagraph =
@@ -54,11 +54,11 @@ const jsonLd = [
 const faqs = [
   {
     q: 'Can I try QualiReps before paying?',
-    a: 'Yes. The free version runs on one exercise, on any path and at any level. It can move down to an easier level and back up to the level you chose, but not above it. Max testing, the dose, the five states, set logging, history, the form guides, CSV export and backup all work on it. You can change your choice of exercise once. Going above the level you chose, adding exercises and creating custom exercises are paid.',
+    a: 'Yes. The free version runs on one active exercise, on any of the four paths, with every level of that path: you move up and down freely. Max testing, the dose, the five states, set logging, history, the form guides, CSV export and backup all work on it. You can archive it and start another. A second active exercise and custom exercises are paid.',
   },
   {
     q: 'What does the purchase add?',
-    a: 'Three things: moving to any level, on any exercise; up to three active exercises at a time, at most one per path; and custom exercises, for movements outside the paths. The limit of three active exercises applies to paid users too. The price is <span data-paddle-price>9,99 €</span>, paid once: a lifetime license, no subscription.',
+    a: 'Two things: as many active exercises as you want, several on the same path if you like; and custom exercises, for movements outside the paths. The price is <span data-paddle-price>9,99 €</span>, paid once: a lifetime license, no subscription.',
   },
   {
     q: 'How do I pay, and how do I use my other devices?',
@@ -198,9 +198,8 @@ const faqs = [
           Push-up path: 19 levels, ending at One-Arm Push-Up — Narrow Stance.
           Pull-up path: 12 levels, ending at One-Arm Pull-Up. Squat path: 10
           levels, ending at Free Pistol. Kettlebell press path: 11 levels, from
-          8 kg to 48 kg in 4 kg steps. You choose the level you start at, and
-          you can keep one active exercise per path. For a movement outside the
-          paths, a paid license adds custom exercises.
+          8 kg to 48 kg in 4 kg steps. You choose the level you start at. For a
+          movement outside the paths, a paid license adds custom exercises.
         </p>
       </div>
     </div>
@@ -246,16 +245,15 @@ const faqs = [
 
       <div class="demo-body">
         <p>
-          You pick one exercise, on any path, at any level. It can move down
-          to an easier level and back up to that one, and everything else
-          works on it: max testing, the dose, the five states, set logging, history, the form guides, CSV export and
+          You pick one exercise, on any path, at any level, and every level of
+          that path stays open to it, up and down. Everything else works on
+          it: max testing, the dose, the five states, set logging, history, the form guides, CSV export and
           backup.
         </p>
         <p>
-          You can change that choice once. After that it is fixed: archiving or
-          deleting the exercise does not open a new choice, and neither does
-          Reset all data. When you reach the passage criterion, the app still
-          shows it; going above the level you chose is part of the paid version.
+          To practice something else, archive it and create another. More than
+          one active exercise, and custom exercises, are part of the paid
+          version.
         </p>
       </div>
 
@@ -263,8 +261,8 @@ const faqs = [
         <div class="panel">
           <h3>Free</h3>
           <ul>
-            <li>One exercise, on any path and at any level, free to move between level 1 and that level</li>
-            <li>One change of that choice</li>
+            <li>One active exercise, on any path, with every level of that path</li>
+            <li>Archive it and start another at any time</li>
             <li>Max testing, dose, the five states, set logging</li>
             <li>History, CSV export, backup</li>
             <li>All 42 form guides</li>
@@ -273,8 +271,7 @@ const faqs = [
         <div class="panel">
           <h3>Paid · <span data-paddle-price>9,99 €</span> once</h3>
           <ul>
-            <li>Any level, on any exercise, at any time</li>
-            <li>Up to three active exercises, at most one per path</li>
+            <li>Unlimited exercises, several per path if you want</li>
             <li>Custom exercises, for movements outside the paths</li>
             <li>One license key for your other devices</li>
           </ul>

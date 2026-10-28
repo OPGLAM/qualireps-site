@@ -26,7 +26,7 @@ On purchase, we grant you a non-exclusive, non-transferable, worldwide license t
 
 ## Free demo
 
-The free demo lets you try the instrument on one exercise. The demo is not time-limited and may be used indefinitely. Within the demo, the exercise may move down to an easier level and back up to the level chosen at the start. Moving above that level, additional exercises, and custom exercises require purchase of the full version.
+The free demo lets you use the instrument on one active exercise, with every level of its path. The demo is not time-limited and may be used indefinitely. The exercise may be archived and replaced by another. Additional active exercises and custom exercises require purchase of the full version.
 
 ## Purchases
 
