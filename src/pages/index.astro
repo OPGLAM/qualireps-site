@@ -10,8 +10,8 @@ import PaddlePrice from '../components/PaddlePrice.astro';
 import { groupByChain } from '../lib/content';
 import { SITE_ORIGIN, APP_URL, APP_HOST } from '../lib/site';
 
-// 01 (dashboard) and 03 (resting) are not used: they show a 15-minute rest
-// on an exercise created before the 5-minute default.
+// 01 (dashboard) is not used: it shows a 15-minute rest on an exercise
+// created before the 5-minute default. 03 (resting) is current but not used.
 import heroShot from '../assets/screenshots/02-exercise-fresh.png';
 import shotRecovery from '../assets/screenshots/04-exercise-recovery.png';
 import shotTestMax from '../assets/screenshots/05-test-max.png';
