@@ -38,4 +38,4 @@ Exhale as you pack down, inhale on the release. No holding.
 - *Easier:* feet lightly supported to offload weight; smaller range, rebuilt over time.
 
 ## Dose
-Test your max clean reps (straight arms throughout), then practice at half rounded down, capped at 5 reps per set, spread through the day. Stop before the elbows want to bend.
+Test your max clean reps (straight arms throughout), then practice at half of it (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, spread through the day. Stop before the elbows want to bend.

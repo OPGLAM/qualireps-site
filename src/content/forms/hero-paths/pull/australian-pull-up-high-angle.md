@@ -37,6 +37,6 @@ Exhale on the pull, inhale on the lower. Free throughout.
 - *Easier:* feet back / bar higher (more upright, lighter).
 
 ## Dose
-Test your max in clean form, then practice at half rounded down, capped at 5 reps per set, spread through the day. Stop well short of form breakdown.
+Test your max in clean form, then practice at half of it (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, spread through the day. Stop well short of form breakdown.
 
 *No adjustable bar? Set the load by foot position: feet forward = more horizontal = harder; feet back = more upright = easier. Aim for ~45° here.*

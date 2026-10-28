@@ -1,6 +1,6 @@
 # Perfect Form Sheets — Index
 
-Master registry of all exercise content for QualiReps V2. 39 unique fiches: 38 Hero Path movement levels (16 push + 12 pull + 10 squat) plus 1 KB press fiche shared across all 11 levels. Custom exercises carry no fiche.
+Master registry of all exercise content for QualiReps V2. 42 unique fiches: 41 Hero Path movement levels (19 push + 12 pull + 10 squat) plus 1 KB press fiche shared across all 11 levels. Custom exercises carry no fiche.
 
 > The Open Path concept was removed (2026-05-31). The 11 Open-only fiches and the overlap mapping (`_OVERLAPS.md`) were deleted; the 3 former overlap exercises (`standard-push-up`, `standard-pull-up`, `dead-hang`) remain solely as the Hero Path level fiches they always were.
 
@@ -8,26 +8,31 @@ Master registry of all exercise content for QualiReps V2. 39 unique fiches: 38 H
 
 > The push path was expanded again in a second coach review (2026-06) to a 16-level one-arm ramp matching the realistic 2-3 year progression: entry from 2 strict standard push-ups, two isometric levels (one-arm high plank at L3, one-arm bottom hold at L12), a one-arm incline ramp by absolute support height (90 → 10 cm), and a final floor ramp by stance width (wide → shoulder → narrow). Endpoint is now the One-Arm Push-Up — Narrow Stance (maintenance-only, no passage criterion).
 
-## Push-up path (16 levels)
+> Three bilateral entry levels were added at the head of the push path on 2026-10-28 (wall push-up, incline push-up at ~90 cm, incline push-up at ~45 cm), so a beginner with no floor push-up has a full set to practise. The strict standard push-up moves from L1 to L4 and every later push level shifts by 3 (19 levels). The three new fiches await coach review.
+
+## Push-up path (19 levels)
 
 | Level | exercise_id | File |
 |---|---|---|
-| 1 | `standard-push-up` | `hero-paths/push/standard-push-up.md` |
-| 2 | `diamond-push-up` | `hero-paths/push/diamond-push-up.md` |
-| 3 | `one-arm-high-plank` | `hero-paths/push/one-arm-high-plank.md` |
-| 4 | `one-arm-wall-push-up` | `hero-paths/push/one-arm-wall-push-up.md` |
-| 5 | `one-arm-incline-push-up-90cm` | `hero-paths/push/one-arm-incline-push-up-90cm.md` |
-| 6 | `one-arm-incline-push-up-75cm` | `hero-paths/push/one-arm-incline-push-up-75cm.md` |
-| 7 | `one-arm-incline-push-up-60cm` | `hero-paths/push/one-arm-incline-push-up-60cm.md` |
-| 8 | `one-arm-incline-push-up-45cm` | `hero-paths/push/one-arm-incline-push-up-45cm.md` |
-| 9 | `one-arm-incline-push-up-30cm` | `hero-paths/push/one-arm-incline-push-up-30cm.md` |
-| 10 | `one-arm-incline-push-up-20cm` | `hero-paths/push/one-arm-incline-push-up-20cm.md` |
-| 11 | `one-arm-incline-push-up-10cm` | `hero-paths/push/one-arm-incline-push-up-10cm.md` |
-| 12 | `one-arm-bottom-hold` | `hero-paths/push/one-arm-bottom-hold.md` |
-| 13 | `one-arm-self-assisted-push-up` | `hero-paths/push/one-arm-self-assisted-push-up.md` |
-| 14 | `one-arm-push-up-wide-stance` | `hero-paths/push/one-arm-push-up-wide-stance.md` |
-| 15 | `one-arm-push-up-shoulder-stance` | `hero-paths/push/one-arm-push-up-shoulder-stance.md` |
-| 16 | `one-arm-push-up-narrow-stance` | `hero-paths/push/one-arm-push-up-narrow-stance.md` |
+| 1 | `wall-push-up` | `hero-paths/push/wall-push-up.md` |
+| 2 | `incline-push-up-90cm` | `hero-paths/push/incline-push-up-90cm.md` |
+| 3 | `incline-push-up-45cm` | `hero-paths/push/incline-push-up-45cm.md` |
+| 4 | `standard-push-up` | `hero-paths/push/standard-push-up.md` |
+| 5 | `diamond-push-up` | `hero-paths/push/diamond-push-up.md` |
+| 6 | `one-arm-high-plank` | `hero-paths/push/one-arm-high-plank.md` |
+| 7 | `one-arm-wall-push-up` | `hero-paths/push/one-arm-wall-push-up.md` |
+| 8 | `one-arm-incline-push-up-90cm` | `hero-paths/push/one-arm-incline-push-up-90cm.md` |
+| 9 | `one-arm-incline-push-up-75cm` | `hero-paths/push/one-arm-incline-push-up-75cm.md` |
+| 10 | `one-arm-incline-push-up-60cm` | `hero-paths/push/one-arm-incline-push-up-60cm.md` |
+| 11 | `one-arm-incline-push-up-45cm` | `hero-paths/push/one-arm-incline-push-up-45cm.md` |
+| 12 | `one-arm-incline-push-up-30cm` | `hero-paths/push/one-arm-incline-push-up-30cm.md` |
+| 13 | `one-arm-incline-push-up-20cm` | `hero-paths/push/one-arm-incline-push-up-20cm.md` |
+| 14 | `one-arm-incline-push-up-10cm` | `hero-paths/push/one-arm-incline-push-up-10cm.md` |
+| 15 | `one-arm-bottom-hold` | `hero-paths/push/one-arm-bottom-hold.md` |
+| 16 | `one-arm-self-assisted-push-up` | `hero-paths/push/one-arm-self-assisted-push-up.md` |
+| 17 | `one-arm-push-up-wide-stance` | `hero-paths/push/one-arm-push-up-wide-stance.md` |
+| 18 | `one-arm-push-up-shoulder-stance` | `hero-paths/push/one-arm-push-up-shoulder-stance.md` |
+| 19 | `one-arm-push-up-narrow-stance` | `hero-paths/push/one-arm-push-up-narrow-stance.md` |
 
 ## Pull-up path (12 levels)
 
@@ -71,9 +76,9 @@ The KB press fiche has no per-level key — one fiche is shared across all 11 lo
 
 ## Totals
 
-- **Hero Path movement fiches**: 38 (16 push + 12 pull + 10 squat)
+- **Hero Path movement fiches**: 41 (19 push + 12 pull + 10 squat)
 - **KB press fiche**: 1 (shared across 11 levels)
-- **Unique markdown files**: 39
+- **Unique markdown files**: 42
 - **Exercises accessible in the app**: Hero Path levels + KB press levels (Custom exercises carry no fiche)
 
 ## Frontmatter convention

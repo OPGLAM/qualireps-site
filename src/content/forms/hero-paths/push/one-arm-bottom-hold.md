@@ -1,7 +1,7 @@
 ---
 exercise_id: "one-arm-bottom-hold"
 chain: "push"
-level: 12
+level: 15
 kind: "unilateral"
 unit: "seconds"
 ---
@@ -41,4 +41,4 @@ Short pressurized breaths behind a firm brace; never relax the trunk to breathe.
 - *Easier:* feet wider; rest the free-hand fingertips on the floor for balance, taking less weight on them over time.
 
 ## Dose
-Test a clean max hold on each side; hold half of the weaker side (rounded down to whole seconds) per set, same duration both sides, weaker side first, spread through the day. Stop each hold well short of form failure.
+Test a clean max hold on each side; hold half of the weaker side (rounded down to whole seconds, 30 s at most) per set, same duration both sides, weaker side first, spread through the day. Stop each hold well short of form failure.

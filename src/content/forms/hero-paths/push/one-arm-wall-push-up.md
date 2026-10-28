@@ -1,7 +1,7 @@
 ---
 exercise_id: "one-arm-wall-push-up"
 chain: "push"
-level: 4
+level: 7
 kind: "unilateral"
 unit: "reps"
 ---
@@ -41,4 +41,4 @@ Inhale and brace at lockout; exhale gently as you press away from the wall.
 - *Easier:* step closer; widen the feet. If balance is the limiter, rest the free-hand fingertips beside the working hand and lean on them less over time.
 
 ## Dose
-Test a clean max on each side; work at half of the weaker side (rounded down), max 5 reps per set, same count both sides, weaker side first, spread through the day. Stop each set well short of failure.
+Test a clean max on each side; work at half of the weaker side (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both sides, weaker side first, spread through the day. Stop each set well short of failure.

@@ -1,7 +1,7 @@
 ---
 exercise_id: "one-arm-push-up-shoulder-stance"
 chain: "push"
-level: 15
+level: 18
 kind: "unilateral"
 unit: "reps"
 ---
@@ -40,4 +40,4 @@ Sharp exhale through the press; trunk braced between reps, never soft.
 - *Easier:* widen the feet a touch toward the wide stance. Slow negatives build the rep without progressing the count.
 
 ## Dose
-Test a clean max on each side; work at half of the weaker side (rounded down), max 5 reps per set, same count both sides, weaker side first, spread through the day. Stop each set well short of failure.
+Test a clean max on each side; work at half of the weaker side (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both sides, weaker side first, spread through the day. Stop each set well short of failure.

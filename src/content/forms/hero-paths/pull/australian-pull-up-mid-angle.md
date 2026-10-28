@@ -36,6 +36,6 @@ Exhale on the pull, inhale on the lower.
 - *Easier:* feet back toward the high-angle band.
 
 ## Dose
-Test your max in clean form, then practice at half rounded down, capped at 5 reps per set, spread through the day.
+Test your max in clean form, then practice at half of it (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, spread through the day.
 
 *No adjustable bar? Walk the feet ~10–15 cm forward of level 3 to reach ~30°.*

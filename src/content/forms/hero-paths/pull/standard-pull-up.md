@@ -37,4 +37,4 @@ Exhale on the pull, inhale on the lower. No holding at the top.
 - *Easier:* a touch of foot or band assist to finish clean reps; reduce range and rebuild.
 
 ## Dose
-Test your max in strict form (no kip), then practice at half rounded down, capped at 5 reps per set, spread through the day. Stop well short of form breakdown.
+Test your max in strict form (no kip), then practice at half of it (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, spread through the day. Stop well short of form breakdown.

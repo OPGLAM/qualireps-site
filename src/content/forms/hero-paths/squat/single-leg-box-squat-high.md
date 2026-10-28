@@ -39,4 +39,4 @@ Inhale on the descent, exhale on the drive up.
 - *Easier:* higher surface (smaller range); a fingertip on a side support for balance (not load).
 
 ## Dose
-Test a clean max per side, then practice at half of the weaker side rounded down, capped at 5 reps per set, same count both sides, weaker side first, spread through the day.
+Test a clean max per side, then practice at half of the weaker side (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both sides, weaker side first, spread through the day.

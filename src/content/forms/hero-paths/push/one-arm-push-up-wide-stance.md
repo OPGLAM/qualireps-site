@@ -1,7 +1,7 @@
 ---
 exercise_id: "one-arm-push-up-wide-stance"
 chain: "push"
-level: 14
+level: 17
 kind: "unilateral"
 unit: "reps"
 ---
@@ -40,4 +40,4 @@ Inhale and brace at the top; strong sharp exhale through the bottom of the press
 - *Easier:* widen the feet a touch more for a broader anti-rotation base. Slow negatives also build the rep without progressing the count.
 
 ## Dose
-Test a clean max on each side; work at half of the weaker side (rounded down), max 5 reps per set, same count both sides, weaker side first, spread through the day. Stop each set well short of failure.
+Test a clean max on each side; work at half of the weaker side (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both sides, weaker side first, spread through the day. Stop each set well short of failure.

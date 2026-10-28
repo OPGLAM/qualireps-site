@@ -1,17 +1,17 @@
 ---
 exercise_id: "standard-push-up"
 chain: "push"
-level: 1
+level: 4
 kind: "bilateral"
 unit: "reps"
 ---
 
 # Strict Standard Push-Up
 **Push horizontal · reps · bilateral**
-*The floor of the whole chain. The pattern and the full-body tension you carry, unchanged, all the way to the one-arm endpoint.*
+*The first level on the floor. The pattern and the full-body tension you carry, unchanged, all the way to the one-arm endpoint.*
 
 ## The movement
-This chain assumes you can already perform 2 strict standard push-ups. From a locked-out plank, hands a little wider than the shoulders, lower the chest to the floor in one rigid line, then press back to straight arms. Body, hips and head travel as one block — nothing leads, nothing lags.
+This is the first level on the floor. If you cannot yet do 3 clean reps, go back to the incline levels: the brace and the range you built there are exactly what this level asks for. From a locked-out plank, hands a little wider than the shoulders, lower the chest to the floor in one rigid line, then press back to straight arms. Body, hips and head travel as one block — nothing leads, nothing lags.
 
 ## Set-up — and what each part is for
 - **Hands** flat under the collarbone line, slightly wider than the shoulders, fingers spread, middle fingers pointing forward. This sets the elbow path.
@@ -40,4 +40,4 @@ Inhale and brace at the top, hold the pressurized trunk through the descent, sha
 - *Easier:* feet wider for a more stable base.
 
 ## Dose
-Test a clean max; work at half (rounded down), max 5 reps per set, spread through the day. Stop each set well short of failure.
+Test a clean max; work at half of it (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, spread through the day. Stop each set well short of failure.

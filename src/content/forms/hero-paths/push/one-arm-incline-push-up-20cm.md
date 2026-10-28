@@ -1,7 +1,7 @@
 ---
 exercise_id: "one-arm-incline-push-up-20cm"
 chain: "push"
-level: 10
+level: 13
 kind: "unilateral"
 unit: "reps"
 ---
@@ -41,4 +41,4 @@ Inhale and brace at the top; strong sharp exhale through the press.
 - *Easier:* widen the feet. If balance is the limiter, rest the free-hand fingertips on the support, reducing contact over time.
 
 ## Dose
-Test a clean max on each side; work at half of the weaker side (rounded down), max 5 reps per set, same count both sides, weaker side first, spread through the day. Stop each set well short of failure.
+Test a clean max on each side; work at half of the weaker side (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both sides, weaker side first, spread through the day. Stop each set well short of failure.

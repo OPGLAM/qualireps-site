@@ -35,4 +35,4 @@ Steady through the hold; exhale on the lower. No long breath-holds.
 - *Easier:* hold higher (chin well over); shorter holds; a light band or finger touch to steady, removed over time.
 
 ## Dose
-Test a clean max hold on each side; hold half of the weaker side (rounded down to whole seconds) per set, same duration both sides, weaker side first, spread through the day. Stop each hold well short of form failure. Add a slow controlled lower after each hold.
+Test a clean max hold on each side; hold half of the weaker side (rounded down to whole seconds, 30 s at most) per set, same duration both sides, weaker side first, spread through the day. Stop each hold well short of form failure. Add a slow controlled lower after each hold.

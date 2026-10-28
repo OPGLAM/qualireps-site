@@ -42,4 +42,4 @@ The endpoint stays active after the criterion is met.
 > **A note on anatomy.** The strict free pistol is partly a question of body proportions. Longer femurs relative to the shins, or stubborn ankle-mobility limits, can make it mechanically hard regardless of strength. If it stalls after long practice and honest ankle work, that may be anatomy, not a training failure — a lasting practice at the counterweight levels (7–8) is a legitimate strength endpoint in its own right. The strict free pistol is one valid endpoint, not the only one.
 
 ## Dose
-Test a clean max per side, then practice at half of the weaker side rounded down, capped at 5 reps per set, same count both sides, weaker side first, spread through the day. At a 3-rep criterion, the daily set is typically 1 clean rep per side.
+Test a clean max per side, then practice at half of the weaker side (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both sides, weaker side first, spread through the day. At a 3-rep criterion, the daily set is typically 1 clean rep per side.

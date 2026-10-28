@@ -1,7 +1,7 @@
 ---
 exercise_id: "diamond-push-up"
 chain: "push"
-level: 2
+level: 5
 kind: "bilateral"
 unit: "reps"
 ---
@@ -39,4 +39,4 @@ Brace at the top, hold through the descent, pressurized exhale through the locko
 - *Easier:* hands a touch farther apart — keep the elbows tucked.
 
 ## Dose
-Test a clean max; work at half (rounded down), max 5 reps per set, spread through the day. Stop each set well short of failure.
+Test a clean max; work at half of it (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, spread through the day. Stop each set well short of failure.

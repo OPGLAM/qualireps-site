@@ -37,4 +37,4 @@ Inhale on the descent, exhale on the drive up.
 - *Easier:* raise the surface (back toward the chair); fingertip on a side support.
 
 ## Dose
-Test a clean max per side, then practice at half of the weaker side rounded down, capped at 5 reps per set, same count both sides, weaker side first, spread through the day. If progress stalls here despite weeks of practice, the limiter is usually ankle mobility, not strength — keep the chair box as the working level while the ankle opens up.
+Test a clean max per side, then practice at half of the weaker side (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both sides, weaker side first, spread through the day. If progress stalls here despite weeks of practice, the limiter is usually ankle mobility, not strength — keep the chair box as the working level while the ankle opens up.

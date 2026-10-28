@@ -1,7 +1,7 @@
 ---
 exercise_id: "one-arm-incline-push-up-90cm"
 chain: "push"
-level: 5
+level: 8
 kind: "unilateral"
 unit: "reps"
 ---
@@ -41,4 +41,4 @@ Inhale and brace at the top; pressurized exhale through the press out of the bot
 - *Easier:* widen the feet for a more stable base. If balance is the limiter, rest the free-hand fingertips on the support beside the working hand and lean on them less over time.
 
 ## Dose
-Test a clean max on each side; work at half of the weaker side (rounded down), max 5 reps per set, same count both sides, weaker side first, spread through the day. Stop each set well short of failure.
+Test a clean max on each side; work at half of the weaker side (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both sides, weaker side first, spread through the day. Stop each set well short of failure.
