@@ -39,4 +39,6 @@ Exhale on the pull, inhale on the lower. Free throughout.
 ## Dose
 Test your max in clean form, then practice at half of it (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, spread through the day. Stop well short of form breakdown.
 
+With the Muscle focus: your max minus 3 reps per set, never fewer than above, no cap of 5.
+
 *No adjustable bar? Set the load by foot position: feet forward = more horizontal = harder; feet back = more upright = easier. Aim for ~45° here.*

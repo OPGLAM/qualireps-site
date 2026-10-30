@@ -39,3 +39,5 @@ Exhale as you pack down, inhale on the release. No holding.
 
 ## Dose
 Test your max clean reps (straight arms throughout), then practice at half of it (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, spread through the day. Stop before the elbows want to bend.
+
+With the Muscle focus: your max minus 3 reps per set, never fewer than above, no cap of 5.

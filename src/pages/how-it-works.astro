@@ -1,0 +1,233 @@
+---
+// Copy source: qualireps-v2/qualireps-audit/Landing page textes.md, section
+// "Page How it works", checked against the app code (qualireps-v2 @ 582bd2a:
+// src/lib/logic/dose.ts, focus.ts, setEffort.ts, recovery.ts, criterion.ts;
+// routes/LogPastSet.svelte). Where the code and the document differed, the
+// page follows the code. On-screen words are the app's own.
+import Base from '../layouts/Base.astro';
+import { SITE_ORIGIN } from '../lib/site';
+
+const title = 'How it works — QualiReps';
+const description =
+  'The rules QualiReps follows, written down: your max, the size of each set (Strength or Muscle focus), rest, max-test recovery, levels and loads, past sets and rest days.';
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_ORIGIN}/` },
+      { '@type': 'ListItem', position: 2, name: 'How it works', item: `${SITE_ORIGIN}/how-it-works` },
+    ],
+  },
+];
+
+// Each rule: a heading and a few plain sentences. HTML is limited to <em>
+// for the app's on-screen labels.
+const rules = [
+  {
+    h: 'Your max',
+    items: [
+      'Every exercise starts from a max: your best clean reps, or your best clean seconds for a hold.',
+      'You set it in one of three ways: test it now, enter a test you have already done, or estimate it.',
+      'An estimated max is marked as estimated, and the app suggests confirming it with a real test.',
+      'Your max changes only when you update it.',
+    ],
+  },
+  {
+    h: 'The size of each set',
+    items: [
+      'Each exercise has a <em>Focus</em>: Strength or Muscle. You can change it at any time, without a new test.',
+      '<strong>Strength:</strong> half your max, rounded down, 5 reps at most.',
+      '<strong>Muscle:</strong> your max minus 3 reps, with no upper limit, and never fewer than in Strength.',
+      'Either way, every set leaves at least 2 reps in reserve. With a max of 1 or 2, no full set is proposed: the app suggests an easier variation (or a lighter load), slow negatives, or holding the hardest position. Single reps, well spaced, remain possible.',
+      'Holds: half your max time, 30 seconds at most. Focus does not apply to holds.',
+      'One-sided exercises are sized from your weaker side.',
+    ],
+  },
+  {
+    h: 'Rest',
+    items: [
+      'After each set, the exercise is <em>Resting</em> for 2, 3 or 5 minutes, depending on the effort of the set.',
+      'In Muscle focus, the rest depends on the reps you kept in reserve: 2 minutes with 4 or more, 3 minutes with 2 or 3, 5 minutes with 1.',
+      '<em>It felt hard</em> adds one step to the rest, up to 5 minutes.',
+      'A set taken to your max ends that exercise until midnight: <em>Done for today</em>.',
+      'Rest is counted for each exercise on its own. <em>Log set</em> stays off until the exercise is <em>Fresh</em> again.',
+    ],
+  },
+  {
+    h: 'Max tests',
+    items: [
+      'A max test puts that exercise in <em>Recovery</em> for 24 hours. Your other exercises are not affected.',
+      'A new test at the same level waits 48 hours.',
+      'An estimated max starts no recovery.',
+    ],
+  },
+  {
+    h: 'Levels and loads',
+    items: [
+      'Each level of a bodyweight path has a passage criterion. When your max reaches it, the app says so and offers <em>Change level</em>.',
+      'The kettlebell press and your own exercises with a load have a criterion you set: 12 reps by default. When your max reaches it, the app suggests a heavier load.',
+      'Changing level or load means setting a new max.',
+    ],
+  },
+  {
+    h: 'Sets logged later',
+    items: [
+      '<em>Log a past set</em> records a set you forgot. It counts in your volume and is never refused: not during rest, not during recovery, not on a rest day.',
+      'A past set cannot be dated in the future, or before your last max test.',
+    ],
+  },
+  {
+    h: 'Rest days',
+    items: [
+      'Under Settings → <em>Active days</em>, you choose the days you train. Sunday is off by default.',
+      'On a rest day, no set can be logged live. Past sets can still be added.',
+    ],
+  },
+  {
+    h: 'What the app does not do',
+    items: [
+      'No program. No imposed goal. No automatic move to the next level or the next load.',
+      'The app shows when the next set is safe. What you train stays your decision.',
+    ],
+  },
+];
+---
+
+<Base title={title} description={description} path="/how-it-works" jsonLd={jsonLd}>
+  <div class="wrap">
+    <article class="how">
+      <header class="how-head">
+        <div class="eyebrow">How it works</div>
+        <h1>The rules, written down.</h1>
+        <p class="lead">
+          QualiReps follows the same rules every day, for every exercise. Here
+          they are, in plain words.
+        </p>
+      </header>
+
+      <ol class="rules" role="list">
+        {
+          rules.map((rule, i) => (
+            <li class="rule">
+              <div class="rule-head">
+                <span class="n">{String(i + 1).padStart(2, '0')}</span>
+                <h2>{rule.h}</h2>
+              </div>
+              <ul class="rule-body">
+                {rule.items.map((item) => (
+                  <li set:html={item} />
+                ))}
+              </ul>
+            </li>
+          ))
+        }
+      </ol>
+
+      <aside class="how-cta">
+        <a href="/#install" class="btn btn-primary">Install QualiReps — free</a>
+        <a href="/pricing" class="btn btn-ghost">Pricing</a>
+      </aside>
+    </article>
+  </div>
+</Base>
+
+<style>
+  .how {
+    padding: clamp(32px, 5vw, 64px) 0 clamp(48px, 7vw, 96px);
+  }
+  .how-head {
+    max-width: 60ch;
+    margin-bottom: clamp(32px, 5vw, 56px);
+  }
+  .how-head .eyebrow {
+    margin-bottom: 20px;
+  }
+  .how h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    letter-spacing: -0.02em;
+    margin: 0 0 18px;
+    color: var(--fg);
+  }
+  .how .lead {
+    font-size: clamp(16px, 1.5vw, 19px);
+    line-height: 1.6;
+    color: var(--fg-mute);
+    margin: 0;
+  }
+
+  .rules {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--hairline-soft);
+  }
+  .rule {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
+    gap: clamp(16px, 5vw, 72px);
+    padding: clamp(24px, 3vw, 36px) 0;
+    border-bottom: 1px solid var(--hairline-soft);
+  }
+  .rule-head {
+    display: flex;
+    gap: 14px;
+    align-items: baseline;
+  }
+  .rule-head .n {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    font-weight: 600;
+    min-width: 22px;
+  }
+  .rule-head h2 {
+    font-size: clamp(20px, 2.2vw, 26px);
+    margin: 0;
+    color: var(--fg);
+  }
+  .rule-body {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .rule-body li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin: 0 0 0.8rem;
+    color: var(--fg);
+    font-size: 16px;
+    line-height: 1.65;
+  }
+  .rule-body li:last-child {
+    margin-bottom: 0;
+  }
+  .rule-body li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+  .rule-body li :global(em) {
+    font-style: normal;
+    color: var(--accent-hi);
+  }
+  .rule-body li :global(strong) {
+    font-weight: 600;
+  }
+
+  .how-cta {
+    margin-top: clamp(32px, 5vw, 56px);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  @media (max-width: 760px) {
+    .rule {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

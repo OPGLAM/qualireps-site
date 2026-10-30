@@ -1,6 +1,6 @@
 # Perfect Form Sheets — Index
 
-Master registry of all exercise content for QualiReps V2. 42 unique fiches: 41 Hero Path movement levels (19 push + 12 pull + 10 squat) plus 1 KB press fiche shared across all 11 levels. Custom exercises carry no fiche.
+Master registry of all exercise content for QualiReps V2. 42 unique fiches: 41 Hero Path movement levels (19 push + 12 pull + 10 squat) plus 1 fiche for the kettlebell press (one exercise, any load). Custom exercises carry no fiche.
 
 > The Open Path concept was removed (2026-05-31). The 11 Open-only fiches and the overlap mapping (`_OVERLAPS.md`) were deleted; the 3 former overlap exercises (`standard-push-up`, `standard-pull-up`, `dead-hang`) remain solely as the Hero Path level fiches they always were.
 
@@ -66,20 +66,20 @@ Master registry of all exercise content for QualiReps V2. 42 unique fiches: 41 H
 | 9 | `pistol-arms-counterweight` | `hero-paths/squat/pistol-arms-counterweight.md` |
 | 10 | `free-pistol` | `hero-paths/squat/free-pistol.md` |
 
-## Kettlebell press path (1 fiche, shared across 11 levels)
+## Kettlebell press (1 fiche, one exercise at a load you choose)
 
 | exercise_id | Unit | Kind | File |
 |---|---|---|---|
 | `one-arm-kb-strict-press` | reps | unilateral | `kb-press-path.md` |
 
-The KB press fiche has no per-level key — one fiche is shared across all 11 load levels (only the bell weight changes).
+The kettlebell press is one exercise with no levels: the user chooses the load (kg or lb) and changes it through Change load. The fiche has no per-level key.
 
 ## Totals
 
 - **Hero Path movement fiches**: 41 (19 push + 12 pull + 10 squat)
-- **KB press fiche**: 1 (shared across 11 levels)
+- **KB press fiche**: 1 (one exercise, any load)
 - **Unique markdown files**: 42
-- **Exercises accessible in the app**: Hero Path levels + KB press levels (Custom exercises carry no fiche)
+- **Exercises accessible in the app**: Hero Path levels + the kettlebell press (Custom exercises carry no fiche)
 
 ## Frontmatter convention
 
@@ -89,7 +89,7 @@ All fiches use the following frontmatter schema:
 ---
 exercise_id: "{slug}"           # matches file slug, used as canonical app ID
 chain: "push" | "pull" | "squat" | "kb_press_path" | null
-level: 1..16 | null              # null for the KB press fiche (shared)
+level: 1..19 | null              # null for the KB press fiche (no levels)
 kind: "bilateral" | "unilateral" # data model values, strict
 unit: "reps" | "seconds"
 ---

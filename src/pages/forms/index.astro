@@ -2,15 +2,16 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import FicheCard from '../../components/FicheCard.astro';
-import { groupByChain } from '../../lib/content';
+import { groupByChain, guideCounts } from '../../lib/content';
 import { SITE_ORIGIN } from '../../lib/site';
 
 const entries = await getCollection('forms');
 const chains = groupByChain(entries);
+const counts = guideCounts(entries);
 
 const title = 'Perfect form guides — QualiReps';
 const description =
-  'Free perfect form guides for the QualiReps paths: one for each of the 41 bodyweight levels, and one shared by all 11 kettlebell press levels.';
+  `Free perfect form guides for QualiReps: one for each of the ${counts.bodyweight} levels of the bodyweight paths, and one for the kettlebell press, at the load you choose.`;
 
 const jsonLd = [
   {
@@ -39,8 +40,9 @@ const jsonLd = [
     <div class="forms-intro">
     <h1>Perfect form guides</h1>
     <p>
-      42 perfect form guides: one for each of the 41 bodyweight levels, and one
-      shared by all 11 kettlebell press levels. They are free to read, here and
+      {counts.total} perfect form guides: one for each of the
+      {counts.bodyweight} levels of the bodyweight paths, and one for the
+      kettlebell press, at the load you choose. They are free to read, here and
       in the app.
     </p>
     <p class="safety">

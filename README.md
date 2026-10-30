@@ -11,14 +11,15 @@ Production origin: **https://qualireps.app**
 
 | Route            | Content                                                        |
 | ---------------- | -------------------------------------------------------------- |
-| `/`              | Home — hero, freemium explainer, install block (`#install`)    |
+| `/`              | Home — the strength ledger, offer, install block (`#install`)  |
+| `/how-it-works`  | The exact rules: max, set size, rest, recovery, levels, loads  |
 | `/pricing`       | Pricing (9,99 €, lifetime, no subscription)                    |
 | `/buy`           | Paddle checkout overlay (gated by `CHECKOUT_LIVE`)             |
 | `/thanks`        | Purchase success page — shows the issued license key           |
 | `/privacy`       | Privacy policy (rendered from `PRIVACY.md`)                     |
 | `/terms`         | Terms of service (rendered from `TERMS.md`)                     |
 | `/refund`        | Refund policy (rendered from `REFUND.md`)                       |
-| `/forms`         | Index of all 42 form guides, grouped by chain                  |
+| `/forms`         | Index of all form guides, grouped by chain                     |
 | `/forms/{slug}`  | Individual form guide (`slug` = `exercise_id`)                 |
 
 ## Quick start

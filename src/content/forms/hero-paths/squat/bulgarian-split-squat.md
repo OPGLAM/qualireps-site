@@ -40,3 +40,5 @@ Inhale on the descent, exhale on the drive up.
 
 ## Dose
 Test a clean max per side, then practice at half of the weaker side (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both sides, weaker side first, spread through the day.
+
+With the Muscle focus: your weaker side's max minus 3 reps per set, same count both sides, never fewer than above, no cap of 5.

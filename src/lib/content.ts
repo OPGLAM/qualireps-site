@@ -9,15 +9,15 @@ export type ChainKey = 'push' | 'pull' | 'squat' | 'kb_press_path';
  * The canonical registry is coach-content/index.md (synced to
  * src/content/forms/index.md). These display names and this ordering mirror its
  * section headings ("Push-up path", "Pull-up path", "Squat path", "Kettlebell
- * press path"). Within a chain, fiches are ordered by their `level` frontmatter
- * (the same order index.md tabulates). The KB press chain has a single shared
- * fiche (level: null).
+ * press"). Within a chain, fiches are ordered by their `level` frontmatter
+ * (the same order index.md tabulates). The kettlebell press is one exercise at
+ * a load the user chooses, with a single fiche (level: null).
  */
 export const CHAINS: { key: ChainKey; name: string }[] = [
   { key: 'push', name: 'Push-up path' },
   { key: 'pull', name: 'Pull-up path' },
   { key: 'squat', name: 'Squat path' },
-  { key: 'kb_press_path', name: 'Kettlebell press path' },
+  { key: 'kb_press_path', name: 'Kettlebell press' },
 ];
 
 const CHAIN_NAME = new Map<ChainKey, string>(
@@ -124,6 +124,19 @@ export function groupByChain(entries: FormEntry[]): ChainGroup[] {
       .sort((a, b) => (a.data.level ?? 0) - (b.data.level ?? 0));
     return { key, name, fiches };
   }).filter((g) => g.fiches.length > 0);
+}
+
+/** Guide counts, derived from the collection (never written by hand). */
+export function guideCounts(entries: FormEntry[]): {
+  total: number;
+  bodyweight: number;
+} {
+  return {
+    total: entries.length,
+    bodyweight: entries.filter(
+      (e) => e.data.chain !== null && e.data.chain !== 'kb_press_path'
+    ).length,
+  };
 }
 
 /** Previous / next fiche within the same chain (by level). */

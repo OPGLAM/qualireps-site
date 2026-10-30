@@ -1,42 +1,37 @@
 ---
-// Copy source: AUDIT-2026-10-15.md (repo root). Every factual statement on
-// this page traces to a section of that audit; vocabulary follows its
-// section 9 (the app's own words on screen).
+// Copy source: qualireps-v2/qualireps-audit/Landing page textes.md (validated
+// 2026-10-30), sections 0 to 10. The exact rules live on /how-it-works.
 import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import PlatformInstall from '../components/PlatformInstall.astro';
 import PaddlePrice from '../components/PaddlePrice.astro';
 import { groupByChain } from '../lib/content';
-import { SITE_ORIGIN, APP_URL, APP_HOST } from '../lib/site';
+import { SITE_ORIGIN } from '../lib/site';
+import { FREE_FEATURES, PAID_FEATURES, OFFER_LOCKUP } from '../lib/offer';
 
-// 01 (dashboard) is not used: it shows a 15-minute rest on an exercise
-// created before the 5-minute default. 03 (resting) is current but not used.
-import heroShot from '../assets/screenshots/02-exercise-fresh.png';
-import shotRecovery from '../assets/screenshots/04-exercise-recovery.png';
-import shotTestMax from '../assets/screenshots/05-test-max.png';
+import heroShot from '../assets/screenshots/01-dashboard.png';
+import shotResting from '../assets/screenshots/03-exercise-resting.png';
+import shotNewLoad from '../assets/screenshots/08-change-load.png';
+import shotHistory from '../assets/screenshots/09-exercise-history.png';
 import shotCustom from '../assets/screenshots/06-custom-exercise.png';
-import shotChainPicker from '../assets/screenshots/07-chain-picker.png';
 
 const entries = await getCollection('forms');
 const chains = groupByChain(entries);
 
 // Screenshots gallery — user-controlled strip. `alt` is a fuller description
-// for assistive tech; `caption` is the short visible label.
+// for assistive tech; `caption` is the short visible label. The hero shows 01,
+// so the gallery starts at 03.
 const shots = [
-  { src: shotChainPicker, caption: 'Choose a path', alt: 'New exercise screen: Push-up path 19 levels, Pull-up path 12 levels, Squat path 10 levels, Kettlebell press path 11 levels, and Create a custom exercise' },
-  { src: shotTestMax, caption: 'Test your max', alt: 'Test max now screen: a clean reps stepper and the line “Saving this starts a 24-hour test recovery on this exercise.”' },
-  { src: shotRecovery, caption: 'Recovery after a max test', alt: 'Standard Pull-Up, Pull-up path Level 7 of 12: state Recovery, with a 24-hour countdown' },
-  { src: shotCustom, caption: 'A custom exercise', alt: 'Custom exercise form: exercise name, unit (reps or seconds), symmetry (bilateral or unilateral)' },
+  { src: shotResting, caption: 'Rest set by effort', alt: 'Split Squat, Squat path Level 1 of 10: one set logged today (4 left, 4 right), next set 4 reps, state Resting with 02:50 left on the countdown; the Log set button is inactive, Log a past set stays available' },
+  { src: shotNewLoad, caption: 'Your load, your call', alt: 'Set max for new load screen, moving to 62.5 kg: “How will you set your max?” with three choices — Use estimated max (suggested start: 8 reps), Already performed, or Test max now (starts a 24-hour test recovery)' },
+  { src: shotHistory, caption: 'Every set, kept', alt: 'History screen: a Max evolution curve with a 16 kg and a 12 kg tab, measured and estimated points from 21 to 26 October 2026, then sessions by day — Today, Yesterday, 2 days ago, 5 days ago — with their sets and reps' },
+  { src: shotCustom, caption: 'Your own exercises, with loads', alt: 'Custom exercise form: reps or seconds, bilateral or unilateral, With load set to 10 kg (kg or lb), and a passage criterion of 12 reps — “When your max reaches it, the app suggests a heavier load.”' },
 ];
 
-const title = 'QualiReps — a strength ledger for frequent practice';
+const title = 'QualiReps — the strength ledger';
 const description =
-  'A ledger for practicing one movement often, in sets well short of failure. QualiReps records your max, computes the dose for each set, shows when the next set is due, and tracks your level on four progression paths. Free on one exercise, with every level of its path; 9,99 € once for unlimited exercises and custom ones.';
-
-// The only home-page occurrence of the term outside the FAQ (kept for search).
-const methodParagraph =
-  'QualiReps is built around one practice: a single movement, done in several short sets spread through the day, each set stopped well short of failure. The practice is known as <em>Greasing the Groove</em>; on screen, the app calls it GtG. QualiReps keeps the ledger for it, exercise by exercise.';
+  'Every set, every max, every level, every load — kept on your phone. QualiReps sizes each set from your max, leaves you a margin, and shows when the next one is safe. Bodyweight paths, kettlebell and your own exercises. One exercise free; 9,99 € once.';
 
 const jsonLd = [
   {
@@ -53,20 +48,16 @@ const jsonLd = [
 
 const faqs = [
   {
-    q: 'Can I try QualiReps before paying?',
-    a: 'Yes. The free version runs on one active exercise, on any of the four paths, with every level of that path: you move up and down freely. Max testing, the dose, the five states, set logging, history, the form guides, CSV export and backup all work on it. You can archive it and start another. A second active exercise and custom exercises are paid.',
+    q: 'Can I try it before paying?',
+    a: 'Yes. The free version runs on one active exercise, on any path, with every level of that path. Everything works on it: max tests, set sizes, rest, history, export and backup. To practice something else, archive it and start another.',
   },
   {
     q: 'What does the purchase add?',
-    a: 'Two things: as many active exercises as you want, several on the same path if you like; and custom exercises, for movements outside the paths. The price is <span data-paddle-price>9,99 €</span>, paid once: a lifetime license, no subscription, no ads.',
+    a: 'One exercise on every path at the same time, and as many exercises of your own as you want, with loads. <span data-paddle-price>9,99 €</span> once: a lifetime license, no subscription, no ads.',
   },
   {
-    q: 'How do I pay, and how do I use my other devices?',
+    q: 'How do I pay, and use my other devices?',
     a: 'You pay once through Paddle, either from inside the app or <a href="/buy">on the web</a>. The license key is emailed to you, and in the app it is shown under Settings → License. On another device, tap “I have a license” or “Enter key →” and type the key. It is checked on the device; there is no account.',
-  },
-  {
-    q: 'How do I install QualiReps?',
-    a: `From the browser; there is no app store. On Android and desktop, open <a href="${APP_URL}">${APP_HOST}</a> in Chrome (or Edge on desktop) and use its install button. On iPhone and iPad, open <a href="${APP_URL}">${APP_HOST}</a> in Safari, tap Share, then “Add to Home Screen”.`,
   },
   {
     q: 'Does it work offline?',
@@ -81,40 +72,43 @@ const faqs = [
     a: 'Your data lives only on the device, so keep a backup. Settings → Data → “Export backup” writes a JSON file with everything, including your license key; the file is not encrypted, so keep it somewhere safe. “Import backup” on another device replaces that device’s data with the file’s. The app reminds you after 30 days without a backup.',
   },
   {
-    q: 'What is Greasing the Groove?',
-    a: 'A way of practicing one movement: several short sets through the day, each stopped well short of failure, with rest between sets. QualiReps implements it with the mechanics on this page: the dose comes from your max, the next set waits for the rest to end, and a level change waits for you, once the passage criterion is reached.',
+    q: 'Strength or muscle?',
+    a: 'Each exercise has a focus. Strength keeps sets short and far from failure. Muscle brings each set closer to your max, which is where muscle grows. Both always leave you a margin, and you can switch at any time without a new test.',
+  },
+  {
+    q: 'Is this Greasing the Groove?',
+    a: 'It can be. Greasing the Groove means practicing a movement in short sets spread through the day, well short of failure. QualiReps keeps the ledger for that, and for sets done back to back in a session.',
   },
 ];
 ---
 
 <Base title={title} description={description} path="/" jsonLd={jsonLd}>
-  <!-- ───────────── HERO ───────────── -->
+  <!-- ───────────── 0 · OPENING ───────────── -->
   <section class="hero">
     <div class="wrap">
       <div class="hero-grid">
         <div class="hero-copy">
-          <div class="eyebrow hero-eyebrow">A strength practice ledger · v1.0</div>
-          <h1>A strength ledger for frequent practice.</h1>
+          <div class="eyebrow hero-eyebrow">A strength ledger · v1.0</div>
+          <h1>The strength ledger.</h1>
           <p class="hero-sub">
-            Practice one movement often, in sets well short of failure.
-            QualiReps records your max, computes the dose for each set, shows
-            when the next set is due, and tracks your level along a path of
-            harder variations.
+            Every set, every max, every level, every load — kept on your phone.
+            QualiReps sizes each set from your max, leaves you a margin, and
+            shows when the next one is safe. It never tells you what to train.
           </p>
           <div class="hero-cta-row">
             <a href="#install" class="btn btn-primary">Install QualiReps — free</a>
-            <a href="#method" class="btn btn-ghost">How it works</a>
+            <a href="/how-it-works" class="btn btn-ghost">How it works</a>
           </div>
           <a href="/pricing" class="hero-price">
             <span class="lead-in">Lifetime license —</span>
             <span class="amount" data-paddle-price>9,99 €</span>
-            <span class="terms">· one purchase, no subscription, no ads</span>
+            <span class="terms">· pay once, like a book. No account, no ads, no subscription.</span>
           </a>
 
           <div class="hero-meta">
             <div class="item">
-              <span class="k">Paths</span>
-              <span class="v">Push-up · Pull-up · Squat · Kettlebell press</span>
+              <span class="k">Train</span>
+              <span class="v">Bodyweight paths · Kettlebell · Your own exercises</span>
             </div>
             <div class="item">
               <span class="k">Platform</span>
@@ -122,7 +116,7 @@ const faqs = [
             </div>
             <div class="item">
               <span class="k">Pricing</span>
-              <span class="v">Free on one exercise · <span data-paddle-price>9,99 €</span> once</span>
+              <span class="v">One exercise free · <span data-paddle-price>9,99 €</span> once</span>
             </div>
           </div>
         </div>
@@ -133,7 +127,7 @@ const faqs = [
               <Image
                 class="phone-shot"
                 src={heroShot}
-                alt="Exercise screen for Split Squat, Squat path Level 1 of 10: state Fresh, next set 4 reps"
+                alt="QualiReps home screen: six exercises listed by availability, each with its next set, rest countdown or recovery."
                 widths={[320, 480, 640]}
                 sizes="(max-width: 880px) 280px, 320px"
                 format="webp"
@@ -147,153 +141,182 @@ const faqs = [
     </div>
   </section>
 
-  <!-- ───────────── 01 · HOW IT WORKS ───────────── -->
+  <!-- ───────────── 1 · WHAT IT KEEPS ───────────── -->
+  <section class="for-who">
+    <div class="wrap inner">
+      <div>
+        <div class="eyebrow" style="margin-bottom:24px">01 / The ledger</div>
+        <h2>What it keeps.</h2>
+      </div>
+      <div>
+        <p>
+          Your max for each exercise, and the date you set it. Every set you
+          log, with its reps or seconds, its load and its time — including the
+          sets you forgot to log and add later. Every level change, every load
+          change. History by exercise and by day, a curve of your maxes, CSV
+          export and a full backup file.
+        </p>
+        <p>
+          It is a notebook that does the arithmetic. Nothing leaves your phone.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── 2 · WHAT IT WORKS OUT ───────────── -->
   <section id="method" class="section-divider">
     <div class="wrap">
       <div class="two-col">
         <div class="col-head">
-          <div class="eyebrow" style="margin-bottom:24px">01 / How it works</div>
-          <h2>Max, dose, rest, level.</h2>
-          <p class="lead" style="margin-top:18px">
-            What QualiReps keeps for each exercise, and what it shows you.
-          </p>
+          <div class="eyebrow" style="margin-bottom:24px">02 / The arithmetic</div>
+          <h2>What it works out.</h2>
         </div>
         <div class="body">
-          <p set:html={methodParagraph}></p>
-          <div class="gtg-principles">
-            <div class="p"><span class="n">01</span><div><span class="t">Max</span><span class="d">Your max in clean reps or clean seconds: performed now, already performed, or estimated. It changes only when you update it.</span></div></div>
-            <div class="p"><span class="n">02</span><div><span class="t">Dose</span><span class="d">NEXT SET shows half your max, rounded down, capped at 5 reps, and always leaves at least 2 reps in reserve: with a max of 1 or 2, no full set is proposed. Timed holds get half the max, capped at 30 seconds. One-sided exercises are dosed from the weaker side.</span></div></div>
-            <div class="p"><span class="n">03</span><div><span class="t">Rest</span><span class="d">After a set, the exercise is Resting, with a countdown of 2, 3 or 5 minutes depending on the effort of the set. A set taken to your max ends that exercise for the day: it shows Done for today. Its Log set button stays disabled until it is Fresh again.</span></div></div>
-            <div class="p"><span class="n">04</span><div><span class="t">Level</span><span class="d">Each level has a passage criterion. When your max reaches it, the exercise screen says so and offers Change level. Moving is never automatic.</span></div></div>
+          <div class="principles">
+            <div class="p"><span class="n">01</span><div><span class="t">The next set.</span><span class="d">Sized from your max, with the focus you choose for each exercise: short, crisp sets for strength, or longer sets closer to your max for muscle. Always at least two reps short of your max. You finish every set with something left.</span></div></div>
+            <div class="p"><span class="n">02</span><div><span class="t">The rest.</span><span class="d">The harder the set felt, the longer the wait: two, three or five minutes. A set taken to your max ends that exercise for the day.</span></div></div>
+            <div class="p"><span class="n">03</span><div><span class="t">The recovery.</span><span class="d">After a max test, that exercise rests for 24 hours. Your other exercises are not affected.</span></div></div>
           </div>
           <p class="after-grid">
-            A measured max test puts that exercise into test recovery for 24
-            hours before you practice it again, and a new test at the same level
-            waits 48 hours; an estimated max does neither, and your other
-            exercises are unaffected.
-            On the days you switch off under Settings → Active days (Sunday, by
-            default), every exercise shows Rest day and its set button is
-            disabled.
+            The next set button stays off until the rest is over. The rules are
+            written down, the same every day:
+            <a href="/how-it-works" class="inline-link">How it works →</a>
+          </p>
+          <p class="closing">
+            QualiReps never tells you what to train. It tells you when the next
+            set is safe.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ───────────── 02 · THE PATHS ───────────── -->
+  <!-- ───────────── 3 · WHAT YOU TRAIN ───────────── -->
+  <section id="train" class="section-divider">
+    <div class="wrap">
+      <div class="features-head">
+        <div>
+          <div class="eyebrow" style="margin-bottom:24px">03 / Exercises</div>
+          <h2>What you train.</h2>
+        </div>
+      </div>
+
+      <div class="cols cols-3">
+        <div class="panel">
+          <h3>Bodyweight paths</h3>
+          <p>
+            Push-up, pull-up and squat, each a ladder of harder variations —
+            from a push-up against the wall to the one-arm push-up, from a dead
+            hang to the one-arm pull-up, from a split squat to the free pistol.
+            Each level has a passage criterion; you decide when to move.
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Kettlebell press</h3>
+          <p>
+            One movement, your bell. Set the weight you own; change it when you
+            choose.
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Your own exercises</h3>
+          <p>
+            Anything outside the paths, with a load if it has one — dumbbells, a
+            barbell, a machine. Kilograms or pounds.
+          </p>
+        </div>
+      </div>
+
+      <p class="lockup">One exercise per path at a time, and as many of your own as you like.</p>
+    </div>
+  </section>
+
+  <!-- ───────────── 4 · YOUR WAY ───────────── -->
   <section class="for-who">
     <div class="wrap inner">
       <div>
-        <div class="eyebrow" style="margin-bottom:24px">02 / The paths</div>
-        <h2>Four paths of harder variations.</h2>
+        <div class="eyebrow" style="margin-bottom:24px">04 / Practice</div>
+        <h2>Your way.</h2>
       </div>
       <div>
         <p>
-          Each path is a ladder of levels; every level below the last has a
-          passage criterion. The push-up, pull-up and squat paths make each
-          level harder through leverage. The kettlebell press path keeps one
-          movement, a one-arm clean and press, and makes it harder by weight.
+          Train for strength, for muscle, or both: each exercise has its own
+          focus, and you can switch it at any time. Spread short sets through
+          the day, or do them back to back in one session. Rest is counted
+          exercise by exercise, so you can alternate two movements while each
+          one rests.
         </p>
         <p>
-          Push-up path: 19 levels, ending at One-Arm Push-Up — Narrow Stance.
-          Pull-up path: 12 levels, ending at One-Arm Pull-Up. Squat path: 10
-          levels, ending at Free Pistol. Kettlebell press path: 11 levels, from
-          8 kg to 48 kg in 4 kg steps. You choose the level you start at. For a
-          movement outside the paths, a paid license adds custom exercises.
+          Spreading sets through the day has a name: <em>Greasing the
+          Groove</em>. QualiReps works well for it, and for anything else built
+          on sets and rest.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- ───────────── 03 · WHO IT'S FOR ───────────── -->
-  <section class="for-who">
-    <div class="wrap inner">
-      <div>
-        <div class="eyebrow" style="margin-bottom:24px">03 / Who it's for</div>
-        <h2>Who it's for.</h2>
-      </div>
-      <div>
-        <p>
-          You want to get better at one movement — a pull-up, a pistol, a
-          one-arm push-up — and you'd rather practice it often than train it
-          hard twice a week. You can fit a thirty-second set into your day,
-          several times over.
-        </p>
-        <p>
-          And you want a record of what you did rather than a coach telling you
-          what to do: QualiReps keeps the ledger, the decisions stay yours. The
-          paths run to the One-Arm Push-Up — Narrow Stance, the One-Arm Pull-Up
-          and the Free Pistol — far ends, reached level by level, or not. The
-          record is useful either way.
-        </p>
+  <!-- ───────────── 5 · CALM BY DESIGN ───────────── -->
+  <section id="calm" class="section-divider">
+    <div class="wrap">
+      <div class="two-col">
+        <div class="col-head">
+          <div class="eyebrow" style="margin-bottom:24px">05 / Principles</div>
+          <h2>Calm by design.</h2>
+        </div>
+        <div class="body">
+          <p>
+            QualiReps follows the principles of calm technology: ask for as
+            little attention as possible, inform without pushing.
+          </p>
+          <ul class="dash-list">
+            <li>No account, no email, no password.</li>
+            <li>Your data stays on your phone, and the app works offline.</li>
+            <li>No ads, no tracking in the app.</li>
+            <li>No badges, no streaks, no messages telling you to do more.</li>
+            <li>Pay once, like a book. No subscription.</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ───────────── 04 · FREE AND PAID ───────────── -->
+  <!-- ───────────── 6 · FREE AND PAID ───────────── -->
   <section id="demo" class="section-divider">
     <div class="wrap">
       <div class="features-head">
         <div>
-          <div class="eyebrow" style="margin-bottom:24px">04 / Free and paid</div>
-          <h2>Free on one exercise.</h2>
+          <div class="eyebrow" style="margin-bottom:24px">06 / Pricing</div>
+          <h2>Free and paid.</h2>
         </div>
-        <p class="lead">
-          The free version runs the whole ledger, on one exercise.
-        </p>
-      </div>
-
-      <div class="demo-body">
-        <p>
-          You pick one exercise, on any path, at any level, and every level of
-          that path stays open to it, up and down. Everything else works on
-          it: max testing, the dose, the five states, set logging, history, the form guides, CSV export and
-          backup.
-        </p>
-        <p>
-          To practice something else, archive it and create another. More than
-          one active exercise, and custom exercises, are part of the paid
-          version.
-        </p>
       </div>
 
       <div class="cols">
         <div class="panel">
           <h3>Free</h3>
           <ul>
-            <li>One active exercise, on any path, with every level of that path</li>
-            <li>Archive it and start another at any time</li>
-            <li>Max testing, dose, the five states, set logging</li>
-            <li>History, CSV export, backup</li>
-            <li>All 42 form guides</li>
+            {FREE_FEATURES.map((f) => <li>{f}</li>)}
           </ul>
         </div>
         <div class="panel">
           <h3>Paid · <span data-paddle-price>9,99 €</span> once</h3>
           <ul>
-            <li>Unlimited exercises, several per path if you want</li>
-            <li>Custom exercises, for movements outside the paths</li>
-            <li>One license key for your other devices</li>
+            {PAID_FEATURES.map((f) => <li>{f}</li>)}
           </ul>
         </div>
       </div>
 
-      <p class="lockup">One purchase, lifetime license. No subscription, no ads.</p>
+      <p class="lockup">{OFFER_LOCKUP}</p>
     </div>
   </section>
 
-  <!-- ───────────── 04 · SCREENSHOTS ───────────── -->
+  <!-- ───────────── 7 · SEE IT ───────────── -->
   <section id="screenshots" class="section-divider">
     <div class="wrap">
       <div class="features-head">
         <div>
-          <div class="eyebrow" style="margin-bottom:24px">05 / Screenshots</div>
+          <div class="eyebrow" style="margin-bottom:24px">07 / Screenshots</div>
           <h2>See it.</h2>
         </div>
-        <p class="lead">
-          The paths, the max test, the Recovery state that follows it, and a
-          custom exercise.
-        </p>
       </div>
 
       <ul class="shots" role="list">
@@ -319,12 +342,12 @@ const faqs = [
     </div>
   </section>
 
-  <!-- ───────────── 05 · GET QUALIREPS ───────────── -->
+  <!-- ───────────── 8 · INSTALL ───────────── -->
   <section id="install" class="section-divider">
     <div class="wrap">
       <div class="features-head">
         <div>
-          <div class="eyebrow" style="margin-bottom:24px">06 / Get QualiReps</div>
+          <div class="eyebrow" style="margin-bottom:24px">08 / Get QualiReps</div>
           <h2>Install.</h2>
         </div>
         <p class="lead">
@@ -337,18 +360,18 @@ const faqs = [
     </div>
   </section>
 
-  <!-- ───────────── 06 · PERFECT FORM GUIDES ───────────── -->
+  <!-- ───────────── 9 · FORM GUIDES ───────────── -->
   <section id="forms" class="section-divider">
     <div class="wrap">
       <div class="features-head">
         <div>
-          <div class="eyebrow" style="margin-bottom:24px">07 / Perfect form guides</div>
-          <h2>Open knowledge.</h2>
+          <div class="eyebrow" style="margin-bottom:24px">09 / Form guides</div>
+          <h2>Form guides.</h2>
         </div>
         <p class="lead">
-          42 perfect form guides: one for each of the 41 bodyweight levels, and
-          one shared by all 11 kettlebell levels. They are free to read, here
-          and in the app.
+          One guide for every level of the bodyweight paths, and one for the
+          kettlebell press: set-up, the rep, what to watch for. Free to read,
+          here and in the app.
         </p>
       </div>
 
@@ -371,12 +394,12 @@ const faqs = [
     </div>
   </section>
 
-  <!-- ───────────── 07 · FAQ ───────────── -->
+  <!-- ───────────── 10 · QUESTIONS ───────────── -->
   <section id="faq" class="section-divider">
     <div class="wrap">
       <div class="features-head faq-head">
         <div>
-          <div class="eyebrow" style="margin-bottom:24px">08 / Frequently asked</div>
+          <div class="eyebrow" style="margin-bottom:24px">10 / Frequently asked</div>
           <h2>Questions.</h2>
         </div>
       </div>
@@ -534,7 +557,7 @@ const faqs = [
     }
   }
 
-  /* ───── TWO-COL (GtG) ───── */
+  /* ───── TWO-COL ───── */
   .two-col {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
@@ -559,27 +582,28 @@ const faqs = [
     color: var(--fg-mute);
     font-size: 15px;
   }
-  .gtg-principles {
+  .two-col .body p.closing {
     margin-top: 28px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    font-family: var(--font-display);
+    font-size: clamp(18px, 2vw, 22px);
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+  }
+  .inline-link {
+    color: var(--accent-hi);
+    white-space: nowrap;
+  }
+  .principles {
     border-top: 1px solid var(--hairline-soft);
   }
-  .gtg-principles .p {
+  .principles .p {
     padding: 18px 0;
     border-bottom: 1px solid var(--hairline-soft);
     display: flex;
     gap: 14px;
     align-items: flex-start;
   }
-  .gtg-principles .p:nth-child(odd) {
-    padding-right: 24px;
-    border-right: 1px solid var(--hairline-soft);
-  }
-  .gtg-principles .p:nth-child(even) {
-    padding-left: 24px;
-  }
-  .gtg-principles .n {
+  .principles .n {
     font-family: var(--font-mono);
     font-size: 11px;
     letter-spacing: 0.12em;
@@ -588,31 +612,41 @@ const faqs = [
     padding-top: 3px;
     min-width: 22px;
   }
-  .gtg-principles .t {
+  .principles .t {
     font-weight: 600;
     font-size: 15px;
     color: var(--fg);
     display: block;
     margin-bottom: 4px;
   }
-  .gtg-principles .d {
+  .principles .d {
     color: var(--fg-mute);
-    font-size: 14px;
-    line-height: 1.55;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .dash-list {
+    list-style: none;
+    margin: 8px 0 0;
+    padding: 0;
+    border-top: 1px solid var(--hairline-soft);
+  }
+  .dash-list li {
+    position: relative;
+    padding: 14px 0 14px 1.5rem;
+    border-bottom: 1px solid var(--hairline-soft);
+    color: var(--fg);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .dash-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
   }
   @media (max-width: 760px) {
     .two-col {
       grid-template-columns: 1fr;
-    }
-    .gtg-principles {
-      grid-template-columns: 1fr;
-    }
-    .gtg-principles .p:nth-child(odd) {
-      padding-right: 0;
-      border-right: 0;
-    }
-    .gtg-principles .p:nth-child(even) {
-      padding-left: 0;
     }
   }
 
@@ -637,6 +671,10 @@ const faqs = [
     margin-top: 18px;
     color: var(--fg-mute);
     font-size: clamp(16px, 1.4vw, 18px);
+  }
+  .for-who p :global(em) {
+    color: var(--accent-hi);
+    font-style: italic;
   }
   .for-who + .for-who {
     border-top: 0;
@@ -663,20 +701,7 @@ const faqs = [
     max-width: 38ch;
   }
 
-  /* ───── DEMO ───── */
-  .demo-body {
-    max-width: 65ch;
-    margin-bottom: 32px;
-  }
-  .demo-body p {
-    color: var(--fg);
-    font-size: 17px;
-    line-height: 1.7;
-  }
-  .demo-body p + p {
-    margin-top: 16px;
-    color: var(--fg-mute);
-  }
+  /* ───── PANELS (train, free and paid) ───── */
   .cols {
     display: grid;
     gap: 1px;
@@ -698,6 +723,15 @@ const faqs = [
     text-transform: uppercase;
     color: var(--accent);
     margin: 0 0 16px;
+  }
+  .cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .panel p {
+    margin: 0;
+    color: var(--fg);
+    font-size: 15px;
+    line-height: 1.6;
   }
   .panel ul {
     list-style: none;
@@ -724,6 +758,11 @@ const faqs = [
     color: var(--fg);
     margin: 32px 0 0;
     letter-spacing: -0.01em;
+  }
+  @media (max-width: 880px) {
+    .cols-3 {
+      grid-template-columns: 1fr;
+    }
   }
   @media (max-width: 560px) {
     .cols {

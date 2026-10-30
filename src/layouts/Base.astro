@@ -32,6 +32,7 @@ const ogImageUrl = new URL(ogImage, Astro.site).href;
 // the root; the others match their section (so /forms/{slug} keeps Forms lit).
 const navItems = [
   { href: '/', label: 'Home' },
+  { href: '/how-it-works', label: 'How it works' },
   { href: '/forms', label: 'Forms' },
   { href: '/pricing', label: 'Pricing' },
 ];
@@ -116,14 +117,16 @@ function isActive(href: string): boolean {
       <div class="wrap foot-inner">
         <div class="foot-logo">
           <Logo wordmark="#a59f97" />
-          <span class="foot-meta">A daily strength practice tool · v1.0</span>
+          <span class="foot-meta">A strength ledger · v1.0</span>
         </div>
         <nav aria-label="Footer">
+          <a href="/how-it-works">How it works</a>
+          <a href="/forms">Forms</a>
+          <a href="/pricing">Pricing</a>
           <a href="/privacy">Privacy</a>
           <a href="/terms">Terms</a>
           <a href="/refund">Refund</a>
           <a href="/legal">Legal</a>
-          <a href="/forms">Forms</a>
           <a href={`mailto:${SUPPORT_EMAIL}`}>Contact</a>
         </nav>
       </div>

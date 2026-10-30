@@ -16,6 +16,6 @@
     <line x1="77" y1="138" x2="90" y2="151" stroke="#d9904a" stroke-width="17" stroke-linecap="square"/>
   </g>
   <text x="110" y="430" font-family="Inter, system-ui, sans-serif" font-size="84" font-weight="800" fill="#e8e4de" letter-spacing="-2">QualiReps</text>
-  <text x="112" y="500" font-family="Inter, system-ui, sans-serif" font-size="34" font-weight="500" fill="#b8b3ad">A strength ledger for frequent practice.</text>
-  <text x="112" y="556" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="500" fill="#d9904a" letter-spacing="3">GTG LEDGER</text>
+  <text x="112" y="500" font-family="Inter, system-ui, sans-serif" font-size="34" font-weight="500" fill="#b8b3ad">The strength ledger.</text>
+  <text x="112" y="556" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="500" fill="#d9904a" letter-spacing="3">BODYWEIGHT · KETTLEBELL · YOUR OWN EXERCISES</text>
 </svg>

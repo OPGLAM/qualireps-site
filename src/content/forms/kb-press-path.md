@@ -8,7 +8,7 @@ unit: "reps"
 
 # One-Arm Kettlebell Strict Press
 
-**Pattern:** vertical press (load progression) · **Unit:** reps · **One bell, one arm**
+**Pattern:** vertical press · **Unit:** reps · **One bell, one arm, a load you choose**
 
 ## The movement
 
@@ -16,7 +16,7 @@ A slow, controlled press of one kettlebell from the shoulder to a locked-out arm
 
 ## Equipment and setup
 
-- One kettlebell at your current level's weight.
+- One kettlebell, at the load recorded for this exercise. When your max reaches your criterion, the app suggests a heavier bell; a new load means a new max (Change load).
 - Flat, hard, non-slip floor; avoid soft mats.
 - Clear overhead space; room to set the bell down and clear a failed rep.
 - Flat footwear or bare feet; chalk if grip limits.
@@ -69,4 +69,6 @@ The app selects the mode from your dose: Mode A when the daily set is 3 reps or 
 
 ## Dose
 
-Test a clean max per arm with your current bell; work at half of the weaker arm (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both arms, weaker arm first, spread through the day. Stop each set well short of failure.
+Test a clean max per arm with the bell you practice with; work at half of the weaker arm (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both arms, weaker arm first, spread through the day. Stop each set well short of failure.
+
+With the Muscle focus: your weaker side's max minus 3 reps per set, same count both sides, never fewer than above, no cap of 5.

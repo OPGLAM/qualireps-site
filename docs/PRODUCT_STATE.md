@@ -26,14 +26,17 @@ of serverless endpoints for Paddle checkout fulfillment.
 ## 3. Live & working (present in the code)
 
 Pages (`src/pages/`):
-- `/` — home: hero, freemium/free-demo explainer, three-platform install block.
+- `/` — home: the strength ledger (sections 0–10 of qualireps-v2's
+  `qualireps-audit/Landing page textes.md`), three-platform install block.
+- `/how-it-works` — the exact rules (max, set size by Focus, rest, recovery,
+  levels and loads, past sets, rest days), checked against the app code.
 - `/pricing` — single-story pricing (9,99 €, lifetime, no subscription).
 - `/buy` — Paddle checkout overlay (gated by `CHECKOUT_LIVE`).
 - `/thanks` — purchase success page; surfaces the issued license key.
 - `/privacy`, `/terms`, `/refund` — legal pages rendered from `PRIVACY.md`,
   `TERMS.md`, `REFUND.md`.
-- `/forms` — index of 42 perfect-form guides, grouped by chain (push / pull /
-  squat / kettlebell press).
+- `/forms` — index of the perfect-form guides (count derived from the
+  collection), grouped by chain (push / pull / squat / kettlebell press).
 - `/forms/{slug}` — individual form guide (`slug` = `exercise_id`).
 
 API routes (serverless, `prerender = false`):
