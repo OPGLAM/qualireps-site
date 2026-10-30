@@ -25,8 +25,27 @@ const chains = groupByChain(entries);
 const shots = [
   { src: shotResting, caption: 'Rest set by effort', alt: 'Split Squat, Squat path Level 1 of 10: one set logged today (4 left, 4 right), next set 4 reps, state Resting with 02:50 left on the countdown; the Log set button is inactive, Log a past set stays available' },
   { src: shotNewLoad, caption: 'Your load, your call', alt: 'Set max for new load screen, moving to 62.5 kg: “How will you set your max?” with three choices — Use estimated max (suggested start: 8 reps), Already performed, or Test max now (starts a 24-hour test recovery)' },
-  { src: shotHistory, caption: 'Every set, kept', alt: 'History screen: a Max evolution curve with a 16 kg and a 12 kg tab, measured and estimated points from 21 to 26 October 2026, then sessions by day — Today, Yesterday, 2 days ago, 5 days ago — with their sets and reps' },
+  { src: shotHistory, caption: 'Every set, kept', alt: 'History screen: a Max evolution curve with a 16 kg and a 12 kg tab, three measured maxes rising from 29 September to 26 October 2026, then sessions by day — Today, Yesterday, 4 days ago, 5 days ago — with their sets and reps' },
   { src: shotCustom, caption: 'Your own exercises, with loads', alt: 'Custom exercise form: reps or seconds, bilateral or unilateral, With load set to 10 kg (kg or lb), and a passage criterion of 12 reps — “When your max reaches it, the app suggests a heavier load.”' },
+];
+
+// "Built on research": each claim links to its source (opens in a new tab).
+const studies = [
+  {
+    text: '<strong>Stopping short of failure builds strength about as well as going all the way</strong>, and you recover faster.',
+    label: 'Meta-analysis of 55 studies →',
+    href: 'https://www.fau.edu/newsdesk/articles/muscle-growth-strength-study',
+  },
+  {
+    text: '<strong>Sets kept well short of failure are recovered from within hours; sets taken to failure take one to two days.</strong> That is why a set to your max ends the exercise for the day, and a max test starts a 24-hour recovery.',
+    label: 'Morán-Navarro et al., 2017 →',
+    href: 'https://pubmed.ncbi.nlm.nih.gov/28965198/',
+  },
+  {
+    text: '<strong>Adding reps or adding load: both make you stronger.</strong> You choose when to move up.',
+    label: 'Plotkin et al., 2022 →',
+    href: 'https://peerj.com/articles/14142',
+  },
 ];
 
 const title = 'QualiReps — the strength ledger';
@@ -73,7 +92,7 @@ const faqs = [
   },
   {
     q: 'Strength or muscle?',
-    a: 'Each exercise has a focus. Strength keeps sets short and far from failure. Muscle brings each set closer to your max, which is where muscle grows. Both always leave you a margin, and you can switch at any time without a new test.',
+    a: 'Each exercise has a focus. Strength keeps sets short and far from failure. Muscle (hypertrophy) brings each set closer to your max, which is where muscle grows. Both always leave you a margin, and you can switch at any time without a new test.',
   },
   {
     q: 'Is this Greasing the Groove?',
@@ -89,11 +108,11 @@ const faqs = [
       <div class="hero-grid">
         <div class="hero-copy">
           <div class="eyebrow hero-eyebrow">A strength ledger · v1.0</div>
-          <h1>The strength ledger.</h1>
+          <h1>Get stronger without guessing.</h1>
           <p class="hero-sub">
             Every set, every max, every level, every load — kept on your phone.
             QualiReps sizes each set from your max, leaves you a margin, and
-            shows when the next one is safe. It never tells you what to train.
+            shows when the next one is safe. A tool, not a coach.
           </p>
           <div class="hero-cta-row">
             <a href="#install" class="btn btn-primary">Install QualiReps — free</a>
@@ -127,7 +146,7 @@ const faqs = [
               <Image
                 class="phone-shot"
                 src={heroShot}
-                alt="QualiReps home screen: six exercises listed by availability, each with its next set, rest countdown or recovery."
+                alt="QualiReps home screen: six exercises listed by availability. Ready first, with their next set: a custom Dumbbell Row at 22 kg in Muscle focus, the One-Arm Kettlebell Strict Press at 16 kg, a Split Squat. Then two exercises resting (Wait 1 min, Wait 2 min) and a Standard Pull-Up in 24-hour recovery."
                 widths={[320, 480, 640]}
                 sizes="(max-width: 880px) 280px, 320px"
                 format="webp"
@@ -183,10 +202,33 @@ const faqs = [
             <a href="/how-it-works" class="inline-link">How it works →</a>
           </p>
           <p class="closing">
-            QualiReps never tells you what to train. It tells you when the next
-            set is safe.
+            QualiReps is a tool, not a coach. It tells you when the next set is
+            safe.
           </p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── 2b · BUILT ON RESEARCH ───────────── -->
+  <section id="research" class="for-who">
+    <div class="wrap inner">
+      <div>
+        <div class="eyebrow" style="margin-bottom:24px">03 / Research</div>
+        <h2>Built on research.</h2>
+      </div>
+      <div>
+        <p>The rules come from published studies, not from habit. Three of them:</p>
+        <ul class="studies" role="list">
+          {
+            studies.map((s) => (
+              <li>
+                <span class="claim" set:html={s.text} />
+                <a class="study-link" href={s.href} target="_blank" rel="noopener noreferrer">{s.label}</a>
+              </li>
+            ))
+          }
+        </ul>
       </div>
     </div>
   </section>
@@ -196,7 +238,7 @@ const faqs = [
     <div class="wrap">
       <div class="features-head">
         <div>
-          <div class="eyebrow" style="margin-bottom:24px">03 / Exercises</div>
+          <div class="eyebrow" style="margin-bottom:24px">04 / Exercises</div>
           <h2>What you train.</h2>
         </div>
       </div>
@@ -235,7 +277,7 @@ const faqs = [
   <section class="for-who">
     <div class="wrap inner">
       <div>
-        <div class="eyebrow" style="margin-bottom:24px">04 / Practice</div>
+        <div class="eyebrow" style="margin-bottom:24px">05 / Practice</div>
         <h2>Your way.</h2>
       </div>
       <div>
@@ -260,7 +302,7 @@ const faqs = [
     <div class="wrap">
       <div class="two-col">
         <div class="col-head">
-          <div class="eyebrow" style="margin-bottom:24px">05 / Principles</div>
+          <div class="eyebrow" style="margin-bottom:24px">06 / Principles</div>
           <h2>Calm by design.</h2>
         </div>
         <div class="body">
@@ -280,12 +322,37 @@ const faqs = [
     </div>
   </section>
 
+  <!-- ───────────── 5b · WHY I BUILT IT ───────────── -->
+  <section id="why" class="for-who">
+    <div class="wrap inner">
+      <div>
+        <div class="eyebrow" style="margin-bottom:24px">07 / Origin</div>
+        <h2>Why I built it.</h2>
+      </div>
+      <div>
+        <p>
+          I built QualiReps to track my own progress and manage my recovery
+          properly. I like to train as often as I want, and the soreness from
+          sets taken to failure kept costing me days. So I stopped going to
+          failure, and wanted a tool that made it simple: every set sized, every
+          rest timed, an honest record.
+        </p>
+        <p>
+          QualiReps has a few bodyweight paths, built on what calisthenics
+          practitioners have long done, and a notebook for everything else — so
+          anyone can log what they practice and progress at their own pace.
+        </p>
+        <p class="signature">— Olivier, independent developer near Paris</p>
+      </div>
+    </div>
+  </section>
+
   <!-- ───────────── 6 · FREE AND PAID ───────────── -->
   <section id="demo" class="section-divider">
     <div class="wrap">
       <div class="features-head">
         <div>
-          <div class="eyebrow" style="margin-bottom:24px">06 / Pricing</div>
+          <div class="eyebrow" style="margin-bottom:24px">08 / Pricing</div>
           <h2>Free and paid.</h2>
         </div>
       </div>
@@ -314,7 +381,7 @@ const faqs = [
     <div class="wrap">
       <div class="features-head">
         <div>
-          <div class="eyebrow" style="margin-bottom:24px">07 / Screenshots</div>
+          <div class="eyebrow" style="margin-bottom:24px">09 / Screenshots</div>
           <h2>See it.</h2>
         </div>
       </div>
@@ -347,7 +414,7 @@ const faqs = [
     <div class="wrap">
       <div class="features-head">
         <div>
-          <div class="eyebrow" style="margin-bottom:24px">08 / Get QualiReps</div>
+          <div class="eyebrow" style="margin-bottom:24px">10 / Get QualiReps</div>
           <h2>Install.</h2>
         </div>
         <p class="lead">
@@ -365,7 +432,7 @@ const faqs = [
     <div class="wrap">
       <div class="features-head">
         <div>
-          <div class="eyebrow" style="margin-bottom:24px">09 / Form guides</div>
+          <div class="eyebrow" style="margin-bottom:24px">11 / Form guides</div>
           <h2>Form guides.</h2>
         </div>
         <p class="lead">
@@ -399,7 +466,7 @@ const faqs = [
     <div class="wrap">
       <div class="features-head faq-head">
         <div>
-          <div class="eyebrow" style="margin-bottom:24px">10 / Frequently asked</div>
+          <div class="eyebrow" style="margin-bottom:24px">12 / Frequently asked</div>
           <h2>Questions.</h2>
         </div>
       </div>
@@ -675,6 +742,45 @@ const faqs = [
   .for-who p :global(em) {
     color: var(--accent-hi);
     font-style: italic;
+  }
+  .for-who p.signature {
+    margin-top: 24px;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    color: var(--fg-mute);
+  }
+  .studies {
+    list-style: none;
+    margin: 24px 0 0;
+    padding: 0;
+    border-top: 1px solid var(--hairline-soft);
+  }
+  .studies li {
+    padding: 18px 0;
+    border-bottom: 1px solid var(--hairline-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .studies .claim {
+    color: var(--fg-mute);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .studies .claim :global(strong) {
+    color: var(--fg);
+    font-weight: 600;
+  }
+  .study-link {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--accent-hi);
+    align-self: flex-start;
+  }
+  .study-link:hover {
+    color: var(--accent);
   }
   .for-who + .for-who {
     border-top: 0;
