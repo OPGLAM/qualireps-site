@@ -36,7 +36,7 @@ Exhale on the pull, inhale on the lower.
 - *Easier:* feet back toward the high-angle band.
 
 ## Dose
-Test your max in clean form, then practice at half of it (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, spread through the day.
+Test your max in clean form, then practice at half of it (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve.
 
 With the Muscle focus: your max minus 3 reps per set, never fewer than above, no cap of 5.
 

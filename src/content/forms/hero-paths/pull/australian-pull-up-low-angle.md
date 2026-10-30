@@ -36,6 +36,6 @@ Exhale on the pull, inhale on the lower.
 - *Easier:* feet back toward the mid-angle band.
 
 ## Dose
-Test your max in clean form, then practice at half of it (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, spread through the day. Clean reps over count — at this load the difference is what makes level 6 reachable.
+Test your max in clean form, then practice at half of it (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve. Clean reps over count — at this load the difference is what makes level 6 reachable.
 
 With the Muscle focus: your max minus 3 reps per set, never fewer than above, no cap of 5.

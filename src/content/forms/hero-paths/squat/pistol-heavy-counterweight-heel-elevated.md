@@ -38,6 +38,6 @@ Inhale on the descent, exhale on the drive up. A brief brace at the bottom is fi
 - *Easier:* taller wedge; heavier counterweight; a fingertip on a side support for balance.
 
 ## Dose
-Set your wedge and counterweight, test a clean max per side at that setting, then practice at half of the weaker side (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both sides, weaker side first, spread through the day. Keep the wedge and weight fixed across max tests and daily sets; reduce them deliberately, then re-test.
+Set your wedge and counterweight, test a clean max per side at that setting, then practice at half of the weaker side (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both sides, weaker side first. Keep the wedge and weight fixed across max tests and daily sets; reduce them deliberately, then re-test.
 
 With the Muscle focus: your weaker side's max minus 3 reps per set, same count both sides, never fewer than above, no cap of 5.

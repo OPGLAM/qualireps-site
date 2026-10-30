@@ -69,6 +69,6 @@ The app selects the mode from your dose: Mode A when the daily set is 3 reps or 
 
 ## Dose
 
-Test a clean max per arm with the bell you practice with; work at half of the weaker arm (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both arms, weaker arm first, spread through the day. Stop each set well short of failure.
+Test a clean max per arm with the bell you practice with; work at half of the weaker arm (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both arms, weaker arm first. Stop each set well short of failure.
 
 With the Muscle focus: your weaker side's max minus 3 reps per set, same count both sides, never fewer than above, no cap of 5.

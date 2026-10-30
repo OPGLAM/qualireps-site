@@ -49,6 +49,6 @@ Inhale and brace at the top, hold the brace on the way down, exhale as you press
 
 ## Dose
 
-Test a clean max; work at half of it (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, spread through the day. Stop each set well short of failure. If your max is 2 or fewer, step closer to the wall and test again, or practice slow lowering only (3–5 s down, then step back to the start) until your max grows.
+Test a clean max; work at half of it (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve. Stop each set well short of failure. If your max is 2 or fewer, step closer to the wall and test again, or practice slow lowering only (3–5 s down, then step back to the start) until your max grows.
 
 With the Muscle focus: your max minus 3 reps per set, never fewer than above, no cap of 5.

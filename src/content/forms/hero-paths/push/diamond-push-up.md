@@ -39,6 +39,6 @@ Brace at the top, hold through the descent, pressurized exhale through the locko
 - *Easier:* hands a touch farther apart — keep the elbows tucked.
 
 ## Dose
-Test a clean max; work at half of it (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, spread through the day. Stop each set well short of failure.
+Test a clean max; work at half of it (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve. Stop each set well short of failure.
 
 With the Muscle focus: your max minus 3 reps per set, never fewer than above, no cap of 5.

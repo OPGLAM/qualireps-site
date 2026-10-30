@@ -41,6 +41,6 @@ Sharp exhale through the press, abs held as a shield. No soft trunk at any point
 - *Easier:* widen the feet. If balance is the limiter, rest the free-hand fingertips on the support, reducing contact over time.
 
 ## Dose
-Test a clean max on each side; work at half of the weaker side (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both sides, weaker side first, spread through the day. Stop each set well short of failure.
+Test a clean max on each side; work at half of the weaker side (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both sides, weaker side first. Stop each set well short of failure.
 
 With the Muscle focus: your weaker side's max minus 3 reps per set, same count both sides, never fewer than above, no cap of 5.

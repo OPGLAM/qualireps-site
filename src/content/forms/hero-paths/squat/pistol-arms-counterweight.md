@@ -38,6 +38,6 @@ Inhale on the descent, exhale on the drive up; brief brace at the bottom is fine
 - *Easier:* a token light weight in the hands (back to level 8); a fingertip for balance.
 
 ## Dose
-Test a clean max per side, then practice at half of the weaker side (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both sides, weaker side first, spread through the day. At a 3-rep criterion, the daily set is typically 1 clean rep per side.
+Test a clean max per side, then practice at half of the weaker side (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both sides, weaker side first. At a 3-rep criterion, the daily set is typically 1 clean rep per side.
 
 With the Muscle focus: your weaker side's max minus 3 reps per set, same count both sides, never fewer than above, no cap of 5.

@@ -38,6 +38,6 @@ Inhale on the descent, exhale on the drive up; brief brace at the bottom is fine
 - *Easier:* re-introduce a small heel wedge (back to level 6); a fingertip for balance.
 
 ## Dose
-Test a clean max per side, then practice at half of the weaker side (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both sides, weaker side first, spread through the day. If this stalls for weeks, the cause is almost always ankle mobility — hold level 6 as the strength level and work the ankle in parallel.
+Test a clean max per side, then practice at half of the weaker side (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both sides, weaker side first. If this stalls for weeks, the cause is almost always ankle mobility — hold level 6 as the strength level and work the ankle in parallel.
 
 With the Muscle focus: your weaker side's max minus 3 reps per set, same count both sides, never fewer than above, no cap of 5.

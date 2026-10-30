@@ -37,4 +37,4 @@ Free and continuous, no holding. If breathing gets labored, the grip is failing 
 - *Easier:* feet lightly on a support to offload weight; shorter holds, more sets.
 
 ## Dose
-Test your max hold in clean form (stop before the grip actually fails), then hold half of that per set (30 s at most), spread through the day. Stop each hold well before the grip gives.
+Test your max hold in clean form (stop before the grip actually fails), then hold half of that per set (30 s at most). Stop each hold well before the grip gives.

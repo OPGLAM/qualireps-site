@@ -37,6 +37,6 @@ Breathe steadily through the shifts; don't hold at the top.
 - *Easier:* hands a little closer; shorter shift; more support from the straight arm.
 
 ## Dose
-Test a clean max per side (controlled shifts, top held), then practice at half of the weaker side (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both sides, weaker side first, spread through the day.
+Test a clean max per side (controlled shifts, top held), then practice at half of the weaker side (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both sides, weaker side first.
 
 With the Muscle focus: your weaker side's max minus 3 reps per set, same count both sides, never fewer than above, no cap of 5.
