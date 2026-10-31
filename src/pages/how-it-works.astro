@@ -23,8 +23,18 @@ const jsonLd = [
 ];
 
 // Each rule: a heading and a few plain sentences. HTML is limited to <em>
-// for the app's on-screen labels.
-const rules = [
+// for the app's on-screen labels. A rule with `paras` is explanatory prose
+// rather than a list of rules.
+type Rule = { h: string; items?: string[]; paras?: string[] };
+const rules: Rule[] = [
+  {
+    h: 'How you get stronger',
+    paras: [
+      'Strength grows first in your nervous system. To move, your brain recruits motor units — groups of muscle fibers that fire together. Training teaches it to recruit them faster and better: more fibers at once, firing at a higher rate, working together. That speed and quality of recruitment is where most of your early progress comes from, and it is why strength belongs to the movement you practice. It builds through clean, repeated sets.',
+      'Then the muscle follows. Asked again and again to work close to its limit, its fibers grow thicker — their number barely changes. This is hypertrophy, and it serves strength: bigger fibers give your nervous system more force to recruit. It comes more slowly, over months.',
+      'QualiReps trains both. The Strength focus keeps sets short and crisp, far from failure: frequent, clean practice that sharpens recruitment. The Muscle focus brings each set closer to your max, giving your fibers a reason to grow. Either way, every set leaves a margin, and recovery is respected.',
+    ],
+  },
   {
     h: 'Your max',
     items: [
@@ -123,11 +133,19 @@ const rules = [
                 <span class="n">{String(i + 1).padStart(2, '0')}</span>
                 <h2>{rule.h}</h2>
               </div>
-              <ul class="rule-body">
-                {rule.items.map((item) => (
-                  <li set:html={item} />
-                ))}
-              </ul>
+              {rule.paras ? (
+                <div class="rule-prose">
+                  {rule.paras.map((p) => (
+                    <p set:html={p} />
+                  ))}
+                </div>
+              ) : (
+                <ul class="rule-body">
+                  {rule.items!.map((item) => (
+                    <li set:html={item} />
+                  ))}
+                </ul>
+              )}
             </li>
           ))
         }
@@ -224,6 +242,16 @@ const rules = [
   }
   .rule-body li :global(strong) {
     font-weight: 600;
+  }
+  .rule-prose p {
+    margin: 0 0 0.9rem;
+    color: var(--fg);
+    font-size: 16px;
+    line-height: 1.65;
+    max-width: 68ch;
+  }
+  .rule-prose p:last-child {
+    margin-bottom: 0;
   }
 
   .how-cta {
