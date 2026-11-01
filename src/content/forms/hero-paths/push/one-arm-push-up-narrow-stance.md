@@ -8,7 +8,7 @@ unit: "reps"
 
 # One-Arm Push-Up — Narrow Stance
 **Push horizontal · reps · unilateral**
-*The endpoint of the chain. Feet close, body a rigid plank, zero twist. From here you maintain rather than progress.*
+*The endpoint of the path. Feet close, body a rigid plank, zero twist. From here you maintain rather than progress.*
 
 ## The movement
 On the floor, feet narrow, working hand under its shoulder, the other parked behind the back. Lower the chest to the floor and press back, on one arm, body moving as one rigid block with the pelvis perfectly square from start to finish. Do all reps on one side, then switch.

@@ -8,7 +8,7 @@ unit: "seconds"
 
 # Dead Hang
 **Pull vertical (prep) · seconds · bilateral**
-*The base of the chain: grip endurance and shoulder-tissue tolerance, built passively.*
+*The base of the path: grip endurance and shoulder-tissue tolerance, built passively.*
 
 ## The movement
 Hang from the bar with arms completely straight and shoulders relaxed, body still, for time. Pure passive suspension — no pulling, no effort beyond the grip.

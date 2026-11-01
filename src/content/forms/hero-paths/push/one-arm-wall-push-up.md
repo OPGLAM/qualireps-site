@@ -11,7 +11,7 @@ unit: "reps"
 *The gentlest possible one-arm press. Load is minimal — the work is to groove the single-arm pattern: elbow tracking, hand-screw, square pelvis.*
 
 ## The movement
-Standing and leaning into a wall on one hand, bend the elbow to bring the shoulder toward the wall — not the face — then press back to a straight arm. The free arm is parked. This is the only pressing level of the chain with feet flat. Do all reps on one side, then switch.
+Standing and leaning into a wall on one hand, bend the elbow to bring the shoulder toward the wall — not the face — then press back to a straight arm. The free arm is parked. This is the only pressing level of the path with feet flat. Do all reps on one side, then switch.
 
 ## Set-up — and what each part is for
 - **Face the wall**, feet a short distance away (start about two foot-lengths back). The lean should feel light. **Measure this foot-to-wall distance and reproduce it every session.**

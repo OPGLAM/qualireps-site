@@ -14,7 +14,7 @@ unit: "reps"
 The Australian pull-up with the body nearly horizontal (~15°). Chest to the bar, lower to straight arms. The load on the back approaches a vertical pull, in a horizontal pattern with the heels still down.
 
 ## Set-up — and what each part is for
-- **Bar** low-thigh height, or feet walked well forward; **grip** pronated, thumbs wrapped.
+- **Bar** a little above hip height — or keep the level-3 bar (around chest height) and put your heels on a box or low bench about 35 cm high; **grip** pronated, thumbs wrapped.
 - **Body** one straight line, ~15° to the floor — nearly horizontal. Strict full-body brace: glutes, abs, low back. → *feel one continuous hard line; the first place that softens is the giveaway.*
 
 ## The rep — rehearse it before you do it
@@ -33,9 +33,11 @@ Exhale on the pull, inhale on the lower.
 
 ## Within the level
 - *Harder:* feet on a low support (toward feet-level / near-vertical); slow lower; top pause.
-- *Easier:* feet back toward the mid-angle band.
+- *Easier:* feet a small step back, or a higher bar.
 
 ## Dose
 Test your max in clean form, then practice at half of it (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve. Clean reps over count — at this load the difference is what makes level 6 reachable.
 
 With the Muscle focus: your max minus 3 reps per set, never fewer than above, no cap of 5.
+
+*No adjustable bar? Keep the level-3 bar and raise your heels on a box or low bench about 35 cm high to reach ~15°. Walking the feet forward does not work: the chest can no longer reach the bar, the neck gets there first.*

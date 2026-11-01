@@ -11,10 +11,10 @@ unit: "reps"
 *The first loaded pull: chest to the bar, body angled — the angle sets the load.*
 
 ## The movement
-Hang under a bar around hip height, body straight and angled, heels on the floor. Pull the chest to the bar by driving the elbows back and down, then lower to straight arms. The higher the body angle, the lighter the load.
+Hang under a bar around chest height, body straight and angled, heels on the floor. Pull the chest to the bar by driving the elbows back and down, then lower to straight arms. The higher the body angle, the lighter the load.
 
 ## Set-up — and what each part is for
-- **Bar** ~hip height; **grip** pronated, thumbs wrapped, a little wider than shoulders.
+- **Bar** around chest height; **grip** pronated, thumbs wrapped, a little wider than shoulders.
 - **Body** one straight line head-to-heels, ~45° to the floor, heels down. Glutes and abs braced. → *feel a flat, hard plank; the hips don't sag.*
 - **Head** neutral.
 
@@ -33,12 +33,12 @@ Exhale on the pull, inhale on the lower. Free throughout.
 - **Bent legs** → the body is one straight unit; bent legs change the angle and unload it.
 
 ## Within the level
-- *Harder:* walk the feet forward (lower angle, more load); slow the lower; pause at the top.
-- *Easier:* feet back / bar higher (more upright, lighter).
+- *Harder:* walk the feet a small step forward, as long as your chest still meets the bar; slow the lower; pause at the top.
+- *Easier:* feet a small step back, or a higher bar.
 
 ## Dose
 Test your max in clean form, then practice at half of it (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve. Stop well short of form breakdown.
 
 With the Muscle focus: your max minus 3 reps per set, never fewer than above, no cap of 5.
 
-*No adjustable bar? Set the load by foot position: feet forward = more horizontal = harder; feet back = more upright = easier. Aim for ~45° here.*
+*Fine-tune the effort with your feet: a small step forward makes it harder, a small step back easier. Your chest should still meet the bar; for a bigger change, change the bar height or move to the next level. Aim for ~45° here.*

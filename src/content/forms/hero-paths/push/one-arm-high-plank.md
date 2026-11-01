@@ -8,7 +8,7 @@ unit: "seconds"
 
 # One-Arm High Plank
 **Push horizontal · seconds · unilateral**
-*The first single-arm load — and the hidden prerequisite for the whole chain. You are not learning to press; you are learning not to rotate.*
+*The first single-arm load — and the hidden prerequisite for the whole path. You are not learning to press; you are learning not to rotate.*
 
 ## The movement
 Hold a high-plank position on one arm, perfectly still. There is no displacement — the work is entirely in holding the trunk square against the load that wants to twist you toward the free side. Train both sides; the weaker side gates progression.

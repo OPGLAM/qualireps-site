@@ -11,7 +11,7 @@ unit: "reps"
 *The bridge to the full pull-up: vertical hang, one foot sharing a fixed part of the load.*
 
 ## The movement
-Hang from the bar, one foot resting on a chair or bench under it. Pull the chest up until the chin clears the bar; the foot carries a fixed share of bodyweight (your convention), the same on every rep. Lower to a full hang. This is the first vertical pull of the chain.
+Hang from the bar, one foot resting on a chair or bench under it. Pull the chest up until the chin clears the bar; the foot carries a fixed share of bodyweight (your convention), the same on every rep. Lower to a full hang. This is the first vertical pull of the path.
 
 ## Set-up — pick a foot-pressure convention and keep it
 - **Bar** overhead; **grip** pronated, thumbs wrapped, a little wider than shoulders.

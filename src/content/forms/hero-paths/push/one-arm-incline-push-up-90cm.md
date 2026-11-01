@@ -16,7 +16,7 @@ One hand on a high stable surface (worktop or tall box with a free edge, ~90 cm)
 ## Set-up — and what each part is for
 - **Face a stable surface** at roughly 90 cm with a free edge to clear the head. Working hand under its shoulder, fingers spread.
 - **Feet** on the balls of the feet, heels lifted and driven back, toes pointing straight ahead. Shoulder-width — held constant across every incline level.
-- **Distance to support (relative).** Walk the feet back until the body is one straight line, crown to heel, with the working shoulder stacked over the hand at lockout. **Measure your toe-to-support-base distance and reproduce it every session** — a few centimetres changes the angle and breaks the continuity of the chain.
+- **Distance to support (relative).** Walk the feet back until the body is one straight line, crown to heel, with the working shoulder stacked over the hand at lockout. **Measure your toe-to-support-base distance and reproduce it every session** — a few centimetres changes the angle and breaks the continuity of the path.
 - **Free hand** parked in the small of the back.
 - **Body** one straight line. Glutes squeezed, abdominals braced, ribs down. Pelvis square to the floor.
 - **Working shoulder** packed down; **hand screwed** into the edge — outward rotational intent.

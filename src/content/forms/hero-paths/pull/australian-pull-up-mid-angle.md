@@ -14,7 +14,7 @@ unit: "reps"
 The Australian pull-up with the body angled ~30° — more horizontal than level 3. Chest to the bar, lower to straight arms. More of your weight on the back and arms.
 
 ## Set-up — and what each part is for
-- **Bar** ~mid-thigh height, or feet walked forward; **grip** pronated, thumbs wrapped.
+- **Bar** around the bottom of your chest — or keep the level-3 bar (around chest height) and put your heels on a step about 15 cm high; **grip** pronated, thumbs wrapped.
 - **Body** one straight line ~30° to the floor, heels down. Glutes and abs braced before the pull. → *feel the plank harder than at level 3; if the hips start to sag, the brace slipped.*
 
 ## The rep — rehearse it before you do it
@@ -32,12 +32,12 @@ Exhale on the pull, inhale on the lower.
 - **Feet drifting** → once the angle is set, feet stay planted.
 
 ## Within the level
-- *Harder:* feet forward toward the low-angle band; slow lower; top pause.
-- *Easier:* feet back toward the high-angle band.
+- *Harder:* heels a little higher, or a lower bar; slow lower; top pause.
+- *Easier:* feet a small step back, or a higher bar.
 
 ## Dose
 Test your max in clean form, then practice at half of it (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve.
 
 With the Muscle focus: your max minus 3 reps per set, never fewer than above, no cap of 5.
 
-*No adjustable bar? Walk the feet ~10–15 cm forward of level 3 to reach ~30°.*
+*No adjustable bar? Keep the level-3 bar and raise your heels on a step about 15 cm high to reach ~30°. Walking the feet forward does not work: the chest can no longer reach the bar, the neck gets there first.*
