@@ -8,7 +8,7 @@ unit: "reps"
 
 # One-Arm Self-Assisted Push-Up
 **Push horizontal · reps · unilateral**
-*The first concentric one-arm press from the floor. The free hand gives just enough help to complete the rep — and the help is dialled down over time, whole fingers → fingertips → one finger.*
+*The first concentric one-arm press from the floor. The free hand gives just enough help to complete the rep — and the help is dialled down over time, fingertips → fewer fingers → one finger.*
 
 ## The movement
 On the floor, the working hand under its shoulder; the free hand's fingertips lightly on the floor out to the side. Lower the chest to the floor and press back, on the working arm — the fingertips supply only the missing effort. The passage bar is set high on purpose: arrive at the next level with real margin once the help disappears.
@@ -36,7 +36,7 @@ On the floor, the working hand under its shoulder; the free hand's fingertips li
 Brace and inhale before the descent; decisive sharp exhale through the press.
 
 ## Within the level
-- *Harder:* reduce the assist over weeks — whole fingers on the floor → fingertips → fewer fingers → a single finger. Narrow the feet.
+- *Harder:* reduce the assist over weeks — fingertips → fewer fingers → a single finger. Narrow the feet.
 - *Easier:* increase the contact slightly (more of the fingers on the floor). Use 3 s descents to build strength at the bottom range.
 
 ## Dose

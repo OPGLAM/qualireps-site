@@ -25,7 +25,7 @@ One hand on a stable surface around 30 cm (low bench, double step, stacked riser
 ## The rep — rehearse it before you do it
 - **Down (1–2 s).** Controlled tempo. Elbow ~45°, chest toward the edge. → *Feel a heavy, whole-side effort: working chest, triceps, front shoulder, with the lats now clearly firing.*
 - **Bottom.** Chest at the edge, brief still pause. → *Feel a strong continuous anti-rotation brace through the trunk; the whole body presses, not just the arm.*
-- **Up.** Press to a complete lockout; the water glass on the sacrum stays full.
+- **Up.** Press to a complete lockout; the pelvis stays level and square, no tilt, no twist.
 
 ## Watch for
 - **Subtle range reduction** to preserve the rep count → call it honestly and end the set instead.

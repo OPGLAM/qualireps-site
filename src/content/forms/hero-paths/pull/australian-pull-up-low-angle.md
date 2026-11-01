@@ -32,7 +32,7 @@ Exhale on the pull, inhale on the lower.
 - **Grip drifting inward** → set hands a little wider than shoulders and keep them.
 
 ## Within the level
-- *Harder:* feet on a low support (toward feet-level / near-vertical); slow lower; top pause.
+- *Harder:* feet on a low support (body closer to horizontal, more of your weight to pull); slow lower; top pause.
 - *Easier:* feet a small step back, or a higher bar.
 
 ## Dose

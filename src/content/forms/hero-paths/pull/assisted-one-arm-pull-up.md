@@ -39,7 +39,7 @@ Exhale on the pull, inhale on the lower.
 
 ## Within the level
 - *Harder:* less help — lower the band grip, lower the towel hand, or drop a finger. Re-test your max when you change the help.
-- *Easier:* more help — higher band grip, lower the towel hand, or more fingers.
+- *Easier:* more help — higher band grip, raise the towel hand, or more fingers.
 
 ## Dose
 Set your assist convention, test your max on each side at that convention, then practice at half of the weaker side (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both sides, weaker side first. When you can do clean reps at minimal help, you're ready for the one-arm pull-up.
