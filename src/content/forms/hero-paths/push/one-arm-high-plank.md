@@ -15,7 +15,7 @@ Hold a high-plank position on one arm, perfectly still. There is no displacement
 
 ## Set-up — and what each part is for
 - **Feet** on the balls of the feet, heels lifted, **wide** (about 1.5× shoulder-width) for a stable base.
-- **Working hand** flat on the floor directly under its shoulder, fingers spread. Hand screwed into the floor — outward rotational intent.
+- **Working hand** flat on the floor under the lower chest line, fingers spread. Hand screwed into the floor — outward rotational intent.
 - **Free hand** parked in the small of the back. No contact with the floor.
 - **Body** one straight plank, crown to heel. Glutes squeezed, abdominals braced, ribs down.
 - **Pelvis square** to the floor: both hips level, facing down, neither opening upward. → *Feel a deep working sensation through the obliques and the side of the trunk — especially on the free side, which fights the rotation.*

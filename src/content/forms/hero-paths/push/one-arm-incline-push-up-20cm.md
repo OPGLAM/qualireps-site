@@ -11,10 +11,10 @@ unit: "reps"
 *Second-to-last incline. The press feels close to a true floor one-arm push-up. Maximal tension and honest range are everything here.*
 
 ## The movement
-One hand on a stable surface around 20 cm (single aerobic step, low crate), body nearly horizontal. Build full tension before each rep, controlled descent to the edge, firm lockout. The free hand is entirely passive on the back.
+One hand on a stable surface around 20 cm (single aerobic step, low crate), body nearly horizontal at the bottom. Build full tension before each rep, controlled descent to the edge, firm lockout. The free hand is entirely passive on the back.
 
 ## Set-up — and what each part is for
-- **Face a stable surface** at roughly 20 cm with a free edge. Working hand under its shoulder.
+- **Face a stable surface** at roughly 20 cm with a free edge. Working hand under the lower chest line.
 - **Feet** on the balls of the feet, heels lifted, toes forward, shoulder-width.
 - **Distance to support (relative).** Straight-line rule. **Re-measure for this height and store the distance.**
 - **Free hand** parked.

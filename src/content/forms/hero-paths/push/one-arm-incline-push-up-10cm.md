@@ -11,10 +11,10 @@ unit: "reps"
 *The last incline. Mechanically almost at the floor. The remaining gap is owned next by the bottom hold; here, tension makes the difference between a clean rep and a stall.*
 
 ## The movement
-One hand on a low rigid surface around 10 cm (thin riser, stable stack of large books, plate), body nearly horizontal. Full-range press: chest to the support every rep, body as one block, pelvis square under a near-floor load.
+One hand on a low rigid surface around 10 cm (thin riser, stable stack of large books, plate), body nearly horizontal at the bottom. Full-range press: chest to the support every rep, body as one block, pelvis square under a near-floor load.
 
 ## Set-up — and what each part is for
-- **Face a low rigid surface** at roughly 10 cm with a free edge — rigid is critical at this load. Working hand under its shoulder.
+- **Face a low rigid surface** at roughly 10 cm with a free edge — rigid is critical at this load. Working hand under the lower chest line.
 - **Feet** on the balls of the feet, heels lifted, toes forward, shoulder-width.
 - **Distance to support (relative).** Straight-line rule. **Re-measure for this height and store the distance.**
 - **Free hand** parked.

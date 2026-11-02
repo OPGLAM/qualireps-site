@@ -11,11 +11,11 @@ unit: "reps"
 *The first complete, unassisted one-arm push-up. The strength is there from the previous levels; the wide base minimizes the anti-rotation demand so you can assemble descent and press into one clean rep.*
 
 ## The movement
-On the floor, working hand under its shoulder, the other parked behind the back. Lower the chest to the floor and press back, on one arm, while the trunk holds square. The wide base is a base, not a license to twist. Do all reps on one side, then switch.
+On the floor, working hand under the lower chest line, the other parked behind the back. Lower the chest to the floor and press back, on one arm, while the trunk holds square. The wide base is a base, not a license to twist. Do all reps on one side, then switch.
 
 ## Set-up — and what each part is for
 - **Feet** on the balls of the feet, heels lifted, **very wide** (1.5–2× shoulder-width); toes may point slightly out.
-- **Working hand** flat on the floor under its shoulder.
+- **Working hand** flat on the floor under the lower chest line.
 - **Free hand** parked firmly in the small of the back — not free to swing.
 - **Body** one straight line. Glutes squeezed, abdominals braced hard. Pelvis square.
 - **Working shoulder** packed down; hand screwed into the floor.

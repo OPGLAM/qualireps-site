@@ -11,10 +11,10 @@ unit: "reps"
 *Mid-descent, at a very reproducible height. Anti-rotation typically limits as much as the press does. Brace fully, then push.*
 
 ## The movement
-One hand on a stable surface around 45 cm (sturdy chair seat or standard box), body close to horizontal. Controlled press to the edge and back, on one arm. The trunk brace has to be set hard before each descent or the hips will leak rotation.
+One hand on a stable surface around 45 cm (sturdy chair seat or standard box), body close to horizontal at the bottom. Controlled press to the edge and back, on one arm. The trunk brace has to be set hard before each descent or the hips will leak rotation.
 
 ## Set-up — and what each part is for
-- **Face a stable surface** at roughly 45 cm with a free edge — anchor it against a wall if it can slide. Working hand under its shoulder.
+- **Face a stable surface** at roughly 45 cm with a free edge — anchor it against a wall if it can slide. Working hand under the lower chest line.
 - **Feet** on the balls of the feet, heels lifted, toes forward, shoulder-width.
 - **Distance to support (relative).** Straight-line rule. **Re-measure for this height and store the distance.**
 - **Free hand** parked.

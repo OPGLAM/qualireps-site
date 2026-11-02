@@ -11,10 +11,10 @@ unit: "reps"
 *The first level on the floor. The pattern and the full-body tension you carry, unchanged, all the way to the one-arm endpoint.*
 
 ## The movement
-This is the first level on the floor. If you cannot yet do 3 clean reps, go back to the incline levels: the brace and the range you built there are exactly what this level asks for. From a locked-out plank, hands a little wider than the shoulders, lower the chest to the floor in one rigid line, then press back to straight arms. Body, hips and head travel as one block — nothing leads, nothing lags.
+This is the first level on the floor. If you cannot yet do 3 clean reps, go back to the incline levels: the brace and the range you built there are exactly what this level asks for. From a locked-out plank, hands under the lower chest, slightly wider than the shoulders, lower the chest to the floor in one rigid line, then press back to straight arms. Body, hips and head travel as one block — nothing leads, nothing lags.
 
 ## Set-up — and what each part is for
-- **Hands** flat under the collarbone line, slightly wider than the shoulders, fingers spread, middle fingers pointing forward. This sets the elbow path.
+- **Hands** flat on the floor under the lower chest, slightly wider than the shoulders, fingers spread, middle fingers pointing forward. This sets the elbow path.
 - **Feet** on the balls of the feet, heels lifted and driven back, hip-width or together for a tighter line.
 - **Body** one straight line, head to heels. Glutes squeezed, abdominals braced as if expecting a light punch, ribs pulled down toward the pelvis. → *Feel a flat, hard panel from chest to pubis; no pinch in the low back.*
 - **Shoulders** down, away from the ears; upper back wide. The serratus (the muscle along the side of the ribs, under the shoulder blade) holds the blades flat to the ribs. The working armpit is closed — lat engaged.

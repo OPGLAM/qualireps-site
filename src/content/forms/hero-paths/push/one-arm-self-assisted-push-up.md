@@ -11,11 +11,11 @@ unit: "reps"
 *The first concentric one-arm press from the floor. The free hand gives just enough help to complete the rep — and the help is dialled down over time, fingertips → fewer fingers → one finger.*
 
 ## The movement
-On the floor, the working hand under its shoulder; the free hand's fingertips lightly on the floor out to the side. Lower the chest to the floor and press back, on the working arm — the fingertips supply only the missing effort. The passage bar is set high on purpose: arrive at the next level with real margin once the help disappears.
+On the floor, the working hand under the lower chest line; the free hand's fingertips lightly on the floor out to the side. Lower the chest to the floor and press back, on the working arm — the fingertips supply only the missing effort. The passage bar is set high on purpose: arrive at the next level with real margin once the help disappears.
 
 ## Set-up — and what each part is for
 - **Feet** on the balls of the feet, heels lifted, **wide** (1.5–2× shoulder-width) for an anti-rotation base.
-- **Working hand** flat on the floor under its shoulder, fingers spread.
+- **Working hand** flat on the floor under the lower chest line, fingers spread.
 - **Free hand fingertips** lightly on the floor, out to the side at roughly chest height — close enough to assist, far enough to keep the load on the working arm.
 - **Body** one straight line. Glutes squeezed, abdominals braced. Pelvis square.
 - **Working shoulder** packed down; working hand screwed into the floor.

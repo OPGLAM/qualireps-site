@@ -15,7 +15,7 @@ Hold the low position of a one-arm push-up still: chest near the floor, elbow tu
 
 ## Set-up — and what each part is for
 - **Feet** on the balls of the feet, heels lifted, **wide** (1.5–2× shoulder-width) for an anti-rotation base while you learn the position.
-- **Working hand** flat on the floor directly under its shoulder, fingers spread.
+- **Working hand** flat on the floor under the lower chest line, fingers spread.
 - **Free hand** parked in the small of the back.
 - **Entry.** Lower into the bottom position with both hands assisting, or via a slow controlled descent on the working arm. The hold is the work, not the descent.
 - **Bottom position.** Elbow tucked ~45° to the ribs, chest near the floor.

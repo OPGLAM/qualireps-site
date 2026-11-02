@@ -11,11 +11,11 @@ unit: "reps"
 *The endpoint of the path. Feet close, body a rigid plank, zero twist. From here you maintain rather than progress.*
 
 ## The movement
-On the floor, feet narrow, working hand under its shoulder, the other parked behind the back. Lower the chest to the floor and press back, on one arm, body moving as one rigid block with the pelvis perfectly square from start to finish. Do all reps on one side, then switch.
+On the floor, feet narrow, working hand under the lower chest line, the other parked behind the back. Lower the chest to the floor and press back, on one arm, body moving as one rigid block with the pelvis perfectly square from start to finish. Do all reps on one side, then switch.
 
 ## Set-up — and what each part is for
 - **Feet** on the balls of the feet, heels lifted, **hip-width or together**.
-- **Working hand** flat on the floor under its shoulder.
+- **Working hand** flat on the floor under the lower chest line.
 - **Free hand** parked firmly in the small of the back.
 - **Body** one straight line. Glutes squeezed, abdominals braced hard — this narrow base forgives nothing. Pelvis square.
 - **Working shoulder** packed down; hand screwed into the floor; armpit closed, lat engaged.

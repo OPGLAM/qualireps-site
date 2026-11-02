@@ -15,7 +15,7 @@ Identical to the wide stance, but on a narrower base. Lower the chest to the flo
 
 ## Set-up — and what each part is for
 - **Feet** on the balls of the feet, heels lifted, **shoulder-width**.
-- **Working hand** flat on the floor under its shoulder.
+- **Working hand** flat on the floor under the lower chest line.
 - **Free hand** parked firmly in the small of the back.
 - **Body** one straight line. Glutes squeezed, abdominals braced hard. Pelvis square.
 - **Working shoulder** packed down; hand screwed into the floor; armpit closed, lat engaged.

@@ -15,7 +15,7 @@ The Australian pull-up with the body angled ~30° — more horizontal than level
 
 ## Set-up — and what each part is for
 - **Bar** around the bottom of your chest — or keep the level-3 bar (around chest height) and put your heels on a step about 15 cm high; **grip** pronated, thumbs wrapped.
-- **Body** one straight line ~30° to the floor, heels down. Glutes and abs braced before the pull. → *feel the plank harder than at level 3; if the hips start to sag, the brace slipped.*
+- **Body** one straight line ~30° to the floor at the bottom, arms straight, heels down. Glutes and abs braced before the pull. → *feel the plank harder than at level 3; if the hips start to sag, the brace slipped.*
 
 ## The rep — rehearse it before you do it
 - **Set** the blades, then **pull the chest to the bar**, elbows back and down. → *feel the lats lead.*

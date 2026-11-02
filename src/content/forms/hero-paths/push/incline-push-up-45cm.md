@@ -19,7 +19,7 @@ Hands on the edge of a stable surface at about 45 cm (sturdy bench, step, low so
 ## Set-up — and what each part is for
 
 - **Support** stable and that cannot slide or tip. A bench against a wall, or a stair step, works well.
-- **Hands** on the edge, slightly wider than the shoulders, fingers spread.
+- **Hands** on the edge, under the lower chest, slightly wider than the shoulders, fingers spread.
 - **Feet** on the balls, heels lifted and driven back, hip-width. **Measure your toe-to-support distance and reproduce it every session.**
 - **Body** one straight line, head to heels. Glutes squeezed, abdominals braced as if expecting a light punch, ribs down. → *Feel the front panel working hard now; the low back stays neutral.*
 - **Shoulders** down; serratus (the muscle along the side of the ribs, under the shoulder blade) holding the blades flat to the ribs.

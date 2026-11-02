@@ -14,7 +14,7 @@ unit: "reps"
 One hand on a stable surface around 60 cm (firm sofa back, large crate, stacked steps), body more horizontal than the previous level. Controlled descent to the edge and a clean press back, on one arm.
 
 ## Set-up — and what each part is for
-- **Face a stable surface** at roughly 60 cm with a free edge. Working hand under its shoulder.
+- **Face a stable surface** at roughly 60 cm with a free edge. Working hand under the lower chest line.
 - **Feet** on the balls of the feet, heels lifted, toes forward, shoulder-width.
 - **Distance to support (relative).** Straight-line rule. **Re-measure for this height and store the distance.**
 - **Free hand** parked.

@@ -19,8 +19,8 @@ Hands on the edge of a stable surface at about 90 cm (kitchen worktop, solid tab
 ## Set-up — and what each part is for
 
 - **Support** stable, heavy, and that cannot slide — a worktop against a wall is ideal. Check it before every set.
-- **Hands** on the edge, slightly wider than the shoulders, fingers spread. Same hand position as the floor push-up.
-- **Feet** on the balls, heels lifted, hip-width. Walk them back until the body is one straight line with the shoulders above the hands at lockout. **Measure your toe-to-support distance and reproduce it every session.**
+- **Hands** on the edge, under the lower chest, slightly wider than the shoulders, fingers spread. Same hand position as the floor push-up.
+- **Feet** on the balls, heels lifted, hip-width. Walk them back until the body is one straight line and, at the bottom, the chest meets the edge between the hands. **Measure your toe-to-support distance and reproduce it every session.**
 - **Body** one straight line. Glutes squeezed, abdominals braced, ribs down. → *Feel a flat, hard panel from chest to pubis; no pinch in the low back.*
 - **Shoulders** down, away from the ears; upper back wide.
 - **Hands screwed** into the edge: an outward rotational intent without the hands moving. → *Feel like you push the support away, not just lock the elbows.*

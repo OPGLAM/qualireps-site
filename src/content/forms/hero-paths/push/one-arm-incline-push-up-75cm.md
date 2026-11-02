@@ -14,7 +14,7 @@ unit: "reps"
 One hand on a stable surface around table or desk height (~75 cm), body more tilted toward horizontal than the previous level. Lower the chest to the edge and press back, on one arm. The pattern is identical to the previous level (~90 cm) against a heavier load.
 
 ## Set-up — and what each part is for
-- **Face a stable surface** at roughly 75 cm with a free edge. Working hand under its shoulder.
+- **Face a stable surface** at roughly 75 cm with a free edge. Working hand under the lower chest line.
 - **Feet** on the balls of the feet, heels lifted, toes forward, shoulder-width.
 - **Distance to support (relative).** Straight-line rule: walk the feet back until crown-to-heel is one line. **Re-measure for this height and store the distance.**
 - **Free hand** parked.

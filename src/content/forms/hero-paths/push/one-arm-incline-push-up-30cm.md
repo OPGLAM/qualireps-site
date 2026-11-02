@@ -11,10 +11,10 @@ unit: "reps"
 *Approaching the floor. The load on the working arm is now high; the level's discipline is to protect full range and total-body tension as it gets hard.*
 
 ## The movement
-One hand on a stable surface around 30 cm (low bench, double step, stacked risers), body nearly horizontal. Controlled full-range press to the edge and back, on one arm. Resist the urge to cut depth as fatigue rises.
+One hand on a stable surface around 30 cm (low bench, double step, stacked risers), body nearly horizontal at the bottom. Controlled full-range press to the edge and back, on one arm. Resist the urge to cut depth as fatigue rises.
 
 ## Set-up — and what each part is for
-- **Face a stable surface** at roughly 30 cm with a free edge. Working hand under its shoulder.
+- **Face a stable surface** at roughly 30 cm with a free edge. Working hand under the lower chest line.
 - **Feet** on the balls of the feet, heels lifted, toes forward, shoulder-width.
 - **Distance to support (relative).** Straight-line rule. **Re-measure for this height and store the distance.**
 - **Free hand** parked.

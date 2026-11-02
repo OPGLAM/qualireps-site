@@ -8,14 +8,14 @@ unit: "reps"
 
 # Australian Pull-Up — Low Angle (~15°)
 **Pull horizontal · reps · bilateral**
-*Nearly horizontal, close to a full bodyweight pull — holding the plank is the whole point.*
+*Nearly horizontal at the bottom, close to a full bodyweight pull — holding the plank is the whole point.*
 
 ## The movement
-The Australian pull-up with the body nearly horizontal (~15°). Chest to the bar, lower to straight arms. The load on the back approaches a vertical pull, in a horizontal pattern with the heels still down.
+The Australian pull-up with the body nearly horizontal at the bottom (~15°, arms straight). Chest to the bar, lower to straight arms. The load on the back approaches a vertical pull, in a horizontal pattern with the heels still down.
 
 ## Set-up — and what each part is for
 - **Bar** a little above hip height — or keep the level-3 bar (around chest height) and put your heels on a box or low bench about 35 cm high; **grip** pronated, thumbs wrapped.
-- **Body** one straight line, ~15° to the floor — nearly horizontal. Strict full-body brace: glutes, abs, low back. → *feel one continuous hard line; the first place that softens is the giveaway.*
+- **Body** one straight line, ~15° to the floor at the bottom, arms straight — nearly horizontal. Strict full-body brace: glutes, abs, low back. → *feel one continuous hard line; the first place that softens is the giveaway.*
 
 ## The rep — rehearse it before you do it
 - **Set** the blades, then **pull the chest to the bar**, elbows back and down. → *feel the lats and mid-back take a near-full pulling load.*
