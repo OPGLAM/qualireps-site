@@ -16,7 +16,7 @@ Standing and leaning into a wall on one hand, bend the elbow to bring the should
 ## Set-up — and what each part is for
 - **Face the wall**, feet a short distance away (start about two foot-lengths back). The lean should feel light. **Measure this foot-to-wall distance and reproduce it every session.**
 - **Feet** **flat, heels grounded** — unique to this level. Hip-width. If your heels start lifting, step the feet in.
-- **Working hand** flat on the wall at lower-chest height.
+- **Working hand** flat on the wall just below shoulder height.
 - **Free hand** parked in the small of the back. No contact.
 - **Body** one straight line. Glutes squeezed, abdominals braced, pelvis square to the wall. → *Feel a faint anti-rotation tension in the trunk; the free-side hip does not open.*
 - **Working shoulder** packed down; hand screwed into the wall.

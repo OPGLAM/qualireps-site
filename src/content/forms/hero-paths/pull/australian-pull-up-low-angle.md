@@ -16,6 +16,7 @@ The Australian pull-up with the body nearly horizontal at the bottom (~15°, arm
 ## Set-up — and what each part is for
 - **Bar** a little above hip height — or keep the level-3 bar (around chest height) and put your heels on a box or low bench about 35 cm high; **grip** pronated, thumbs wrapped.
 - **Body** one straight line, ~15° to the floor at the bottom, arms straight — nearly horizontal. Strict full-body brace: glutes, abs, low back. → *feel one continuous hard line; the first place that softens is the giveaway.*
+- Wear shoes; on a slippery floor, brace your heels against a wall or a step.
 
 ## The rep — rehearse it before you do it
 - **Set** the blades, then **pull the chest to the bar**, elbows back and down. → *feel the lats and mid-back take a near-full pulling load.*

@@ -14,7 +14,7 @@ unit: "reps"
 Feet staggered, one forward and one back. Bend both knees to lower straight down until the back knee nearly touches the floor, then drive back up mostly through the front leg. The back foot stays on the floor for balance and carries a small share of the load — about a third — so the front leg does most of the work without yet needing single-leg balance.
 
 ## Set-up — and what each part is for
-- **Stance** one foot forward, one back, set from the bottom position: kneel in a 90-90 (front knee and hip at ~90°, back knee under the hip), then stand up without moving the feet — about 60–80 cm apart. → *feel stable front-to-back before you move.*
+- **Stance** one foot forward, one back, set from the bottom position: kneel in a 90-90 (front knee and hip at ~90°, back knee under the hip), then stand up without moving the feet — about 70–85 cm apart. → *feel stable front-to-back before you move.*
 - **Front foot** flat, heel anchored — the leg that drives. **Back foot** on the ball, heel up — balance and a light share of load, not a motor.
 - **Weight** mostly on the front leg (~two-thirds), pressed through the front heel. → *feel the load sit in the front thigh, not the back foot.*
 - **Torso** vertical, gaze forward; hands on hips or forward for counterbalance.

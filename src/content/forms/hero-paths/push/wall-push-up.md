@@ -14,12 +14,12 @@ unit: "reps"
 
 ## The movement
 
-Standing, hands on a wall at lower-chest height, slightly wider than the shoulders, body leaning in one straight line. Bend the elbows to bring the chest toward the wall, then press back to straight arms. Body, hips and head move as one block. No pushing ability is needed to start: if you can stand and lean, you can do this level.
+Standing, hands on a wall just below shoulder height, slightly wider than the shoulders, body leaning in one straight line. Bend the elbows to bring the chest toward the wall, then press back to straight arms. Body, hips and head move as one block. No pushing ability is needed to start: if you can stand and lean, you can do this level.
 
 ## Set-up — and what each part is for
 
 - **Face the wall**, feet about one arm's length away. The lean should feel light. **Measure this foot-to-wall distance and reproduce it every session** — a few centimetres change the load.
-- **Hands** flat on the wall at lower-chest height, slightly wider than the shoulders, fingers spread and pointing up. This sets the elbow path for every level that follows.
+- **Hands** flat on the wall just below shoulder height, slightly wider than the shoulders, fingers spread and pointing up. This sets the elbow path for every level that follows.
 - **Feet** hip-width, heels down.
 - **Body** one straight line, head to heels. Glutes squeezed, abdominals braced, ribs pulled down toward the pelvis. → *Feel a firm front panel from chest to pubis; the hips do not sag toward the wall.*
 - **Shoulders** down, away from the ears.

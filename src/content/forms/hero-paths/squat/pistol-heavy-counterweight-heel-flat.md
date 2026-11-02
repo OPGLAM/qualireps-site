@@ -8,18 +8,18 @@ unit: "reps"
 
 # Pistol — Heavy Counterweight + Heel Flat
 **Squat · reps · unilateral**
-*Same heavy counterweight, wedge removed — now the ankle does it on its own.*
+*Same heavy counterweight, block removed — now the ankle does it on its own.*
 
 ## The movement
-The full-depth pistol with the heavy counterweight (~5–8 kg) still held forward, but **no heel wedge** — the foot is flat on the floor. This is where full ankle mobility is required: the heel must stay anchored through the whole descent with no wedge to help. The counterweight still handles balance.
+The full-depth pistol with the heavy counterweight (~5–8 kg) still held forward, but **no heel block** — the foot is flat on the floor. This is where more ankle range than level 6 is required: the heel must stay anchored through the whole descent with no block to help. The counterweight still handles balance.
 
 ## Set-up — and what each part is for
-- **Foot** flat on the floor, no wedge. → *feel the heel stay planted through the deepest point — this is the level's test.*
+- **Foot** flat on the floor, no block. → *feel the heel stay planted through the deepest point — this is the level's test.*
 - **Counterweight** ~5–8 kg, arms extended forward.
-- **Free leg** forward, off the floor; **torso** upright.
+- **Free leg** forward, nearly horizontal at the bottom; a slight bend of the free knee is fine; **torso** upright.
 
 ## The rep — rehearse it before you do it
-- **Descend** in 2–3 s: knee bends, hips back, torso leans forward, counterweight reaches out. → *feel the ankle bend deeply with the heel staying down; quadriceps and glute control the descent.*
+- **Descend** in 2–3 s: knee bends, hips back, torso leans slightly forward, the counterweight stays at arm's length, level. → *feel the ankle bend deeply with the heel staying down; quadriceps and glute control the descent.*
 - **Bottom:** hamstring near/on calf, 1 s hold, heel planted.
 - **Drive up** through the whole foot; torso returns vertical.
 - **Switch sides** after all reps on one side.
@@ -28,14 +28,14 @@ The full-depth pistol with the heavy counterweight (~5–8 kg) still held forwar
 Inhale on the descent, exhale on the drive up; brief brace at the bottom is fine.
 
 ## Watch for
-- **Heel lifting at the bottom** → the defining test; if it rises, ankle range is the limiter, not strength — keep the wedge level (6) as your working level and do ankle drills, re-testing this monthly.
+- **Heel lifting at the bottom** → the defining test; if it rises, ankle range is the limiter, not strength — keep the block level (6) as your working level and do ankle drills, re-testing this monthly.
 - **Severe forward collapse** → some lean is needed; a collapse can mean the ankle is being compensated for by over-leaning.
 - **Bouncing** → controlled pause.
 - **Free leg dropping** → hip flexor fatigue; set over.
 
 ## Within the level
 - *Harder:* lighter counterweight (toward the next level); slower descent; pause.
-- *Easier:* re-introduce a small heel wedge (back to level 6); a fingertip for balance.
+- *Easier:* re-introduce a small heel block (back to level 6); a fingertip for balance.
 
 ## Dose
 Test a clean max per side, then practice at half of the weaker side (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both sides, weaker side first. If this stalls for weeks, the cause is almost always ankle mobility — hold level 6 as the strength level and work the ankle in parallel.

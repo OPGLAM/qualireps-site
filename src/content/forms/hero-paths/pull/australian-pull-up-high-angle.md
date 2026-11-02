@@ -17,6 +17,7 @@ Hang under a bar around chest height, body straight and angled, heels on the flo
 - **Bar** around chest height; **grip** pronated, thumbs wrapped, a little wider than shoulders.
 - **Body** one straight line head-to-heels, ~45° to the floor at the bottom, arms straight, heels down. Glutes and abs braced. → *feel a flat, hard plank; the hips don't sag.*
 - **Head** neutral.
+- Wear shoes; on a slippery floor, brace your heels against a wall or a step.
 
 ## The rep — rehearse it before you do it
 - **Set** the shoulder blades (pack down), then **pull the chest to the bar**, elbows back and down. → *feel the lats and mid-back do the work, not the hands.*

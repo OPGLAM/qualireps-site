@@ -6,16 +6,16 @@ kind: "unilateral"
 unit: "reps"
 ---
 
-# Single-Leg Box Squat — Low (~25 cm)
+# Single-Leg Box Squat — Low (~20 cm)
 **Squat · reps · unilateral**
 *Near-full pistol depth, the box only a brief reference — ankle mobility starts to matter.*
 
 ## The movement
-The single-leg box squat to a low surface (~20–30 cm, a single step). The descent is now close to full pistol depth, the working thigh going well below parallel. The box gives only a brief touch at the bottom. This is the last level before full-depth pistols with counterweight.
+The single-leg box squat to a low surface: a step of about 20 cm. The descent is now close to full pistol depth, thighs below parallel. The box gives only a brief touch at the bottom. This is the last level before full-depth pistols with counterweight.
 
 ## Set-up — and what each part is for
-- **Low surface** ~20–30 cm behind you (a step, low platform, stack of books); stand ~5–10 cm in front, working foot flat.
-- **Free leg** forward, off the floor. **Arms** forward or crossed. **Torso** upright.
+- **Low surface** behind you: a step of about 20 cm (or a low platform, a stack of books); stand ~5–10 cm in front, working foot flat.
+- **Free leg** forward, nearly horizontal at the bottom; a slight bend of the free knee is fine. **Arms** forward or crossed. **Torso** upright.
 
 ## The rep — rehearse it before you do it
 - **Descend** in 2–3 s: knee bends, hips back, torso leans forward more than at the chair (deeper = more counterbalance), free leg stays up. → *feel the deep range load the quadriceps (front-thigh) and glute (buttock muscle), and the working heel press into the floor.*
