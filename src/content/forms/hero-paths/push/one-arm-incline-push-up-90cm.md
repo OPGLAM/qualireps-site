@@ -15,7 +15,7 @@ One hand on a high stable surface (worktop or tall box with a free edge, ~90 cm)
 
 ## Set-up — and what each part is for
 - **Face a stable surface** at roughly 90 cm with a free edge to clear the head. Working hand under the lower chest line, fingers spread.
-- **Feet** on the balls of the feet, heels lifted and driven back, toes pointing straight ahead. Shoulder-width — the base stance for every incline level; narrow or widen it only as a within-level adjustment.
+- **Feet** on the balls of the feet, heels lifted and driven back, toes pointing straight ahead. Wide, about one and a half shoulder-widths — the base stance for every incline level; adjust them within a level: wider is easier, narrower is harder.
 - **Distance to support (relative).** Walk the feet back until the body is one straight line, crown to heel, and at the bottom the chest meets the edge beside the working hand. **Measure your toe-to-support-base distance and reproduce it every session** — a few centimetres changes the angle and breaks the continuity of the path.
 - **Free hand** parked in the small of the back.
 - **Body** one straight line. Glutes squeezed, abdominals braced, ribs down. Pelvis square to the floor.
@@ -23,7 +23,7 @@ One hand on a high stable surface (worktop or tall box with a free edge, ~90 cm)
 - **Head** neutral, chin clearing past the free edge of the support.
 
 ## The rep — rehearse it before you do it
-- **Down (1–2 s).** Elbow tracks back ~45°, chest descends toward the edge. → *Feel the working chest and triceps take the load, with the first faint call on the free-side obliques to keep you square.*
+- **Down (1–2 s).** Elbow tracks back close to your side, forearm upright under it; chest descends toward the edge. → *Feel the working chest and triceps take the load, with the first faint call on the free-side obliques to keep you square.*
 - **Bottom.** Chest at the edge, brief still pause. → *Feel the trunk still rigid; the pelvis has not turned toward the free side.*
 - **Up.** Drive the support away to a complete lockout, no twist.
 

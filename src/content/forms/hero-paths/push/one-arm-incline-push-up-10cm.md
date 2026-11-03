@@ -15,7 +15,7 @@ One hand on a low rigid surface around 10 cm (thin riser, stable stack of large 
 
 ## Set-up — and what each part is for
 - **Face a low rigid surface** at roughly 10 cm with a free edge — rigid is critical at this load. Working hand under the lower chest line.
-- **Feet** on the balls of the feet, heels lifted, toes forward, shoulder-width.
+- **Feet** on the balls of the feet, heels lifted, toes forward, wide, about one and a half shoulder-widths.
 - **Distance to support (relative).** Straight-line rule. **Re-measure for this height and store the distance.**
 - **Free hand** parked.
 - **Body** one straight line. Glutes squeezed, abdominals braced. Pelvis square.
@@ -23,7 +23,7 @@ One hand on a low rigid surface around 10 cm (thin riser, stable stack of large 
 - **Head** neutral, clearing the edge.
 
 ## The rep — rehearse it before you do it
-- **Down (1–2 s).** Controlled tempo. Elbow ~45°, chest toward the support. → *Feel almost identical to a floor one-arm push-up: a near-maximal working arm and chest, lats firing.*
+- **Down (1–2 s).** Controlled tempo. Elbow close to your side, forearm upright under it, chest toward the support. → *Feel almost identical to a floor one-arm push-up: a near-maximal working arm and chest, lats firing.*
 - **Bottom.** Chest reaches the support every rep — no shortened range under load. → *Feel a maximal continuous trunk brace; the square pelvis is what makes the rep clean.*
 - **Up.** Press to a complete lockout; the whole body rigid, hips and chest moving together.
 

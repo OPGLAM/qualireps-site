@@ -14,7 +14,7 @@ unit: "reps"
 Standing and leaning into a wall on one hand, bend the elbow to bring the shoulder toward the wall — not the face — then press back to a straight arm. The free arm is parked. This is the only pressing level of the path with feet flat. Do all reps on one side, then switch.
 
 ## Set-up — and what each part is for
-- **Face the wall**, feet a short distance away (start about two foot-lengths back). The lean should feel light. **Measure this foot-to-wall distance and reproduce it every session.**
+- **Face the wall**, feet a short distance away (start with the toes about two foot-lengths from the wall). The lean should feel light. **Measure this foot-to-wall distance and reproduce it every session.**
 - **Feet** **flat, heels grounded** — unique to this level. Hip-width. If your heels start lifting, step the feet in.
 - **Working hand** flat on the wall just below shoulder height.
 - **Free hand** parked in the small of the back. No contact.
@@ -23,7 +23,7 @@ Standing and leaning into a wall on one hand, bend the elbow to bring the should
 - **Head turned slightly toward the free-arm side** so the cheek passes alongside the hand at the bottom. The head never touches the wall.
 
 ## The rep — rehearse it before you do it
-- **Down.** Bend the working elbow ~45°; the *shoulder*, not the face, travels toward the wall. The whole rigid line translates in. → *Feel the free-side obliques hold you from twisting open toward the free arm.*
+- **Down.** Elbow tracks back close to your side, forearm upright; the *shoulder*, not the face, travels toward the wall. The whole rigid line translates in. → *Feel the free-side obliques hold you from twisting open toward the free arm.*
 - **Bottom.** Forearm roughly vertical, shoulder close to the wall, chin and forehead clear. Brief still pause. → *Feel the trunk rigid; the pelvis has not turned.*
 - **Up.** Press back to a complete lockout, no twist. The line stays angled and square.
 

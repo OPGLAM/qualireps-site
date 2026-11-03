@@ -15,7 +15,7 @@ One hand on a stable surface around 45 cm (sturdy chair seat or standard box), b
 
 ## Set-up — and what each part is for
 - **Face a stable surface** at roughly 45 cm with a free edge — anchor it against a wall if it can slide. Working hand under the lower chest line.
-- **Feet** on the balls of the feet, heels lifted, toes forward, shoulder-width.
+- **Feet** on the balls of the feet, heels lifted, toes forward, wide, about one and a half shoulder-widths.
 - **Distance to support (relative).** Straight-line rule. **Re-measure for this height and store the distance.**
 - **Free hand** parked.
 - **Body** one straight line. Glutes squeezed, abdominals braced hard — the brace is now load-bearing in the strict sense. Pelvis square.
@@ -23,7 +23,7 @@ One hand on a stable surface around 45 cm (sturdy chair seat or standard box), b
 - **Head** neutral, clearing the edge.
 
 ## The rep — rehearse it before you do it
-- **Down (1–2 s).** Lock the trunk *before* initiating the descent — reactive bracing is too late at this load. Elbow ~45°, chest toward the edge. → *Feel the press demand in the chest and triceps and the anti-rotation demand across the obliques and serratus arrive as co-equals.*
+- **Down (1–2 s).** Lock the trunk *before* initiating the descent — reactive bracing is too late at this load. Elbow close to your side, forearm upright under it, chest toward the edge. → *Feel the press demand in the chest and triceps and the anti-rotation demand across the obliques and serratus arrive as co-equals.*
 - **Bottom.** Chest at the edge, brief still pause. → *Feel the trunk hard first; the rep happens around it.*
 - **Up.** Press to lockout, no twist; hips and shoulders stay square.
 

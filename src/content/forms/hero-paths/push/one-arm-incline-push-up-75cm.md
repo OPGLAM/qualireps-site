@@ -15,7 +15,7 @@ One hand on a stable surface around table or desk height (~75 cm), body more til
 
 ## Set-up — and what each part is for
 - **Face a stable surface** at roughly 75 cm with a free edge. Working hand under the lower chest line.
-- **Feet** on the balls of the feet, heels lifted, toes forward, shoulder-width.
+- **Feet** on the balls of the feet, heels lifted, toes forward, wide, about one and a half shoulder-widths.
 - **Distance to support (relative).** Straight-line rule: walk the feet back until crown-to-heel is one line. **Re-measure for this height and store the distance.**
 - **Free hand** parked.
 - **Body** one straight line. Glutes squeezed, abdominals braced. Pelvis square.
@@ -23,7 +23,7 @@ One hand on a stable surface around table or desk height (~75 cm), body more til
 - **Head** neutral, clearing the edge.
 
 ## The rep — rehearse it before you do it
-- **Down (1–2 s).** Elbow ~45°, chest toward the edge. → *Feel noticeably more in the working chest and triceps than at 90 cm, and a clearer call on the free-side obliques to stop the hips from opening.*
+- **Down (1–2 s).** Elbow close to your side, forearm upright under it, chest toward the edge. → *Feel noticeably more in the working chest and triceps than at 90 cm, and a clearer call on the free-side obliques to stop the hips from opening.*
 - **Bottom.** Chest at the edge, brief still pause. → *Feel the trunk holding square against a real twisting force now.*
 - **Up.** Drive the support away to a clean lockout, no twist.
 
@@ -31,7 +31,7 @@ One hand on a stable surface around table or desk height (~75 cm), body more til
 - **A small twist appearing on the last reps** — a sign you are near your limit; reduce the working-set reps.
 - **Weight drifting toward the free side** → the free hand stays passive on the back.
 - **Range quietly shrinking** under fatigue → full range or end the set.
-- **Elbow flaring late** → keep ~45°.
+- **Elbow flaring late** → keep the elbow close to your side.
 
 ## Breathing
 Brace at the top, hold through the descent, sharp exhale through the press.

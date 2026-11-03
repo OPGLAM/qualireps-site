@@ -15,7 +15,7 @@ One hand on a stable surface around 20 cm (single aerobic step, low crate), body
 
 ## Set-up — and what each part is for
 - **Face a stable surface** at roughly 20 cm with a free edge. Working hand under the lower chest line.
-- **Feet** on the balls of the feet, heels lifted, toes forward, shoulder-width.
+- **Feet** on the balls of the feet, heels lifted, toes forward, wide, about one and a half shoulder-widths.
 - **Distance to support (relative).** Straight-line rule. **Re-measure for this height and store the distance.**
 - **Free hand** parked.
 - **Body** one straight line. Glutes squeezed, abdominals braced. Pelvis square.
@@ -23,7 +23,7 @@ One hand on a stable surface around 20 cm (single aerobic step, low crate), body
 - **Head** neutral, clearing the edge.
 
 ## The rep — rehearse it before you do it
-- **Down (1–2 s).** Build full tension before initiating the descent. Elbow ~45°, chest toward the edge. → *Feel a near-maximal demand in the working arm and chest, with the trunk's anti-rotation brace working hard the entire rep.*
+- **Down (1–2 s).** Build full tension before initiating the descent. Elbow close to your side, forearm upright under it, chest toward the edge. → *Feel a near-maximal demand in the working arm and chest, with the trunk's anti-rotation brace working hard the entire rep.*
 - **Bottom.** Chest at the edge, brief still pause. → *Feel this is the real thing at a small advantage; the floor is close.*
 - **Up.** Press by screwing the hand into the support; full lockout, no twist.
 
@@ -31,7 +31,7 @@ One hand on a stable surface around 20 cm (single aerobic step, low crate), body
 - **Shoulder collapsing** at the bottom → packed shoulder, lat engaged.
 - **Jerks or kips** on the way up → press cleanly or end the set.
 - **Free hand sneaking in** to help → it stays parked.
-- **Elbow flaring** under fatigue → hold ~45°.
+- **Elbow flaring** under fatigue → keep the elbow close to your side.
 
 ## Breathing
 Inhale and brace at the top; strong sharp exhale through the press.
