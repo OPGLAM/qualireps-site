@@ -1,6 +1,6 @@
 # Perfect Form Sheets — Index
 
-Master registry of all exercise content for QualiReps V2. 42 unique fiches: 41 Hero Path movement levels (19 push + 12 pull + 10 squat) plus 1 fiche for the kettlebell press (one exercise, any load). Custom exercises carry no fiche.
+Master registry of all exercise content for QualiReps V2. 40 unique fiches: 39 Hero Path movement levels (17 push + 12 pull + 10 squat) plus 1 fiche for the kettlebell press (one exercise, any load). Custom exercises carry no fiche.
 
 > The Open Path concept was removed (2026-05-31). The 11 Open-only fiches and the overlap mapping (`_OVERLAPS.md`) were deleted; the 3 former overlap exercises (`standard-push-up`, `standard-pull-up`, `dead-hang`) remain solely as the Hero Path level fiches they always were.
 
@@ -10,7 +10,9 @@ Master registry of all exercise content for QualiReps V2. 42 unique fiches: 41 H
 
 > Three bilateral entry levels were added at the head of the push path on 2026-10-28 (wall push-up, incline push-up at ~90 cm, incline push-up at ~45 cm), so a beginner with no floor push-up has a full set to practise. The strict standard push-up moves from L1 to L4 and every later push level shifts by 3 (19 levels). The three new fiches await coach review.
 
-## Push-up path (19 levels)
+> The push path ends at level 17, the One-Arm Push-Up — Wide Stance (decision 2026-11-03, 17 levels): the shoulder-width and narrow stances (L18–L19) and their fiches were removed. Like the Free Pistol and the One-Arm Pull-Up, the endpoint keeps its criterion and has no next level.
+
+## Push-up path (17 levels)
 
 | Level | exercise_id | File |
 |---|---|---|
@@ -31,8 +33,6 @@ Master registry of all exercise content for QualiReps V2. 42 unique fiches: 41 H
 | 15 | `one-arm-bottom-hold` | `hero-paths/push/one-arm-bottom-hold.md` |
 | 16 | `one-arm-self-assisted-push-up` | `hero-paths/push/one-arm-self-assisted-push-up.md` |
 | 17 | `one-arm-push-up-wide-stance` | `hero-paths/push/one-arm-push-up-wide-stance.md` |
-| 18 | `one-arm-push-up-shoulder-stance` | `hero-paths/push/one-arm-push-up-shoulder-stance.md` |
-| 19 | `one-arm-push-up-narrow-stance` | `hero-paths/push/one-arm-push-up-narrow-stance.md` |
 
 ## Pull-up path (12 levels)
 
@@ -76,9 +76,9 @@ The kettlebell press is one exercise with no levels: the user chooses the load (
 
 ## Totals
 
-- **Hero Path movement fiches**: 41 (19 push + 12 pull + 10 squat)
+- **Hero Path movement fiches**: 39 (17 push + 12 pull + 10 squat)
 - **KB press fiche**: 1 (one exercise, any load)
-- **Unique markdown files**: 42
+- **Unique markdown files**: 40
 - **Exercises accessible in the app**: Hero Path levels + the kettlebell press (Custom exercises carry no fiche)
 
 ## Frontmatter convention
