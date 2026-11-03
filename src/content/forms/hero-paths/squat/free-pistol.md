@@ -14,7 +14,7 @@ unit: "reps"
 A complete single-leg squat at full depth — hamstring to calf — with nothing: no counterweight, no heel block, no hand support. Descend in balance, pause at the bottom, drive back to standing on one leg. The canonical pistol, the reference standard of bodyweight single-leg squatting.
 
 ## Set-up — and what each part is for
-- **Foot** flat; **free leg** forward, off the floor.
+- **Foot** flat; **free leg** forward, off the floor. The free leg needs some hamstring flexibility; a slight bend of the free knee is fine.
 - **Arms** your choice — forward is most common (natural counterweight); by the sides is harder (more internal leverage). → *feel the whole leg own the balance and the load.*
 - **Torso** upright to start; gaze forward.
 

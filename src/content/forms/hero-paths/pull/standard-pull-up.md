@@ -14,6 +14,7 @@ unit: "reps"
 From a full dead hang, pull until the chin clears the bar, then lower under control to straight arms. No foot, no swing — the back and arms move the whole bodyweight.
 
 ## Set-up — and what each part is for
+- **Bar** high enough that your feet hang clear of the floor; use a box or step to reach it.
 - **Grip** pronated, thumbs wrapped, a little wider than shoulders.
 - **Start** a full dead hang, arms straight; body still, ankles crossed if you swing.
 - **Head** neutral.

@@ -14,6 +14,7 @@ unit: "seconds"
 Hang from the bar with arms completely straight and shoulders relaxed, body still, for time. Pure passive suspension — no pulling, no effort beyond the grip.
 
 ## Set-up — and what each part is for
+- **Bar** high enough that your feet hang clear of the floor; use a box or step to reach it.
 - **Grip** pronated (palms forward), a little wider than the shoulders, **thumbs wrapped under** the bar. The wrap is what makes the grip secure; thumb on top slips.
 - **Arms** fully straight; **shoulders relaxed and high**, rising toward the ears — the one level where the shoulders stay passive. → *feel the stretch through forearms, shoulders, and upper back.*
 - **Body** still; slight pelvic tuck; ankles crossed if you tend to swing.

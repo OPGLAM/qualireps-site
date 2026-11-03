@@ -11,10 +11,10 @@ unit: "reps"
 *Counterweight cut to a token — the torso and back take over the balancing.*
 
 ## The movement
-The full pistol with only a light counterweight (~1–2 kg). With most of the external help gone, the body balances through its own leverage: the torso leans further forward, the arms reach further, the back works harder. The mechanics are close to the free pistol now, with a small assist remaining.
+The full pistol with only a light counterweight (~1–2 kg). With most of the external help gone, the body balances through its own leverage: the torso leans further forward, arms straight forward at shoulder height, the back works harder. The mechanics are close to the free pistol now, with a small assist remaining.
 
 ## Set-up — and what each part is for
-- **Foot** flat; **free leg** forward, off the floor.
+- **Foot** flat; **free leg** forward, off the floor. The free leg needs some hamstring flexibility; a slight bend of the free knee is fine.
 - **Light counterweight** ~1–2 kg, arms extended forward (a 1.5 L bottle, a thick book, a small weight). → *feel how little it gives — the balance is now mostly you.*
 - **Torso** upright to start.
 

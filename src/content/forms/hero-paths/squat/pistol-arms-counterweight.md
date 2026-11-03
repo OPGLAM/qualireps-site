@@ -14,7 +14,7 @@ unit: "reps"
 The full pistol with no weight at all: the arms extended forward are the only counterbalance. The body balances entirely on its own leverage — arms forward, torso leaning forward, hips back. This is bodyweight pistol mechanics, one step from the endpoint.
 
 ## Set-up — and what each part is for
-- **Foot** flat; **free leg** forward, off the floor.
+- **Foot** flat; **free leg** forward, off the floor. The free leg needs some hamstring flexibility; a slight bend of the free knee is fine.
 - **Arms** extended forward, no object held. → *feel the arms reaching forward as the counterweight — let them fold and you fall back.*
 - **Torso** upright to start; gaze forward.
 
@@ -31,7 +31,7 @@ Inhale on the descent, exhale on the drive up; brief brace at the bottom is fine
 - **Arms folding in during the descent** → that removes the counterweight; keep them reaching forward throughout.
 - **Arms flailing for balance** → the level isn't stable yet; a fingertip lightly on a vertical support (balance, not load) is a fair within-level regression while balance catches up.
 - **Falling backward** → more forward lean; rehearse with the light weight (level 8) and return.
-- **Heel lifting** → uncommon now, but means residual ankle limitation.
+- **Heel lifting** → this level asks the most ankle range so far; a lifting heel means residual ankle limitation.
 
 ## Within the level
 - *Harder:* arms crossed or by the sides (less counterweight — toward the free pistol); slower descent; pause.
