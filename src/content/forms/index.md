@@ -6,7 +6,7 @@ Master registry of all exercise content for QualiReps V2. 40 unique fiches: 39 H
 
 > The three bodyweight chains were restructured in the 2026-06 coach revision: pull → One-Arm Pull-Up endpoint (12 levels); push → collapsed to a single 9-level OAPU ramp; squat → unified to a single 10-level pistol ramp. Fiche filenames are now slug-only (no numeric prefix).
 
-> The push path was expanded again in a second coach review (2026-06) to a 16-level one-arm ramp matching the realistic 2-3 year progression: entry from 2 strict standard push-ups, two isometric levels (one-arm high plank at L3, one-arm bottom hold at L12), a one-arm incline ramp by absolute support height (90 → 10 cm), and a final floor ramp by stance width (wide → shoulder → narrow). Endpoint is now the One-Arm Push-Up — Narrow Stance (maintenance-only, no passage criterion).
+> The push path was expanded again in a second coach review (2026-06) to a 16-level one-arm ramp matching the realistic 2-3 year progression: entry from 2 strict standard push-ups, two isometric levels (one-arm high plank at L3, one-arm bottom hold at L12), a one-arm incline ramp by absolute support height (90 → 10 cm), and a final floor ramp by stance width (wide → shoulder → narrow). The path now ends at the One-Arm Push-Up — Wide Stance (level 17, feet wide; decision 2026-11-03).
 
 > Three bilateral entry levels were added at the head of the push path on 2026-10-28 (wall push-up, incline push-up at ~90 cm, incline push-up at ~45 cm), so a beginner with no floor push-up has a full set to practise. The strict standard push-up moves from L1 to L4 and every later push level shifts by 3 (19 levels). The three new fiches await coach review.
 
@@ -89,7 +89,7 @@ All fiches use the following frontmatter schema:
 ---
 exercise_id: "{slug}"           # matches file slug, used as canonical app ID
 chain: "push" | "pull" | "squat" | "kb_press_path" | null
-level: 1..19 | null              # null for the KB press fiche (no levels)
+level: 1..17 | null              # null for the KB press fiche (no levels)
 kind: "bilateral" | "unilateral" # data model values, strict
 unit: "reps" | "seconds"
 ---

@@ -14,11 +14,11 @@ unit: "seconds"
 Hold the low position of a one-arm push-up still: chest near the floor, elbow tucked, body rigid, pelvis square. There is no displacement during the hold — entry and exit are not the work. Train both sides; the weaker side gates progression.
 
 ## Set-up — and what each part is for
-- **Feet** on the balls of the feet, heels lifted, **wide** (1.5–2× shoulder-width) for an anti-rotation base while you learn the position.
+- **Feet** on the balls of the feet, heels lifted, **wide**, about twice shoulder-width, for an anti-rotation base while you learn the position.
 - **Working hand** flat on the floor under the lower chest line, fingers spread.
 - **Free hand** parked in the small of the back.
 - **Entry.** Lower into the bottom position with both hands assisting, or via a slow controlled descent on the working arm. The hold is the work, not the descent.
-- **Bottom position.** Elbow tucked ~45° to the ribs, chest near the floor.
+- **Bottom position.** Elbow close to your side, forearm upright under it, chest near the floor.
 - **Body** one straight line. Glutes squeezed, abdominals braced. Pelvis square.
 - **Working shoulder** packed down; hand screwed into the floor.
 
@@ -37,7 +37,7 @@ Hold the low position of a one-arm push-up still: chest near the floor, elbow tu
 Short pressurized breaths behind a firm brace; never relax the trunk to breathe.
 
 ## Within the level
-- *Harder:* narrow the feet toward shoulder-width; longer holds within the dose cap.
+- *Harder:* narrow the feet a little; longer holds within the dose cap.
 - *Easier:* feet wider; rest the free-hand fingertips on the floor for balance, taking less weight on them over time.
 
 ## Dose

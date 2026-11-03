@@ -14,7 +14,7 @@ unit: "reps"
 On the floor, working hand under the lower chest line, the other parked behind the back. Lower the chest to the floor and press back, on one arm, while the trunk holds square. The wide base is a base, not a license to twist. Do all reps on one side, then switch.
 
 ## Set-up — and what each part is for
-- **Feet** on the balls of the feet, heels lifted, **very wide** (1.5–2× shoulder-width); toes may point slightly out.
+- **Feet** on the balls of the feet, heels lifted, **very wide**, about twice shoulder-width; toes may point slightly out.
 - **Working hand** flat on the floor under the lower chest line.
 - **Free hand** parked firmly in the small of the back — not free to swing.
 - **Body** one straight line. Glutes squeezed, abdominals braced hard. Pelvis square.
@@ -22,7 +22,7 @@ On the floor, working hand under the lower chest line, the other parked behind t
 - **Head** neutral, gaze to the floor a little ahead.
 
 ## The rep — rehearse it before you do it
-- **Down (2 s).** Lock everything before initiating the descent. Elbow ~45°, chest toward the floor. → *Feel a near-maximal whole-arm and chest effort, with the lats strongly involved.*
+- **Down (2 s).** Lock everything before initiating the descent. Elbow close to your side, forearm upright under it, chest toward the floor. → *Feel a near-maximal whole-arm and chest effort, with the lats strongly involved.*
 - **Bottom.** Chest grazes the floor, brief still pause. → *Feel the anti-rotation brace, made manageable by the wide base; the press, not the rotation, should be the limit here.*
 - **Up.** Drive the floor away; screw the hand. Crisp lockout, shoulder packed down, no twist.
 

@@ -14,7 +14,7 @@ unit: "reps"
 On the floor, the working hand under the lower chest line; the free hand's fingertips lightly on the floor out to the side. Lower the chest to the floor and press back, on the working arm — the fingertips supply only the missing effort. The passage bar is set high on purpose: arrive at the next level with real margin once the help disappears.
 
 ## Set-up — and what each part is for
-- **Feet** on the balls of the feet, heels lifted, **wide** (1.5–2× shoulder-width) for an anti-rotation base.
+- **Feet** on the balls of the feet, heels lifted, **wide**, about twice shoulder-width, for an anti-rotation base.
 - **Working hand** flat on the floor under the lower chest line, fingers spread.
 - **Free hand fingertips** lightly on the floor, out to the side at roughly chest height — close enough to assist, far enough to keep the load on the working arm.
 - **Body** one straight line. Glutes squeezed, abdominals braced. Pelvis square.
@@ -22,7 +22,7 @@ On the floor, the working hand under the lower chest line; the free hand's finge
 - **Head** neutral, eyes to the floor a little ahead.
 
 ## The rep — rehearse it before you do it
-- **Down (1–2 s).** Controlled descent on the working arm, elbow ~45°, chest toward the floor. The free hand stays passive on its fingertips; it does not press down yet. → *Feel the working chest, triceps, and shoulder under near-maximal demand, with strong anti-rotation work through the trunk.*
+- **Down (1–2 s).** Controlled descent on the working arm, elbow close to your side, forearm upright under it, chest toward the floor. The free hand stays passive on its fingertips; it does not press down yet. → *Feel the working chest, triceps, and shoulder under near-maximal demand, with strong anti-rotation work through the trunk.*
 - **Bottom.** Chest grazes the floor, elbow tucked, brief still pause. → *Feel the trunk still square; the free hand has not turned into a second press.*
 - **Up.** Press back to lockout on the working arm. The fingertips supply only the missing effort — the assist should feel like a light spot, not a co-press.
 
