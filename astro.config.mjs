@@ -21,6 +21,20 @@ export default defineConfig({
   // turns this setting into a permanent redirect from the slash form.
   trailingSlash: 'never',
 
+  // Retired form guides → their closest remaining level, permanently. The push
+  // path ends at level 17 (qualireps-v2 @ bd5bfda): the shoulder-width and
+  // narrow stances (L18–L19) were removed.
+  redirects: {
+    '/forms/one-arm-push-up-shoulder-stance': {
+      status: 301,
+      destination: '/forms/one-arm-push-up-wide-stance',
+    },
+    '/forms/one-arm-push-up-narrow-stance': {
+      status: 301,
+      destination: '/forms/one-arm-push-up-wide-stance',
+    },
+  },
+
   integrations: [
     sitemap({
       // Checkout and post-purchase pages stay out of the index (they also
