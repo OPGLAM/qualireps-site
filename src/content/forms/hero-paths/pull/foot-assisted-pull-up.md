@@ -37,6 +37,4 @@ Exhale on the pull, inhale on the lower. No holding.
 - *Easier:* more foot pressure; or a band over the bar for a hand to share load.
 
 ## Dose
-Set your foot-pressure convention on the first session and keep it for max tests and daily sets. Test your max in clean form, then practice at half of it (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve.
-
-With the Muscle focus: your max minus 3 reps per set, never fewer than above, no cap of 5.
+Set your foot-pressure convention on the first session and keep it for max tests and daily sets. Test your max in clean form, then practice in a range: from half of it (rounded down) to your max minus 3, always leaving at least 2 reps in reserve.

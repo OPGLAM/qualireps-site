@@ -23,10 +23,10 @@ const chains = groupByChain(entries);
 // for assistive tech; `caption` is the short visible label. The hero shows 01,
 // so the gallery starts at 03.
 const shots = [
-  { src: shotResting, caption: 'Rest set by effort', alt: 'Split Squat, Squat path Level 1 of 10: one set logged today (4 left, 4 right), next set 4 reps, state Resting with 02:50 left on the countdown; the Log set button is inactive, Log a past set stays available' },
+  { src: shotResting, caption: 'Rest set by what you had left', alt: 'Split Squat, Squat path Level 1 of 10, max 9 left and 8 right: one set logged today (4 left, 4 right). Next set 4–5 reps per side, with a counter for each side; Resting · 02:50, the reserve buttons 0, 1, 2 and 3+ greyed out, Log a past set still available' },
   { src: shotNewLoad, caption: 'Your load, your call', alt: 'Set max for new load screen, moving to 62.5 kg: “How will you set your max?” with three choices — Use estimated max (suggested start: 8 reps), Already performed, or Test max now (starts a 24-hour test recovery)' },
   { src: shotHistory, caption: 'Every set, kept', alt: 'History screen: a Max evolution curve with a 16 kg and a 12 kg tab, three measured maxes rising from 29 September to 26 October 2026, then sessions by day — Today, Yesterday, 4 days ago, 5 days ago — with their sets and reps' },
-  { src: shotCustom, caption: 'Your own exercises, with loads', alt: 'Custom exercise form: reps or seconds, bilateral or unilateral, With load set to 10 kg (kg or lb), and a passage criterion of 12 reps — “When your max reaches it, the app suggests a heavier load.”' },
+  { src: shotCustom, caption: 'Your own exercises, with loads', alt: 'Custom exercise form: reps or seconds, bilateral or unilateral, With load set to 10 kg (kg or lb), and a passage criterion of 10 reps — “When your max reaches it, the app suggests a heavier load.”' },
 ];
 
 // "Built on research": each claim links to its source (opens in a new tab).
@@ -97,11 +97,11 @@ const faqs = [
   },
   {
     q: 'Strength or muscle?',
-    a: 'Each exercise has a focus. Strength keeps sets short and far from failure. Muscle (hypertrophy) brings each set closer to your max, which is where muscle grows. Both always leave you a margin, and you can switch at any time without a new test.',
+    a: 'Both, from the same exercise. Each set is given as a range: the low end, half your max, builds strength with short, crisp sets; the high end, your max minus 3, brings you closer to your max, where muscle grows. After each set you tap how many reps you had left, and the rest follows from it. Every set leaves a margin.',
   },
   {
     q: 'Is this Greasing the Groove?',
-    a: 'It can be. Greasing the Groove means practicing a movement in short sets spread through the day, well short of failure. QualiReps keeps the ledger for that, and for sets done back to back in a session.',
+    a: 'It can be. Greasing the Groove means short sets spread through the day, well short of failure. QualiReps keeps the ledger for that: stay at the low end of the range, or below. It works just as well for sets done back to back in a session.',
   },
 ];
 ---
@@ -155,7 +155,7 @@ const faqs = [
               <Image
                 class="phone-shot"
                 src={heroShot}
-                alt="QualiReps home screen: six exercises listed by availability. Ready first, with their next set: a custom Dumbbell Row at 22 kg in Muscle focus, the One-Arm Kettlebell Strict Press at 16 kg, a Split Squat. Then two exercises resting (Wait 1 min, Wait 2 min) and a Standard Pull-Up in 24-hour recovery."
+                alt="QualiReps home screen: six exercises listed by availability, each with its max and its sets today. Ready first, with their next set as a range: a custom Dumbbell Row at 22 kg (max 12, 6–9 reps per side), the One-Arm Kettlebell Strict Press at 16 kg (max 7, 3–4 reps per side), a Split Squat at level 1 (max 8, 4–5 reps per side) and a Strict Standard Push-Up at level 4 (max 10, 5–7 reps). Then a Hollow Body Hold resting (Wait 2 min) and a Standard Pull-Up in 24-hour recovery."
                 widths={[320, 480, 640]}
                 sizes="(max-width: 880px) 280px, 320px"
                 format="webp"
@@ -201,8 +201,8 @@ const faqs = [
         </div>
         <div class="body">
           <div class="principles">
-            <div class="p"><span class="n">01</span><div><span class="t">The next set.</span><span class="d">Sized from your max, with the focus you choose for each exercise: short, crisp sets for strength, or longer sets closer to your max for muscle. Always at least two reps short of your max. You finish every set with something left.</span></div></div>
-            <div class="p"><span class="n">02</span><div><span class="t">The rest.</span><span class="d">The harder the set felt, the longer the wait: two, three or five minutes. A set that truly reaches your max counts as a max test, and that exercise rests for 24 hours.</span></div></div>
+            <div class="p"><span class="n">01</span><div><span class="t">The next set.</span><span class="d">Given as a range, sized from your max: from half your max for strength to your max minus 3 for muscle. Always at least two reps short of your max. You choose where to land.</span></div></div>
+            <div class="p"><span class="n">02</span><div><span class="t">The rest.</span><span class="d">After each set, tap how many reps you had left: 0, 1, 2 or 3+. The rest follows: two, three or five minutes. A set with nothing left is a maximal effort, and that exercise rests for 24 hours.</span></div></div>
             <div class="p"><span class="n">03</span><div><span class="t">The recovery.</span><span class="d">After a max test, that exercise rests for 24 hours. Your other exercises are not affected.</span></div></div>
           </div>
           <p class="after-grid">
@@ -299,10 +299,10 @@ const faqs = [
           rest.
         </p>
         <p>
-          Train for strength, for muscle, or both: each exercise has its own
-          focus. Spreading sets through the day has a name, <em>Greasing the
-          Groove</em> — QualiReps works well for it, and for anything else
-          built on sets and rest.
+          Strength and muscle come from the same exercise: each set is a
+          range, and you choose where to land. Short sets spread through the
+          day, a practice known as <em>Greasing the Groove</em>, or a full
+          session: both work.
         </p>
       </div>
     </div>

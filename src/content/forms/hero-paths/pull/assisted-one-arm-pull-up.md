@@ -42,6 +42,4 @@ Exhale on the pull, inhale on the lower.
 - *Easier:* more help — higher band grip, raise the towel hand, or more fingers.
 
 ## Dose
-Set your assist convention, test your max on each side at that convention, then practice at half of the weaker side (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve, same count both sides, weaker side first. When you can do clean reps at minimal help, you're ready for the one-arm pull-up.
-
-With the Muscle focus: your weaker side's max minus 3 reps per set, same count both sides, never fewer than above, no cap of 5.
+Set your assist convention, test your max on each side at that convention, then practice in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first. When you can do clean reps at minimal help, you're ready for the one-arm pull-up.

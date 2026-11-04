@@ -1,9 +1,9 @@
 ---
 // Copy source: qualireps-v2/qualireps-audit/Landing page textes.md, section
-// "Page How it works", checked against the app code (qualireps-v2 @ 582bd2a:
-// src/lib/logic/dose.ts, focus.ts, setEffort.ts, recovery.ts, criterion.ts;
-// routes/LogPastSet.svelte). Where the code and the document differed, the
-// page follows the code. On-screen words are the app's own.
+// "Page How it works", checked against the app code (qualireps-v2 @ e004800:
+// src/lib/logic/dose.ts, reserve.ts, recovery.ts, criterion.ts;
+// data/chains.ts; routes/ExerciseScreen.svelte, LogPastSet.svelte). Where
+// the code and the document differed, the page follows the code. On-screen words are the app's own.
 import Base from '../layouts/Base.astro';
 import { SITE_ORIGIN } from '../lib/site';
 
@@ -32,7 +32,7 @@ const rules: Rule[] = [
     paras: [
       'Strength grows first in your nervous system. To move, your brain recruits motor units — groups of muscle fibers that fire together. Training teaches it to recruit them faster and better: more fibers at once, firing at a higher rate, working together. That speed and quality of recruitment is where most of your early progress comes from, and it is why strength belongs to the movement you practice. It builds through clean, repeated sets.',
       'Then the muscle follows. Asked again and again to work close to its limit, its fibers grow thicker — their number barely changes. This is hypertrophy, and it serves strength: bigger fibers give your nervous system more force to recruit. It comes more slowly, over months.',
-      'QualiReps trains both. The Strength focus keeps sets short and crisp, far from failure: frequent, clean practice that sharpens recruitment. The Muscle focus brings each set closer to your max, giving your fibers a reason to grow. Either way, every set leaves a margin, and recovery is respected.',
+      'QualiReps trains both from the same exercise. The low end of each range keeps sets short and crisp, far from failure; the high end brings each set closer to your max, where muscle grows.',
     ],
   },
   {
@@ -41,28 +41,26 @@ const rules: Rule[] = [
       'Every exercise starts from a max: your best clean reps, or your best clean seconds for a hold.',
       'You set it in one of three ways: test it now, enter a test you have already done, or estimate it.',
       'An estimated max is marked as estimated, and the app suggests confirming it with a real test.',
-      'Your max changes only when you update it.',
+      'Your max changes when you test it, or when a set logged with 1 or 2 reps left shows you can do more; the new max is then marked estimated. It is never lowered automatically.',
     ],
   },
   {
     h: 'The size of each set',
     items: [
-      'Each exercise has a <em>Focus</em>: Strength or Muscle. You can change it at any time, without a new test.',
-      '<strong>Strength:</strong> half your max, rounded down, 5 reps at most.',
-      '<strong>Muscle (hypertrophy):</strong> your max minus 3 reps, with no upper limit, and never fewer than in Strength.',
-      'Either way, every set leaves at least 2 reps in reserve. With a max of 1 or 2, no full set is proposed: the app suggests an easier variation (or a lighter load), slow negatives, or holding the hardest position. Single reps, well spaced, remain possible.',
-      'Holds: half your max time, 30 seconds at most. Focus does not apply to holds.',
+      'Each next set is given as a range. Low end: half your max, rounded down. High end: your max minus 3, never below the low end. Every set leaves at least 2 reps in reserve.',
+      'With a max of 1 or 2, no full set is proposed: the app suggests an easier variation (or a lighter load), slow negatives, or holding the hardest position. Single reps, well spaced, remain possible.',
+      'Holds: half your max time, 30 seconds at most.',
       'One-sided exercises are sized from your weaker side.',
     ],
   },
   {
     h: 'Rest',
     items: [
-      'After each set, the exercise is <em>Resting</em> for 2, 3 or 5 minutes, depending on the effort of the set.',
-      'In Muscle focus, the rest depends on the reps you kept in reserve: 2 minutes with 4 or more, 3 minutes with 2 or 3, 5 minutes with 1.',
-      '<em>It felt hard</em> adds one step to the rest, up to 5 minutes.',
-      'A set that reaches your max: the app asks whether it was a true max effort. If it was, it counts as a max test and the exercise recovers for 24 hours. If you had more in you, you say how many reps were left and your max is updated.',
-      'Rest is counted for each exercise on its own. <em>Log set</em> stays off until the exercise is <em>Fresh</em> again.',
+      'After each set, tap how many reps you had left: 0, 1, 2 or 3+. The exercise then rests 2 minutes with 4 or more left, 3 minutes with 2 or 3, 5 minutes with 1. With 3+, the app uses how far the set was below your max.',
+      '0 means a maximal effort: the exercise rests for 24 hours, and at or above your max it counts as a max test.',
+      'Three sets in a row with less left than planned suggest retesting your max.',
+      'A hold that reaches your max: the app asks whether it was a true max effort.',
+      'Rest is counted for each exercise on its own. The reserve buttons (or <em>Log set</em> for a hold) stay off until the exercise is <em>Fresh</em> again.',
     ],
   },
   {
@@ -85,7 +83,7 @@ const rules: Rule[] = [
     h: 'Levels and loads',
     items: [
       'Each level of a bodyweight path has a passage criterion. When your max reaches it, the app says so and offers <em>Change level</em>.',
-      'The kettlebell press and your own exercises with a load have a criterion you set: 12 reps by default. When your max reaches it, the app suggests a heavier load.',
+      'Your own exercises with a load have a criterion you set: 10 reps by default. The kettlebell press uses 12, because bells go up in large steps. When your max reaches the criterion, the app suggests a heavier load.',
       'Changing level or load means setting a new max.',
     ],
   },

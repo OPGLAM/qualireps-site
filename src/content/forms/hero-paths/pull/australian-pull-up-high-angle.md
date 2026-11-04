@@ -38,8 +38,6 @@ Exhale on the pull, inhale on the lower. Free throughout.
 - *Easier:* feet a small step back, or a higher bar.
 
 ## Dose
-Test your max in clean form, then practice at half of it (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve. Stop well short of form breakdown.
-
-With the Muscle focus: your max minus 3 reps per set, never fewer than above, no cap of 5.
+Test your max in clean form, then practice in a range: from half of it (rounded down) to your max minus 3, always leaving at least 2 reps in reserve. Stop well short of form breakdown.
 
 *Fine-tune the effort with your feet: a small step forward makes it harder, a small step back easier. Your chest should still meet the bar; for a bigger change, change the bar height or move to the next level. Aim for ~45° here.*

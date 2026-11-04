@@ -37,8 +37,6 @@ Exhale on the pull, inhale on the lower.
 - *Easier:* feet a small step back, or a higher bar.
 
 ## Dose
-Test your max in clean form, then practice at half of it (rounded down), max 5 reps per set, always leaving at least 2 reps in reserve.
-
-With the Muscle focus: your max minus 3 reps per set, never fewer than above, no cap of 5.
+Test your max in clean form, then practice in a range: from half of it (rounded down) to your max minus 3, always leaving at least 2 reps in reserve.
 
 *No adjustable bar? Keep the level-3 bar and raise your heels on a step about 15 cm high to reach ~30°. Walking the feet forward does not work: the chest can no longer reach the bar, the neck gets there first.*

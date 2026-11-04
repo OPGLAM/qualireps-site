@@ -6,7 +6,7 @@ confirmed from code or git are marked **(to verify)**._
 ## 1. What this repo is
 
 `qualireps-site` is the public landing, legal, and perfect-form-guide site for
-**QualiReps**, a strength ledger for daily (Greasing-the-Groove) practice. The
+**QualiReps**, a strength ledger for bodyweight, kettlebell and custom exercises. The
 product itself is a separate installable PWA served from `app.qualireps.app`;
 this repo is the marketing/legal/SEO front served at the production origin
 **https://qualireps.app**. It is a mostly-static Astro site with a small number
@@ -28,7 +28,7 @@ of serverless endpoints for Paddle checkout fulfillment.
 Pages (`src/pages/`):
 - `/` — home: the strength ledger (sections 0–10 of qualireps-v2's
   `qualireps-audit/Landing page textes.md`), three-platform install block.
-- `/how-it-works` — the exact rules (max, set size by Focus, rest, recovery,
+- `/how-it-works` — the exact rules (max, set range, reserve and rest, recovery,
   levels and loads, past sets, rest days), checked against the app code.
 - `/pricing` — single-story pricing (9,99 €, lifetime, no subscription).
 - `/buy` — Paddle checkout overlay (gated by `CHECKOUT_LIVE`).
