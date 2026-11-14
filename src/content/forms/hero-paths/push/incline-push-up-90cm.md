@@ -51,4 +51,4 @@ Inhale and brace at the top, hold the pressurised trunk through the descent, sha
 
 ## Dose
 
-Test a clean max; work in a range: from half of it (rounded down) to your max minus 3, always leaving at least 2 reps in reserve. Stop each set well short of failure.
+Set your max with a check set: as many clean reps as you can, keeping 2 in reserve. Work in a range: from half of it (rounded down) to your max minus 3, always leaving at least 2 reps in reserve. Stop each set well short of failure.

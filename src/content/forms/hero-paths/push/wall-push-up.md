@@ -49,4 +49,4 @@ Inhale and brace at the top, hold the brace on the way down, exhale as you press
 
 ## Dose
 
-Test a clean max; work in a range: from half of it (rounded down) to your max minus 3, always leaving at least 2 reps in reserve. Stop each set well short of failure. If your max is 2 or fewer, step closer to the wall and test again, or practice slow lowering only (3–5 s down, then step back to the start) until your max grows.
+Set your max with a check set: as many clean reps as you can, keeping 2 in reserve. Work in a range: from half of it (rounded down) to your max minus 3, always leaving at least 2 reps in reserve. Stop each set well short of failure. If your max is 2 or fewer, step closer to the wall and check your max again, or practice slow lowering only (3–5 s down, then step back to the start) until your max grows.

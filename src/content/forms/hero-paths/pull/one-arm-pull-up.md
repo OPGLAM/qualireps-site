@@ -40,4 +40,4 @@ The endpoint stays active after the criterion is met.
 - *Easier:* drop back to the one-arm lock-off (level 11) for the top hold and controlled descent, or re-introduce a touch of free-hand help (the assisted level's convention).
 
 ## Dose
-Test a clean max on each side, then practice in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first. At the endpoint the daily set is typically a single clean rep per side. Stop well short of form breakdown.
+Set your max on each side with a check set: as many clean reps as you can, keeping 2 in reserve. Then practice in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first. At the endpoint the daily set is typically a single clean rep per side. Stop well short of form breakdown.

@@ -38,4 +38,4 @@ Exhale as you pack down, inhale on the release. No holding.
 - *Easier:* feet lightly supported to offload weight; smaller range, rebuilt over time.
 
 ## Dose
-Test your max clean reps (straight arms throughout), then practice in a range: from half of it (rounded down) to your max minus 3, always leaving at least 2 reps in reserve. Stop before the elbows want to bend.
+Set your max with a check set: as many clean reps as you can (straight arms throughout), keeping 2 in reserve. Then practice in a range: from half of it (rounded down) to your max minus 3, always leaving at least 2 reps in reserve. Stop before the elbows want to bend.

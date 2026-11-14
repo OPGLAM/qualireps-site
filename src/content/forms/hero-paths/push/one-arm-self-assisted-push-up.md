@@ -40,4 +40,4 @@ Brace and inhale before the descent; decisive sharp exhale through the press.
 - *Easier:* increase the contact slightly (more of the fingers on the floor). Use 3 s descents to build strength at the bottom range.
 
 ## Dose
-Test a clean max on each side (with the current level of fingertip assist); work in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first. Stop each set well short of failure.
+Set your max on each side with a check set, at the current level of fingertip assist: as many clean reps as you can, keeping 2 in reserve. Work in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first. Stop each set well short of failure.

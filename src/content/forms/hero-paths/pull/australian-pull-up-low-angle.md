@@ -37,6 +37,6 @@ Exhale on the pull, inhale on the lower.
 - *Easier:* feet a small step back, or a higher bar.
 
 ## Dose
-Test your max in clean form, then practice in a range: from half of it (rounded down) to your max minus 3, always leaving at least 2 reps in reserve. Clean reps over count — at this load the difference is what makes level 6 reachable.
+Set your max with a check set: as many clean reps as you can, keeping 2 in reserve. Then practice in a range: from half of it (rounded down) to your max minus 3, always leaving at least 2 reps in reserve. Clean reps over count — at this load the difference is what makes level 6 reachable.
 
 *No adjustable bar? Keep the level-3 bar and raise your heels on a box or low bench about 35 cm high to reach ~15°. Walking the feet forward does not work: the chest can no longer reach the bar, the neck gets there first.*

@@ -41,4 +41,4 @@ Inhale and brace at lockout; exhale gently as you press away from the wall.
 - *Easier:* step closer; widen the feet. If balance is the limiter, rest the free-hand fingertips beside the working hand and lean on them less over time.
 
 ## Dose
-Test a clean max on each side; work in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first. Stop each set well short of failure.
+Set your max on each side with a check set: as many clean reps as you can, keeping 2 in reserve. Work in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first. Stop each set well short of failure.

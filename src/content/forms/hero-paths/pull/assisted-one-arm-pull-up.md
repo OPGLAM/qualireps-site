@@ -17,7 +17,7 @@ This level is to the one-arm pull-up what the foot-assisted pull-up (level 6) is
 
 ## Set-up — pick one assist convention and keep it
 - **Working hand** pronated on the bar, thumb wrapped.
-- **Free-hand help** (choose one, keep it for max tests and daily sets):
+- **Free-hand help** (choose one, keep it for daily sets and whenever you set your max):
   - *Band:* loop a band over the bar, grip it with the free hand — higher grip = more help, lower = less.
   - *Towel / strap:* hang one from the bar, free hand grips it lower than the working hand.
   - *Fingers:* free hand holds the working forearm — fewer fingers = less help.
@@ -38,8 +38,8 @@ Exhale on the pull, inhale on the lower.
 - **Uneven sides** → match reps, weaker side first.
 
 ## Within the level
-- *Harder:* less help — lower the band grip, lower the towel hand, or drop a finger. Re-test your max when you change the help.
+- *Harder:* less help — lower the band grip, lower the towel hand, or drop a finger. Check your max again when you change the help.
 - *Easier:* more help — higher band grip, raise the towel hand, or more fingers.
 
 ## Dose
-Set your assist convention, test your max on each side at that convention, then practice in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first. When you can do clean reps at minimal help, you're ready for the one-arm pull-up.
+Set your assist convention, then set your max on each side at that convention with a check set: as many clean reps as you can, keeping 2 in reserve. Then practice in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first. When you can do clean reps at minimal help, you're ready for the one-arm pull-up.

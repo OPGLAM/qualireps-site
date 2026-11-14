@@ -37,4 +37,4 @@ Breathe steadily through the shifts; don't hold at the top.
 - *Easier:* hands a little closer; shorter shift; more support from the straight arm.
 
 ## Dose
-Test a clean max per side (controlled shifts, top held), then practice in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first.
+Set your max per side with a check set: as many clean reps as you can (controlled shifts, top held), keeping 2 in reserve. Then practice in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first.

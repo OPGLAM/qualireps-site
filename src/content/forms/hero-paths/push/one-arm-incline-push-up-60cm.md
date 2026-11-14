@@ -41,4 +41,4 @@ Short braced breaths between reps; pressurized exhale through each press.
 - *Easier:* widen the feet. If balance is the limiter, rest the free-hand fingertips on the support, reducing contact over time.
 
 ## Dose
-Test a clean max on each side; work in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first. Stop each set well short of failure.
+Set your max on each side with a check set: as many clean reps as you can, keeping 2 in reserve. Work in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first. Stop each set well short of failure.

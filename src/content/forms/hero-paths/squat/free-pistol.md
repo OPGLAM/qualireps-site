@@ -30,7 +30,7 @@ Inhale on the descent, exhale on the drive up; a brief brace at the bottom is na
 ## Watch for
 - **Bouncing or rocking at the bottom** → a controlled pause is the standard, no momentum.
 - **Free leg dropping** → hip flexor fatigue; set is over.
-- **Backward or forward fall** → not fully consolidated; return to level 9, use a fingertip if needed, rebuild, re-test.
+- **Backward or forward fall** → not fully consolidated; return to level 9, use a fingertip if needed, rebuild, then check your max again.
 - **Heel lifting** → residual ankle limitation under fatigue.
 
 ## Within the level
@@ -42,4 +42,4 @@ The endpoint stays active after the criterion is met.
 > **A note on anatomy.** The strict free pistol is partly a question of body proportions. Longer femurs relative to the shins, or stubborn ankle-mobility limits, can make it mechanically hard regardless of strength. If it stalls after long practice and honest ankle work, that may be anatomy, not a training failure — a lasting practice at the counterweight levels (7–8) is a legitimate strength endpoint in its own right. The strict free pistol is one valid endpoint, not the only one.
 
 ## Dose
-Test a clean max per side, then practice in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first. At a 3-rep criterion, the daily set is typically 1 clean rep per side.
+Set your max per side with a check set: as many clean reps as you can, keeping 2 in reserve. Then practice in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first. At a 3-rep criterion, the daily set is typically 1 clean rep per side.

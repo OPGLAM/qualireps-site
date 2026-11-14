@@ -38,4 +38,4 @@ Inhale on the descent, exhale on the drive up; brief brace at the bottom is fine
 - *Easier:* re-introduce a small heel block (back to level 6); a fingertip for balance.
 
 ## Dose
-Test a clean max per side, then practice in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first. If this stalls for weeks, the cause is almost always ankle mobility — hold level 6 as the strength level and work the ankle in parallel.
+Set your max per side with a check set: as many clean reps as you can, keeping 2 in reserve. Then practice in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first. If this stalls for weeks, the cause is almost always ankle mobility — hold level 6 as the strength level and work the ankle in parallel.

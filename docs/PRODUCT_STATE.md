@@ -1,6 +1,6 @@
 # Product State — qualireps-site (the landing)
 
-_Snapshot derived from the repository on 2026-10-13. Items that could not be
+_Snapshot derived from the repository on 2026-11-14. Items that could not be
 confirmed from code or git are marked **(to verify)**._
 
 ## 1. What this repo is
@@ -14,8 +14,12 @@ of serverless endpoints for Paddle checkout fulfillment.
 
 ## 2. Status
 
-- **Last commit (main):** `415ba60` — _Chore/remove notification copy (#7)_ —
-  2026-08-09. Repositioning work is in progress on `copy/repositioning`.
+- **Last commit (main):** `97fb7e0` — _copy: align site with app lot B
+  (qualireps-v2 @ e004800)_ — 2026-11-04. Copy and form guides are being
+  aligned with the app's rules v2 (qualireps-v2 @ 810f662): the check set
+  (as many clean reps as possible, 2 kept in reserve, max = reps + 2, no 24 h
+  rest) is the recommended way to set a max; the full test stays, with 24 h
+  of recovery.
 - **Live in prod?** The repo is wired for Vercel (`@astrojs/vercel` adapter +
   `vercel.json` headers) and the production origin is `https://qualireps.app`.
   Actual deployment/DNS being live **(to verify)** — not confirmable from the
@@ -28,8 +32,9 @@ of serverless endpoints for Paddle checkout fulfillment.
 Pages (`src/pages/`):
 - `/` — home: the strength ledger (sections 0–10 of qualireps-v2's
   `qualireps-audit/Landing page textes.md`), three-platform install block.
-- `/how-it-works` — the exact rules (max, set range, reserve and rest, recovery,
-  levels and loads, past sets, rest days), checked against the app code.
+- `/how-it-works` — the exact rules (max and check sets, set range, reserve and
+  rest, full tests and recovery, breaks, levels and loads, past sets, rest
+  days), checked against the app code (qualireps-v2 @ 810f662).
 - `/pricing` — single-story pricing (9,99 €, lifetime, no subscription).
 - `/buy` — Paddle checkout overlay (gated by `CHECKOUT_LIVE`).
 - `/thanks` — purchase success page; surfaces the issued license key.
@@ -62,9 +67,6 @@ Form content is synced (committed) from the `qualireps-v2` app repo via
 ## 4. In progress / pending
 
 - **No open TODO/FIXME markers** in `src/`.
-- **Branches:** only `main` and `copy/repositioning` exist, locally and on
-  `origin`. The seven leftover source branches of squash-merged PRs (#1–#7)
-  were deleted on 2026-10-12.
 - Pre-launch placeholders still open (see README): real `PLAY_PACKAGE_NAME`
   (only needed for V1.5 Play TWA), designed OG image, official Play badge art.
 

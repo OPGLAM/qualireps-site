@@ -42,4 +42,4 @@ The endpoint stays active after the criterion is met.
 - *Easier:* widen the feet a touch more for a broader anti-rotation base. Slow negatives also build the rep without progressing the count.
 
 ## Dose
-Test a clean max on each side; work in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first. Stop each set well short of failure.
+Set your max on each side with a check set: as many clean reps as you can, keeping 2 in reserve. Work in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first. Stop each set well short of failure.

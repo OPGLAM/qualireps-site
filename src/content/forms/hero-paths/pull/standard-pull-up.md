@@ -38,4 +38,4 @@ Exhale on the pull, inhale on the lower. No holding at the top.
 - *Easier:* a touch of foot or band assist to finish clean reps; reduce range and rebuild.
 
 ## Dose
-Test your max in strict form (no kip), then practice in a range: from half of it (rounded down) to your max minus 3, always leaving at least 2 reps in reserve. Stop well short of form breakdown.
+Set your max with a check set: as many strict reps (no kip) as you can, keeping 2 in reserve. Then practice in a range: from half of it (rounded down) to your max minus 3, always leaving at least 2 reps in reserve. Stop well short of form breakdown.

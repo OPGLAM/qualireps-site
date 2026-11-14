@@ -1,7 +1,8 @@
 ---
 // Copy source: qualireps-v2/qualireps-audit/Landing page textes.md, section
-// "Page How it works", checked against the app code (qualireps-v2 @ e004800:
-// src/lib/logic/dose.ts, reserve.ts, recovery.ts, criterion.ts;
+// "Page How it works", checked against the app code (qualireps-v2 @ 810f662:
+// src/lib/logic/dose.ts, reserve.ts, recovery.ts, criterion.ts, checkSet.ts,
+// triggers.ts, triggerMessages.ts, load.ts, pastSet.ts, retestKind.ts;
 // data/chains.ts; routes/ExerciseScreen.svelte, LogPastSet.svelte). Where
 // the code and the document differed, the page follows the code. On-screen words are the app's own.
 import Base from '../layouts/Base.astro';
@@ -9,7 +10,7 @@ import { SITE_ORIGIN } from '../lib/site';
 
 const title = 'How it works — QualiReps';
 const description =
-  'How strength grows — nervous system first, then muscle — and the exact rules QualiReps uses: set size, rest, max tests, breaks.';
+  'How strength grows — nervous system first, then muscle — and the exact rules QualiReps uses: set size, reps left and rest, check sets, max tests, breaks.';
 
 const jsonLd = [
   {
@@ -39,9 +40,8 @@ const rules: Rule[] = [
     h: 'Your max',
     items: [
       'Every exercise starts from a max: your best clean reps, or your best clean seconds for a hold.',
-      'You set it in one of three ways: test it now, enter a test you have already done, or estimate it.',
-      'An estimated max is marked as estimated, and the app suggests confirming it with a real test.',
-      'Your max changes when you test it, or when a set logged with 1 or 2 reps left shows you can do more; the new max is then marked estimated. It is never lowered automatically.',
+      'You set your max in one of four ways. A check set, the recommended one: as many clean reps as you can while keeping 2 in reserve; your max becomes those reps plus 2, higher or lower than before, with no 24-hour rest. A full test, to your limit, followed by 24 hours of recovery. A test you have already done. Or an estimate, marked as such, which the app suggests confirming with a check set. When you start an exercise, pick a level or load where you can do 5 to 10 clean reps: that is where sets size best. Holds, and maxes under 3, use a full test: a check set needs room for at least one rep with 2 left.',
+      'Your max also rises when a set shows you can do more: the reps you did plus the reps you had left, marked estimated. Between full tests, your max can rise by up to 2 reps above your last full test, or above the max you started the level or load with; beyond that, the app asks for a full test. Only a check set or a test can lower it.',
     ],
   },
   {
@@ -57,26 +57,26 @@ const rules: Rule[] = [
     h: 'Rest',
     items: [
       'After each set, tap how many reps you had left: 0, 1, 2 or 3+. The exercise then rests 2 minutes with 4 or more left, 3 minutes with 2 or 3, 5 minutes with 1. With 3+, the app uses how far the set was below your max.',
-      '0 means a maximal effort: the exercise rests for 24 hours, and at or above your max it counts as a max test.',
-      'Three sets in a row with less left than planned suggest retesting your max.',
+      '0 means a maximal effort: the exercise rests for 24 hours, and at or above your max it counts as a max test. If you tap 0 well below your max, the app asks whether it really was your limit.',
       'A hold that reaches your max: the app asks whether it was a true max effort.',
       'Rest is counted for each exercise on its own. The reserve buttons (or <em>Log set</em> for a hold) stay off until the exercise is <em>Fresh</em> again.',
     ],
   },
   {
-    h: 'Max tests',
+    h: 'Checks and tests',
     items: [
-      'Before a max test, warm up: a few minutes of light movement, then 2 or 3 short sets building up, a short rest, then test.',
-      'A max test puts that exercise in <em>Recovery</em> for 24 hours. Your other exercises are not affected.',
-      'A new test at the same level waits 48 hours.',
-      'An estimated max starts no recovery.',
+      'Before a full test, warm up: a few minutes of light movement, then 2 or 3 short sets building up, a short rest, then test.',
+      'A full test puts that exercise in <em>Recovery</em> for 24 hours. A check set does not. Your other exercises are not affected.',
+      'A new full test at the same level waits 48 hours.',
+      'A check set or an estimated max starts no recovery.',
+      'About every three weeks, or after a solid volume of work, the app suggests a check set to keep your max current, never sooner than a week after the last one (a full test for holds and small maxes).',
     ],
   },
   {
     h: 'After a break',
     items: [
       'After 2 weeks without a set on an exercise, its sets are sized from 90% of your max, and from 80% after 4 weeks, until you record a new max.',
-      'After 4 weeks, a max test is recommended. Nothing is blocked.',
+      'After 4 weeks, a check set is recommended (a full test for holds and small maxes). Nothing is blocked.',
     ],
   },
   {
@@ -84,14 +84,14 @@ const rules: Rule[] = [
     items: [
       'Each level of a bodyweight path has a passage criterion. When your max reaches it, the app says so and offers <em>Change level</em>.',
       'Your own exercises with a load have a criterion you set: 10 reps by default. The kettlebell press uses 12, because bells go up in large steps. When your max reaches the criterion, the app suggests a heavier load.',
-      'Changing level or load means setting a new max.',
+      'Changing level or load means setting a new max, with a check set if you like. If a heavier load would bring your max below 5, the app says so and suggests a smaller step, except for kettlebells, which go up in large steps.',
     ],
   },
   {
     h: 'Sets logged later',
     items: [
       '<em>Log a past set</em> records a set you forgot. It counts in your volume and is never refused: not during rest, not during recovery, not on a rest day.',
-      'A past set cannot be dated in the future, or before your last max test.',
+      'A past set cannot be dated in the future, or before your last check set or max test.',
     ],
   },
   {
@@ -105,6 +105,7 @@ const rules: Rule[] = [
     h: 'What the app does not do',
     items: [
       'No program. No imposed goal. No automatic move to the next level or the next load.',
+      'It never asks you to go to failure.',
       'The app shows when the next set is safe. What you train stays your decision.',
     ],
   },

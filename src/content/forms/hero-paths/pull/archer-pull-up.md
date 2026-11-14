@@ -37,4 +37,4 @@ Exhale on the pull, inhale on the lower.
 - *Easier:* let the straight arm bend and help a little more; narrower grip.
 
 ## Dose
-Test a clean max on each side. Practice in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first.
+Set your max on each side with a check set: as many clean reps as you can, keeping 2 in reserve. Practice in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first.

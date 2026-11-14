@@ -18,7 +18,7 @@ QualiReps handles data in three places: the app on your device, the purchase, an
 
 The app asks for no account, no email, no name and no device identifier. It contains no analytics, no trackers and no third-party fonts.
 
-Your practice data (exercises, sets, max tests, settings) is stored in your browser's storage on your device (IndexedDB). In normal use, nothing leaves your device.
+Your practice data (exercises, sets, maxes, settings) is stored in your browser's storage on your device (IndexedDB). In normal use, nothing leaves your device.
 
 ### When you buy
 

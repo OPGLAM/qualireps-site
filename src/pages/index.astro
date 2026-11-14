@@ -24,9 +24,9 @@ const chains = groupByChain(entries);
 // so the gallery starts at 03.
 const shots = [
   { src: shotResting, caption: 'Rest set by what you had left', alt: 'Split Squat, Squat path Level 1 of 10, max 9 left and 8 right: one set logged today (4 left, 4 right). Next set 4–5 reps per side, with a counter for each side; Resting · 02:50, the reserve buttons 0, 1, 2 and 3+ greyed out, Log a past set still available' },
-  { src: shotNewLoad, caption: 'Your load, your call', alt: 'Set max for new load screen, moving to 62.5 kg: “How will you set your max?” with three choices — Use estimated max (suggested start: 8 reps), Already performed, or Test max now (starts a 24-hour test recovery)' },
+  { src: shotNewLoad, caption: 'Your load, your call', alt: 'Set max screen, moving to 62.5 kg: “How will you set your max?” with four choices — Check set, marked Recommended (as many clean reps as you can, keeping 2 in reserve; no 24-hour rest), Use estimated max (suggested start: 8 reps), Already performed, and Full test' },
   { src: shotHistory, caption: 'Every set, kept', alt: 'History screen: a Max evolution curve with a 16 kg and a 12 kg tab, three measured maxes rising from 29 September to 26 October 2026, then sessions by day — Today, Yesterday, 4 days ago, 5 days ago — with their sets and reps' },
-  { src: shotCustom, caption: 'Your own exercises, with loads', alt: 'Custom exercise form: reps or seconds, bilateral or unilateral, With load set to 10 kg (kg or lb), and a passage criterion of 10 reps — “When your max reaches it, the app suggests a heavier load.”' },
+  { src: shotCustom, caption: 'Your own exercises, with loads', alt: 'Custom exercise form: reps or seconds, bilateral or unilateral, With load set to 10 kg (kg or lb) — “Pick a load you can lift 5 to 10 times in clean form. Your max is tied to it.” — and a criterion of 10 reps: “When your max reaches it, the app suggests a heavier load.”' },
 ];
 
 // "Built on research": each claim links to its source (opens in a new tab).
@@ -42,7 +42,7 @@ const studies = [
     href: 'https://www.fau.edu/newsdesk/articles/muscle-growth-strength-study',
   },
   {
-    text: '<strong>Sets kept well short of failure are recovered from within hours; sets taken to failure take one to two days.</strong> That is why a set that truly reaches your max counts as a max test, and a max test starts a 24-hour recovery.',
+    text: '<strong>Sets kept well short of failure are recovered from within hours; sets taken to failure take one to two days.</strong> That is why QualiReps measures your max with 2 reps in reserve, and why a full test to failure starts a 24-hour recovery.',
     label: 'Morán-Navarro et al., 2017 →',
     href: 'https://pubmed.ncbi.nlm.nih.gov/28965198/',
   },
@@ -55,7 +55,7 @@ const studies = [
 
 const title = 'QualiReps — the strength ledger';
 const description =
-  'Every set, every max, every level, every load — kept on your phone. QualiReps sizes each set from your max, leaves you a margin, and shows when the next one is safe. Bodyweight paths, kettlebell and your own exercises. One exercise free; 9,99 € once.';
+  'A strength ledger that never asks you to fail — not even to measure your max. Every set sized from your max, counted in reps left.';
 
 const jsonLd = [
   {
@@ -73,7 +73,7 @@ const jsonLd = [
 const faqs = [
   {
     q: 'Can I try it before paying?',
-    a: 'Yes. The free version runs on one active exercise, on any path, with every level of that path. Everything works on it: max tests, set sizes, rest, history, export and backup. To practice something else, archive it and start another.',
+    a: 'Yes. The free version runs on one active exercise, on any path, with every level of that path. Everything works on it: check sets, set sizes, rest, history, export and backup. To practice something else, archive it and start another.',
   },
   {
     q: 'What does the purchase add?',
@@ -116,8 +116,9 @@ const faqs = [
           <h1>Get stronger without guessing.</h1>
           <p class="hero-sub">
             Every set, every max, every level, every load — kept on your phone.
-            QualiReps sizes each set from your max, leaves you a margin, and
-            shows when the next one is safe. A tool, not a coach.
+            QualiReps sizes each set from your max and counts everything in reps
+            left: it never asks you to train to failure, not even to measure your
+            max. A tool, not a coach.
           </p>
           <p class="hero-note">
             No program to follow, no sessions to plan. Open it, see what's
@@ -202,8 +203,8 @@ const faqs = [
         <div class="body">
           <div class="principles">
             <div class="p"><span class="n">01</span><div><span class="t">The next set.</span><span class="d">Given as a range, sized from your max: from half your max for strength to your max minus 3 for muscle. Always at least two reps short of your max. You choose where to land.</span></div></div>
-            <div class="p"><span class="n">02</span><div><span class="t">The rest.</span><span class="d">After each set, tap how many reps you had left: 0, 1, 2 or 3+. The rest follows: two, three or five minutes. A set with nothing left is a maximal effort, and that exercise rests for 24 hours.</span></div></div>
-            <div class="p"><span class="n">03</span><div><span class="t">The recovery.</span><span class="d">After a max test, that exercise rests for 24 hours. Your other exercises are not affected.</span></div></div>
+            <div class="p"><span class="n">02</span><div><span class="t">The rest.</span><span class="d">After each set, tap how many reps you had left: 0, 1, 2 or 3+. The rest follows: two, three or five minutes. A set with nothing left is a maximal effort, and that exercise rests for 24 hours; well below your max, the app asks first.</span></div></div>
+            <div class="p"><span class="n">03</span><div><span class="t">Your max.</span><span class="d">Set it with a check set: as many clean reps as you can while keeping 2 in reserve. No failure, no 24-hour rest. A full test is there if you want it; it rests that exercise for 24 hours.</span></div></div>
           </div>
           <p class="after-grid">
             The next set button stays off until the rest is over. The rules are
@@ -326,6 +327,7 @@ const faqs = [
             <li>Your data stays on your phone, and the app works offline.</li>
             <li>No ads, no tracking in the app.</li>
             <li>No badges, no streaks, no messages telling you to do more.</li>
+            <li>Never asks you to train to failure.</li>
             <li>Pay once, like a book. No subscription.</li>
           </ul>
         </div>
@@ -345,8 +347,8 @@ const faqs = [
           I built QualiReps to track my own progress and manage my recovery
           properly. I like to train as often as I want, and the soreness from
           sets taken to failure kept costing me days. So I stopped going to
-          failure, and wanted a tool that made it simple: every set sized, every
-          rest timed, an honest record.
+          failure, even to test my max, and wanted a tool that made it simple:
+          every set sized, every rest timed, an honest record.
         </p>
         <p>
           QualiReps has a few bodyweight paths, built on what calisthenics

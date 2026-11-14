@@ -7,7 +7,7 @@
 export const FREE_FEATURES = [
   'One active exercise, on any path, with every level of that path',
   'Archive it and start another at any time',
-  'Max tests, set sizes, rest, history, export and backup',
+  'Check sets, set sizes, rest, history, export and backup',
   'All form guides',
 ];
 

@@ -69,4 +69,4 @@ The app selects the mode from your dose: Mode A when the daily set is 3 reps or 
 
 ## Dose
 
-Test a clean max per arm with the bell you practice with; work in a range: from half of the weaker arm (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both arms, weaker arm first. Stop each set well short of failure.
+Set your max per arm with a check set, with the bell you practice with: as many clean presses as you can, keeping 2 in reserve. Work in a range: from half of the weaker arm (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both arms, weaker arm first. Stop each set well short of failure.

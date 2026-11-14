@@ -39,4 +39,4 @@ Inhale on the descent, exhale on the drive up.
 - *Easier:* higher surface (smaller range); a fingertip on a side support for balance (not load).
 
 ## Dose
-Test a clean max per side, then practice in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first.
+Set your max per side with a check set: as many clean reps as you can, keeping 2 in reserve. Then practice in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first.

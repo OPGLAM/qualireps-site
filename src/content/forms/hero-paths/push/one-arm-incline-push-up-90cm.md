@@ -41,4 +41,4 @@ Inhale and brace at the top; pressurized exhale through the press out of the bot
 - *Easier:* widen the feet for a more stable base. If balance is the limiter, rest the free-hand fingertips on the support beside the working hand and lean on them less over time.
 
 ## Dose
-Test a clean max on each side; work in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first. Stop each set well short of failure.
+Set your max on each side with a check set: as many clean reps as you can, keeping 2 in reserve. Work in a range: from half of the weaker side (rounded down) to its max minus 3, always leaving at least 2 reps in reserve, same count both sides, weaker side first. Stop each set well short of failure.

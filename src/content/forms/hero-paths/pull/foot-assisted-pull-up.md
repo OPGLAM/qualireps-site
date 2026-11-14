@@ -37,4 +37,4 @@ Exhale on the pull, inhale on the lower. No holding.
 - *Easier:* more foot pressure; or a band over the bar for a hand to share load.
 
 ## Dose
-Set your foot-pressure convention on the first session and keep it for max tests and daily sets. Test your max in clean form, then practice in a range: from half of it (rounded down) to your max minus 3, always leaving at least 2 reps in reserve.
+Set your foot-pressure convention on the first session and keep it for daily sets and whenever you set your max. Set your max with a check set: as many clean reps as you can, keeping 2 in reserve. Then practice in a range: from half of it (rounded down) to your max minus 3, always leaving at least 2 reps in reserve.
