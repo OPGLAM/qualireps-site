@@ -80,11 +80,17 @@ You may not reverse-engineer the application, redistribute it, or use the QualiR
 
 ## No warranties
 
-QualiReps is provided as is. We do not guarantee that the application will be available without interruption, error-free, or compatible with all devices and operating system versions. This does not limit the legal guarantees you have as a consumer.
+QualiReps is provided as is. We do not guarantee that the application will be available without interruption, error-free, or compatible with all devices and operating system versions. This does not limit the legal guarantees you have as a consumer, set out below.
+
+## Legal guarantee of conformity
+
+If you are a consumer, the full version you buy is digital content covered by the legal guarantee of conformity (Articles L224-25-12 and following of the French Consumer Code). We are liable for any lack of conformity that exists when the content is supplied and appears within two years of that supply; a lack of conformity that appears within twelve months of the supply is presumed to have existed at that time. You are entitled to have the content brought into conformity, free of charge. If that is impossible, refused, not done within a reasonable time or without major inconvenience to you, or if the lack of conformity remains, you may obtain a reduction of the price or, unless the lack of conformity is minor, end the contract and be refunded. To use this guarantee, write to support@qualireps.app. It applies to every purchase of the full version.
 
 ## Limitation of liability
 
-To the extent permitted by law, we are not liable for indirect, incidental, or consequential damages arising from your use of QualiReps. Our total liability for any direct damages is limited to the amount you paid for the application.
+Nothing in these Terms limits or excludes our liability where the law does not allow it. If you are a consumer, you keep all your legal rights and remedies, including compensation for any loss caused by a failure on our part.
+
+If you use QualiReps for professional purposes, our liability towards you is limited, to the extent permitted by law, to direct damages and to the amount you paid for the application.
 
 ## Changes to the application
 

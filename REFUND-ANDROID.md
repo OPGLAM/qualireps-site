@@ -22,7 +22,7 @@ After 48 hours, write to support@qualireps.app with your Google Play order numbe
 
 The full version is digital content, unlocked as soon as the purchase is complete. Under European Union consumer law, the 14-day right of withdrawal does not apply to digital content once its supply has begun with your prior express consent and your acknowledgement that you thereby lose that right (Article 16(m) of Directive 2011/83/EU; in France, Article L221-28 of the Consumer Code). Where the law still gives you a right of withdrawal, we honour it: write to support@qualireps.app.
 
-This does not affect your legal guarantees: if the app does not work as described, write to us at support@qualireps.app.
+This does not affect your legal guarantee of conformity, described in our [Terms of Service](/terms): if the app does not work as described, write to us at support@qualireps.app.
 
 ## After a refund
 

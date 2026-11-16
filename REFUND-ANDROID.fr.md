@@ -22,7 +22,7 @@ Après 48 heures, écrivez à support@qualireps.app en indiquant votre numéro d
 
 La version complète est un contenu numérique, débloqué dès que l'achat est effectué. Selon le droit de la consommation de l'Union européenne, le droit de rétractation de 14 jours ne s'applique pas à un contenu numérique dont la fourniture a commencé avec votre accord préalable exprès et votre reconnaissance que vous perdez ainsi ce droit (article 16, point m, de la directive 2011/83/UE ; en France, article L221-28 du Code de la consommation). Lorsque la loi vous accorde malgré tout un droit de rétractation, nous le respectons : écrivez à support@qualireps.app.
 
-Cela ne touche pas à vos garanties légales : si l'application ne fonctionne pas comme décrit, écrivez-nous à support@qualireps.app.
+Cela ne touche pas à votre garantie légale de conformité, décrite dans nos [conditions d'utilisation](/fr/terms) : si l'application ne fonctionne pas comme décrit, écrivez-nous à support@qualireps.app.
 
 ## Après un remboursement
 

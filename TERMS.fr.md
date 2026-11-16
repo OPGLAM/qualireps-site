@@ -80,11 +80,17 @@ Vous ne pouvez pas décompiler l'application, la redistribuer, ni utiliser le no
 
 ## Absence de garantie
 
-QualiReps est fourni en l'état. Nous ne garantissons pas que l'application sera disponible sans interruption, sans erreur, ni compatible avec tous les appareils et toutes les versions de système. Cela ne limite pas les garanties légales dont vous bénéficiez en tant que consommateur.
+QualiReps est fourni en l'état. Nous ne garantissons pas que l'application sera disponible sans interruption, sans erreur, ni compatible avec tous les appareils et toutes les versions de système. Cela ne limite pas les garanties légales dont vous bénéficiez en tant que consommateur, décrites ci-dessous.
+
+## Garantie légale de conformité
+
+Si vous êtes un consommateur, la version complète que vous achetez est un contenu numérique couvert par la garantie légale de conformité (articles L224-25-12 et suivants du Code de la consommation). Nous répondons des défauts de conformité qui existent au moment de la fourniture et qui apparaissent dans les deux ans qui suivent ; un défaut de conformité qui apparaît dans les douze mois qui suivent la fourniture est présumé avoir existé à ce moment-là. Vous avez droit à la mise en conformité du contenu, sans frais. Si elle est impossible, refusée, n'a pas lieu dans un délai raisonnable ou sans inconvénient majeur pour vous, ou si le défaut de conformité persiste, vous pouvez obtenir une réduction du prix ou, sauf si le défaut de conformité est mineur, la résolution du contrat et le remboursement. Pour mettre en œuvre cette garantie, écrivez à support@qualireps.app. Elle s'applique à tout achat de la version complète.
 
 ## Limitation de responsabilité
 
-Dans la mesure permise par la loi, nous ne sommes pas responsables des dommages indirects, accessoires ou consécutifs liés à votre utilisation de QualiReps. Notre responsabilité totale pour tout dommage direct est limitée au montant que vous avez payé pour l'application.
+Rien dans ces conditions ne limite ni n'exclut notre responsabilité là où la loi l'interdit. Si vous êtes un consommateur, vous conservez tous vos droits et recours légaux, y compris la réparation du préjudice causé par un manquement de notre part.
+
+Si vous utilisez QualiReps à des fins professionnelles, notre responsabilité envers vous est limitée, dans la mesure permise par la loi, aux dommages directs et au montant que vous avez payé pour l'application.
 
 ## Évolutions de l'application
 
