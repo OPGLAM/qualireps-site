@@ -40,6 +40,12 @@ export default defineConfig({
       // Checkout and post-purchase pages stay out of the index (they also
       // carry a robots noindex meta tag).
       filter: (page) => !/\/(buy|thanks)\/?$/.test(new URL(page).pathname),
+      // Lot L5: the legal pages exist in English (/terms…) and French
+      // (/fr/terms…). Each URL gets its hreflang alternates in the sitemap.
+      i18n: {
+        defaultLocale: 'en',
+        locales: { en: 'en', fr: 'fr' },
+      },
     }),
   ],
 

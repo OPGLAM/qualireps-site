@@ -1,0 +1,14 @@
+---
+// Rendered from the repo-root PRIVACY.fr.md (single source of truth, lot L5;
+// the app copies it with `npm run sync-legal`).
+import LegalPage from '../../components/LegalPage.astro';
+import { Content } from '../../../PRIVACY.fr.md';
+
+const title = 'Politique de confidentialité — QualiReps';
+const description =
+  "QualiReps n'a pas de compte et ne collecte aucune donnée vous concernant : vos données d'entraînement restent sur votre appareil. Achats sur ce site et sur Google Play, rappels, sauvegarde Android.";
+---
+
+<LegalPage title={title} description={description} lang="fr" enPath="/privacy">
+  <Content />
+</LegalPage>

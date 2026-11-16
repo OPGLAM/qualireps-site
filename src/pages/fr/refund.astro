@@ -1,0 +1,14 @@
+---
+// Rendered from the repo-root REFUND.fr.md (single source of truth, lot L5;
+// the app copies it with `npm run sync-legal`).
+import LegalPage from '../../components/LegalPage.astro';
+import { Content } from '../../../REFUND.fr.md';
+
+const title = 'Politique de remboursement — QualiReps';
+const description =
+  "Les achats sur ce site sont traités par Paddle, vendeur officiel. Vous pouvez vous rétracter dans les 14 jours qui suivent l'achat, sans motif, et être remboursé intégralement.";
+---
+
+<LegalPage title={title} description={description} lang="fr" enPath="/refund">
+  <Content />
+</LegalPage>

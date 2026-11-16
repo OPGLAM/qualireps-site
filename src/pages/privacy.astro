@@ -1,24 +1,14 @@
 ---
-import Base from '../layouts/Base.astro';
-// Rendered from the repo-root PRIVACY.md (single source of truth for the
-// legal copy). Astro's markdown pipeline turns it into a component.
+// Rendered from the repo-root PRIVACY.md (single source of truth, lot L5;
+// the app copies it with `npm run sync-legal`).
+import LegalPage from '../components/LegalPage.astro';
 import { Content } from '../../PRIVACY.md';
 
 const title = 'Privacy Policy — QualiReps';
 const description =
-  'The QualiReps app keeps your data on your device, with no account, analytics or trackers. What leaves it when you buy, and what this website records.';
+  'QualiReps has no account and collects no data about you: your practice data stays on your device. Purchases on this website and on Google Play, reminders, Android backup.';
 ---
 
-<Base title={title} description={description} path="/privacy">
-  <div class="wrap">
-    <article class="prose legal">
-      <Content />
-    </article>
-  </div>
-</Base>
-
-<style>
-  .legal {
-    padding: 2rem 0;
-  }
-</style>
+<LegalPage title={title} description={description} lang="en" enPath="/privacy">
+  <Content />
+</LegalPage>

@@ -1,0 +1,14 @@
+---
+// Rendered from the repo-root REFUND-ANDROID.fr.md (single source of truth, lot L5;
+// the app copies it with `npm run sync-legal`).
+import LegalPage from '../../../components/LegalPage.astro';
+import { Content } from '../../../../REFUND-ANDROID.fr.md';
+
+const title = 'Politique de remboursement pour Google Play — QualiReps';
+const description =
+  "Les achats dans l'application Android passent par Google Play : demandez à Google Play dans les 48 heures, puis écrivez-nous. Le droit de rétractation de l'UE pour un contenu numérique, expliqué.";
+---
+
+<LegalPage title={title} description={description} lang="fr" enPath="/android/refund">
+  <Content />
+</LegalPage>

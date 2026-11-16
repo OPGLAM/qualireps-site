@@ -1,10 +1,18 @@
 # Refund Policy
 
-Last updated: 27 October 2026
+Last updated: 16 November 2026
+
+## Language of this policy
+
+This policy is published in English and in French. Both versions have the same value. If they differ, or if a passage is unclear, the interpretation most favourable to you, the customer, prevails.
+
+## Which purchases
+
+This policy covers purchases made on this website, through Paddle. For a purchase made in the Android app on Google Play, see the [Refund Policy for Google Play](/android/refund).
 
 ## Merchant of record
 
-Purchases of QualiReps are processed by Paddle.com Market Limited, which acts as the merchant of record and authorized reseller. Your bank or card statement shows a charge from Paddle.com.
+Purchases of QualiReps on this website are processed by Paddle.com Market Limited, which acts as the merchant of record and authorized reseller. Your bank or card statement shows a charge from Paddle.com.
 
 ## 14-day right of withdrawal
 

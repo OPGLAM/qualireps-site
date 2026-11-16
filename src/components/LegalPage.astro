@@ -1,0 +1,62 @@
+---
+/**
+ * A legal page (lot L5): Terms, Privacy, Refund (website and Google Play) and
+ * the Legal notice, each in English and in French with the same value. The
+ * text is the repo-root markdown (TERMS.md / TERMS.fr.md…), the single source
+ * the app also copies (qualireps-v2 `npm run sync-legal`). Paragraphs about
+ * buying on this website sit between `<!-- web-only -->` markers: the site
+ * shows them, the Android app leaves them out.
+ *
+ * Each page links to its other language and declares both with hreflang.
+ */
+import Base from '../layouts/Base.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  lang: 'en' | 'fr';
+  /** The English path, e.g. "/terms"; the French one is "/fr" + it. */
+  enPath: string;
+}
+
+const { title, description, lang, enPath } = Astro.props;
+const frPath = `/fr${enPath}`;
+const path = lang === 'fr' ? frPath : enPath;
+const other = lang === 'fr' ? { href: enPath, label: 'English version', hreflang: 'en' } : { href: frPath, label: 'Version française', hreflang: 'fr' };
+---
+
+<Base
+  title={title}
+  description={description}
+  path={path}
+  lang={lang}
+  alternates={[
+    { lang: 'en', path: enPath },
+    { lang: 'fr', path: frPath },
+  ]}
+>
+  <div class="wrap">
+    <p class="lang-switch">
+      <a href={other.href} hreflang={other.hreflang} lang={other.hreflang}>{other.label}</a>
+    </p>
+    <article class="prose legal">
+      <slot />
+    </article>
+  </div>
+</Base>
+
+<style>
+  .legal {
+    padding: 0 0 2rem;
+  }
+  .lang-switch {
+    margin: 0;
+    padding: 1.5rem 0 0;
+    font-size: 0.9rem;
+  }
+  .lang-switch a {
+    color: var(--color-cuivre);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+</style>

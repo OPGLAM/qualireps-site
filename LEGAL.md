@@ -1,6 +1,10 @@
 # Legal Notice
 
-Last updated: 27 October 2026
+Last updated: 16 November 2026
+
+## Language of this notice
+
+This notice is published in English and in French. Both versions have the same value. If they differ, or if a passage is unclear, the interpretation most favourable to you prevails.
 
 ## Publisher
 

@@ -1,23 +1,14 @@
 ---
-import Base from '../layouts/Base.astro';
-// Rendered from the repo-root REFUND.md (single source of truth).
+// Rendered from the repo-root REFUND.md (single source of truth, lot L5;
+// the app copies it with `npm run sync-legal`).
+import LegalPage from '../components/LegalPage.astro';
 import { Content } from '../../REFUND.md';
 
 const title = 'Refund Policy — QualiReps';
 const description =
-  'Purchases are processed by Paddle as merchant of record. You can withdraw within 14 days of purchase, without giving a reason, for a full refund.';
+  'Purchases on this website are processed by Paddle as merchant of record. You can withdraw within 14 days of purchase, without giving a reason, for a full refund.';
 ---
 
-<Base title={title} description={description} path="/refund">
-  <div class="wrap">
-    <article class="prose legal">
-      <Content />
-    </article>
-  </div>
-</Base>
-
-<style>
-  .legal {
-    padding: 2rem 0;
-  }
-</style>
+<LegalPage title={title} description={description} lang="en" enPath="/refund">
+  <Content />
+</LegalPage>

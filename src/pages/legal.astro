@@ -1,6 +1,7 @@
 ---
-import Base from '../layouts/Base.astro';
-// Rendered from the repo-root LEGAL.md (single source of truth).
+// Rendered from the repo-root LEGAL.md (single source of truth, lot L5;
+// the app copies it with `npm run sync-legal`).
+import LegalPage from '../components/LegalPage.astro';
 import { Content } from '../../LEGAL.md';
 
 const title = 'Legal Notice — QualiReps';
@@ -8,16 +9,6 @@ const description =
   'Publisher, publication director and hosting provider of qualireps.app and the QualiReps application.';
 ---
 
-<Base title={title} description={description} path="/legal">
-  <div class="wrap">
-    <article class="prose legal">
-      <Content />
-    </article>
-  </div>
-</Base>
-
-<style>
-  .legal {
-    padding: 2rem 0;
-  }
-</style>
+<LegalPage title={title} description={description} lang="en" enPath="/legal">
+  <Content />
+</LegalPage>

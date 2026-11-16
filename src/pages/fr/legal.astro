@@ -1,0 +1,14 @@
+---
+// Rendered from the repo-root LEGAL.fr.md (single source of truth, lot L5;
+// the app copies it with `npm run sync-legal`).
+import LegalPage from '../../components/LegalPage.astro';
+import { Content } from '../../../LEGAL.fr.md';
+
+const title = 'Mentions légales — QualiReps';
+const description =
+  "Éditeur, directeur de la publication et hébergeur de qualireps.app et de l'application QualiReps.";
+---
+
+<LegalPage title={title} description={description} lang="fr" enPath="/legal">
+  <Content />
+</LegalPage>

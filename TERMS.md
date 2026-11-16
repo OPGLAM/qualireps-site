@@ -1,6 +1,6 @@
 # Terms of Service
 
-Last updated: 28 October 2026
+Last updated: 16 November 2026
 
 ## Operator
 
@@ -9,6 +9,10 @@ QualiReps is operated by Olivier Lamglait, sole proprietor (entrepreneur individ
 Contact: legal@qualireps.app
 
 Support: support@qualireps.app
+
+## Language of these Terms
+
+These Terms are published in English and in French. Both versions have the same value. If they differ, or if a passage is unclear, the interpretation most favourable to you, the customer, prevails.
 
 ## By using the application
 
@@ -20,6 +24,8 @@ QualiReps is a strength training ledger. It tracks your practice, calculates tra
 
 You decide what to practice, how much, and whether to follow the application's suggestions.
 
+QualiReps exists as a web app, installed from your browser, and as an Android app, installed from Google Play.
+
 ## License
 
 On purchase, we grant you a non-exclusive, non-transferable, worldwide license to use QualiReps for your personal training practice. The license is for the lifetime of the application and does not expire. There is no recurring fee.
@@ -30,11 +36,27 @@ The free demo lets you use the instrument on one active exercise, with every lev
 
 ## Purchases
 
-Purchases are processed by Paddle.com Market Limited, which acts as the merchant of record and authorized reseller of QualiReps. Payment, taxes, and billing are handled by Paddle according to its terms; your bank or card statement shows a charge from Paddle.com. On a completed purchase, we issue you a license key that unlocks the full version on your device.
+The full version is a one-time purchase, with no subscription.
 
-Refunds are handled in accordance with our [Refund Policy](/refund).
+<!-- web-only -->
+### On this website (web app)
+
+Purchases on this website are processed by Paddle.com Market Limited, which acts as the merchant of record and authorized reseller of QualiReps. Payment, taxes, and billing are handled by Paddle according to its terms; your bank or card statement shows a charge from Paddle.com. On a completed purchase, we issue you a license key that unlocks the full version on your device.
+
+Refunds of these purchases are handled in accordance with our [Refund Policy](/refund).
 
 Your license key is the only credential — there is no account. If you uninstall and reinstall, re-enter your license key to restore the full version. The key is emailed to you and shown on the purchase success page; keep it. If you lose it, contact us at support@qualireps.app.
+<!-- /web-only -->
+
+### On Google Play (Android app)
+
+In the Android app, the full version is bought through Google Play. Payment, taxes and billing are handled by Google under the Google Play terms, at the price shown on Google Play for your country.
+
+The purchase is tied to your Google account. On another Android device signed in to the same Google account, the app restores it by itself, or when you tap Restore purchase. A purchase on Google Play unlocks the Android app.
+
+Refunds of purchases on Google Play are handled in accordance with our [Refund Policy for Google Play](/android/refund).
+
+A license key, if you have one, also unlocks the Android app: enter it in the app.
 
 ## Your responsibility
 
@@ -58,7 +80,7 @@ You may not reverse-engineer the application, redistribute it, or use the QualiR
 
 ## No warranties
 
-QualiReps is provided as is. We do not guarantee that the application will be available without interruption, error-free, or compatible with all devices and operating system versions.
+QualiReps is provided as is. We do not guarantee that the application will be available without interruption, error-free, or compatible with all devices and operating system versions. This does not limit the legal guarantees you have as a consumer.
 
 ## Limitation of liability
 

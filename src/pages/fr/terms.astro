@@ -1,0 +1,14 @@
+---
+// Rendered from the repo-root TERMS.fr.md (single source of truth, lot L5;
+// the app copies it with `npm run sync-legal`).
+import LegalPage from '../../components/LegalPage.astro';
+import { Content } from '../../../TERMS.fr.md';
+
+const title = "Conditions d'utilisation — QualiReps";
+const description =
+  "Les conditions d'utilisation de QualiReps, un carnet d'entraînement de force : un outil, pas un coaching, ni un avis médical, ni une prescription. Achats sur ce site et sur Google Play.";
+---
+
+<LegalPage title={title} description={description} lang="fr" enPath="/terms">
+  <Content />
+</LegalPage>

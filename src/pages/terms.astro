@@ -1,23 +1,14 @@
 ---
-import Base from '../layouts/Base.astro';
-// Rendered from the repo-root TERMS.md (single source of truth).
+// Rendered from the repo-root TERMS.md (single source of truth, lot L5;
+// the app copies it with `npm run sync-legal`).
+import LegalPage from '../components/LegalPage.astro';
 import { Content } from '../../TERMS.md';
 
 const title = 'Terms of Service — QualiReps';
 const description =
-  'The terms governing use of QualiReps: a strength training ledger. It is a tool, not coaching, medical advice, or a prescription.';
+  'The terms governing use of QualiReps: a strength training ledger. It is a tool, not coaching, medical advice, or a prescription. Purchases on this website and on Google Play.';
 ---
 
-<Base title={title} description={description} path="/terms">
-  <div class="wrap">
-    <article class="prose legal">
-      <Content />
-    </article>
-  </div>
-</Base>
-
-<style>
-  .legal {
-    padding: 2rem 0;
-  }
-</style>
+<LegalPage title={title} description={description} lang="en" enPath="/terms">
+  <Content />
+</LegalPage>
